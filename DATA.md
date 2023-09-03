@@ -250,6 +250,30 @@
 ## 3. 엠블렘
 ### 3-1. 일반 엠블렘
 * 골드 메이플리프 엠블렘
+```json
+{
+         "name":"골드 메이플리프 엠블렘",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLEOA.png",
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 골드 시그너스 엠블렘
 * 골드 레지스탕스 엠블렘
 * 골드 데몬 엠블렘
@@ -431,6 +455,31 @@
 ### 5-3. 펜던트
 * 카오스 혼테일의 목걸이
 * 매커네이터 펜던트
+```json
+   {"name":"매커네이터 펜던트",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJFLF.png",
+         "category":"펜던트",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "hp":250,
+            "mp":250,
+            "atk":1,
+            "mAtk":1,
+            "def":100
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+   }
+```
 * 도미네이터 펜던트
 * 베어스 퍼플 펜던트
 * 울프스 퍼플 펜던트
@@ -468,6 +517,32 @@
 * 커맨드 포스 이어링
 ### 5-8. 뱃지
 * 크리스탈 웬투스 뱃지
+```json
+   {
+         "name":"크리스탈 웬투스 뱃지",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOKJHGG.png",
+         "category":"뱃지",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":5,
+            "mAtk":5,
+            "speed":10,
+            "jump":10
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+   }
+```
 * 칠요의 뱃지
 * 창세의 뱃지
 ### 5-9. 훈장
