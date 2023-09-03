@@ -358,6 +358,9 @@
             "grade":"legendary",
             "effects":[
                {
+                  "coolDown":2
+               },
+               {
                   "lukP":9
                },
                {
