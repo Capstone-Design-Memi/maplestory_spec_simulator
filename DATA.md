@@ -328,6 +328,52 @@
          "scissors":10
       }
 ```
+* 강화버전 예시
+```json
+   {
+         "name":"하이네스 어새신보닛",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "dex":40,
+            "luk":40,
+            "hp":360,
+            "mp":360,
+            "atk":2,
+            "def":300,
+            "ignoreDef":10
+         },
+         "scroll":{
+            "dex":117,
+            "luk":117,
+            "hp":255,
+            "atk":85,
+            "mAtk":85,
+            "def":598
+         },
+         "grade":"legendary",
+         "star":22,
+         "potential":{
+            "grade":"legendary",
+            "effects":[
+               {
+                  "lukP":9
+               },
+               {
+                  "allStatP":6
+               }
+            ]
+         },
+         "flame":{
+            "str":40,
+            "int":24,
+            "luk":56,
+            "allStatP":5
+         },
+         "scissors":10
+      }
+```
 * 하이네스 원더러햇
 #### 4-1-2. 앱솔랩스 모자
 * 앱솔랩스 나이트 헬름
