@@ -134,6 +134,29 @@
 * 아케인셰이드 매직 건틀렛
 #### 1-3-4. 아케인셰이드 무기(도적)
 * 아케인셰이드 대거
+```json
+{
+         "name":"아케인셰이드 대거",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGJ.png",
+         "category":"단검 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":276,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 가즈
 * 아케인셰이드 케인
 * 아케인셰이드 에너지체인
@@ -246,6 +269,26 @@
 * 데이모스 세이지 실드
 * 데이모스 워리어 실드
 * 데이모스 다크니스 실드
+```json
+{
+    "name":"데이모스 다크니스 실드",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLJHGJ.png",
+    "category":"방패",
+    "upgrade":0,
+    "base":{
+       "luk":10,
+       "def":99
+    },
+    "scroll":{
+
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+       
+    }
+ }
+```
 * 루인 포스실드
 ## 3. 엠블렘
 ### 3-1. 일반 엠블렘
@@ -345,36 +388,13 @@
             "ignoreDef":10
          },
          "scroll":{
-            "dex":117,
-            "luk":117,
-            "hp":255,
-            "atk":85,
-            "mAtk":85,
-            "def":598
+
          },
          "grade":"legendary",
-         "star":22,
-         "potential":{
-            "grade":"legendary",
-            "effects":[
-               {
-                  "coolDown":2
-               },
-               {
-                  "lukP":9
-               },
-               {
-                  "allStatP":6
-               }
-            ]
-         },
+         "star":0,
          "flame":{
-            "str":40,
-            "int":24,
-            "luk":56,
-            "allStatP":5
-         },
-         "scissors":10
+         
+         }
       }
 ```
 * 하이네스 원더러햇
@@ -402,6 +422,29 @@
 * 이글아이 레인져후드
 * 이글아이 던위치로브
 * 이글아이 어새신셔츠
+```json
+{
+    "name":"이글아이 어새신셔츠",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLG.png",
+    "category":"상의",
+    "upgrade":0,
+    "base":{
+       "dex":30,
+       "luk":30,
+       "atk":2,
+       "def":135,
+       "ignoreDef":5
+    },
+    "scroll":{
+     
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+
+    }
+ }
+```
 * 이글아이 원더러코트
 #### 4-2-2. 에테르넬 상의
 * 에테르넬 나이트아머
@@ -490,17 +533,119 @@
 * 리부트 어웨이크 링(4단계)
 * 리부트 테네브리스 원정대 반지(완성)
 * 글로리온 링 : 슈프림
+```json
+{
+    "name":"글로리온 링 : 슈프림",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEPH.png",
+    "category":"반지",
+    "upgrade":0,
+    "base":{
+       "str":40,
+       "dex":40,
+       "int":40,
+       "luk":40,
+       "hp":4000,
+       "mp":4000,
+       "atk":25,
+       "mAtk":25
+    },
+    "scroll":{
+       
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+       
+    }
+ }
+```
 * 마이스터 링
 * 가디언 엔젤 링
 * 여명의 가디언 엔젤 링
+```json
+{
+    "name":"여명의 가디언 엔젤 링",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
+    "category":"반지",
+    "upgrade":0,
+    "base":{
+       "str":5,
+       "dex":5,
+       "int":5,
+       "luk":5,
+       "hp":200,
+       "mp":200,
+       "atk":2,
+       "mAtk":2
+    },
+    "scroll":{
+
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+       
+    }
+}
+```
 * 거대한 공포
 * 리스트레인트 링
+```json
+{
+    "name":"리스트레인트 링",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIHHJ.png",
+    "category":"반지",
+    "upgrade":0,
+    "base":{
+       "str":4,
+       "dex":4,
+       "int":4,
+       "luk":4,
+       "atk":4,
+       "mAtk":4
+    },
+    "scroll":{
+       
+    },
+    "grade":"nothing",
+    "star":0,
+    "flame":{
+       
+    }
+}
+```
 ### 5-2. 포켓아이템
 * 핑크빛 성배
 * 저주받은 적의 마도서
 * 저주받은 녹의 마도서
 * 저주받은 청의 마도서
 * 저주받은 황의 마도서
+```json
+{
+    "name":"저주받은 황의 마도서",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGC.png",
+    "category":"포켓 아이템",
+    "upgrade":0,
+    "base":{
+       "str":10,
+       "dex":10,
+       "int":10,
+       "luk":20,
+       "hp":100,
+       "mp":100,
+       "atk":10,
+       "mAtk":10
+    },
+    "scroll":{
+       
+    },
+    "grade":"nothing",
+    "star":0,
+    "flame":{
+  
+    }
+ }
+```
 ### 5-3. 펜던트
 * 카오스 혼테일의 목걸이
 * 매커네이터 펜던트
@@ -530,6 +675,31 @@
    }
 ```
 * 도미네이터 펜던트
+```json
+{
+    "name":"도미네이터 펜던트",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJGLB.png",
+    "category":"펜던트",
+    "upgrade":0,
+    "base":{
+       "str":20,
+       "dex":20,
+       "int":20,
+       "luk":20,
+       "hpP":10,
+       "mpP":10,
+       "atk":3,
+       "mAtk":3,
+       "def":100
+    },
+    "scroll":{
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+    }
+ }
+```
 * 베어스 퍼플 펜던트
 * 울프스 퍼플 펜던트
 * 아울스 퍼플 펜던트
@@ -561,6 +731,31 @@
 * 마력이 깃든 안대
 ### 5-7. 귀걸이
 * 데아시두스 이어링
+```json
+{
+    "name":"데아 시두스 이어링",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
+    "category":"귀고리",
+    "upgrade":0,
+    "base":{
+       "str":5,
+       "dex":5,
+       "int":5,
+       "luk":5,
+       "atk":2,
+       "mAtk":2,
+       "def":50
+    },
+    "scroll":{
+    
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+    
+    }
+ }
+```
 * 지옥의 불꽃
 * 마이스터 이어링
 * 커맨드 포스 이어링
