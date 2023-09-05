@@ -557,10 +557,115 @@
 ### 4-4. 장갑
 #### 4-4-1. 앱솔랩스 장갑
 * 앱솔랩스 나이트글러브
+```json
+      {
+         "name":"앱솔랩스 나이트글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 아처글러브
+```json
+      {
+         "name":"앱솔랩스 아처글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150
+         },
+         "scroll":
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 메이지글러브
+```json
+      {
+         "name":"앱솔랩스 메이지글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "luk":20,
+            "int":20,
+            "mAtk":5,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 시프글러브
+```json
+      {
+         "name":"앱솔랩스 시프글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "dex":20,
+            "luk":20,
+            "atk":5,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 파이렛글러브
+```json
+      {
+         "name":"앱솔랩스 파이렛글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 #### 4-4-2. 아케인셰이드 장갑
 * 아케인셰이드 나이트글러브
 ```json
@@ -677,10 +782,130 @@
 * 분노한 자쿰의 망토
 #### 4-5-2. 앱솔랩스 망토
 * 앱솔랩스 나이트케이프
+```json
+      {
+         "name":"앱솔랩스 나이트케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":15,
+            "dex":15,
+            "int":15,
+            "luk":15,
+            "atk":2,
+            "mAtk":2,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 아처케이프
+```json
+      {
+         "name":"앱솔랩스 아처케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":15,
+            "dex":15,
+            "int":15,
+            "luk":15,
+            "atk":2,
+            "mAtk":2,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 메이지케이프
+```json
+      {
+         "name":"앱솔랩스 메이지케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":15,
+            "dex":15,
+            "int":15,
+            "luk":15,
+            "atk":2,
+            "mAtk":2,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 시프케이프
+```json
+      {
+         "name":"앱솔랩스 시프케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":15,
+            "dex":15,
+            "int":15,
+            "luk":15,
+            "atk":2,
+            "mAtk":2,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 파이렛케이프
+```json
+      {
+         "name":"앱솔랩스 파이렛케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":15,
+            "dex":15,
+            "int":15,
+            "luk":15,
+            "atk":2,
+            "mAtk":2,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 #### 4-5-3. 아케인셰이드 망토
 * 아케인셰이드 나이트케이프
 ```json
