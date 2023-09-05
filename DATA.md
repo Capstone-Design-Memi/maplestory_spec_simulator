@@ -563,6 +563,27 @@
 * 앱솔랩스 파이렛글러브
 #### 4-4-2. 아케인셰이드 장갑
 * 아케인셰이드 나이트글러브
+```json
+   {
+         "name":"아케인셰이드 나이트글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 아처글러브
 ```json
    {
@@ -586,8 +607,71 @@
       }
 ```
 * 아케인셰이드 메이지글러브
+```json
+   {
+         "name":"아케인셰이드 메이지글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "int":40,
+            "luk":40,
+            "mAtk":9,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 시프글러브
+```json
+   {
+         "name":"아케인셰이드 시프글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "dex":40,
+            "luk":40,
+            "atk":9,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 파이렛글러브
+```json
+   {
+         "name":"아케인셰이드 파이렛글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 ### 4-5. 망토
 #### 4-5-1. 공용 망토
 * 분노한 자쿰의 망토
@@ -599,10 +683,130 @@
 * 앱솔랩스 파이렛케이프
 #### 4-5-3. 아케인셰이드 망토
 * 아케인셰이드 나이트케이프
+```json
+      {
+         "name":"아케인셰이드 나이트케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":6,
+            "mAtk":6,
+            "def":450
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 아처케이프
+```json
+      {
+         "name":"아케인셰이드 아처케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":6,
+            "mAtk":6,
+            "def":450
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 메이지케이프
+```json
+      {
+         "name":"아케인셰이드 메이지케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":6,
+            "mAtk":6,
+            "def":450
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 시프케이프
+```json
+      {
+         "name":"아케인셰이드 시프케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":6,
+            "mAtk":6,
+            "def":450
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 파이렛케이프
+```json
+      {
+         "name":"아케인셰이드 파이렛케이프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
+         "category":"망토",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":6,
+            "mAtk":6,
+            "def":450
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 ### 4-6. 신발
 #### 4-6-1. 앱솔랩스 신발
 * 앱솔랩스 나이트슈즈
@@ -630,15 +834,222 @@
       }
 ```
 * 앱솔랩스 아처슈즈
+```json
+      {
+         "name":"앱솔랩스 아처슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 메이지슈즈
-* 앱솔랩스 시프숄더
+```json
+      {
+         "name":"앱솔랩스 메이지슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "int":20,
+            "luk":20,
+            "mAtk":5,
+            "def":150,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
+* 앱솔랩스 시프슈즈
+```json
+      {
+         "name":"앱솔랩스 시프슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "dex":20,
+            "luk":20,
+            "atk":5,
+            "def":150,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 파이렛슈즈
+```json
+      {
+         "name":"앱솔랩스 파이렛슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 #### 4-6-2. 아케인셰이드 신발
 * 아케인셰이드 나이트슈즈
+```json
+      {
+         "name":"아케인셰이드 나이트슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 아처슈즈
+```json
+      {
+         "name":"아케인셰이드 아처슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 메이지슈즈
+```json
+      {
+         "name":"아케인셰이드 메이지슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "int":40,
+            "luk":40,
+            "mAtk":9,
+            "def":250,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 시프슈즈
+```json
+      {
+         "name":"아케인셰이드 시프슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "dex":40,
+            "luk":40,
+            "atk":9,
+            "def":250,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 파이렛슈즈
+```json
+      {
+         "name":"아케인셰이드 파이렛슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 ### 4-7. 어깨장식
 #### 4-7-1. 앱솔랩스 어깨장식
 * 앱솔랩스 나이트숄더
@@ -648,10 +1059,130 @@
 * 앱솔랩스 파이렛숄더
 #### 4-7-2. 아케인셰이드 어깨장식
 * 아케인셰이드 나이트숄더
+```json
+      {
+         "name":"아케인셰이드 나이트숄더",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
+         "category":"어깨장식",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":20,
+            "mAtk":20,
+            "def":300
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 아처숄더
+```json
+      {
+         "name":"아케인셰이드 아처숄더",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
+         "category":"어깨장식",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":20,
+            "mAtk":20,
+            "def":300
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 메이지숄더
+```json
+      {
+         "name":"아케인셰이드 메이지숄더",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
+         "category":"어깨장식",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":20,
+            "mAtk":20,
+            "def":300
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 시프숄더
+```json
+      {
+         "name":"아케인셰이드 시프숄더",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
+         "category":"어깨장식",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":20,
+            "mAtk":20,
+            "def":300
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 파이렛숄더
+```json
+      {
+         "name":"아케인셰이드 파이렛숄더",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
+         "category":"어깨장식",
+         "upgrade":0,
+         "base":{
+            "str":35,
+            "dex":35,
+            "int":35,
+            "luk":35,
+            "atk":20,
+            "mAtk":20,
+            "def":300
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 4-7-3. 에테르넬 어깨장식
 * 에테르넬 나이트숄더
 * 에테르넬 메이지숄더
