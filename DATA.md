@@ -122,6 +122,31 @@
 * 아케인셰이드 튜너
 #### 1-3-2. 아케인셰이드 무기(궁수)
 * 아케인셰이드 보우
+```json
+   {
+      "name":"아케인셰이드 보우",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
+         "category":"활 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":276,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 크로스보우
 * 아케인셰이드 듀얼보우건
 * 아케인 에인션트 보우
@@ -345,6 +370,30 @@
 #### 4-1-1. 파프니르 모자
 * 하이네스 워리어 헬름
 * 하이네스 레인져베레
+```json
+{
+      "name":"하이네스 레인져베레",
+      "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIAHI.png",
+      "category":"모자",
+      "upgrade":0,
+      "base":{
+         "str":40,
+         "dex":40,
+         "hp":360,
+         "mp":360,
+         "atk":2,
+         "def":300,
+         "ignoreDef":10
+         },
+      "scroll":{
+      },
+         "grade":"nothing",
+         "star":0,
+         "flame":{      
+         },
+         "scissors":10
+      }
+```
 * 하이네스 던위치햇
 * 하이네스 어새신보닛
 ```json
@@ -371,32 +420,6 @@
          "scissors":10
       }
 ```
-* 강화버전 예시
-```json
-   {
-         "name":"하이네스 어새신보닛",
-         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
-         "category":"모자",
-         "upgrade":0,
-         "base":{
-            "dex":40,
-            "luk":40,
-            "hp":360,
-            "mp":360,
-            "atk":2,
-            "def":300,
-            "ignoreDef":10
-         },
-         "scroll":{
-
-         },
-         "grade":"legendary",
-         "star":0,
-         "flame":{
-         
-         }
-      }
-```
 * 하이네스 원더러햇
 #### 4-1-2. 앱솔랩스 모자
 * 앱솔랩스 나이트 헬름
@@ -419,7 +442,51 @@
 ### 4-2. 상의
 #### 4-2-1. 파프니르 상의
 * 이글아이 워리어아머
+```json
+      {
+         "name":"이글아이 워리어아머",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLF.png",
+         "category":"상의",
+         "upgrade":0,
+         "base":{
+            "str":30,
+            "dex":30,
+            "atk":2,
+            "def":210,
+            "ignoreDef":5
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 이글아이 레인져후드
+```json
+   {
+      "name":"이글아이 레인져후드",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLH.png",
+         "category":"상의",
+         "upgrade":0,
+         "base":{
+            "str":30,
+            "dex":30,
+            "atk":2,
+            "def":135,
+            "ignoreDef":5
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 이글아이 던위치로브
 * 이글아이 어새신셔츠
 ```json
@@ -455,6 +522,28 @@
 ### 4-3. 하의
 #### 4-3-1. 파프니르 하의
 * 트릭스터 워리어팬츠
+```json
+      {
+         "name":"트릭스터 워리어팬츠",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIE.png",
+         "category":"하의",
+         "upgrade":0,
+         "base":{
+            "str":30,
+            "dex":30,
+            "atk":2,
+            "def":210,
+            "ignoreDef":5
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 트릭스터 레인져팬츠
 * 트릭스터 던위치팬츠
 * 트릭스터 어새신팬츠
@@ -475,6 +564,27 @@
 #### 4-4-2. 아케인셰이드 장갑
 * 아케인셰이드 나이트글러브
 * 아케인셰이드 아처글러브
+```json
+   {
+         "name":"아케인셰이드 아처글러브",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
+         "category":"장갑",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "atk":9,
+            "def":250
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 메이지글러브
 * 아케인셰이드 시프글러브
 * 아케인셰이드 파이렛글러브
@@ -496,6 +606,29 @@
 ### 4-6. 신발
 #### 4-6-1. 앱솔랩스 신발
 * 앱솔랩스 나이트슈즈
+```json
+      {
+         "name":"앱솔랩스 나이트슈즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
+         "category":"신발",
+         "upgrade":0,
+         "base":{
+            "str":20,
+            "dex":20,
+            "atk":5,
+            "def":150,
+            "speed":10,
+            "jump":7
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 앱솔랩스 아처슈즈
 * 앱솔랩스 메이지슈즈
 * 앱솔랩스 시프숄더
@@ -530,8 +663,58 @@
 * 실버블라썸 링
 * 고귀한 이피아의 반지
 * 이터널 플레임 링
+```json
+   {
+      "name":"이터널 플레임 링",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMF.png",
+         "category":"반지",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "int":40,
+            "luk":40,
+            "hp":4000,
+            "mp":4000,
+            "atk":25,
+            "mAtk":25
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 리부트 어웨이크 링(4단계)
 * 리부트 테네브리스 원정대 반지(완성)
+```json
+   {
+         "name":"리부트 테네브리스 원정대 반지(완성)",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEPA.png",
+         "category":"반지",
+         "upgrade":0,
+         "base":{
+            "str":40,
+            "dex":40,
+            "int":40,
+            "luk":40,
+            "hp":4000,
+            "mp":4000,
+            "atk":25,
+            "mAtk":25
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{         
+         }
+      }
+```
 * 글로리온 링 : 슈프림
 ```json
 {
@@ -560,7 +743,59 @@
  }
 ```
 * 마이스터 링
+```json
+ {
+         "name":"마이스터링",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIHLE.png",
+         "category":"반지",
+         "upgrade":0,
+         "base":{
+            "str":5,
+            "dex":5,
+            "int":5,
+            "luk":5,
+            "hp":200,
+            "mp":200,
+            "atk":1,
+            "mAtk":1,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 가디언 엔젤 링
+```json
+{
+    "name":"여명의 가디언 엔젤 링",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
+    "category":"반지",
+    "upgrade":0,
+    "base":{
+       "str":5,
+       "dex":5,
+       "int":5,
+       "luk":5,
+       "hp":200,
+       "mp":200,
+       "atk":2,
+       "mAtk":2
+    },
+    "scroll":{
+
+    },
+    "grade":"legendary",
+    "star":0,
+    "flame":{
+       
+    }
+}
+```
 * 여명의 가디언 엔젤 링
 ```json
 {
@@ -709,6 +944,32 @@
 ### 5-4. 벨트
 * 골든 클로버 벨트
 * 분노한 자쿰의 벨트
+```json
+      {
+         "name":"분노한 자쿰의 벨트",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFHH.png",
+         "category":"벨트",
+         "upgrade":0,
+         "base":{
+            "str":18,
+            "dex":18,
+            "int":18,
+            "luk":18,
+            "hp":150,
+            "mp":150,
+            "atk":1,
+            "mAtk":1,
+            "def":150
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 타일런트 히아데스 벨트
 * 타일런트 헤르메스 벨트
 * 타일런트 케이론 벨트
@@ -757,6 +1018,60 @@
  }
 ```
 * 지옥의 불꽃
+```json
+      {
+         "name":"지옥의 불꽃",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJGNH.png",
+         "category":"귀고리",
+         "upgrade":0,
+         "base":{
+            "str":7,
+            "dex":7,
+            "int":7,
+            "luk":7,
+            "hp":100,
+            "mp":100,
+            "atk":2,
+            "mAtk":2,
+            "def":100
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
+* 에스텔라 이어링
+```json
+   {
+         "name":"에스텔라 이어링",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJENB.png",
+         "category":"귀고리",
+         "upgrade":0,
+         "base":{
+            "str":7,
+            "dex":7,
+            "int":7,
+            "luk":7,
+            "hp":300,
+            "mp":300,
+            "atk":2,
+            "mAtk":2,
+            "def":100
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
+* 오션 글로우 이어링
 * 마이스터 이어링
 * 커맨드 포스 이어링
 ### 5-8. 뱃지
