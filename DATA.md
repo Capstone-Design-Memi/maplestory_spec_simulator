@@ -104,6 +104,29 @@
 #### 1-2-5. 앱솔랩스 무기(해적)
 * 앱솔랩스 포인팅건
 * 앱솔랩스 블로우너클
+```json
+{
+   "name":"앱솔랩스 블로우너클",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMD.png",
+   "category":"너클 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":154,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 앱솔랩스 블래스트캐논
 * 앱솔랩스 소울슈터
 * 앱솔랩스 에너지소드
@@ -395,6 +418,31 @@
       }
 ```
 * 하이네스 던위치햇
+```json
+{
+   "name":"하이네스 던위치햇",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIAHJ.png",
+   "category":"모자",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "hp":360,
+      "mp":360,
+      "mAtk":2,
+      "def":180,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 하이네스 어새신보닛
 ```json
     {
@@ -421,6 +469,31 @@
       }
 ```
 * 하이네스 원더러햇
+```json
+{
+   "name":"하이네스 원더러햇",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOA.png",
+   "category":"모자",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "hp":360,
+      "mp":360,
+      "atk":2,
+      "def":300,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 #### 4-1-2. 앱솔랩스 모자
 * 앱솔랩스 나이트 헬름
 * 앱솔랩스 아처후드
@@ -513,6 +586,29 @@
  }
 ```
 * 이글아이 원더러코트
+```json
+{
+   "name":"이글아이 원더러코트",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLJ.png",
+   "category":"상의",
+   "upgrade":0,
+   "base":{
+      "str":30,
+      "dex":30,
+      "atk":2,
+      "def":135,
+      "ignoreDef":5
+   },
+   "scroll":{
+
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 #### 4-2-2. 에테르넬 상의
 * 에테르넬 나이트아머
 * 에테르넬 아처후드
@@ -546,6 +642,29 @@
 ```
 * 트릭스터 레인져팬츠
 * 트릭스터 던위치팬츠
+```json
+{
+   "name":"트릭스터 던위치팬츠",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIH.png",
+   "category":"하의",
+   "upgrade":0,
+   "base":{
+      "int":30,
+      "luk":30,
+      "mAtk":2,
+      "def":120,
+      "ignoreDef":5
+   },
+   "scroll":{
+
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 트릭스터 어새신팬츠
 * 트릭스터 원더러팬츠
 #### 4-3-2. 에테르넬 하의
@@ -1418,6 +1537,32 @@
 ### 5-1. 반지
 * 실버블라썸 링
 * 고귀한 이피아의 반지
+```json
+{
+   "name":"고귀한 이피아의 반지",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIFGD.png",
+   "category":"반지",
+   "upgrade":0,
+   "base":{
+      "str":5,
+      "dex":5,
+      "int":5,
+      "luk":5,
+      "hp":200,
+      "mp":200,
+      "atk":2,
+      "mAtk":2
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+      
+   }
+ }
+```
 * 이터널 플레임 링
 ```json
    {
@@ -1446,6 +1591,32 @@
       }
 ```
 * 리부트 어웨이크 링(4단계)
+```json
+{
+   "name":"리부트 어웨이크 링(4단계)",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMD.png",
+   "category":"반지",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "int":40,
+      "luk":40,
+      "hp":4000,
+      "mp":4000,
+      "atk":25,
+      "mAtk":25
+   },
+   "scroll":{
+      
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+      
+   }
+ }
+```
 * 리부트 테네브리스 원정대 반지(완성)
 ```json
    {
@@ -1699,6 +1870,33 @@
 * 고통의 근원
 ### 5-4. 벨트
 * 골든 클로버 벨트
+```json
+{
+   "name":"골든 클로버 벨트",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFJD.png",
+   "category":"벨트",
+   "upgrade":0,
+   "base":{
+      "str":15,
+      "dex":15,
+      "int":15,
+      "luk":15,
+      "hp":150,
+      "mp":150,
+      "atk":1,
+      "mAtk":1,
+      "def":150
+   },
+   "scroll":{
+    
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 분노한 자쿰의 벨트
 ```json
       {
@@ -1734,6 +1932,31 @@
 * 몽환의 벨트
 ### 5-5. 얼굴장식
 * 응축된 힘의 결정석
+```json
+{
+   "name":"응축된 힘의 결정석",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDJJ.png",
+   "category":"얼굴장식",
+   "upgrade":0,
+   "base":{
+      "str":5,
+      "dex":5,
+      "int":5,
+      "luk":5,
+      "atk":5,
+      "mAtk":5,
+      "def":100
+   },
+   "scroll":{
+
+   },
+   "grade":"epic",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 샤이니 레드 워리어 마이스터 심볼
 * 샤이니 레드 아처 마이스터 심볼
 * 샤이니 레드 매지션 마이스터 심볼
@@ -1743,6 +1966,31 @@
 ### 5-6. 눈장식
 * 아쿠아틱 레터 눈장식
 * 블랙빈 마크
+```json
+{
+   "name":"블랙빈 마크",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFND.png",
+   "category":"눈장식",
+   "upgrade":0,
+   "base":{
+      "str":7,
+      "dex":7,
+      "int":7,
+      "luk":7,
+      "atk":1,
+      "mAtk":1,
+      "def":120
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 카오스 핑크빈 마크
 * 파풀라투스 마크
 * 마력이 깃든 안대
@@ -1863,4 +2111,23 @@
 ### 5-9. 훈장
 ### 5-10. 기계심장
 * 페어리 하트
+```json
+{
+   "name":"페어리 하트",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEJFJHJI.png",
+   "category":"기계 심장",
+   "upgrade":0,
+   "base":{
+      "hp":100
+   },
+   "scroll":{
+
+   },
+   "grade":"legendary",
+   "star":0,
+   "flame":{
+      
+   }
+ }
+```
 * 블랙 하트
