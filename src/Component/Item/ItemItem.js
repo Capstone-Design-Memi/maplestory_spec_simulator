@@ -20,7 +20,6 @@ const ItemItem = () => {
       >
         <a onClick={(e) => e.preventDefault()}>
           <Space>
-            Hover me
             <Avatar />
           </Space>
         </a>
