@@ -218,30 +218,615 @@
 * 아케인셰이드 소울슈터
 * 아케인셰이드 에너지체인
 ### 1-4. 제네시스 무기
+### 1-4. 제네시스 무기
 #### 1-4-1. 제네시스 무기(전사)
 * 제네시스 세이버
+```json
+{
+         "name":"제네시스 세이버",
+         "imageUrl": ,
+         "category":"한손검 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":326,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":223
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 엑스
+```json
+{
+         "name":"제네시스 엑스",
+         "imageUrl": ,
+         "category":"한손도끼 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":326,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":223
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 해머
+```json
+{
+         "name":"제네시스 해머",
+         "imageUrl": ,
+         "category":"한손둔기 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":326,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":223
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 투핸드소드
+```json
+{
+         "name":"제네시스 투핸드소드",
+         "imageUrl": ,
+         "category":"두손검 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 투핸드엑스
+```json
+{
+         "name":"제네시스 투핸드엑스",
+         "imageUrl": ,
+         "category":"두손도끼 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 투핸드해머
+```json
+{
+         "name":"제네시스 투핸드해머",
+         "imageUrl": ,
+         "category":"두손둔기 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 스피어
+```json
+{
+         "name":"제네시스 스피어",
+         "imageUrl": ,
+         "category":"창 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 폴암
+```json
+{
+         "name":"제네시스 폴암",
+         "imageUrl": ,
+         "category":"폴암 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":304,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":217
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 데스페라도
+```json
+{
+         "name":"제네시스 데스페라도",
+         "imageUrl": ,
+         "category":"데스페라도 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "hp":2800,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 엘라하
+```json
+{
+         "name":"제네시스 엘라하",
+         "imageUrl": ,
+         "category":"건틀렛 리볼버 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":255,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":199
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 튜너
+```json
+{
+         "name":"제네시스 튜너",
+         "imageUrl": ,
+         "category":"튜너 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":340,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":228
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 #### 1-4-2. 제네시스 무기(궁수)
 * 제네시스 보우
+```json
+{
+         "name":"제네시스 보우",
+         "imageUrl": ,
+         "category":"활 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":318,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
+     
 * 제네시스 크로스보우
+```json
+{
+         "name":"제네시스 크로스보우",
+         "imageUrl": ,
+         "category":"석궁 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":326,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":223
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 듀얼보우건
+```json
+{
+         "name":"제네시스 듀얼보우건",
+         "imageUrl": ,
+         "category":"듀얼보우건 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":318,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 에인션트 보우
+```json
+{
+         "name":"제네시스 에인션트 보우",
+         "imageUrl": ,
+         "category":"에인션트 보우 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":318,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 브레스 슈터
+```json
+{
+         "name":"제네시스 브레스 슈터",
+         "imageUrl": ,
+         "category":"브레스 슈터 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":318,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }        
+      }
+```
+     
 #### 1-4-3. 제네시스 무기(마법사)
 * 제네시스 완드
+```json
+{
+         "name":"제네시스 완드",
+         "imageUrl": ,
+         "category":"완드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":150,
+            "luk":150,
+            "atk":237,
+            "mAtk":400,            
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":193,
+            "mAtk":250
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 스태프
+```json
+{
+         "name":"제네시스 스태프",
+         "imageUrl": ,
+         "category":"스태프 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":150,
+            "luk":150,
+            "atk":251,
+            "mAtk":406,            
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":198,
+            "mAtk":252
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 샤이닝로드
+```json
+{
+         "name":"제네시스 샤이닝로드",
+         "imageUrl": ,
+         "category":"샤이닝 로드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":150,
+            "luk":150,
+            "atk":237,
+            "mAtk":400,            
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":193,
+            "mAtk":250
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 ESP 리미터
+```json
+{
+         "name":"제네시스 ESP 리미터",
+         "imageUrl": ,
+         "category":"ESP 리미터 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":150,
+            "luk":150,
+            "atk":237,
+            "mAtk":400,            
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":193,
+            "mAtk":250
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 매직 건틀렛
+```json
+{
+         "name":"제네시스 매직 건틀렛",
+         "imageUrl": ,
+         "category":"매직 건틀렛 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":150,
+            "luk":150,
+            "atk":237,
+            "mAtk":400,            
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":193,
+            "mAtk":250
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 #### 1-4-4. 제네시스 무기(도적)
 * 제네시스 대거
 * 제네시스 가즈
