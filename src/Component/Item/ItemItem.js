@@ -1,6 +1,6 @@
 import { Avatar, Dropdown, Space } from "antd";
 import React from "react";
-import ItemStat from "./ItemStat";
+import ItemStat from "../ItemDetail/ItemStat";
 
 const items = [
   {
@@ -20,7 +20,6 @@ const ItemItem = () => {
       >
         <a onClick={(e) => e.preventDefault()}>
           <Space>
-            Hover me
             <Avatar />
           </Space>
         </a>
