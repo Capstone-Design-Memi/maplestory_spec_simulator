@@ -361,6 +361,29 @@
 * 골드 키네시스 엠블렘
 ### 3-2. 미트라의 분노
 * 미트라의 분노 : 전사
+```json
+{
+   "name":"미트라의 분노 : 전사",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLE.png",
+   "category":"엠블렘",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "hp":700,
+      "atk":5,
+      "mAtk":5
+   },
+   "scroll":{
+      
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+      
+   }
+}
+```
 * 미트라의 분노 : 궁수
 * 미트라의 분노 : 마법사
 * 미트라의 분노 : 도적
@@ -1278,10 +1301,125 @@
 ### 4-7. 어깨장식
 #### 4-7-1. 앱솔랩스 어깨장식
 * 앱솔랩스 나이트숄더
+```json
+{
+   "name":"앱솔랩스 나이트숄더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
+   "category":"어깨장식",
+   "upgrade":0,
+   "base":{
+      "str":14,
+      "dex":14,
+      "int":14,
+      "luk":14,
+      "atk":10,
+      "mAtk":10,
+      "def":100
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 * 앱솔랩스 아처숄더
+```json
+{
+   "name":"앱솔랩스 아처숄더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
+   "category":"어깨장식",
+   "upgrade":0,
+   "base":{
+      "str":14,
+      "dex":14,
+      "int":14,
+      "luk":14,
+      "atk":10,
+      "mAtk":10,
+      "def":100
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 * 앱솔랩스 메이지숄더
+```json
+{
+   "name":"앱솔랩스 메이지숄더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
+   "category":"어깨장식",
+   "upgrade":0,
+   "base":{
+      "str":14,
+      "dex":14,
+      "int":14,
+      "luk":14,
+      "atk":10,
+      "mAtk":10,
+      "def":100
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 * 앱솔랩스 시프숄더
+```json
+{
+   "name":"앱솔랩스 시프숄더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
+   "category":"어깨장식",
+   "upgrade":0,
+   "base":{
+      "str":14,
+      "dex":14,
+      "int":14,
+      "luk":14,
+      "atk":10,
+      "mAtk":10,
+      "def":100
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 * 앱솔랩스 파이렛숄더
+```json
+{
+   "name":"앱솔랩스 파이렛숄더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
+   "category":"어깨장식",
+   "upgrade":0,
+   "base":{
+      "str":14,
+      "dex":14,
+      "int":14,
+      "luk":14,
+      "atk":10,
+      "mAtk":10,
+      "def":100
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 #### 4-7-2. 아케인셰이드 어깨장식
 * 아케인셰이드 나이트숄더
 ```json
@@ -1697,6 +1835,31 @@
 * 피콕스 퍼플 펜던트
 * 데이브레이크 펜던트
 * 고통의 근원
+```json
+{
+   "name":"고통의 근원",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJDNB.png",
+   "category":"펜던트",
+   "upgrade":0,
+   "base":{
+      "str":10,
+      "dex":10,
+      "int":10,
+      "luk":10,
+      "hpP":5,
+      "atk":3,
+      "mAtk":3,
+      "def":200
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   },
+   "scissors":5
+}
+```
 ### 5-4. 벨트
 * 골든 클로버 벨트
 * 분노한 자쿰의 벨트
@@ -1732,6 +1895,31 @@
 * 타일런트 리카온 벨트
 * 타일런트 알테어 벨트
 * 몽환의 벨트
+```json
+{
+   "name":"몽환의 벨트",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJEOJ.png",
+   "category":"벨트",
+   "upgrade":0,
+   "base":{
+      "str":50,
+      "dex":50,
+      "int":50,
+      "luk":50,
+      "hp":150,
+      "mp":150,
+      "atk":6,
+      "mAtk":6,
+      "def":150
+   },
+   "scroll":{
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+   }
+}
+```
 ### 5-5. 얼굴장식
 * 응축된 힘의 결정석
 * 샤이니 레드 워리어 마이스터 심볼
@@ -1859,6 +2047,31 @@
    }
 ```
 * 칠요의 뱃지
+```json
+{
+   "name":"칠요의 뱃지",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOKJFOB.png",
+   "category":"뱃지",
+   "upgrade":0,
+   "base":{
+      "str":7,
+      "dex":7,
+      "int":7,
+      "luk":7,
+      "atk":7,
+      "mAtk":7,
+      "ignoreDef":10
+   },
+   "scroll":{
+      
+   },
+   "grade":"nothing",
+   "star":0,
+   "flame":{
+      
+   }
+}
+```
 * 창세의 뱃지
 ### 5-9. 훈장
 ### 5-10. 기계심장
