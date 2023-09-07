@@ -1,3 +1,4 @@
+
 export const CharactersInfo = [
     {
     id:1,
@@ -30,5 +31,4 @@ export const CharactersInfo = [
         dex : 2,
         luk : 2 
     }
-},
-]
+}

@@ -1,3 +1,1 @@
-export const DefaultItems = [{
-
-}]
+export const DefaultItems = [{}];
