@@ -4,29 +4,27 @@ import { useNavigate } from "react-router-dom";
 import { Class } from "../Util/Class";
 
 const CreateCharacter = () => {
-  const onFinish = (value) => {
-    console.log(value);
+  const onFinish = (values) => {
+    console.log("Success:", values.job[1]);
   };
 
   const navigator = useNavigate();
   return (
     <div>
       <h2>캐릭터 생성</h2>
-      <Form onFinish={onFinish}>
+      <Form name="basic" onFinish={onFinish}>
+        <Form.Item label="Username" name="username">
+          <Input />
+        </Form.Item>
+
         <Form.Item name="job">
-          <label>직업</label>
           <Cascader options={Class} placeholder="Please select" />
         </Form.Item>
-        <Form.Item name="name">
-          <label>이름</label>
-          <Input
-            onChange={(e) => {
-              console.log(e.target.value);
-            }}
-            style={{ width: "10rem" }}
-          />
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Submit
+          </Button>
         </Form.Item>
-        <Button htmlType="submit">캐릭터 생성</Button>
       </Form>
     </div>
   );
