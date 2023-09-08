@@ -218,7 +218,6 @@
 * 아케인셰이드 소울슈터
 * 아케인셰이드 에너지체인
 ### 1-4. 제네시스 무기
-### 1-4. 제네시스 무기
 #### 1-4-1. 제네시스 무기(전사)
 * 제네시스 세이버
 ```json
@@ -829,18 +828,344 @@
 ```
 #### 1-4-4. 제네시스 무기(도적)
 * 제네시스 대거
+```json
+{
+         "name":"제네시스 대거",
+         "imageUrl": ,
+         "category":"단검 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":318,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 가즈
+```json
+{
+         "name":"제네시스 가즈",
+         "imageUrl": ,
+         "category":"아대 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":172,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":170
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 케인
+```json
+{
+         "name":"제네시스 케인",
+         "imageUrl": ,
+         "category":"케인 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":326,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "int":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":223
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 에너지체인
+```json
+{
+         "name":"제네시스 에너지체인",
+         "imageUrl": ,
+         "category":"에너지소드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":255,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":199
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 체인
+```json
+{
+         "name":"제네시스 체인",
+         "imageUrl": ,
+         "category":"체인 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":318,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "dex":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 창세선
+```json
+{
+         "name":"제네시스 창세선",
+         "imageUrl": ,
+         "category":"부채 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":318,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "dex":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 이클립스
+```json
+{
+         "name":"제네시스 이클립스",
+         "imageUrl": ,
+         "category":"차크람 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":150,
+            "luk":150,
+            "atk":318,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "dex":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":221
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 #### 1-4-5. 제네시스 무기(해적)
 * 제네시스 피스톨
+```json
+{
+         "name":"제네시스 피스톨",
+         "imageUrl": ,
+         "category":"건 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":249,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":197
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 클로
+```json
+{
+         "name":"제네시스 클로",
+         "imageUrl": ,
+         "category":"너클 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":255,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":199
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 시즈건
+```json
+{
+         "name":"제네시스 시즈건",
+         "imageUrl": ,
+         "category":"핸드캐논 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":348,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":231
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 소울슈터
+```json
+{
+         "name":"제네시스 소울슈터",
+         "imageUrl": ,
+         "category":"소울 슈터 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":255,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "hp":255,
+            "mp":255,
+            "atk":199
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 * 제네시스 에너지체인
+```json
+{
+         "name":"제네시스 에너지체인",
+         "imageUrl": ,
+         "category":"에너지소드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":150,
+            "dex":150,
+            "atk":255,           
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            "str":145,
+            "dex":145,
+            "luk":145,
+            "hp":255,
+            "mp":255,
+            "atk":199
+         },
+         "grade":"nothing",
+         "star":22,
+         "flame":{
+            
+         }
+      }
+```
 ## 2. 보조무기
 ### 2-1. 일반 보조무기
 #### 2-1-1. 일반 보조무기(모험가)
