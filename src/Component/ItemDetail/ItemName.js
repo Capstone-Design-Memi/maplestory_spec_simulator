@@ -11,10 +11,11 @@ export const Line = styled.div`
 `
 
 export const Name = styled.span`
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: white;
     font-size: 14px;
-    font-family : 'KoPubWorld Dotum Bold';
+    font-weight: 600;
+    font-family : 'KoPubWorld Dotum Medium';
     
 `
 

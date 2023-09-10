@@ -1,5 +1,5 @@
 import React from "react";
-import { DefaultItems } from "../../Util/ItemDatas";
+//import { DefaultItems } from "../../Util/ItemDatas";
 import styled from 'styled-components';
 import Cover_img from '../../images/frame/cover.png';
 import Top_frame_img from '../../images/frame/top.png';
@@ -16,6 +16,8 @@ const Wrapper = styled.div`
   margin: 0em;
   width: 261px;
   background-image: url('${Cover_img}');
+  background-position: let top;
+  
 `;
 
 export const TopFrame = styled.div`
@@ -51,13 +53,16 @@ const ItemStat = () => {
       <DotLine/>
       <Line7/>
       <Line/><Line/><Line/>
-      <ItemImagePart grade={itemEx.grade} imgUrl={itemEx.imageUrl}/>
+      <ItemImagePart grade={itemEx.grade}
+                     imgUrl={itemEx.imageUrl}
+                     stateChageAmount={otherInformation.stateChageAmount}/>
     </Wrapper>
   );
 };
 
 const otherInformation = {
   maxStar : 25,
+  stateChageAmount : -2010955
 }
 
 const itemEx = {

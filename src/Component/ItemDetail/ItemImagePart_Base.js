@@ -33,9 +33,17 @@ export const Shade = styled.div`
 
 
 const ItemImagePart_Base = (props) => {
+    const imgUrl = props.imgUrl;
     return(
        <Base>
             <Cover>
+                <img
+                    style={{marginTop:'10px'}}
+                    src={imgUrl}
+                    alt="item Image"
+                    width={57}
+                    height={57}
+                />
                 <Shade/>
             </Cover>
        </Base>

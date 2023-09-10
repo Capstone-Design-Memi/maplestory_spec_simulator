@@ -6,6 +6,7 @@ import GradeEpic_img from '../../images/itemIcon/epic.png';
 import GradeUnique_img from '../../images/itemIcon/unique.png';
 import GradeLegendary_img from '../../images/itemIcon/legendary.png';
 import ItemImagePart_Base from "./ItemImagePart_Base";
+import ItemImagePart_StateChage from "./ItemImagePart_StateChange";
 
 export const Line = styled.div`
   margin: 0px;
@@ -38,21 +39,32 @@ export const GradeLegendary = styled.div`
   height: 80px;
   margin-left: 10px;
   float: left;
-  
   background-image: url('${GradeLegendary_img}');
 `
-
+export const IncreaseText = styled.span`
+    float: right;
+    width: 140px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    color: #999999;
+    font-size: 11px;
+    font-family : 'KoPubWorld Dotum Bold';
+    text-align: right;
+`
 
 
 const ItemImagePart = (props) => {
   const grade = props.grade
   const imgUrl = props.imgUrl;
-  if(grade == "legendary") {
+  const stateChageAmount = props.stateChageAmount;
+  if(grade === "legendary") {
     return(
       <Line>
         <GradeLegendary>
           <ItemImagePart_Base imgUrl={imgUrl}/>
         </GradeLegendary>
+        <IncreaseText>공격력 증가량</IncreaseText>
+        <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
       </Line>
     );
   }

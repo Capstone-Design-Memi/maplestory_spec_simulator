@@ -9,7 +9,7 @@ export const Line = styled.div`
 `
 
 export const EquipText = styled.span`
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #FFAA00;
     font-size: 11px;
     font-family : 'KoPubWorld Dotum Medium';
