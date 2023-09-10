@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "NEXON LV1 Gothic Low OTF Bold";
+    font-style: normal;
+    font-weight: 100;
+    src: url("./NEXON\ Lv1\ Gothic\ Low\ OTF\ Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: "NEXON LV1 Gothic Low OTF Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./NEXON\ Lv1\ Gothic\ Low\ OTF\ Bold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "NEXON LV1 Gothic Low OTF";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./NEXON\ Lv1\ Gothic\ Low\ OTF.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "KoPubWorld Dotum Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./KoPubWorld\ Dotum\ Bold.ttf") format("woff");
+  }
+
+  @font-face {
+    font-family: "KoPubWorld Dotum Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./KoPubWorld\ Dotum\ Light.ttf") format("woff");
+  }
+
+  @font-face {
+    font-family: "KoPubWorld Dotum Bold Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./KoPubWorld\ Dotum\ Medium.ttf") format("woff");
+  }
