@@ -7,6 +7,7 @@ import GradeUnique_img from '../../images/itemIcon/unique.png';
 import GradeLegendary_img from '../../images/itemIcon/legendary.png';
 import ItemImagePart_Base from "./ItemImagePart_Base";
 import ItemImagePart_StateChage from "./ItemImagePart_StateChange";
+import ItemImagePart_ReqLev from "./ItemImagePart_ReqLev";
 
 export const Line = styled.div`
   margin: 0px;
@@ -65,6 +66,7 @@ const ItemImagePart = (props) => {
         </GradeLegendary>
         <IncreaseText>공격력 증가량</IncreaseText>
         <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
+        <ItemImagePart_ReqLev/>
       </Line>
     );
   }

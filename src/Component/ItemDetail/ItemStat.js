@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   width: 261px;
   background-image: url('${Cover_img}');
   background-position: let top;
-  
+
 `;
 
 export const TopFrame = styled.div`
@@ -62,7 +62,7 @@ const ItemStat = () => {
 
 const otherInformation = {
   maxStar : 25,
-  stateChageAmount : -2010955
+  stateChageAmount : 20109121
 }
 
 const itemEx = {
@@ -88,7 +88,7 @@ const itemEx = {
     def: 402,
   },
   grade: "legendary",
-  star: 8,
+  star: 22,
   potential: {
     grade: "epic",
     effects: [
