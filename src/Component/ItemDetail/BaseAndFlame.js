@@ -118,15 +118,23 @@ const BaseAndFlame = (props) => {
                     outputArr.push(<BlueText>{statDisplayArr[l]} : </BlueText>)
                     outputArr.push(<BlueText>{sumStatArr[l]}%</BlueText>)
                     outputArr.push(<WhiteText>({baseStatArr[l]}%</WhiteText>)
-                    outputArr.push(<LimeText>+{flameStatArr[l]}%</LimeText>)
-                    outputArr.push(<OrangeText>+{scrollStatArr[l]}%</OrangeText>)
+                    if(flameStatArr[l]!=0){
+                        outputArr.push(<LimeText>+{flameStatArr[l]}%</LimeText>)
+                    }
+                    if(scrollStatArr[l]!=0){
+                        outputArr.push(<OrangeText>+{scrollStatArr[l]}%</OrangeText>)
+                    }
                     outputArr.push(<WhiteText>)</WhiteText>)
                 }else{
                     outputArr.push(<BlueText>{statDisplayArr[l]} : </BlueText>)
                     outputArr.push(<BlueText>{sumStatArr[l]}</BlueText>)
                     outputArr.push(<WhiteText>({baseStatArr[l]}</WhiteText>)
-                    outputArr.push(<LimeText>+{flameStatArr[l]}</LimeText>)
-                    outputArr.push(<OrangeText>+{scrollStatArr[l]}</OrangeText>)
+                    if(flameStatArr[l]!=0){
+                        outputArr.push(<LimeText>+{flameStatArr[l]}</LimeText>)
+                    }
+                    if(scrollStatArr[l]!=0){
+                        outputArr.push(<OrangeText>+{scrollStatArr[l]}</OrangeText>)
+                    }
                     outputArr.push(<WhiteText>)</WhiteText>)
                 }
             }else {

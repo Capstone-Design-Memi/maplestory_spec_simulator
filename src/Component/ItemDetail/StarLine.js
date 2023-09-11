@@ -31,10 +31,6 @@ export const Blank = styled.div`
   height: 10px;
 `
 
-export const NextLine = styled.div`
-    width: 300px;
-`
-
 const StarLine = (props) => {
     const currentStar = props.currentStar;
     const maxStar = props.maxStar;
@@ -65,7 +61,7 @@ const StarLine = (props) => {
 
     if(maxStar == 25) {
         return (
-            <>
+            <div>
             <Line>
                 <ul style={{listStyle:"none",marginLeft:"9px"}}>
                 {
@@ -87,7 +83,7 @@ const StarLine = (props) => {
                 ))}
                 </ul>    
             </Line>
-            </>
+            </div>
         );
     }else if(maxStar == 20) {
         return(

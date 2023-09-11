@@ -25,7 +25,7 @@ const MakeItem = () => {
       >
         제작
       </Button>
-      <ItemStat />
+      <ItemStat/>
     </div>
   );
 };

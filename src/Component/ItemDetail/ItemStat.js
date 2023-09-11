@@ -19,9 +19,8 @@ const Wrapper = styled.div`
   margin: 0em;
   width: 261px;
   background-image: url('${Cover_img}');
-  background-position: let top;
-
-`;
+  background-position: left top;
+`
 
 export const TopFrame = styled.div`
   height: 13px;
@@ -30,6 +29,11 @@ export const TopFrame = styled.div`
 
 export const Line = styled.div`
   height: 1px;
+  background-image: url('${Line_img}');
+`
+
+export const Line3 = styled.div`
+  height: 3px;
   background-image: url('${Line_img}');
 `
 
@@ -48,14 +52,14 @@ const ItemStat = () => {
     <Wrapper>
       <TopFrame/>
       <StarLine currentStar={itemEx.star} maxStar={otherInformation.maxStar}/>
-      <Line/><Line/><Line/>
+      <Line3/>
       <ItemName name={itemEx.name}/>
       <ItemPotential grade={itemEx.grade}/>
       <EquipDisable/>
       <Line7/>
       <DotLine/>
       <Line7/>
-      <Line/><Line/><Line/>
+      <Line3/>
       <ItemImagePart grade={itemEx.grade}
                      imgUrl={itemEx.imageUrl}
                      stateChageAmount={otherInformation.stateChageAmount}
@@ -65,6 +69,8 @@ const ItemStat = () => {
       <Line7/>
       <DotLine/>
       <BaseAndFlame category={itemEx.category} base={itemEx.base} flame={itemEx.flame} scroll={itemEx.scroll}/>
+      <Line7/>
+      <DotLine/>
     </Wrapper>
   );
 };
@@ -133,7 +139,7 @@ const itemEx = {
     def: 402,
   },
   grade: "legendary",
-  star: 22,
+  star: 17,
   potential: {
     grade: "epic",
     effects: [
