@@ -15,8 +15,7 @@ export const Name = styled.span`
     color: white;
     font-size: 14px;
     font-weight: 600;
-    font-family : 'KoPubWorld Dotum Medium';
-    
+    font-family : 'KoPubWorld Dotum Medium';  
 `
 
 const ItemName = (props) => {

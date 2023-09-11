@@ -10,6 +10,9 @@ import EquipDisable from "./EquipDisable";
 import DotLine_img from "../../images/frame/dotline.png";
 import ItemPotential from "./ItemGrade";
 import ItemImagePart from "./ItemImagePart";
+import ZeroPersent from "./ZeroPersent";
+import JobLine from "./JobLine";
+import BaseAndFlame from "./BaseAndFlame";
 
 const Wrapper = styled.div`
   padding: 0em;
@@ -36,7 +39,7 @@ export const Line7 = styled.div`
 `
 
 export const DotLine = styled.div`
-  height: 1px;
+  height: 2px;
   background-image: url('${DotLine_img}');
 `
 
@@ -55,14 +58,56 @@ const ItemStat = () => {
       <Line/><Line/><Line/>
       <ItemImagePart grade={itemEx.grade}
                      imgUrl={itemEx.imageUrl}
-                     stateChageAmount={otherInformation.stateChageAmount}/>
+                     stateChageAmount={otherInformation.stateChageAmount}
+                     reqLev={otherInformation.reqLev}/>
+      <ZeroPersent/>
+      <JobLine/>
+      <Line7/>
+      <DotLine/>
+      <BaseAndFlame category={itemEx.category} base={itemEx.base} flame={itemEx.flame} scroll={itemEx.scroll}/>
     </Wrapper>
   );
 };
 
 const otherInformation = {
   maxStar : 25,
-  stateChageAmount : 20109121
+  stateChageAmount : 2010914,
+  reqLev : 150
+}
+
+const itemEx2 = {
+  name: "이터널 플레임 링",
+        imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMF.png",
+        category: "반지",
+        upgrade: 0,
+        base: {
+          str: 40,
+          dex: 40,
+          int: 40,
+          luk: 40,
+          hp: 4000,
+          mp: 4000,
+          atk: 25,
+          mAtk: 25,
+        },
+        scroll: {},
+        grade: "unique",
+        star: 0,
+        potential: {
+          grade: "unique",
+          effects: [
+            {
+              strP: 9,
+            },
+            {
+              allStatP: 3,
+            },
+            {
+              mpP: 6,
+            },
+          ],
+        },
+        flame: {},
 }
 
 const itemEx = {

@@ -279,7 +279,8 @@ const ItemImagePart_StateChage = (props) => {
     }
     const outputImageR = outputImage.reverse();
     return (
-      <div style={{height:"26px",width:"250px",position:"absolute",left:"27px",top:"140px"}}>
+      <div style={{position:"relative"}}>
+      <div style={{height:"26px",width:"250px",position:"absolute",left:"15px",top:"16px"}}>
         <ul style={{listStyle:"none", marginRight:"10px", height:"26px"}}>
             {
                 outputImageR.map((value, index) => (
@@ -288,6 +289,7 @@ const ItemImagePart_StateChage = (props) => {
                     </li>
             ))}
         </ul>
+      </div>
       </div>
     )
 }

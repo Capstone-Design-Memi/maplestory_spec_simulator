@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Line_img from '../../images/frame/line.png';
 
 export const Line = styled.div`
-  height: 20px;
   background-image: url('${Line_img}');
   text-align: center;
 `
@@ -18,7 +17,7 @@ export const EquipText = styled.span`
  const EquipDisable = () => {
     return (
         <Line>
-            <EquipText>장착 시 교환 불가</EquipText>
+            <EquipText>교환 불가</EquipText>
         </Line>
     )
  }

@@ -23,12 +23,13 @@ export const Cover = styled.div`
 `
 
 export const Shade = styled.div`
-  top: 50px;
+  top: 55px;
   left: 15px;
   width: 49px;
   height: 15px;
   background-image: url('${Shade_img}');
   position:absolute;
+  opacity: 0.5;
 `
 
 
@@ -37,14 +38,14 @@ const ItemImagePart_Base = (props) => {
     return(
        <Base>
             <Cover>
+              <Shade/>
                 <img
-                    style={{marginTop:'10px'}}
+                    style={{marginTop:'10px',zIndex:-1}}
                     src={imgUrl}
                     alt="item Image"
                     width={57}
                     height={57}
                 />
-                <Shade/>
             </Cover>
        </Base>
     );

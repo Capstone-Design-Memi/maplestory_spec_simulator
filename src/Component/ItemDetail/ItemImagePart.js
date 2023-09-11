@@ -19,20 +19,28 @@ export const Line = styled.div`
 export const GradeNone = styled.div`
   width: 90px;
   height: 80px;
+  margin-left: 10px;
+  float: left;
 `
 export const GradeRare = styled.div`
   width: 90px;
   height: 80px;
+  margin-left: 10px;
+  float: left;
   background-image: url('${GradeRare_img}');
 `
 export const GradeEpic = styled.div`
   width: 90px;
   height: 80px;
+  margin-left: 10px;
+  float: left;
   background-image: url('${GradeEpic_img}');
 `
 export const GradeUnique = styled.div`
   width: 90px;
   height: 80px;
+  margin-left: 10px;
+  float: left;
   background-image: url('${GradeUnique_img}');
 `
 export const GradeLegendary = styled.div`
@@ -58,6 +66,8 @@ const ItemImagePart = (props) => {
   const grade = props.grade
   const imgUrl = props.imgUrl;
   const stateChageAmount = props.stateChageAmount;
+  const reqLev = props.reqLev;
+
   if(grade === "legendary") {
     return(
       <Line>
@@ -66,7 +76,59 @@ const ItemImagePart = (props) => {
         </GradeLegendary>
         <IncreaseText>공격력 증가량</IncreaseText>
         <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
-        <ItemImagePart_ReqLev/>
+        <ItemImagePart_ReqLev reqLev={reqLev}/>
+      </Line>
+    );
+  }
+
+  if(grade === "unique") {
+    return(
+      <Line>
+        <GradeUnique>
+          <ItemImagePart_Base imgUrl={imgUrl}/>
+        </GradeUnique>
+        <IncreaseText>공격력 증가량</IncreaseText>
+        <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
+        <ItemImagePart_ReqLev reqLev={reqLev}/>
+      </Line>
+    );
+  }
+
+  if(grade === "epic") {
+    return(
+      <Line>
+        <GradeEpic>
+          <ItemImagePart_Base imgUrl={imgUrl}/>
+        </GradeEpic>
+        <IncreaseText>공격력 증가량</IncreaseText>
+        <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
+        <ItemImagePart_ReqLev reqLev={reqLev}/>
+      </Line>
+    );
+  }
+
+  if(grade === "rare") {
+    return(
+      <Line>
+        <GradeRare>
+          <ItemImagePart_Base imgUrl={imgUrl}/>
+        </GradeRare>
+        <IncreaseText>공격력 증가량</IncreaseText>
+        <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
+        <ItemImagePart_ReqLev reqLev={reqLev}/>
+      </Line>
+    );
+  }
+
+  if(grade === "nothing") {
+    return(
+      <Line>
+        <GradeNone>
+          <ItemImagePart_Base imgUrl={imgUrl}/>
+        </GradeNone>
+        <IncreaseText>공격력 증가량</IncreaseText>
+        <ItemImagePart_StateChage stateChageAmount={stateChageAmount}/>
+        <ItemImagePart_ReqLev reqLev={reqLev}/>
       </Line>
     );
   }
