@@ -5,7 +5,7 @@ import Line_img from '../../images/frame/line.png';
 export const Line = styled.div`
   margin: 0px;
   padding: 0px;
-  height: 20px;
+  height: 18px;
   background-image: url('${Line_img}');
   text-align: center;
 `

@@ -6,7 +6,6 @@ export const Line = styled.div`
   margin: 0px;
   padding: 0px;
   background-image: url('${Line_img}');
-  overflow: auto;
 `
 
 export const WhiteText = styled.p`
@@ -114,7 +113,7 @@ const BaseAndFlame = (props) => {
         sumStatArr[l] = baseStatArr[l] + flameStatArr[l] + scrollStatArr[l];
         if(sumStatArr[l]!=0) {
             if(baseStatArr[l] < sumStatArr[l]) {
-                if(l>11&&l<15){
+                if(l>10&&l<15){
                     outputArr.push(<BlueText>{statDisplayArr[l]} : </BlueText>)
                     outputArr.push(<BlueText>{sumStatArr[l]}%</BlueText>)
                     outputArr.push(<WhiteText>({baseStatArr[l]}%</WhiteText>)
@@ -138,7 +137,7 @@ const BaseAndFlame = (props) => {
                     outputArr.push(<WhiteText>)</WhiteText>)
                 }
             }else {
-                if(l>11||l<15){
+                if(l>10&&l<15){
                     outputArr.push(<WhiteText>{statDisplayArr[l]} : </WhiteText>)
                     outputArr.push(<WhiteText> +{baseStatArr[l]}%</WhiteText>)
                 }else{

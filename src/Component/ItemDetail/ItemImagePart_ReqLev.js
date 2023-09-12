@@ -22,6 +22,7 @@ export const ReqLev = styled.div`
   height: 6px;
   background-image: url('${ReqLev_img}');
   float: left;
+  margin-right:5px;
 `
 
 export const ReqLev0 = styled.div`
@@ -200,17 +201,17 @@ const ItemImagePart_ReqLev = (props) => {
 
     return(
       <>
-        <div style={{height: "6px", width: "155px", float: "left", marginTop:"32px"}}>
+        <div style={{height: "6px", width: "155px", float: "left", marginTop:"33px"}}>
           <ReqLev/>
-          <ul style={{listStyle:"none",marginLeft:"12px"}}>
+          <div style={{marginLeft:"12px"}}>
             {
               outputImage.map((value, index) => (
-                <li style={{marginLeft:"2px"}}>
+                <div style={{marginLeft:"2px"}}>
                   {value}
-                </li>
+                </div>
               ))
             }
-          </ul>
+          </div>
         </div>
         <div style={{width: "155px", float: "left",height:"6px", marginTop:"10px"}}>
             <ReqSTR/>

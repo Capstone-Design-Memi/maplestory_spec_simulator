@@ -1,0 +1,482 @@
+{
+    "name": "섀도어병장님",
+    "world": "리부트",
+    "guild": "본투비",
+    "job": "섀도어",
+    "level": 278,
+    "imageUrl": "https://avatar.maplestory.nexon.com/Character/180/BPFKKNNKGEMLGMKJOPIPJPHLGJNKBHEDCEPNNKDLKDNGLGFHIHFHPBAJIENKEMIJMBJODJMGNCGIBLJPPCLMMAADFJJOBDGFFILPCJOFFGAMHANKEPNCFMKPEPEHBNAPJODLFDAIAPCMEEOFHMANHMIMHCDCJGLHEJPAIGJPJCGDHGMLKDDFJBEINHBOJMBFDOAPAGJHNMCGPBOOJGBAAENEHAHAMAGCDDEJMGIAFPBMCBBIIFJFOKGFFLOMCDAO.png",
+    "traits": {
+        "ambition": 100,
+        "insight": 100,
+        "willpower": 100,
+        "diligence": 83,
+        "empathy": 100,
+        "charm": 73
+    },
+    "spec": {
+        "statAtkLow": 32496673,
+        "statAtkHigh": 36107413,
+        "hp": 52833,
+        "mp": 30315,
+        "str": 4015,
+        "dex": 6807,
+        "int": 3902,
+        "luk": 49019,
+        "critDmg": 98,
+        "bossDmg": 282,
+        "ignoreDef": 94,
+        "resistance": 71,
+        "stance": 100,
+        "def": 76941,
+        "speed": 160,
+        "jump": 123,
+        "starForce": 367,
+        "arcaneForce": 1410,
+        "hypers": {
+            "atk": 24,
+            "mAtk": 24,
+            "str": 60,
+            "dex": 90,
+            "luk": 120,
+            "crit": 9,
+            "critDmg": 12,
+            "ignoreDef": 30,
+            "dmg": 36,
+            "bossDmg": 51
+        },
+        "abilities": {
+            "bossDmg": 17,
+            "drop": 15,
+            "meso": 15
+        }
+    },
+    "equipments": [
+        {
+            "name": "웨폰퍼프 - L링",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIGPH.png",
+            "category": "반지",
+            "upgrade": 0,
+            "base": {
+                "str": 4,
+                "dex": 4,
+                "int": 4,
+                "luk": 4,
+                "atk": 4,
+                "mAtk": 4
+            },
+            "scroll": {},
+            "grade": "nothing",
+            "star": 0,
+            "flame": {}
+        },
+        {
+            "name": "골드 메이플리프 엠블렘",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOLLEOA.png",
+            "category": "엠블렘",
+            "upgrade": 0,
+            "base": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "atk": 2,
+                "mAtk": 2
+            },
+            "scroll": {},
+            "grade": "legendary",
+            "star": 0,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "ignoreDef": 35
+                    },
+                    {
+                        "atkP": 9
+                    },
+                    {
+                        "atkP": 9
+                    }
+                ]
+            },
+            "flame": {}
+        },
+        {
+            "name": "여명의 가디언 엔젤 링",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
+            "category": "반지",
+            "upgrade": 0,
+            "base": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "hp": 200,
+                "mp": 200,
+                "atk": 2,
+                "mAtk": 2
+            },
+            "scroll": {
+                "str": 66,
+                "dex": 66,
+                "int": 66,
+                "luk": 66,
+                "hp": 255,
+                "atk": 21,
+                "mAtk": 21,
+                "def": 18
+            },
+            "grade": "legendary",
+            "star": 17,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "meso": 20
+                    },
+                    {
+                        "lukP": 9
+                    },
+                    {
+                        "lukP": 9
+                    }
+                ]
+            },
+            "flame": {}
+        },
+        {
+            "name": "트와일라이트 마크",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJALG.png",
+            "category": "얼굴장식",
+            "upgrade": 0,
+            "base": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "atk": 5,
+                "mAtk": 5,
+                "def": 100
+            },
+            "scroll": {
+                "str": 76,
+                "dex": 76,
+                "int": 76,
+                "luk": 76,
+                "atk": 38,
+                "mAtk": 38,
+                "def": 168
+            },
+            "grade": "legendary",
+            "star": 19,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "allStatP": 9
+                    },
+                    {
+                        "allStatP": 6
+                    }
+                ]
+            },
+            "flame": {
+                "dex": 20,
+                "luk": 68,
+                "hp": 2520,
+                "allStatP": 5
+            },
+            "scissors": 10
+        },
+        {
+            "name": "크리스탈 웬투스 뱃지",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOKJHGG.png",
+            "category": "뱃지",
+            "upgrade": 0,
+            "base": {
+                "str": 10,
+                "dex": 10,
+                "int": 10,
+                "luk": 10,
+                "atk": 5,
+                "mAtk": 5,
+                "speed": 10,
+                "jump": 10
+            },
+            "scroll": {},
+            "grade": "nothing",
+            "star": 0,
+            "flame": {}
+        },
+        {
+            "name": "마이스터링",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIHLE.png",
+            "category": "반지",
+            "upgrade": 0,
+            "base": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "hp": 200,
+                "mp": 200,
+                "atk": 1,
+                "mAtk": 1,
+                "def": 150
+            },
+            "scroll": {
+                "str": 94,
+                "dex": 94,
+                "int": 94,
+                "luk": 94,
+                "hp": 255,
+                "atk": 63,
+                "mAtk": 63,
+                "def": 284
+            },
+            "grade": "legendary",
+            "star": 21,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "lukP": 9
+                    },
+                    {
+                        "lukP": 9
+                    }
+                ]
+            },
+            "flame": {}
+        },
+        {
+            "name": "도미네이터 펜던트",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJGLB.png",
+            "category": "펜던트",
+            "upgrade": 0,
+            "base": {
+                "str": 20,
+                "dex": 20,
+                "int": 20,
+                "luk": 20,
+                "hpP": 10,
+                "mpP": 10,
+                "atk": 3,
+                "mAtk": 3,
+                "def": 100
+            },
+            "scroll": {
+                "str": 94,
+                "dex": 94,
+                "int": 94,
+                "luk": 94,
+                "hp": 255,
+                "atk": 63,
+                "mAtk": 63,
+                "def": 197
+            },
+            "grade": "legendary",
+            "star": 21,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "allStatP": 6
+                    },
+                    {
+                        "allStatP": 6
+                    }
+                ]
+            },
+            "flame": {
+                "dex": 16,
+                "luk": 48,
+                "atk": 4,
+                "allStatP": 4
+            },
+            "scissors": 10
+        },
+        {
+            "name": "데아 시두스 이어링",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
+            "category": "귀고리",
+            "upgrade": 0,
+            "base": {
+                "str": 5,
+                "dex": 5,
+                "int": 5,
+                "luk": 5,
+                "atk": 2,
+                "mAtk": 2,
+                "def": 50
+            },
+            "scroll": {
+                "str": 75,
+                "dex": 75,
+                "int": 75,
+                "luk": 75,
+                "atk": 45,
+                "mAtk": 45,
+                "def": 99
+            },
+            "grade": "legendary",
+            "star": 20,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "allStatP": 9
+                    },
+                    {
+                        "lukP": 9
+                    },
+                    {
+                        "lukP": 9
+                    }
+                ]
+            },
+            "flame": {
+                "luk": 21,
+                "mp": 1950,
+                "speed": 4,
+                "allStatP": 6
+            }
+        },
+        {
+            "name": "글로리온 링 : 슈프림",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODPEPH.png",
+            "category": "반지",
+            "upgrade": 0,
+            "base": {
+                "str": 40,
+                "dex": 40,
+                "int": 40,
+                "luk": 40,
+                "hp": 4000,
+                "mp": 4000,
+                "atk": 25,
+                "mAtk": 25
+            },
+            "scroll": {},
+            "grade": "legendary",
+            "star": 0,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "allStatP": 9
+                    },
+                    {
+                        "lukP": 9
+                    }
+                ]
+            },
+            "flame": {}
+        },
+        {
+            "name": "이글아이 어새신셔츠",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLG.png",
+            "category": "상의",
+            "upgrade": 0,
+            "base": {
+                "dex": 30,
+                "luk": 30,
+                "atk": 2,
+                "def": 135,
+                "ignoreDef": 5
+            },
+            "scroll": {
+                "dex": 106,
+                "luk": 106,
+                "hp": 255,
+                "atk": 69,
+                "mAtk": 69,
+                "def": 258
+            },
+            "grade": "legendary",
+            "star": 21,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "lukP": 9
+                    },
+                    {
+                        "allStatP": 6
+                    }
+                ]
+            },
+            "flame": {
+                "int": 20,
+                "luk": 60,
+                "hp": 1800,
+                "allStatP": 5
+            },
+            "scissors": 10
+        },
+        {
+            "name": "골든 클로버 벨트",
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFJD.png",
+            "category": "벨트",
+            "upgrade": 0,
+            "base": {
+                "str": 15,
+                "dex": 15,
+                "int": 15,
+                "luk": 15,
+                "hp": 150,
+                "mp": 150,
+                "atk": 1,
+                "mAtk": 1,
+                "def": 150
+            },
+            "scroll": {
+                "str": 94,
+                "dex": 94,
+                "int": 94,
+                "luk": 94,
+                "hp": 255,
+                "atk": 63,
+                "mAtk": 63,
+                "def": 284
+            },
+            "grade": "legendary",
+            "star": 21,
+            "potential": {
+                "grade": "legendary",
+                "effects": [
+                    {
+                        "lukP": 12
+                    },
+                    {
+                        "hpP": 9
+                    },
+                    {
+                        "lukP": 9
+                    }
+                ]
+            },
+            "flame": {
+                "dex": 20,
+                "int": 40,
+                "luk": 60,
+                "allStatP": 6
+            }
+        }
+    ]
+}

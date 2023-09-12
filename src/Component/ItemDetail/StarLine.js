@@ -7,8 +7,8 @@ import Line_img from '../../images/frame/line.png';
 export const Line = styled.div`
   margin: 0px;
   padding: 0px;
-  height: 10px;
   background-image: url('${Line_img}');
+  justify-content : center;
 `
 
 export const YellowStar = styled.div`
@@ -59,91 +59,42 @@ const StarLine = (props) => {
         }
     }
 
-    if(maxStar == 25) {
+    if(maxStar >= 20) {
         return (
-            <div>
             <Line>
-                <ul style={{listStyle:"none",marginLeft:"9px"}}>
+                <div style={{height:"10px",display:"flex",justifyContent:"center",marginBottom:"7px"}}>               
                 {
                     line1_stars.map((value, index) => (
-                        <li>
+                        <>
                             {value}
-                        </li>
+                        </>
                 ))}
-                </ul>
-            </Line>
-            <Line/>
-            <Line>
-                <ul style={{listStyle:"none",marginLeft:"35px"}}>
+                </div>
+                
+                <div style={{height:"10px",display:"flex",justifyContent:"center"}}>     
                 {
                     line2_stars.map((value, index) => (
-                        <li>
+                        <>
                             {value}
-                        </li>
+                        </>
                 ))}
-                </ul>    
+                </div> 
             </Line>
-            </div>
         );
-    }else if(maxStar == 20) {
+    }else if(maxStar <= 15) {
         return(
-        <>
             <Line>
-                <ul style={{listStyle:"none",marginLeft:"9px"}}>
+                <div style={{height:"10px",display:"flex",justifyContent:"center"}}>
                     {
                         line1_stars.map((value, index) => (
-                            <li>
+                            <>
                                 {value}
-                            </li>
+                            </>
                     ))}
-                </ul>
+                </div>
             </Line>
-            <Line/>
-            <Line>
-                <ul style={{listStyle:"none",marginLeft:"64px"}}>
-                {
-                    line2_stars.map((value, index) => (
-                            <li>
-                            {value}
-                            </li>
-                    ))}
-                    </ul>    
-            </Line>
-        </>
-        );
-    }else if(maxStar == 15) {
-        return(
-            <>
-                <Line>
-                <ul style={{listStyle:"none",marginLeft:"9px"}}>
-                    {
-                        line1_stars.map((value, index) => (
-                            <li>
-                                {value}
-                            </li>
-                    ))}
-                </ul>
-            </Line>
-            </>
-        );
-    }else if(maxStar == 8) {
-        return(
-            <>
-                <Line>
-                <ul style={{listStyle:"none",marginLeft:"40px"}}>
-                    {
-                        line1_stars.map((value, index) => (
-                            <li>
-                                {value}
-                            </li>
-                    ))}
-                </ul>
-            </Line>
-            </>
         );
     }
-    
-   
 }
 
 export default StarLine;

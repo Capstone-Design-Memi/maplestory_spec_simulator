@@ -281,14 +281,14 @@ const ItemImagePart_StateChage = (props) => {
     return (
       <div style={{position:"relative"}}>
       <div style={{height:"26px",width:"250px",position:"absolute",left:"15px",top:"16px"}}>
-        <ul style={{listStyle:"none", marginRight:"10px", height:"26px"}}>
+        <div style={{marginRight:"10px", height:"26px"}}>
             {
                 outputImageR.map((value, index) => (
-                    <li style={{width:"10px;"}}>
+                    <div style={{width:"10px;"}}>
                         {value}
-                    </li>
+                    </div>
             ))}
-        </ul>
+        </div>
       </div>
       </div>
     )

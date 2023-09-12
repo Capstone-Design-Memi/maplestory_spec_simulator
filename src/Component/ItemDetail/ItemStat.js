@@ -3,16 +3,18 @@ import React from "react";
 import styled from 'styled-components';
 import Cover_img from '../../images/frame/cover.png';
 import Top_frame_img from '../../images/frame/top.png';
+import Bottom_frame_img from '../../images/frame/bottom.png';
 import Line_img from '../../images/frame/line.png';
 import StarLine from "./StarLine";
 import ItemName from "./ItemName";
 import EquipDisable from "./EquipDisable";
 import DotLine_img from "../../images/frame/dotline.png";
-import ItemPotential from "./ItemGrade";
+import ItemGrade from "./ItemGrade";
 import ItemImagePart from "./ItemImagePart";
 import ZeroPersent from "./ZeroPersent";
 import JobLine from "./JobLine";
 import BaseAndFlame from "./BaseAndFlame";
+import PotentialLine from "./PotentialLine";
 
 const Wrapper = styled.div`
   padding: 0em;
@@ -25,6 +27,11 @@ const Wrapper = styled.div`
 export const TopFrame = styled.div`
   height: 13px;
   background-image: url('${Top_frame_img}');
+`
+
+export const BottomFrame = styled.div`
+  height: 13px;
+  background-image: url('${Bottom_frame_img}');
 `
 
 export const Line = styled.div`
@@ -54,7 +61,7 @@ const ItemStat = () => {
       <StarLine currentStar={itemEx.star} maxStar={otherInformation.maxStar}/>
       <Line3/>
       <ItemName name={itemEx.name}/>
-      <ItemPotential grade={itemEx.grade}/>
+      <ItemGrade grade={itemEx.grade}/>
       <EquipDisable/>
       <Line7/>
       <DotLine/>
@@ -68,55 +75,71 @@ const ItemStat = () => {
       <JobLine/>
       <Line7/>
       <DotLine/>
+      <Line3/>
       <BaseAndFlame category={itemEx.category} base={itemEx.base} flame={itemEx.flame} scroll={itemEx.scroll}/>
       <Line7/>
       <DotLine/>
+      <PotentialLine grade={itemEx.grade} potential={itemEx.potential}/>
+      <Line7/>
+      <BottomFrame/>
     </Wrapper>
   );
 };
 
 const otherInformation = {
-  maxStar : 25,
+  maxStar : 20,
   stateChageAmount : 2010914,
   reqLev : 150
 }
 
-const itemEx2 = {
-  name: "이터널 플레임 링",
-        imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMF.png",
-        category: "반지",
-        upgrade: 0,
-        base: {
-          str: 40,
-          dex: 40,
-          int: 40,
-          luk: 40,
-          hp: 4000,
-          mp: 4000,
-          atk: 25,
-          mAtk: 25,
-        },
-        scroll: {},
-        grade: "unique",
-        star: 0,
-        potential: {
-          grade: "unique",
-          effects: [
-            {
-              strP: 9,
-            },
-            {
-              allStatP: 3,
-            },
-            {
-              mpP: 6,
-            },
-          ],
-        },
-        flame: {},
+const itemEx = {
+  "name": "데아 시두스 이어링",
+  "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
+  "category": "귀고리",
+  "upgrade": 0,
+  "base": {
+      "str": 5,
+      "dex": 5,
+      "int": 5,
+      "luk": 5,
+      "atk": 2,
+      "mAtk": 2,
+      "def": 50
+  },
+  "scroll": {
+      "str": 75,
+      "dex": 75,
+      "int": 75,
+      "luk": 75,
+      "atk": 45,
+      "mAtk": 45,
+      "def": 99
+  },
+  "grade": "legendary",
+  "star": 20,
+  "potential": {
+      "grade": "legendary",
+      "effects": [
+          {
+              "allStatP": 9
+          },
+          {
+              "lukP": 9
+          },
+          {
+              "lukP": 9
+          }
+      ]
+  },
+  "flame": {
+      "luk": 21,
+      "mp": 1950,
+      "speed": 4,
+      "allStatP": 6
+  }
 }
 
-const itemEx = {
+const itemEx2 = {
   name: "하이네스 원더러햇",
   imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOA.png",
   category: "모자",
@@ -138,7 +161,7 @@ const itemEx = {
     mAtk: 19,
     def: 402,
   },
-  grade: "legendary",
+  grade: "epic",
   star: 17,
   potential: {
     grade: "epic",
