@@ -10,7 +10,7 @@ export const Line = styled.div`
   text-align: center;
 `
 
-export const Grade_Text = styled.span`
+export const GradeText = styled.span`
     letter-spacing: 1px;
     color: white;
     font-size: 11px;
@@ -25,25 +25,25 @@ const ItemGrade = (props) => {
     }else if(grade === "rare") {
         return(
             <Line>
-            <Grade_Text>(레어 아이템)</Grade_Text>
+            <GradeText>(레어 아이템)</GradeText>
             </Line>
         )
     }else if(grade === "epic") {
         return(
             <Line>
-            <Grade_Text>(에픽 아이템)</Grade_Text>
+            <GradeText>(에픽 아이템)</GradeText>
             </Line>
         )
     }else if(grade === "unique") {
         return(
             <Line>
-            <Grade_Text>(유니크 아이템)</Grade_Text>
+            <GradeText>(유니크 아이템)</GradeText>
             </Line>
         )
     }else if(grade === "legendary") {
         return(
             <Line>
-            <Grade_Text>(레전드리 아이템)</Grade_Text>
+            <GradeText>(레전드리 아이템)</GradeText>
             </Line>
         )
     }

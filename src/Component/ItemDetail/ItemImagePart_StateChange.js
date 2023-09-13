@@ -236,6 +236,8 @@ const ItemImagePart_StateChage = (props) => {
                 case "9":
                     outputImage.push(<Incline9/>)
                     break;
+                default :
+                    break;
             }
         }
     }
@@ -273,6 +275,8 @@ const ItemImagePart_StateChage = (props) => {
                     break;
                 case "9":
                     outputImage.push(<Decline9/>)
+                    break;
+                default :
                     break;
             }
         }

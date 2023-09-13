@@ -39,7 +39,7 @@ const StarLine = (props) => {
     const line2_stars = [];
     for(let i=0; i<maxStar; i++) {
         if(i<15){
-            if(i%5==0){
+            if(i%5===0){
                 line1_stars.push(<Blank/>);
             }
             if(i<currentStar){
@@ -48,7 +48,7 @@ const StarLine = (props) => {
                 line1_stars.push(<EmptyStar/>);
             }
         }else{
-            if(i%5==0&&i!=14){
+            if(i%5===0&&i!==14){
                 line2_stars.push(<Blank/>);
             }
             if(i<currentStar){
