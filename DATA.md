@@ -223,7 +223,7 @@
 ```json
 {
          "name":"제네시스 세이버",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/mpspgbBcIPlzmcOssWDlvg6QotEyN73jU7fg07TIUR7r8V1Lyjh4g7tV-M5P3K3Y7JftYDaRkPKSenAB9m4LcA.png",
          "category":"한손검 (한손무기)",
          "upgrade":0,
          "base":{
@@ -251,7 +251,7 @@
 ```json
 {
          "name":"제네시스 엑스",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/GijN2SeO0oniU4oTDEFuZDz_mXUnf0zxEdYQDOtCtIr44xilGOOE24yMAZor-sYOUKHxCUAen_W2oPxRk-x-EQ.webp",
          "category":"한손도끼 (한손무기)",
          "upgrade":0,
          "base":{
@@ -279,7 +279,7 @@
 ```json
 {
          "name":"제네시스 해머",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/KmShP5WGS-r__n4Efey8aMZAAmE1agJDvDEHo4Fx5qHqiSckirwXc2Wm4Tb4X1NYM5KbBRfQgh7pLL0slsV65w.webp",
          "category":"한손둔기 (한손무기)",
          "upgrade":0,
          "base":{
@@ -307,7 +307,7 @@
 ```json
 {
          "name":"제네시스 투핸드소드",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/YKgg5U9poVpADO8S58ja1A1PIOe9FaoLjkilKE7Nadp_s8RjCeNjr5h-FPNQX0fgVHf9PWVo6pOk1eTNNkGl6A.png",
          "category":"두손검 (두손무기)",
          "upgrade":0,
          "base":{
@@ -335,7 +335,7 @@
 ```json
 {
          "name":"제네시스 투핸드엑스",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/rVQ3P-gV4AvmGU02Vi65PFgaj0b-9W50SDnGTZEj9t4-MFdiEFOyhuhpt24450V6LLsSXVsewiaZD4Clv1Xyow.png",
          "category":"두손도끼 (두손무기)",
          "upgrade":0,
          "base":{
@@ -363,7 +363,7 @@
 ```json
 {
          "name":"제네시스 투핸드해머",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/CSw9UoC0iFmL03503Sq_1JD9NUrqEvbXrJw_NCYq6_CGsg7ahJzz5NjfJN9t8pypjtQiOtLzoqYhgZJcgA412Q.png",
          "category":"두손둔기 (두손무기)",
          "upgrade":0,
          "base":{
@@ -391,7 +391,7 @@
 ```json
 {
          "name":"제네시스 스피어",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/lWzBNUevm9KYYWhqcHwb6qBt0O7CmFfayC8snyLW91G8PNKRhL66nZYKct3fng67zLnqHZOfRwnfwfbF9YVAgg.png",
          "category":"창 (두손무기)",
          "upgrade":0,
          "base":{
@@ -419,7 +419,7 @@
 ```json
 {
          "name":"제네시스 폴암",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/nvTt5Rak7YgKavgG1yTjjMsXFkcyGjT9Sy9Q66STc3IcLL4TAAMNRBNfLUxnFqtGPLLQ3S8atmR9W_L0VSy4EA.png",
          "category":"폴암 (두손무기)",
          "upgrade":0,
          "base":{
@@ -447,7 +447,7 @@
 ```json
 {
          "name":"제네시스 데스페라도",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/lHZXMEB-TH-BzaK3yCLYEkpif5GZkPvUZr81fJ_9gfgmbn2CeEL7HND04WB0RN1qjxl1mi7KXXu7PJV2amEGVw.png",
          "category":"데스페라도 (한손무기)",
          "upgrade":0,
          "base":{
@@ -475,7 +475,7 @@
 ```json
 {
          "name":"제네시스 엘라하",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/beF4vls4dUmtm2Ac1eKdpmtoFUTSEDa4R0zRIJCjuq__VVpTvhw6f9c288SJIogYyGB-55Ru3WLZcyh4OxKB3g.webp",
          "category":"건틀렛 리볼버 (두손무기)",
          "upgrade":0,
          "base":{
@@ -503,7 +503,7 @@
 ```json
 {
          "name":"제네시스 튜너",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/KRuh1VjQp95MRmMgg5ktaGMPCoWW4tEngLipNIYA-AO8YtoDStAhzLWtwqAkO17M78Ctr6wRs6hUfM24-6xNdw.png",
          "category":"튜너 (한손무기)",
          "upgrade":0,
          "base":{
@@ -532,7 +532,7 @@
 ```json
 {
          "name":"제네시스 보우",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/0ZhFhYzRse6z5KZu49K-6fyY5hl3MqmGUeV6YVWFWb6G5pxl6L1KBD-vacWclRPAkYriIw-s8gIsOAaZ4RPM0A.webp",
          "category":"활 (한손무기)",
          "upgrade":0,
          "base":{
@@ -562,7 +562,7 @@
 ```json
 {
          "name":"제네시스 크로스보우",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/CCc7ezNODNjj0rM52t6aL-qPVoeyNbrUlK9RLfYonJhuM7S435x_lfvavds752j16tX_Jtvn6_59hjAqSo2dzw.png",
          "category":"석궁 (두손무기)",
          "upgrade":0,
          "base":{
@@ -591,7 +591,7 @@
 ```json
 {
          "name":"제네시스 듀얼보우건",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/SEwqD-1B2RX5zDcPhuWumsbTLHbOBl65VKxf3n0bPUxcdLuO336Xs1-f113iEk11LNclFksNoddiuH9vL6pHdg.png",
          "category":"듀얼보우건 (두손무기)",
          "upgrade":0,
          "base":{
@@ -620,7 +620,7 @@
 ```json
 {
          "name":"제네시스 에인션트 보우",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/dzx1eaavJkv4J-NjjflJTiJGYjA6PxkPFC_RPPixXKkI0b0PnQsVgv4Ktmrid8yh7atjYFQilVo4KGRLdAiTTQ.webp",
          "category":"에인션트 보우 (두손무기)",
          "upgrade":0,
          "base":{
@@ -649,7 +649,7 @@
 ```json
 {
          "name":"제네시스 브레스 슈터",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/46vAzivtylCbjPP2hSypd4GaRQHoWoGMqZ1qiOLkR-pJBetJV_SpbNOTTnX5FOqsPX2CNdVtCr22NZPbX_LSrA.webp",
          "category":"브레스 슈터 (한손무기)",
          "upgrade":0,
          "base":{
@@ -680,7 +680,7 @@
 ```json
 {
          "name":"제네시스 완드",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/uKEANUc9cdaSId5kQ3v8ViH_8qhiey4o-lBV1ucKZ1n_9J2gs_2yOCKx6FoBteBIgAae7zK8P4kkINA1EZJl7Q.png",
          "category":"완드 (한손무기)",
          "upgrade":0,
          "base":{
@@ -710,7 +710,7 @@
 ```json
 {
          "name":"제네시스 스태프",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/9qoiCM6ilkn-P_qlCa3f3yo3j5eUi-q6HyBwGo9hy5VpVVs0UU3SxVbD-je8ohx_cyyTtbiz020349AqdFjo4A.png",
          "category":"스태프 (한손무기)",
          "upgrade":0,
          "base":{
@@ -740,7 +740,7 @@
 ```json
 {
          "name":"제네시스 샤이닝로드",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/qERc4nKPedCYYypEogbfUvSZ_7XFSOBuGATH7IbKm7OFXl3qVqB_3LjK2S3XL8Re3XUqq7FZjTy5ebEx5FYl5w.png",
          "category":"샤이닝 로드 (한손무기)",
          "upgrade":0,
          "base":{
@@ -770,7 +770,7 @@
 ```json
 {
          "name":"제네시스 ESP 리미터",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/rQ-1DppV1FSCmSMrKx8nHSVPATSkj_wx-H3CQayx89Z8Dc6qQlhRpx9z1koceGzFwrPIWEMvTC-xKqRLj_Sk2w.png",
          "category":"ESP 리미터 (한손무기)",
          "upgrade":0,
          "base":{
@@ -800,7 +800,7 @@
 ```json
 {
          "name":"제네시스 매직 건틀렛",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/iMlWlrsiM5p9qaGTG9b6BXvjZUZkTW-rgM-yjNPROiK13Xo2XA2yfHCLzOgzaAK1omWdi2KeGnL_0PTy0JLZZQ.webp",
          "category":"매직 건틀렛 (한손무기)",
          "upgrade":0,
          "base":{
@@ -831,7 +831,7 @@
 ```json
 {
          "name":"제네시스 대거",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/AEcsZH-PTFD_v3Za8f5YZMBbOwGnLeRCwrflGOjxd1y-Z-hSvaMuXbA1FrXaUklEx_7MHIvpamgESMNtwBlMqw.webp",
          "category":"단검 (한손무기)",
          "upgrade":0,
          "base":{
@@ -859,7 +859,7 @@
 ```json
 {
          "name":"제네시스 가즈",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/wHK1FAYOh1afYSTzPUDw3OlHgTFkwZN1LOI6WBLW4mljHfhAleJ2HqSJrvRuRtCeAImi0L1CJqsYY4fJCor_Yw.png",
          "category":"아대 (두손무기)",
          "upgrade":0,
          "base":{
@@ -887,7 +887,7 @@
 ```json
 {
          "name":"제네시스 케인",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/IP6pPRFXN4RrQ6NXvcbyxH5N-TZQmR6ZductW5fypHhhziDSmYVhDsWhtsGbAvY7sbRWqtpq-3vwRWev01QPBA.png",
          "category":"케인 (한손무기)",
          "upgrade":0,
          "base":{
@@ -915,7 +915,7 @@
 ```json
 {
          "name":"제네시스 에너지체인",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/1H5aX9WaU4ogPiq9sdJLXXus678lBEZdgfwYr5zyYjdlJWzn4oRMTHNbYeO8auZVAcqWrHed0rdB_oylNI93KA.webp",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
          "base":{
@@ -944,7 +944,7 @@
 ```json
 {
          "name":"제네시스 체인",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/1kzijXOdeHw2z3SySb-rIAXPI6u8Lpq-4UHjb8hgzKpXUNBnPlYv1jzNsa6p8asLflY7zPVvw6u8Ly88ZoqZ3Q.png",
          "category":"체인 (한손무기)",
          "upgrade":0,
          "base":{
@@ -972,7 +972,7 @@
 ```json
 {
          "name":"제네시스 창세선",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/L5-gxTB1h8sOeN308rWGfZvb6bNSf_Mcm_rVlwUs25T9f-23sAJ1zVQJ3DulZBiQDjOVpt2jIJsfBIfgDAZn-Q.png",
          "category":"부채 (한손무기)",
          "upgrade":0,
          "base":{
@@ -1000,7 +1000,7 @@
 ```json
 {
          "name":"제네시스 이클립스",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/SsiyoJYNqZckVj4xK7kuxF9E1UT-z-UxQ67rBdypbVH6TEjatqA3RwI2iCc4xpnqNhA0Ti4cAOJ-pQzLdA-RWA.webp",
          "category":"차크람 (두손무기)",
          "upgrade":0,
          "base":{
@@ -1029,7 +1029,7 @@
 ```json
 {
          "name":"제네시스 피스톨",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/tTa1nGon0UJpRaXZMZRl3c4AGs9WvCnMxeUTmcyfIcRjfoN9ZsQADC4AUlyduyYqHpbw_6M0Hej74hYr9dDpxg.png",
          "category":"건 (두손무기)",
          "upgrade":0,
          "base":{
@@ -1057,7 +1057,7 @@
 ```json
 {
          "name":"제네시스 클로",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/B8EUxh4f2l8Srh64GdnEZ4oJa7wLQPyQOOFa_cQGd_E2bLYxOjRhS_4SLiSVqZ6fxezwnXh1qxLrPoU0AFWF_w.webp",
          "category":"너클 (두손무기)",
          "upgrade":0,
          "base":{
@@ -1085,7 +1085,7 @@
 ```json
 {
          "name":"제네시스 시즈건",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/7ntsZVehkPzwLzwz6E9Q1uF1oBk-aXng4jTE4_ESb5yHpBCR2a3KOE3evTMkNtM434UUJW8-Kg3rB3qh_j3q_w.png",
          "category":"핸드캐논 (두손무기)",
          "upgrade":0,
          "base":{
@@ -1113,7 +1113,7 @@
 ```json
 {
          "name":"제네시스 소울슈터",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/ylrfn5bFf8QyHpsQzR4OcHAFZq4tGpw6CWQGZNm9iMqFmfoRR0E1Fmtr5vPS_GwAeaaDf0IN69DYpAdtIVPWGQ.webp",
          "category":"소울 슈터 (한손무기)",
          "upgrade":0,
          "base":{
@@ -1141,7 +1141,7 @@
 ```json
 {
          "name":"제네시스 에너지체인",
-         "imageUrl": ,
+         "imageUrl":"https://i.namu.wiki/i/1H5aX9WaU4ogPiq9sdJLXXus678lBEZdgfwYr5zyYjdlJWzn4oRMTHNbYeO8auZVAcqWrHed0rdB_oylNI93KA.webp",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
          "base":{
@@ -1460,7 +1460,7 @@
 ```json
     {
          "name":"앱솔랩스 나이트헬름",
-         "imageUrl":,
+         "imageUrl":"https://i.namu.wiki/i/oSNYRGS_ornvlETm1y9dEII0acD3M6PsZzPNeMBjQGKxRlV05BArCa60j6kneSKHzTVjwHf8KeWB4tqwmvO7sg.png",
          "category":"모자",
          "upgrade":0,
          "base":{
@@ -1483,7 +1483,7 @@
 ```json
     {
          "name":"앱솔랩스 아처후드",
-         "imageUrl":,
+         "imageUrl":"https://i.namu.wiki/i/8tEoxDmu9PRkPn0YYESDcyaUN82caE9DZdMwZpwsO8tFj-JzEfjqkrp9GLCNVPxA-Dub-Dd0Jgzr1--uq41TgQ.png",
          "category":"모자",
          "upgrade":0,
          "base":{
@@ -1506,7 +1506,7 @@
 ```json
     {
          "name":"앱솔랩스 메이지크라운",
-         "imageUrl":,
+         "imageUrl":"https://i.namu.wiki/i/a9lVa-1cUlWE6a9IPJTTxRw29RWmxVWfxqWi-cZSh1iDBfRCuAmYGgq2LGCIkDJqr9GXTvb0RTb-e92AuF43GA.png",
          "category":"모자",
          "upgrade":0,
          "base":{
@@ -1529,7 +1529,7 @@
 ```json
     {
          "name":"앱솔랩스 시프캡",
-         "imageUrl":,
+         "imageUrl":"https://i.namu.wiki/i/vuDZugjo5DoKtOpQOWa7fFVpb3nQMVCp-B5bu75C58lZSVGSU1qhO0xhmCNkMaLFUnlGF9lX4KGZ6VBiyyF4jg.png",
          "category":"모자",
          "upgrade":0,
          "base":{
@@ -1552,7 +1552,7 @@
 ```json
     {
          "name":"앱솔랩스 파이렛페도라",
-         "imageUrl":,
+         "imageUrl":"https://i.namu.wiki/i/gb_i25WiV8Lmk-WCnJGQgsA1lSqMunTtaANJqcCHi4_wM02GDmmswian2m-ggivk7_ZqLy7TPNeEyq4ZVGiopw.webp",
          "category":"모자",
          "upgrade":0,
          "base":{
@@ -1573,16 +1573,236 @@
 ```
 #### 4-1-3. 아케인셰이드 모자
 * 아케인셰이드 나이트햇
+```json
+    {
+         "name":"아케인셰이드 나이트햇",
+         "imageUrl":"https://i.namu.wiki/i/lP9shnTuqa0Hy5g-8zXaN-ziOgyCGboGh3mzdh--fY58ZOvH4BMWvn7ugJWDkYsCarI1uUvaTt6pDAnJglSjYQ.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":65,
+            "dex":65,
+            "atk":7,
+            "def":600,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 아처햇
+```json
+    {
+         "name":"아케인셰이드 아처햇",
+         "imageUrl":"https://i.namu.wiki/i/IDKpmieEn_-H7J2cpWir0nnCDSRD1Pj8NwkblWQLDfvsfxuTXO77x7VO2qnOZu5P4jde5UnVlcN_HWeT6Sx8Tw.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":65,
+            "dex":65,
+            "atk":7,
+            "def":600,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```    
 * 아케인셰이드 메이지햇
+```json
+    {
+         "name":"아케인셰이드 메이지햇",
+         "imageUrl":"https://i.namu.wiki/i/ZYgGd1ANP4XBmu2fZnATZ_K5oTUCsl3j2Ruk8jJGkAalTSbPYAvWtYffIJyNXzY0v9vnRPp_BTdP_5kehq3Mow.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "int":65,
+            "luk":65,
+            "mAtk":7,
+            "def":600,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 아케인셰이드 시프햇
+```json
+    {
+         "name":"아케인셰이드 시프햇",
+         "imageUrl":"https://i.namu.wiki/i/U7nYQzEsT0J33pMQk5ltzDwhbuXtl9rSQ5ijpEMJkqNkux3ib5sCFo72CKnk1UNKHaipzbmPTv1zUg-2Pm9qmg.webp",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "dex":65,
+            "luk":65,
+            "atk":7,
+            "def":600,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 아케인셰이드 파이렛햇
+```json
+    {
+         "name":"아케인셰이드 파이렛햇",
+         "imageUrl":"https://i.namu.wiki/i/sGm2pu8PY48hrtrAkFqmpNrbUd2DepJusVKZTEbvbMR3nz9-Jegj6Fc3j0lhBMnN_q7xk1g4ayblivr020oumw.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":65,
+            "dex":65,
+            "atk":7,
+            "def":600,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 #### 4-1-4. 에테르넬 모자
 * 에테르넬 나이트헬름
+```json
+    {
+         "name":"에테르넬 나이트헬름",
+         "imageUrl":"https://i.namu.wiki/i/w1esmI0_lWo_JsP4x_aCjuhp_zVs4odOo3pElWWTPtwyqPZ49_sIf3FthfBsDG-5PrEAMAw2vIA1bpeqbkVO-Q.png",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":80,
+            "dex":80,
+            "atk":10,
+            "def":750,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 에테르넬 아처햇
+```json
+    {
+         "name":"에테르넬 아처햇",
+         "imageUrl":"https://i.namu.wiki/i/SC6qTtYca56Of7xhbzyruaFeSBulI6T2aGjzXzTpQaGCBBeWbsB6nMkl724tvIYLyiHSXGpjQLIkAn-v4gm1nA.webp",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":80,
+            "dex":80,
+            "atk":10,
+            "def":750,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 에테르넬 메이지햇
+```json
+    {
+         "name":"에테르넬 메이지햇",
+         "imageUrl":"https://i.namu.wiki/i/V0FRw8nbWebhdLm7sETKCfU-CI59MOFAybMmxIxNqUO46hHpxE3Ca6UYG332khnT1d2SPk_ZktfMy1AzdPyIog.webp",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "int":80,
+            "luk":80,
+            "mAtk":10,
+            "def":750,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 에테르넬 시프반다나
+```json
+    {
+         "name":"에테르넬 시프반다나",
+         "imageUrl":"https://i.namu.wiki/i/yfQscdk8X_33pPoAAsJdsh7C64g9jUUO2fJHGslqT_daeRz86c8ge08Qbiawg6l_5hKc_DdjnIXEuGW9G30a9g.webp",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "dex":80,
+            "luk":80,
+            "atk":10,
+            "def":750,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 * 에테르넬 파이렛햇
+```json
+    {
+         "name":"에테르넬 파이렛햇",
+         "imageUrl":"https://i.namu.wiki/i/xXGxADAX4vWAUgusrqVAFQMpbHinPGpQQYf_wy9kul4Dqsvq86iwNQ9BzAbQ7dwqPz4YmUAV-BBj2tP8K1NjBA.webp",
+         "category":"모자",
+         "upgrade":0,
+         "base":{
+            "str":80,
+            "dex":80,
+            "atk":10,
+            "def":750,
+            "ignoreDef":15
+         },
+         "scroll":{
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+         },
+         "scissors":10
+    }
+```
 ### 4-2. 상의
 #### 4-2-1. 파프니르 상의
 * 이글아이 워리어아머
