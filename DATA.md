@@ -32,9 +32,13 @@
 ### 1-1. 파프니르 무기
 #### 1-1-1. 파프니르 무기(전사)
 * 파프니르 미스틸테인
+https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELC.png
 * 파프니르 트윈클리버
+https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png
 * 파프니르 골디언해머
+https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFID.png
 * 파프니르 페니텐시아
+https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIH.png
 * 파프니르 배틀클리버
 * 파프니르 라이트닝어
 * 파프니르 브류나크
@@ -71,9 +75,11 @@
 ### 1-2. 앱솔랩스 무기
 #### 1-2-1. 앱솔랩스 무기(전사)
 * 앱솔랩스 세이버
+https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELA.png
 * 앱솔랩스 엑스
 * 앱솔랩스 비트해머
 * 앱솔랩스 브로드세이버
+https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIB.png
 * 앱솔랩스 브로드엑스
 * 앱솔랩스 브로드해머
 * 앱솔랩스 피어싱스피어
@@ -134,8 +140,11 @@ KENDIHMJ
 ### 1-3. 아케인셰이드 무기
 #### 1-3-1. 아케인셰이드 무기(전사)
 * 아케인셰이드 세이버
+https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELI.png
 * 아케인셰이드 엑스
+https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPE.png
 * 아케인셰이드 해머
+https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
 * 아케인셰이드 투핸드소드
 * 아케인셰이드 투핸드엑스
 * 아케인셰이드 투핸드해머
@@ -215,6 +224,7 @@ KENDIHMJ
 #### 1-3-5. 아케인셰이드 무기(해적)
 * 아케인셰이드 피스톨
 * 아케인셰이드 클로
+https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 * 아케인셰이드 시즈건
 * 아케인셰이드 소울슈터
 * 아케인셰이드 에너지체인
@@ -4202,3 +4212,5 @@ KENDIHMJ
     "flame": {}
 }
 ```
+
+https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png
