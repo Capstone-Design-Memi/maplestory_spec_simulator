@@ -196,6 +196,8 @@ const ItemImagePart_ReqLev = (props) => {
       case "9" : 
         outputImage.push(<ReqLev9/>);
         break;
+      default :
+        break;
     }
   }
 
