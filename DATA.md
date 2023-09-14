@@ -6,6 +6,10 @@
 * [1-4.제네시스 무기](#1-4-제네시스-무기)
 ### [2.보조무기](#2-보조무기)
 * [2-1.일반 보조무기](#2-1-일반-보조무기)
+* [2-2.블랙 보조무기](#2-2-블랙-보조무기)
+* [2-3.이볼빙 보조무기](#2-3-이볼빙-보조무기)
+* [2-4.트레져 보조무기](#2-4-트레져-보조무기)
+* [2-5.방패 및 기타](#2-5-방패-및-기타)
 ### [3.엠블렘](#3-엠블렘)
 * [3-1.일반 엔블렘](#3-1-일반-엠블렘)
 * [3-2.미트라의 분노](#3-2-미트라의-분노)
@@ -1181,62 +1185,3531 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ### 2-1. 일반 보조무기
 #### 2-1-1. 일반 보조무기(모험가)
 * 버츄스 메달
+```json
+{
+         "name":"버츄스 메달",
+         "imageUrl":,
+         "category":"메달",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 세크리드 로자리오
+```json
+{
+         "name":"세크리드 로자리오",
+         "imageUrl":,
+         "category":"로자리오",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 버서크 체인
+```json
+{
+         "name":"버서크 체인",
+         "imageUrl":,
+         "category":"쇠사슬",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 적녹의 서 <종장>
+```json
+{
+         "name":"적녹의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 청은의 서 <종장>
+```json
+{
+         "name":"청은의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 백금의 서 <종장>
+```json
+{
+         "name":"백금의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 블라스트 페더
+```json
+{
+         "name":"블라스트 페더",
+         "imageUrl":,
+         "category":"화살깃",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 전발적중
+```json
+{
+         "name":"전발적중",
+         "imageUrl":,
+         "category":"활골무",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 퍼펙트 렐릭
+```json
+{
+         "name":"퍼펙트 렐릭",
+         "imageUrl":,
+         "category":"렐릭",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 파사부
+```json
+{
+         "name":"파사부",
+         "imageUrl":,
+         "category":"부적",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 슬래싱 섀도우
+```json
+{
+         "name":"슬래싱 섀도우",
+         "imageUrl":,
+         "category":"단검용 검집",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 리스트 아머
+```json
+{
+         "name":"리스트 아머",
+         "imageUrl":,
+         "category":"리스트 밴드",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 팔콘아이
+```json
+{
+         "name":"팔콘아이",
+         "imageUrl":,
+         "category":"조준기",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 봄버드 센터파이어
+```json
+{
+         "name":"봄버드 센터파이어",
+         "imageUrl":,
+         "category":"화약통",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3,           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-2. 일반 보조무기(시그너스 기사단)
 * 에레브의 광휘
+```json
+{
+         "name":"에레브의 광휘",
+         "imageUrl":,
+         "category":"보석",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":3,
+            "mAtk":3           
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 정의의 소울실드
+```json
+{
+         "name":"정의의 소울실드",
+         "imageUrl":,
+         "category":"소울실드",
+         "upgrade":0,
+         "base":{
+            "str":12,
+            "dex":12,
+            "hp":600,
+            "mp":110,
+            "def":85          
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-3. 일반 보조무기(레지스탕스)
 * 익스플로시브 필<3호>
+```json
+{
+         "name":"익스플로시브 필<3호>",
+         "imageUrl":,
+         "category":"장약",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3          
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 맥시마이즈 볼
+```json
+{
+         "name":"맥시마이즈 볼",
+         "imageUrl":,
+         "category":"마법구슬",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3          
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 와일드 팡
+```json
+{
+         "name":"와일드 팡",
+         "imageUrl":,
+         "category":"화살촉",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3          
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 이터널 매그넘
+```json
+{
+         "name":"이터널 매그넘",
+         "imageUrl":,
+         "category":"매그넘",
+         "upgrade":0,
+         "base":{
+            "dex":10         
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 극한의 포스실드
+```json
+{
+         "name":"극한의 포스실드",
+         "imageUrl":,
+         "category":"포스실드",
+         "upgrade":0,
+         "base":{
+            "str":12,
+            "dex":12,
+            "mp":600, 
+            "dex":85         
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 옥타코어 컨트롤러
+```json
+{
+         "name":"옥타코어 컨트롤러",
+         "imageUrl":,
+         "category":"컨트롤러",
+         "upgrade":0,
+         "base":{
+            "str":2,
+            "dex":2,
+            "int":2,
+            "luk":2,
+            "hp":900,
+            "mp":500, 
+            "dex":380         
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-4. 일반 보조무기(영웅)
 * 천룡추
+```json
+{
+         "name":"천룡추",
+         "imageUrl":,
+         "category":"무게추",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3         
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 드래곤마스터의 유산
+```json
+{
+         "name":"드래곤마스터의 유산",
+         "imageUrl":,
+         "category":"문서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3         
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 카르마 오브
+```json
+{
+         "name":"카르마 오브",
+         "imageUrl":,
+         "category":"오브",
+         "upgrade":0,
+         "base":{
+       
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 무한의 마법화살
+```json
+{
+         "name":"무한의 마법화살",
+         "imageUrl":,
+         "category":"마법화살",
+         "upgrade":0,
+         "base":{
+       
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 데르니에 카르트
-* 황금빛 여우구술
+```json
+{
+         "name":"데르니에 카르트",
+         "imageUrl":,
+         "category":"카드",
+         "upgrade":0,
+         "base":{
+
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+* 황금빛 여우구슬
+```json
+{
+         "name":"황금빛 여우구슬",
+         "imageUrl":,
+         "category":"여우구슬",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3 
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 진리의 노바의 정수
+```json
+{
+         "name":"진리의 노바의 정수",
+         "imageUrl":,
+         "category":"용의 정수",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "def":30 
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-5. 일반 보조무기(노바)
 * 진리의 노바의 정수
+```json
+{
+         "name":"진리의 노바의 정수",
+         "imageUrl":,
+         "category":"용의 정수",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "def":30 
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * D100 커스텀 웨폰 벨트
+```json
+{
+         "name":"D100 커스텀 웨폰 벨트",
+         "imageUrl":,
+         "category":"웨폰 벨트",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":30 
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 트랜스미터 type:A
+```json
+{
+         "name":"트랜스미터 type:A",
+         "imageUrl":,
+         "category":"무기 전송장치",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":30 
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 그린 소울링
+```json
+{
+         "name":"그린 소울링",
+         "imageUrl":,
+         "category":"소울링",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "hp":900,
+            "def":300
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-6. 일반 보조무기(레프)
 * 노블 브레이슬릿
+```json
+{
+         "name":"노블 브레이슬릿",
+         "imageUrl":,
+         "category":"브레이슬릿",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 글로리 매직윙
+```json
+{
+         "name":"글로리 매직윙",
+         "imageUrl":,
+         "category":"매직윙",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 인피니트 헥스시커
+```json
+{
+         "name":"인피니트 헥스시커",
+         "imageUrl":,
+         "category":"헥스시커",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 얼티밋 패스
+```json
+{
+         "name":"얼티밋 패스",
+         "imageUrl":,
+         "category":"패스 오브 어비스",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-7. 일반 보조무기(아니마)
 * 빛나는 사옥 노리개
+```json
+{
+         "name":"빛나는 사옥 노리개",
+         "imageUrl":,
+         "category":"노리개",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 월장석 선추
+```json
+{
+         "name":"월장석 선추",
+         "imageUrl":,
+         "category":"선추",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-8. 일반 보조무기(제로)
 #### 2-1-9. 일반 보조무기(키네시스)
 * 체스피스 디 퀸
+```json
+{
+         "name":"체스피스 디 퀸",
+         "imageUrl":,
+         "category":"체스피스",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":3
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 2-1-10. 일반 보조무기(듀얼블레이드)
 * 파프니르 래피드엣지
+```json
+{
+         "name":"파프니르 래피드엣지",
+         "imageUrl":,
+         "category":"블레이드",
+         "upgrade":0,
+         "base":{
+            "luk":30,
+            "atk":81
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 앱솔랩스 블레이드
+```json
+{
+         "name":"앱솔랩스 블레이드",
+         "imageUrl":,
+         "category":"블레이드",
+         "upgrade":0,
+         "base":{
+            "luk":40,
+            "atk":97
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 블레이드
+```json
+{
+         "name":"아케인셰이드 블레이드",
+         "imageUrl":,
+         "category":"블레이드",
+         "upgrade":0,
+         "base":{
+            "luk":65,
+            "atk":140
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 ### 2-2. 블랙 보조무기
+* 블랙 메달
+```json
+{
+         "name":"블랙 메달",
+         "imageUrl":,
+         "category":"메달",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 로자리오
+```json
+{
+         "name":"블랙 로자리오",
+         "imageUrl":,
+         "category":"로자리오",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 체인
+```json
+{
+         "name":"블랙 체인",
+         "imageUrl":,
+         "category":"쇠사슬",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 적녹의 서 <블랙>
+```json
+{
+         "name":"적녹의 서 <블랙>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 청은의 서 <블랙>
+```json
+{
+         "name":"청은의 서 <블랙>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 백금의 서 <블랙>
+```json
+{
+         "name":"백금의 서 <블랙>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 페더
+```json
+{
+         "name":"블랙 페더",
+         "imageUrl":,
+         "category":"화살깃",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 전발적중
+```json
+{
+         "name":"블랙 전발적중",
+         "imageUrl":,
+         "category":"활골무",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 렐릭
+```json
+{
+         "name":"블랙 렐릭",
+         "imageUrl":,
+         "category":"렐릭",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 파사부
+```json
+{
+         "name":"블랙 파사부",
+         "imageUrl":,
+         "category":"부적",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 섀도우
+```json
+{
+         "name":"블랙 섀도우",
+         "imageUrl":,
+         "category":"단검용 검집",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 리스트 아머
+```json
+{
+         "name":"블랙 리스트 아머",
+         "imageUrl":,
+         "category":"리스트 밴드",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 팔콘아이
+```json
+{
+         "name":"블랙 팔콘아이",
+         "imageUrl":,
+         "category":"조준기",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 센터파이어
+```json
+{
+         "name":"블랙 센터파이어",
+         "imageUrl":,
+         "category":"화약통",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+* 블랙 에레브의 광휘
+
+```json
+{
+         "name":"블랙 에레브의 광휘",
+         "imageUrl":,
+         "category":"보석",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "int":8,
+            "luk":8,
+            "atk":5,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 소울실드
+```json
+{
+         "name":"블랙 소울실드",
+         "imageUrl":,
+         "category":"소울실드",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "hp":560,
+            "mp":100,
+            "def":81
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 익스플로시브 필
+```json
+{
+         "name":"블랙 소울실드",
+         "imageUrl":,
+         "category":"장약",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 맥시마이즈 볼
+```json
+{
+         "name":"블랙 맥시마이즈 볼",
+         "imageUrl":,
+         "category":"마법구슬",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 와일드 팡
+```json
+{
+         "name":"블랙 와일드 팡",
+         "imageUrl":,
+         "category":"화살촉",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 매그넘
+```json
+{
+         "name":"블랙 매그넘",
+         "imageUrl":,
+         "category":"매그넘",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 포스실드
+```json
+{
+         "name":"블랙 포스실드",
+         "imageUrl":,
+         "category":"포스실드",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "hp":560,
+            "maxDf":100,
+            "def":81
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 옥타코어 컨트롤러
+```json
+{
+         "name":"블랙 옥타코어 컨트롤러",
+         "imageUrl":,
+         "category":"컨트롤러",
+         "upgrade":0,
+         "base":{
+            "str":2,
+            "dex":2,
+            "int":2,
+            "luk":2,
+            "hp":800,
+            "mp":450,
+            "def":380
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 드래곤마스터의 유산
+```json
+{
+         "name":"블랙 드래곤마스터의 유산",
+         "imageUrl":,
+         "category":"문서",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 천룡추
+```json
+{
+         "name":"블랙 천룡추",
+         "imageUrl":,
+         "category":"무게추",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 오브
+```json
+{
+         "name":"블랙 오브",
+         "imageUrl":,
+         "category":"오브",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 마법 화살
+```json
+{
+         "name":"블랙 마법 화살",
+         "imageUrl":,
+         "category":"마법화살",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 카르트
+```json
+{
+         "name":"블랙 카르트",
+         "imageUrl":,
+         "category":"카드",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 여우구슬
+```json
+{
+         "name":"블랙 여우구슬",
+         "imageUrl":,
+         "category":"여우구슬",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 노바의 정수
+```json
+{
+         "name":"블랙 노바의 정수",
+         "imageUrl":,
+         "category":"용의 정수",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "int":8,
+            "luk":8,
+            "def":30
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 D100 웨폰 벨트
+```json
+{
+         "name":"블랙 D100 웨폰 벨트",
+         "imageUrl":,
+         "category":"웨폰 벨트",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 트랜스미터
+```json
+{
+         "name":"블랙 트랜스미터",
+         "imageUrl":,
+         "category":"무기 전송장치",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 소울링
+```json
+{
+         "name":"블랙 소울링",
+         "imageUrl":,
+         "category":"소울링",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "int":8,
+            "luk":8,
+            "hp":800,
+            "def":275
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 샤이니 브레이슬릿
+```json
+{
+         "name":"블랙 샤이니 브레이슬릿",
+         "imageUrl":,
+         "category":"브레이슬릿",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 매직윙
+```json
+{
+         "name":"블랙 매직윙",
+         "imageUrl":,
+         "category":"매직윙",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 인피니트 헥스시커
+```json
+{
+         "name":"블랙 인피니트 헥스시커",
+         "imageUrl":,
+         "category":"헥스시커",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 패스
+```json
+{
+         "name":"블랙 패스",
+         "imageUrl":,
+         "category":"패스 오브 어비스",
+         "upgrade":0,
+         "base":{
+            "str":8,
+            "dex":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 사옥 노리개
+```json
+{
+         "name":"블랙 사옥 노리개",
+         "imageUrl":,
+         "category":"노리개",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 블랙 황수정 선추
+```json
+{
+         "name":"블랙 황수정 선추",
+         "imageUrl":,
+         "category":"선추",
+         "upgrade":0,
+         "base":{
+            "dex":8,
+            "luk":8,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 체스피스 블랙 퀸
+```json
+{
+         "name":"체스피스 블랙 퀸",
+         "imageUrl":,
+         "category":"체스피스",
+         "upgrade":0,
+         "base":{
+            "int":8,
+            "luk":8,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
 ### 2-3. 이볼빙 보조무기
-### 2-4. 방패 및 기타
+* 이볼빙 버츄스 메달
+```json
+{
+         "name":"이볼빙 버츄스 메달",
+         "imageUrl":,
+         "category":"메달",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 세이크리드 로자리오
+```json
+{
+         "name":"이볼빙 세이크리드 로자리오",
+         "imageUrl":,
+         "category":"로자리오",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 버서크 체인
+```json
+{
+         "name":"이볼빙 버서크 체인",
+         "imageUrl":,
+         "category":"쇠사슬",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 적녹의 서 <종장>
+```json
+{
+         "name":"이볼빙 적녹의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 청은의 서 <종장>
+```json
+{
+         "name":"이볼빙 청은의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 백금의 서 <종장>
+```json
+{
+         "name":"이볼빙 백금의 서 <종장>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 블라스트 페더
+```json
+{
+         "name":"이볼빙 블라스트 페더",
+         "imageUrl":,
+         "category":"화살깃",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 전발적중
+```json
+{
+         "name":"이볼빙 전발적중",
+         "imageUrl":,
+         "category":"활골무",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 퍼펙트 렐릭
+```json
+{
+         "name":"이볼빙 퍼펙트 렐릭",
+         "imageUrl":,
+         "category":"렐릭",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 파사부
+```json
+{
+         "name":"이볼빙 파사부",
+         "imageUrl":,
+         "category":"부적",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 슬래싱 섀도우
+```json
+{
+         "name":"이볼빙 슬래싱 섀도우",
+         "imageUrl":,
+         "category":"단검용 검집",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 리스트 아머
+```json
+{
+         "name":"이볼빙 리스트 아머",
+         "imageUrl":,
+         "category":"리스트 밴드",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 팔콘아이
+```json
+{
+         "name":"이볼빙 팔콘아이",
+         "imageUrl":,
+         "category":"조준기",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 봄버드 센터파이어
+```json
+{
+         "name":"이볼빙 봄버드 센터파이어",
+         "imageUrl":,
+         "category":"화약통",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 에레브의 광휘
+```json
+{
+         "name":"이볼빙 에레브의 광휘",
+         "imageUrl":,
+         "category":"보석",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":5,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 정의의 소울실드
+```json
+{
+         "name":"이볼빙 정의의 소울실드",
+         "imageUrl":,
+         "category":"소울실드",
+         "upgrade":0,
+         "base":{
+            "str":12,
+            "dex":12,
+            "hp":600,
+            "mp":110,
+            "atk":2,
+            "def":85
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 익스플로시브 필<3호>
+```json
+{
+         "name":"이볼빙 익스플로시브 필<3호>",
+         "imageUrl":,
+         "category":"장약",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 맥시마이즈 볼
+```json
+{
+         "name":"이볼빙 맥시마이즈 볼",
+         "imageUrl":,
+         "category":"마법구슬",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 와일드 팡
+```json
+{
+         "name":"이볼빙 와일드 팡",
+         "imageUrl":,
+         "category":"화살촉",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 이터널 매그넘
+```json
+{
+         "name":"이볼빙 이터널 매그넘",
+         "imageUrl":,
+         "category":"매그넘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "atk":2
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 극한의 포스실드
+```json
+{
+         "name":"이볼빙 극한의 포스실드",
+         "imageUrl":,
+         "category":"포스실드",
+         "upgrade":0,
+         "base":{
+            "str":12,
+            "dex":12,
+            "hp":600,
+            "maxDf":110,
+            "atk":2,
+            "def":85
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 옥타코어 컨트롤러
+```json
+{
+         "name":"이볼빙 옥타코어 컨트롤러",
+         "imageUrl":,
+         "category":"컨트롤러",
+         "upgrade":0,
+         "base":{
+            "str":2,
+            "dex":2,
+            "int":2,
+            "luk":2,
+            "hp":900,
+            "mp":500,
+            "atk":2,
+            "def":380
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 천룡추
+```json
+{
+         "name":"이볼빙 천룡추",
+         "imageUrl":,
+         "category":"무게추",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 드래곤마스터의 유산
+```json
+{
+         "name":"이볼빙 드래곤마스터의 유산",
+         "imageUrl":,
+         "category":"문서",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 카르마 오브
+```json
+{
+         "name":"이볼빙 카르마 오브",
+         "imageUrl":,
+         "category":"오브",
+         "upgrade":0,
+         "base":{
+            "mAtk":2
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 무한의 마법 화살
+```json
+{
+         "name":"이볼빙 무한의 마법 화살",
+         "imageUrl":,
+         "category":"마법화살",
+         "upgrade":0,
+         "base":{
+            "atk":2
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 데르니에 카르트
+```json
+{
+         "name":"이볼빙 데르니에 카르트",
+         "imageUrl":,
+         "category":"카드",
+         "upgrade":0,
+         "base":{
+            "atk":2
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 황금빛 여우구슬
+```json
+{
+         "name":"이볼빙 황금빛 여우구슬",
+         "imageUrl":,
+         "category":"여우구슬",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 진리의 노바의 정수
+```json
+{
+         "name":"이볼빙 진리의 노바의 정수",
+         "imageUrl":,
+         "category":"용의 정수",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "def":30
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 D100 웨폰 벨트
+```json
+{
+         "name":"이볼빙 D100 웨폰 벨트",
+         "imageUrl":,
+         "category":"웨폰 벨트",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 트랜스미터 type:A
+```json
+{
+         "name":"이볼빙 트랜스미터 type:A",
+         "imageUrl":,
+         "category":"무기 전송장치",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 그린 소울링
+```json
+{
+         "name":"이볼빙 그린 소울링",
+         "imageUrl":,
+         "category":"소울링",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "hp":900,
+            "atk":2,
+            "def":300
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 노블 브레이슬릿
+```json
+{
+         "name":"이볼빙 노블 브레이슬릿",
+         "imageUrl":,
+         "category":"브레이슬릿",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 글로리 매직윙
+```json
+{
+         "name":"이볼빙 글로리 매직윙",
+         "imageUrl":,
+         "category":"매직윙",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 인피니트 헥스시커
+```json
+{
+         "name":"이볼빙 인피니트 헥스시커",
+         "imageUrl":,
+         "category":"헥스시커",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 얼티밋 패스
+```json
+{
+         "name":"이볼빙 얼티밋 패스",
+         "imageUrl":,
+         "category":"패스 오브 어비스",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 사옥 노리개
+```json
+{
+         "name":"이볼빙 사옥 노리개",
+         "imageUrl":,
+         "category":"노리개",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 월장석 선추
+```json
+{
+         "name":"이볼빙 월장석 선추",
+         "imageUrl":,
+         "category":"선추",
+         "upgrade":0,
+         "base":{
+            "dex":10,
+            "luk":10,
+            "atk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 이볼빙 체스피스 디 퀸
+```json
+{
+         "name":"이볼빙 체스피스 디 퀸",
+         "imageUrl":,
+         "category":"체스피스",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "luk":10,
+            "mAtk":5
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+### 2-4. 트레져 보조무기
+* 메이플 트레져 메달
+```json
+{
+         "name":"메이플 트레져 메달",
+         "imageUrl":,
+         "category":"메달",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 로자리오
+```json
+{
+         "name":"메이플 트레져 로자리오",
+         "imageUrl":,
+         "category":"로자리오",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져체인
+```json
+{
+         "name":"메이플 트레져 체인",
+         "imageUrl":,
+         "category":"쇠사슬",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 적녹의 서 <메이플 트레져>
+```json
+{
+         "name":"적녹의 서 <메이플 트레져>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 청은의 서 <메이플 트레져>
+```json
+{
+         "name":"청은의 서 <메이플 트레져>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 백금의 서 <메이플 트레져>
+```json
+{
+         "name":"백금의 서 <메이플 트레져>",
+         "imageUrl":,
+         "category":"마도서",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 페더
+```json
+{
+         "name":"메이플 트레져 페더",
+         "imageUrl":,
+         "category":"화살깃",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 전발적중
+```json
+{
+         "name":"메이플 트레져 전발적중",
+         "imageUrl":,
+         "category":"활골무",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 파사부
+```json
+{
+         "name":"메이플 트레져 파사부",
+         "imageUrl":,
+         "category":"부적",
+         "upgrade":0,
+         "base":{
+            "dex":9,
+            "luk":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 섀도우
+```json
+{
+         "name":"메이플 트레져 섀도우",
+         "imageUrl":,
+         "category":"단검용 검집",
+         "upgrade":0,
+         "base":{
+            "dex":9,
+            "luk":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 리스트아머
+```json
+{
+         "name":"메이플 트레져 리스트아머",
+         "imageUrl":,
+         "category":"리스트 밴드",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 팔콘아이
+```json
+{
+         "name":"메이플 트레져 팔콘아이",
+         "imageUrl":,
+         "category":"조준기",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 센터파이어
+```json
+{
+         "name":"메이플 트레져 센터파이어",
+         "imageUrl":,
+         "category":"화약통",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 에레브의 광휘
+```json
+{
+         "name":"메이플 트레져 에레브의 광휘",
+         "imageUrl":,
+         "category":"보석",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "int":9,
+            "luk":9,
+            "atk":6,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 소울실드
+```json
+{
+         "name":"메이플 트레져 소울실드",
+         "imageUrl":,
+         "category":"소울실드",
+         "upgrade":0,
+         "base":{
+            "str":11,
+            "dex":11,
+            "hp":560,
+            "mp":100,
+            "def":120
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 익스플로시브 필
+```json
+{
+         "name":"메이플 트레져 익스플로시브 필",
+         "imageUrl":,
+         "category":"장약",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 메모라이즈볼
+```json
+{
+         "name":"메이플 트레져 메모라이즈볼",
+         "imageUrl":,
+         "category":"마법구슬",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 와일드 팡
+```json
+{
+         "name":"메이플 트레져 와일드 팡",
+         "imageUrl":,
+         "category":"화살촉",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 매그넘
+```json
+{
+         "name":"메이플 트레져 매그넘",
+         "imageUrl":,
+         "category":"매그넘",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 포스실드
+```json
+{
+         "name":"메이플 트레져 포스실드",
+         "imageUrl":,
+         "category":"포스실드",
+         "upgrade":0,
+         "base":{
+            "str":11,
+            "dex":11,
+            "hp":560,
+            "maxDf":100,
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 컨트롤러
+```json
+{
+         "name":"메이플 트레져 컨트롤러",
+         "imageUrl":,
+         "category":"컨트롤러",
+         "upgrade":0,
+         "base":{
+            "str":3,
+            "dex":3,
+            "int":3,
+            "luk":3,
+            "mp":450,
+            "def":390
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 천룡추
+```json
+{
+         "name":"메이플 트레져 천룡추",
+         "imageUrl":,
+         "category":"무게추",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져의 유산
+```json
+{
+         "name":"메이플 트레져의 유산",
+         "imageUrl":,
+         "category":"문서",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 오브
+```json
+{
+         "name":"메이플 트레져 오브",
+         "imageUrl":,
+         "category":"오브",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 마법 화살
+```json
+{
+         "name":"메이플 트레져 마법 화살",
+         "imageUrl":,
+         "category":"마법화살",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 카르트
+```json
+{
+         "name":"메이플 트레져 카르트",
+         "imageUrl":,
+         "category":"카드",
+         "upgrade":0,
+         "base":{
+            "dex":9,
+            "luk":9
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 여우구슬
+```json
+{
+         "name":"메이플 트레져 여우구슬",
+         "imageUrl":,
+         "category":"여우구슬",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "atk":6
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져의 정수
+```json
+{
+         "name":"메이플 트레져의 정수",
+         "imageUrl":,
+         "category":"용의 정수",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "int":9,
+            "luk":9,
+            "def":40
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 소울링
+```json
+{
+         "name":"메이플 트레져 소울링",
+         "imageUrl":,
+         "category":"소울링",
+         "upgrade":0,
+         "base":{
+            "str":9,
+            "dex":9,
+            "int":9,
+            "luk":9,
+            "def":280
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+* 메이플 트레져 체스피스
+```json
+{
+         "name":"메이플 트레져 체스피스",
+         "imageUrl":,
+         "category":"체스피스",
+         "upgrade":0,
+         "base":{
+            "int":9,
+            "luk":9,
+            "mAtk":7
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
+
+### 2-5. 방패 및 기타
 * 데이모스 세이지 실드
+```json
+{
+         "name":"데이모스 세이지 실드",
+         "imageUrl":,
+         "category":"방패",
+         "upgrade":0,
+         "base":{
+            "int":10,
+            "def":71
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 데이모스 워리어 실드
+```json
+{
+         "name":"데이모스 워리어 실드",
+         "imageUrl":,
+         "category":"방패",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "def":118
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 데이모스 다크니스 실드
 ```json
 {
@@ -1259,6 +4732,29 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
  }
 ```
 * 루인 포스실드
+```json
+{
+         "name":"루인 포스실드",
+         "imageUrl":,
+         "category":"포스실드",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "mp":560,
+            "maxDf":100,
+            "def":81
+         },
+         "scroll":{
+
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 ## 3. 엠블렘
 ### 3-1. 일반 엠블렘
 * 골드 메이플리프 엠블렘
@@ -1287,22 +4783,427 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
       }
 ```
 * 골드 시그너스 엠블렘
+```json
+{
+         "name":"골드 시그너스 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 골드 레지스탕스 엠블렘
+```json
+{
+         "name":"골드 레지스탕스 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 골드 데몬 엠블렘
+```json
+{
+         "name":"골드 데몬 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "hp":500,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 하이브리드 하트
+```json
+{
+         "name":"하이브리드 하트",
+         "imageUrl":,
+         "category":"파워소스",
+         "upgrade":0,
+         "base":{
+            "hp":300,
+            "mp":100,
+            "atk":2,
+            "mAtk":2,
+            "def":100
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 골드 히어로즈 엠블렘
+```json
+{
+         "name":"골드 히어로즈 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```      
 * 드래곤 엠블렘
+```json
+{
+         "name":"드래곤 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```      
 * 골드 히트맨 엠블렘
-* 골드 에니전트 엠블렘
+```json
+{
+         "name":"골드 히트맨 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```   
+* 골드 에이전트 엠블렘
+```json
+{
+         "name":"골드 에이전트 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```  
 * 엔젤 엠블렘
+```json
+{
+         "name":"엔젤 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "hp":400,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```   
 * 골드 나이트 엠블렘
+```json
+{
+         "name":"골드 나이트 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+```  
 * 골드 크리스탈 엠블렘
+```json
+{
+         "name":"골드 크리스탈 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 골드 체이서 엠블렘
+```json
+{
+         "name":"골드 체이서 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 골드 어비스 엠블렘
+```json
+{
+         "name":"골드 어비스 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 금빛 풍수사 엠블렘
+```json
+{
+         "name":"금빛 풍수사 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 금빛 천지인 엠블렘
+```json
+{
+         "name":"금빛 천지인 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 이터널 타임 엠블렘
+```json
+{
+         "name":"이터널 타임 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 * 골드 키네시스 엠블렘
+```json
+{
+         "name":"골드 키네시스 엠블렘",
+         "imageUrl":,
+         "category":"엠블렘",
+         "upgrade":0,
+         "base":{
+            "str":10,
+            "dex":10,
+            "int":10,
+            "luk":10,
+            "atk":2,
+            "mAtk":2
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+}
+``` 
 ### 3-2. 미트라의 분노
 * 미트라의 분노 : 전사
 ```json
