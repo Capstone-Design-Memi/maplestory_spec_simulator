@@ -16,7 +16,7 @@ const TopMenu = () => {
         <Button
           style={{ float: "right" }}
           onClick={() => {
-            navigator("/selectcharacter");
+            navigator("/");
           }}
         >
           캐릭터 선택
@@ -32,7 +32,7 @@ const TopMenu = () => {
         <Button
           style={{ float: "right" }}
           onClick={() => {
-            navigator("/");
+            navigator("/main");
           }}
         >
           메인

@@ -20,12 +20,11 @@ const MakeItem = () => {
       />
       <Button
         onClick={() => {
-          navigator("/");
+          navigator("/main");
         }}
       >
         제작
       </Button>
-      <ItemStat/>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Col, Row } from "antd";
 import React from "react";
 import ItemList from "../Component/Item/ItemList";
 import StatWindow from "../Component/Stat/StatWindow";
