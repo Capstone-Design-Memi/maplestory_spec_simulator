@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { DefaultItems } from "../../Util/ItemDatas";
 import { InventoryWrap, ItemBoxWrap } from "../../Style/Item";
+import { useCookies } from "react-cookie";
 
 const ItemItem = () => {
+  const [cookies, setCookie, removeCookie] = useCookies();
   const myItems = ChractersInfo[0].equipments;
   const [col, setCol] = useState(0);
   const inventoryItem = DefaultItems;
@@ -35,7 +37,9 @@ const ItemItem = () => {
       <h3>인벤</h3>
       <div
         style={{
-          width: `${testInventoryItem.length >= 10 ? 475 : 51}px`,
+          width: `${
+            testInventoryItem.length >= 10 ? 475 : 51 * testInventoryItem.length
+          }px`,
           height: `${
             testInventoryItem.length >= 10
               ? ((testInventoryItem.length - (testInventoryItem.length % 10)) /
