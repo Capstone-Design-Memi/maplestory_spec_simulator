@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Routes>
         <Route element={<TopMenu />}>
-          <Route exact path="/" element={<Main />} />
+          <Route exact path="/" element={<SelectCharacter />} />
           <Route exact path="/createcharacter" element={<CreateCharacter />} />
-          <Route exact path="/selectcharacter" element={<SelectCharacter />} />
+          <Route exact path="/main" element={<Main />} />
           <Route exact path="/makeitem" element={<MakeItem />} />
         </Route>
       </Routes>

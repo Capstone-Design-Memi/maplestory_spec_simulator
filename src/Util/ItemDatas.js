@@ -1,6 +1,7 @@
 export const DefaultItems = [
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -22,6 +23,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -63,6 +65,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -84,6 +87,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -125,6 +129,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -146,6 +151,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -187,6 +193,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -208,6 +215,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -249,6 +257,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -270,6 +279,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -311,6 +321,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -332,6 +343,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -373,6 +385,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -394,6 +407,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
@@ -435,6 +449,7 @@ export const DefaultItems = [
   },
   {
     label: "하이네스 어새신보닛",
+    value: "하이네스 어새신보닛",
     name: "하이네스 어새신보닛",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
     category: "모자",
@@ -456,6 +471,7 @@ export const DefaultItems = [
   },
   {
     label: "아케인셰이드 보우",
+    value: "아케인셰이드 보우",
     name: "아케인셰이드 보우",
     class: "궁수",
     imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
