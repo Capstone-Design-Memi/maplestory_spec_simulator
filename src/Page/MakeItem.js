@@ -1,5 +1,5 @@
 import { Button, Cascader, Form, Select } from "antd";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ItemStat from "../Component/ItemDetail/ItemStat";
 import { DefaultItems } from "../Util/ItemDatas";
@@ -9,6 +9,16 @@ const MakeItem = () => {
   const navigator = useNavigate();
 
   const testLocal = JSON.parse(localStorage.getItem("test"));
+  const allKeys = Object.keys(localStorage);
+  const allKeyMap = allKeys.map((item) => {
+    return JSON.parse(localStorage.getItem(item));
+  });
+  const testId = allKeys[allKeys.length - 1];
+  useEffect(() => {
+    const testReplace = testId.replace("test", "");
+    setItemId(parseInt(testReplace) + 1);
+    console.log(itemId);
+  }, []);
 
   const onFinish = (value) => {
     const defaultItemMap = DefaultItems.map((item) => {

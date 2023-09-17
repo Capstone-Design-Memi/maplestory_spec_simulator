@@ -16,7 +16,6 @@ const ItemItem = () => {
   const allKeyMap = allKeys.map((item) => {
     return JSON.parse(localStorage.getItem(item));
   });
-  console.log(allKeyMap);
 
   const v = allKeyMap.map((item) => {
     return (
