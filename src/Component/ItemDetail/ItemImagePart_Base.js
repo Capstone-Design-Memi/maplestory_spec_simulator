@@ -40,11 +40,9 @@ const ItemImagePart_Base = (props) => {
             <Cover>
               <Shade/>
                 <img
-                    style={{marginTop:'10px',zIndex:-1}}
+                    style={{marginTop:'10px',zIndex:-1,width:"70%"}}
                     src={imgUrl}
-                    alt="item Image"
-                    width={57}
-                    height={57}
+                    alt="item Image"                
                 />
             </Cover>
        </Base>
