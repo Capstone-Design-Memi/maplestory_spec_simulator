@@ -10,15 +10,16 @@ import {
 
 function loadCharacterAPI(data) {
   //단일 게시글 로딩
-  return axios.get(`characters?name=%${data}&scopes=pet,equip,cash,symbol`);
+  return axios.get(`characters?name=${data}&scopes=pet,equip,cash,symbol`);
 }
 
 function* loadCharacter(action) {
   try {
     const result = yield call(loadCharacterAPI, action.data);
+    console.log(result);
     yield put({
       type: LOAD_MAPLE_CHRACTER_SUCCESS,
-      data: result.data.data,
+      data: result,
     });
   } catch (err) {
     console.error(err);
