@@ -21,8 +21,6 @@ const CreateCharacter = () => {
     });
   };
 
-  console.log(chracterInfo);
-
   const navigator = useNavigate();
   return (
     <div>
