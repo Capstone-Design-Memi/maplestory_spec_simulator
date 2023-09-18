@@ -1188,7 +1188,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"버츄스 메달",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOD.png",
          "category":"메달",
          "upgrade":0,
          "base":{
@@ -1206,11 +1206,11 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
          }
       }
 ```
-* 세크리드 로자리오
+* 세이크리드 로자리오
 ```json
 {
-         "name":"세크리드 로자리오",
-         "imageUrl":,
+         "name":"세이크리드 로자리오",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPD.png",
          "category":"로자리오",
          "upgrade":0,
          "base":{
@@ -1232,7 +1232,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"버서크 체인",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMD.png",
          "category":"쇠사슬",
          "upgrade":0,
          "base":{
@@ -1254,7 +1254,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"적녹의 서 <종장>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNC.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -1276,7 +1276,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"청은의 서 <종장>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKD.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -1298,7 +1298,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"백금의 서 <종장>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFLD.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -1320,7 +1320,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블라스트 페더",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFID.png",
          "category":"화살깃",
          "upgrade":0,
          "base":{
@@ -1342,7 +1342,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"전발적중",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFJD.png",
          "category":"활골무",
          "upgrade":0,
          "base":{
@@ -1364,7 +1364,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"퍼펙트 렐릭",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIAOC.png",
          "category":"렐릭",
          "upgrade":0,
          "base":{
@@ -1386,7 +1386,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"파사부",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFHD.png",
          "category":"부적",
          "upgrade":0,
          "base":{
@@ -1408,7 +1408,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"슬래싱 섀도우",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFGD.png",
          "category":"단검용 검집",
          "upgrade":0,
          "base":{
@@ -1430,7 +1430,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"리스트 아머",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOOC.png",
          "category":"리스트 밴드",
          "upgrade":0,
          "base":{
@@ -1452,7 +1452,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"팔콘아이",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOPC.png",
          "category":"조준기",
          "upgrade":0,
          "base":{
@@ -1474,7 +1474,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"봄버드 센터파이어",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOMD.png",
          "category":"화약통",
          "upgrade":0,
          "base":{
@@ -1497,7 +1497,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"에레브의 광휘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOJD.png",
          "category":"보석",
          "upgrade":0,
          "base":{
@@ -1522,7 +1522,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"정의의 소울실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLDHOI.png",
          "category":"소울실드",
          "upgrade":0,
          "base":{
@@ -1547,7 +1547,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"익스플로시브 필<3호>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIDOC.png",
          "category":"장약",
          "upgrade":0,
          "base":{
@@ -1569,7 +1569,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"맥시마이즈 볼",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOLD.png",
          "category":"마법구슬",
          "upgrade":0,
          "base":{
@@ -1591,7 +1591,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"와일드 팡",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOID.png",
          "category":"화살촉",
          "upgrade":0,
          "base":{
@@ -1613,7 +1613,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이터널 매그넘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJAOC.png",
          "category":"매그넘",
          "upgrade":0,
          "base":{
@@ -1633,7 +1633,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"극한의 포스실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPG.png",
          "category":"포스실드",
          "upgrade":0,
          "base":{
@@ -1656,7 +1656,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"옥타코어 컨트롤러",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIHOF.png",
          "category":"컨트롤러",
          "upgrade":0,
          "base":{
@@ -1683,7 +1683,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"천룡추",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOQC.png",
          "category":"무게추",
          "upgrade":0,
          "base":{
@@ -1705,7 +1705,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"드래곤마스터의 유산",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOKD.png",
          "category":"문서",
          "upgrade":0,
          "base":{
@@ -1747,7 +1747,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"무한의 마법화살",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJHOC.png",
          "category":"마법화살",
          "upgrade":0,
          "base":{
@@ -1767,7 +1767,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"데르니에 카르트",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJGOC.png",
          "category":"카드",
          "upgrade":0,
          "base":{
@@ -1787,7 +1787,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"황금빛 여우구슬",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOJ.png",
          "category":"여우구슬",
          "upgrade":0,
          "base":{
@@ -1805,36 +1805,12 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
          }
       }
 ```
-* 진리의 노바의 정수
-```json
-{
-         "name":"진리의 노바의 정수",
-         "imageUrl":,
-         "category":"용의 정수",
-         "upgrade":0,
-         "base":{
-            "str":10,
-            "dex":10,
-            "int":10,
-            "luk":10,
-            "def":30 
-         },
-         "scroll":{
-
-         },
-         "grade":"nothing",
-         "star":0,
-         "flame":{
-            
-         }
-      }
-```
 #### 2-1-5. 일반 보조무기(노바)
 * 진리의 노바의 정수
 ```json
 {
          "name":"진리의 노바의 정수",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJCOC.png",
          "category":"용의 정수",
          "upgrade":0,
          "base":{
@@ -1858,7 +1834,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"D100 커스텀 웨폰 벨트",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHPC.png",
          "category":"웨폰 벨트",
          "upgrade":0,
          "base":{
@@ -1880,7 +1856,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"트랜스미터 type:A",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIEOC.png",
          "category":"무기 전송장치",
          "upgrade":0,
          "base":{
@@ -1902,7 +1878,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"그린 소울링",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJBOF.png",
          "category":"소울링",
          "upgrade":0,
          "base":{
@@ -1928,7 +1904,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"노블 브레이슬릿",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHOC.png",
          "category":"브레이슬릿",
          "upgrade":0,
          "base":{
@@ -1950,7 +1926,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"글로리 매직윙",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHICOC.png",
          "category":"매직윙",
          "upgrade":0,
          "base":{
@@ -1972,7 +1948,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"인피니트 헥스시커",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHNH.png",
          "category":"헥스시커",
          "upgrade":0,
          "base":{
@@ -1994,7 +1970,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"얼티밋 패스",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIBOC.png",
          "category":"패스 오브 어비스",
          "upgrade":0,
          "base":{
@@ -2017,7 +1993,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"빛나는 사옥 노리개",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHMH.png",
          "category":"노리개",
          "upgrade":0,
          "base":{
@@ -2039,7 +2015,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"월장석 선추",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIPOH.png",
          "category":"선추",
          "upgrade":0,
          "base":{
@@ -2063,7 +2039,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"체스피스 디 퀸",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIFOC.png",
          "category":"체스피스",
          "upgrade":0,
          "base":{
@@ -2107,7 +2083,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"앱솔랩스 블레이드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMGJGOA.png",
          "category":"블레이드",
          "upgrade":0,
          "base":{
@@ -2128,7 +2104,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"아케인셰이드 블레이드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMGJGOF.png",
          "category":"블레이드",
          "upgrade":0,
          "base":{
@@ -2219,7 +2195,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"적녹의 서 <블랙>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNE.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -2614,7 +2590,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블랙 포스실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPC.png",
          "category":"포스실드",
          "upgrade":0,
          "base":{
@@ -2778,7 +2754,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블랙 여우구슬",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOH.png",
          "category":"여우구슬",
          "upgrade":0,
          "base":{
@@ -2944,7 +2920,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블랙 인피니트 헥스시커",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHNF.png",
          "category":"헥스시커",
          "upgrade":0,
          "base":{
@@ -2990,7 +2966,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블랙 사옥 노리개",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHMF.png",
          "category":"노리개",
          "upgrade":0,
          "base":{
@@ -3013,7 +2989,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"블랙 황수정 선추",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIPOF.png",
          "category":"선추",
          "upgrade":0,
          "base":{
@@ -3060,7 +3036,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이볼빙 버츄스 메달",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOD.png",
          "category":"메달",
          "upgrade":0,
          "base":{
@@ -3083,7 +3059,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이볼빙 세이크리드 로자리오",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPD.png",
          "category":"로자리오",
          "upgrade":0,
          "base":{
@@ -3106,7 +3082,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이볼빙 버서크 체인",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMD.png",
          "category":"쇠사슬",
          "upgrade":0,
          "base":{
@@ -3129,7 +3105,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이볼빙 적녹의 서 <종장>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNC.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -3152,7 +3128,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이볼빙 청은의 서 <종장>",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKD.png",
          "category":"마도서",
          "upgrade":0,
          "base":{
@@ -4412,7 +4388,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"메이플 트레져 포스실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPF.png",
          "category":"포스실드",
          "upgrade":0,
          "base":{
@@ -4574,7 +4550,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"메이플 트레져 여우구슬",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOG.png",
          "category":"여우구슬",
          "upgrade":0,
          "base":{
@@ -4671,7 +4647,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"데이모스 세이지 실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLJHHD.png",
          "category":"방패",
          "upgrade":0,
          "base":{
@@ -4735,7 +4711,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"루인 포스실드",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPE.png",
          "category":"포스실드",
          "upgrade":0,
          "base":{
