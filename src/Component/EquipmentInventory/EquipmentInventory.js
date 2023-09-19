@@ -8,6 +8,7 @@ export const Background = styled.div`
   padding: 0px;
   width: 230px;
   height: 354px;
+  border-radius: 7px;
   background-image: url('${BackgroundImg}');
 `
 
