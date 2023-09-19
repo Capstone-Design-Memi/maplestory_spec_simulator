@@ -8128,7 +8128,6 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
    }
  }
 ```
-* 카오스 핑크빈 마크
 * 파풀라투스 마크
 ```json
 {
@@ -8289,6 +8288,30 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```
 * 마이스터 이어링
 * 커맨드 포스 이어링
+```json
+{
+        "name": "커맨더 포스 이어링",
+        "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJEPH.png",
+        "category": "귀고리",
+        "upgrade": 0,
+        "base": {
+            "str": 7,
+            "dex": 7,
+            "int": 7,
+            "luk": 7,
+            "hp": 500,
+            "mp": 500,
+            "atk": 5,
+            "mAtk": 5,
+            "def": 100
+        },
+        "scroll": {},
+        "grade": "nothing",
+        "star": 0,
+        "flame": {},
+        "scissors": 5
+    }
+```
 ### 5-8. 뱃지
 * 크리스탈 웬투스 뱃지
 ```json
