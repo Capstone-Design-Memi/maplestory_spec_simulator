@@ -20,7 +20,7 @@ const ItemItem = () => {
   const v = allKeyMap.map((item) => {
     return (
       <InventoryWrap>
-        <img src={item[0].imageUrl} />
+        <img src={item[0]?.imageUrl} />
       </InventoryWrap>
     );
   });
@@ -80,7 +80,11 @@ const ItemItem = () => {
           borderRadius: "5px",
         }}
       >
-        <ItemBoxWrap>{v}</ItemBoxWrap>
+        {allKeys.length !== 0 ? (
+          <ItemBoxWrap>{v}</ItemBoxWrap>
+        ) : (
+          <>아이템이 없습니다</>
+        )}
       </div>
     </div>
   );
