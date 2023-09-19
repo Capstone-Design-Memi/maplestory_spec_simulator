@@ -15,7 +15,7 @@ const MakeItem = () => {
   });
   const testId = allKeys[allKeys.length - 1];
   useEffect(() => {
-    const testReplace = testId.replace("test", "");
+    const testReplace = testId?.replace("test", "");
     setItemId(parseInt(testReplace) + 1);
     console.log(itemId);
   }, []);
