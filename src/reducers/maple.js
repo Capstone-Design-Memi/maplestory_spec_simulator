@@ -1,0 +1,38 @@
+import produce from "immer";
+import {
+  LOAD_MAPLE_CHRACTER_REQUEST,
+  LOAD_MAPLE_CHRACTER_SUCCESS,
+  LOAD_MAPLE_CHRACTER_FAILURE,
+} from "../constants/actionTypes";
+
+export const initialState = {
+  loadMapleCharacterLoading: false, //
+  loadMapleCharacterDone: false,
+  loadMapleCharacterError: null,
+  Likers: [],
+};
+
+const reducer = (state = initialState, action) =>
+  produce(state, (draft) => {
+    switch (action.type) {
+      case LOAD_MAPLE_CHRACTER_REQUEST:
+        draft.loadMapleCharacterLoading = true;
+        draft.loadMapleCharacterDone = false;
+        draft.loadMapleCharacterError = null;
+        break;
+      case LOAD_MAPLE_CHRACTER_SUCCESS: {
+        draft.characterInfo = action.data;
+        draft.loadMapleCharacterLoading = false;
+        draft.loadMapleCharacterDone = true;
+        break;
+      }
+      case LOAD_MAPLE_CHRACTER_FAILURE:
+        draft.loadMapleCharacterLoading = false;
+        draft.loadMapleCharacterError = action.error;
+        break;
+      default:
+        return state;
+    }
+  });
+
+export default reducer;
