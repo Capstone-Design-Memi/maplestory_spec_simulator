@@ -110,10 +110,12 @@ https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELA.png
 * 앱솔랩스 엑스
 https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFOF.png
 * 앱솔랩스 비트해머
+https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png
 * 앱솔랩스 브로드세이버
 https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIB.png
 * 앱솔랩스 브로드엑스
 * 앱솔랩스 브로드해머
+https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png
 * 앱솔랩스 피어싱스피어
 https://avatar.maplestory.nexon.com/ItemIcon/KELBJFAF.png
 * 앱솔랩스 핼버드
@@ -207,7 +209,6 @@ https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
 https://avatar.maplestory.nexon.com/ItemIcon/KELCJFJA.png
 * 아케인셰이드 투핸드엑스
 * 아케인셰이드 투핸드해머
-https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
 * 아케인셰이드 스피어
 https://avatar.maplestory.nexon.com/ItemIcon/KELBJFMI.png
 * 아케인셰이드 폴암
@@ -457,7 +458,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKE.png
 ```json
 {
          "name":"제네시스 투핸드해머",
-         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIF.png",
+         "imageUrl":"",
          "category":"두손둔기 (두손무기)",
          "upgrade":0,
          "base":{
