@@ -24,11 +24,13 @@ const EnforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star, o
 
     return (
         <div style={{width:"300px", height:"700px",border:"1px solid lime"}}>
+            <div>
             <button onClick={onSub10Star} disabled={disable10Sub}>-10</button>
             <button onClick={onSubStar} disabled={disableSub}>-1</button>
             <span>{star}</span>
             <button onClick={onAddStar} disabled={disableAdd}>+1</button>
             <button onClick={onAdd10Star} disabled={disable10Add}>+10</button>
+            </div>
         </div>
     )
 }
