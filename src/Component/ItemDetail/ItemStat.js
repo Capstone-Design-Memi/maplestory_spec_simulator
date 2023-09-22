@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 //import { DefaultItems } from "../../Util/ItemDatas";
 import styled from 'styled-components';
 import Cover_img from '../../images/frame/cover.png';
@@ -54,32 +54,32 @@ export const DotLine = styled.div`
   background-image: url('${DotLine_img}');
 `
 
-const ItemStat = () => {
+const ItemStat = ({item,extraInfo}) => {
   return (
     <Wrapper>
       <TopFrame/>
-      <StarLine currentStar={itemEx.star} maxStar={otherInformation.maxStar}/>
+      <StarLine currentStar={item.star} maxStar={extraInfo.maxStar}/>
       <Line3/>
-      <ItemName name={itemEx.name}/>
-      <ItemGrade grade={itemEx.grade}/>
+      <ItemName name={item.name}/>
+      <ItemGrade grade={item.grade}/>
       <EquipDisable/>
       <Line7/>
       <DotLine/>
       <Line7/>
       <Line3/>
-      <ItemImagePart grade={itemEx.grade}
-                     imgUrl={itemEx.imageUrl}
-                     stateChageAmount={otherInformation.stateChageAmount}
-                     reqLev={otherInformation.reqLev}/>
+      <ItemImagePart grade={item.grade}
+                     imgUrl={item.imageUrl}
+                     stateChageAmount={extraInfo.stateChageAmount}
+                     reqLev={extraInfo.reqLev}/>
       <ZeroPersent/>
       <JobLine/>
       <Line7/>
       <DotLine/>
       <Line3/>
-      <BaseAndFlame category={itemEx.category} base={itemEx.base} flame={itemEx.flame} scroll={itemEx.scroll}/>
+      <BaseAndFlame category={item.category} base={item.base} flame={item.flame} scroll={item.scroll}/>
       <Line7/>
       <DotLine/>
-      <PotentialLine grade={itemEx.grade} potential={itemEx.potential}/>
+      <PotentialLine grade={item.grade} potential={item.potential}/>
       <Line7/>
       <BottomFrame/>
     </Wrapper>
@@ -92,52 +92,52 @@ const otherInformation = {
   reqLev : 150
 }
 
-const itemEx = {
-  "name": "데아 시두스 이어링",
-  "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
-  "category": "귀고리",
-  "upgrade": 0,
-  "base": {
-      "str": 5,
-      "dex": 5,
-      "int": 5,
-      "luk": 5,
-      "atk": 2,
-      "mAtk": 2,
-      "def": 50
-  },
-  "scroll": {
-      "str": 75,
-      "dex": 75,
-      "int": 75,
-      "luk": 75,
-      "atk": 45,
-      "mAtk": 45,
-      "def": 99
-  },
-  "grade": "legendary",
-  "star": 20,
-  "potential": {
-      "grade": "legendary",
-      "effects": [
-          {
-              "allStatP": 9
-          },
-          {
-              "lukP": 9
-          },
-          {
-              "lukP": 9
-          }
-      ]
-  },
-  "flame": {
-      "luk": 21,
-      "mp": 1950,
-      "speed": 4,
-      "allStatP": 6
-  }
-}
+// const itemEx = {
+//   "name": "데아 시두스 이어링",
+//   "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
+//   "category": "귀고리",
+//   "upgrade": 0,
+//   "base": {
+//       "str": 5,
+//       "dex": 5,
+//       "int": 5,
+//       "luk": 5,
+//       "atk": 2,
+//       "mAtk": 2,
+//       "def": 50
+//   },
+//   "scroll": {
+//       "str": 75,
+//       "dex": 75,
+//       "int": 75,
+//       "luk": 75,
+//       "atk": 45,
+//       "mAtk": 45,
+//       "def": 99
+//   },
+//   "grade": "legendary",
+//   "star": 20,
+//   "potential": {
+//       "grade": "legendary",
+//       "effects": [
+//           {
+//               "allStatP": 9
+//           },
+//           {
+//               "lukP": 9
+//           },
+//           {
+//               "lukP": 9
+//           }
+//       ]
+//   },
+//   "flame": {
+//       "luk": 21,
+//       "mp": 1950,
+//       "speed": 4,
+//       "allStatP": 6
+//   }
+// }
 
 const itemEx2 = {
   name: "하이네스 원더러햇",

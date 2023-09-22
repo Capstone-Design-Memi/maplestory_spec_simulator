@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ItemStat from "../Component/ItemDetail/ItemStat";
 import { DefaultItems } from "../Util/ItemDatas";
+import Enforce from "../Component/Enforce/Enforce";
 
 const MakeItem = () => {
   const [itemId, setItemId] = useState(0);
@@ -38,7 +39,7 @@ const MakeItem = () => {
         <Form.Item label="makeItem" name="makeItem">
           <Cascader options={DefaultItems} />
         </Form.Item>
-
+        <Enforce/>
         <Form.Item>
           <Button type="primary" htmlType="submit">
             제작
