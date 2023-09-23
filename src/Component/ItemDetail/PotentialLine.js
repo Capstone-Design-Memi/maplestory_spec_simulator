@@ -196,8 +196,8 @@ const PotentialLine = (props) => {
                 }
                 outputArr.push(<NextLine/>)
             }
-            console.log(key2);
-            console.log(potential[key1][key2]);
+            // console.log(key2);
+            // console.log(potential[key1][key2]);
         }
     }
     return(

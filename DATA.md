@@ -36,84 +36,1519 @@
 ### 1-1. 파프니르 무기
 #### 1-1-1. 파프니르 무기(전사)
 * 파프니르 미스틸테인
-https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELC.png
+```json
+{
+   "name":"파프니르 미스틸테인",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELC.png",
+   "category":"한손검 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":164,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 트윈클리버
-https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png
+```json
+{
+   "name":"파프니르 트윈클리버",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png",
+   "category":"한손도끼 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":164,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 골디언해머
-https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFID.png
+```json
+{
+   "name":"파프니르 골디언해머",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFID.png",
+   "category":"한손둔기 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":164,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 페니텐시아
-https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIH.png
+```json
+{
+   "name":"파프니르 페니텐시아",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIH.png",
+   "category":"두손검 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 배틀클리버
+```json
+{
+   "name":"파프니르 배틀클리버",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png",
+   "category":"두손도끼 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 라이트닝어
+```json
+{
+   "name":"파프니르 라이트닝어",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELAJGKB.png",
+   "category":"두손둔기 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 브류나크
+```json
+{
+   "name":"파프니르 브류나크",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFME.png",
+   "category":"창 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 문글레이브
+```json
+{
+   "name":"파프니르 문글레이브",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFGC.png",
+   "category":"폴암 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":153,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 데스브링어
+```json
+{
+   "name":"파프니르 데스브링어",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGMC.png",
+   "category":"데스페라도 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "hp":2000,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 빅 마운틴
+```json
+{
+   "name":"파프니르 빅 마운틴",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHKD.png",
+   "category":"건틀렛 리볼버 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":128,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 포기브니스
+```json
+{
+   "name":"파프니르 포기브니스",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHNI.png",
+   "category":"튜너 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":171,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-1-2. 파프니르 무기(궁수)
 * 파프니르 윈드체이서
+```json
+{
+   "name":"파프니르 윈드체이서",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIF.png",
+   "category":"활 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 윈드윙슈터
+```json
+{
+   "name":"파프니르 윈드윙슈터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFLH.png",
+   "category":"석궁 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":164,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 듀얼윈드윙
-* 파프니르 에이션트 보우
+```json
+{
+   "name":"파프니르 듀얼윈드윙",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGLC.png",
+   "category":"듀얼 보우건 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
+* 파프니르 에인션트 보우
+```json
+{
+   "name":"파프니르 에인션트 보우",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMI.png",
+   "category":"에인션트 보우 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 나이트체이서
+```json
+{
+   "name":"파프니르 나이트체이서",
+   "imageUrl":"",
+   "category":"브레스 슈터 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-1-3. 파프니르 무기(마법사)
 * 파프니르 마나테이커
+```json
+{
+   "name":"파프니르 마나테이커",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFNE.png",
+   "category":"완드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "atk":119,
+      "mAtk":201,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 마나크라운
+```json
+{
+   "name":"파프니르 마나크라운",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFJJ.png",
+   "category":"스테프 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "atk":126,
+      "mAtk":204,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 마나크래들
+```json
+{
+   "name":"파프니르 마나크래들",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGNB.png",
+   "category":"샤아닝 로드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "atk":119,
+      "mAtk":201,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 ESP리미터
+```json
+{
+   "name":"파프니르 ESP리미터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHLH.png",
+   "category":"ESP리미터 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "atk":119,
+      "mAtk":201,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 매직 건틀렛
+```json
+{
+   "name":"파프니르 매직 건틀렛",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHKA.png",
+   "category":"매직 건틀렛 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":40,
+      "luk":40,
+      "atk":119,
+      "mAtk":201,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-1-4. 파프니르 무기(도적)
 * 파프니르 다마스커스
+```json
+{
+   "name":"파프니르 다마스커스",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGG.png",
+   "category":"단검 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 리스크홀더
+```json
+{
+   "name":"파프니르 리스크홀더",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFJC.png",
+   "category":"아대 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":86,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 클레르시엘
+```json
+{
+   "name":"파프니르 클레르시엘",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKG.png",
+   "category":"케인 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":164,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 스플릿엣지
+```json
+{
+   "name":"파프니르 스플릿엣지",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKC.png",
+   "category":"에너지소드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":128,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 체인
+```json
+{
+   "name":"파프니르 체인",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHKA.png",
+   "category":"체인 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 용선
+```json
+{
+   "name":"파프니르 용선",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHNI.png",
+   "category":"부채 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 차크람
-#### 1-1-5. 파프니르 무기(도적)
+```json
+{
+   "name":"파프니르 차크람",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPH.png",
+   "category":"차크람 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
+#### 1-1-5. 파프니르 무기(해적)
 * 파프니르 첼리스카
+```json
+{
+   "name":"파프니르 첼리스카",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFKC.png",
+   "category":"건 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":125,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 펜리르탈론
+```json
+{
+   "name":"파프니르 펜리르탈론",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFNB.png",
+   "category":"너클 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":128,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 러스터캐논
+```json
+{
+   "name":"파프니르 러스터캐논",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGLE.png",
+   "category":"핸드캐논 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":175,
+      "def":121,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 엔젤릭슈터
+```json
+{
+   "name":"파프니르 엔젤릭슈터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGMB.png",
+   "category":"소울 슈터 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":40,
+      "dex":40,
+      "atk":128,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 파프니르 스플릿엣지
+```json
+{
+   "name":"파프니르 스플릿엣지",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKC.png",
+   "category":"에너지소드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":40,
+      "luk":40,
+      "atk":128,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 ### 1-2. 앱솔랩스 무기
 #### 1-2-1. 앱솔랩스 무기(전사)
 * 앱솔랩스 세이버
-https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELA.png
+```json
+{
+   "name":"앱솔랩스 세이버",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELA.png",
+   "category":"한손검 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":197,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 엑스
+```json
+{
+   "name":"앱솔랩스 엑스",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFOF.png",
+   "category":"한손도끼 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":197,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 비트해머
+```json
+{
+   "name":"앱솔랩스 비트해머",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png",
+   "category":"한손둔기 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":197,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 브로드세이버
-https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIB.png
+```json
+{
+   "name":"앱솔랩스 브로드세이버",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIB.png",
+   "category":"두손검 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 브로드엑스
+```json
+{
+   "name":"앱솔랩스 브로드엑스",
+   "imageUrl":"",
+   "category":"두손도끼 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 브로드해머
+```json
+{
+   "name":"앱솔랩스 브로드해머",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png",
+   "category":"두손둔기 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 피어싱스피어
+```json
+{
+   "name":"앱솔랩스 피어싱스피어",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFAF.png",
+   "category":"창 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 핼버드
+```json
+{
+   "name":"앱솔랩스 핼버드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFIJ.png",
+   "category":"폴암 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":184,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 데스페라도
+```json
+{
+   "name":"앱솔랩스 데스페라도",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGAF.png",
+   "category":"데스페라도 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "hp":2250,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 파일 갓
+```json
+{
+   "name":"앱솔랩스 파일 갓",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHAG.png",
+   "category":"건틀렛 리볼버 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":154,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 튜너
-KENDIHMJ
+```json
+{
+   "name":"앱솔랩스 튜너",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHMJ.png",
+   "category":"튜너 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":205,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-2-2. 앱솔랩스 무기(궁수)
 * 앱솔랩스 슈팅보우
+```json
+{
+   "name":"앱솔랩스 슈팅보우",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFLD.png",
+   "category":"활 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":192,
+      "speed":12,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 크로스보우
+```json
+{
+   "name":"앱솔랩스 크로스보우",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFKF.png",
+   "category":"석궁 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":197,
+      "speed":15,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 듀얼보우건
-* 앱솔랩스 에이션트 보우
+```json
+{
+   "name":"앱솔랩스 듀얼보우건",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGKF.png",
+   "category":"듀얼 보우건 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":192,
+      "speed":15,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
+* 앱솔랩스 에인션트 보우
+```json
+{
+   "name":"앱솔랩스 에인션트 보우",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMJ.png",
+   "category":"에인션트 보우 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":192,
+      "speed":12,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 브레스 슈터
+```json
+{
+   "name":"앱솔랩스 브레스 슈터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDPHMJ.png",
+   "category":"브레스 슈터 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":192,
+      "speed":12,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-2-3. 앱솔랩스 무기(마법사)
 * 앱솔랩스 스펠링완드
+```json
+{
+   "name":"앱솔랩스 스펠링완드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFMI.png",
+   "category":"완드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":60,
+      "luk":60,
+      "atk":143,
+      "mAtk":241,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 스펠링스태프
+```json
+{
+   "name":"앱솔랩스 스펠링스태프",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFIH.png",
+   "category":"스태프 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":60,
+      "luk":60,
+      "atk":151,
+      "mAtk":245,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 샤이닝로드
+```json
+{
+   "name":"앱솔랩스 샤이닝로드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGAE.png",
+   "category":"샤이닝 로드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":60,
+      "luk":60,
+      "atk":143,
+      "mAtk":241,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 ESP리미터
+```json
+{
+   "name":"앱솔랩스 ESP리미터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHAG.png",
+   "category":"ESP 리미터 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":60,
+      "luk":60,
+      "atk":143,
+      "mAtk":241,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 매직 건틀렛
+```json
+{
+   "name":"앱솔랩스 매직 건틀렛",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHAH.png",
+   "category":"매직 건틀렛 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "int":60,
+      "luk":60,
+      "atk":143,
+      "mAtk":241,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-2-4. 앱솔랩스 무기(도적)
 * 앱솔랩스 슬래셔
+```json
+{
+   "name":"앱솔랩스 슬래셔",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGB.png",
+   "category":"단검 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":60,
+      "luk":60,
+      "atk":192,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 리벤지가즈
+```json
+{
+   "name":"앱솔랩스 리벤지가즈",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFIA.png",
+   "category":"아대 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":60,
+      "luk":60,
+      "atk":103,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 핀쳐케인
+```json
+{
+   "name":"앱솔랩스 핀쳐케인",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKA.png",
+   "category":"케인 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":60,
+      "luk":60,
+      "atk":197,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 에너지소드
+```json
+{
+   "name":"앱솔랩스 에너지소드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGMB.png",
+   "category":"에너지소드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":154,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 체인
+```json
+{
+   "name":"앱솔랩스 체인",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHMA.png",
+   "category":"체인 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":192,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 괴선
+```json
+{
+   "name":"앱솔랩스 괴선",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHMJ.png",
+   "category":"부채 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":60,
+      "luk":60,
+      "atk":192,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 차크람
+```json
+{
+   "name":"앱솔랩스 차크람",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPG.png",
+   "category":"차크람 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "dex":60,
+      "luk":60,
+      "atk":192,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-2-5. 앱솔랩스 무기(해적)
 * 앱솔랩스 포인팅건
+```json
+{
+   "name":"앱솔랩스 포인팅건",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFNA.png",
+   "category":"건 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":150,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 앱솔랩스 블로우너클
 ```json
 {
@@ -139,30 +1574,350 @@ KENDIHMJ
  }
 ```
 * 앱솔랩스 블래스트캐논
+```json
+{
+   "name":"앱솔랩스 블래스트캐논",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGKF.png",
+   "category":"핸드캐논 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":210,
+      "def":160,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 앱솔랩스 소울슈터
+```json
+{
+   "name":"앱솔랩스 소울슈터",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGAF.png",
+   "category":"소울슈터 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":154,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+```
 * 앱솔랩스 에너지소드
+```json
+{
+   "name":"앱솔랩스 에너지소드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGMB.png",
+   "category":"에너지소드 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":60,
+      "dex":60,
+      "atk":154,
+      "bossDmg":30,
+      "ignoreDef":10
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 ### 1-3. 아케인셰이드 무기
 #### 1-3-1. 아케인셰이드 무기(전사)
 * 아케인셰이드 세이버
-https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELI.png
+```json
+{
+   "name":"아케인셰이드 세이버",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELI.png",
+   "category":"한손검 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":283,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 엑스
-https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPE.png
+```json
+{
+   "name":"아케인셰이드 엑스",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPE.png",
+   "category":"한손도끼 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":283,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 해머
-https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
+```json
+{
+   "name":"아케인셰이드 해머",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png",
+   "category":"한손둔기 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":283,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 투핸드소드
+```json
+{
+   "name":"아케인셰이드 투핸드소드",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFJA.png",
+   "category":"두손검 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":295,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 투핸드엑스
+```json
+{
+   "name":"아케인셰이드 투핸드엑스",
+   "imageUrl":"",
+   "category":"두손도끼 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":295,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 투핸드해머
+```json
+{
+   "name":"아케인셰이드 투핸드해머",
+   "imageUrl":"",
+   "category":"두손둔기 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":295,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 스피어
+```json
+{
+   "name":"아케인셰이드 스피어",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFMI.png",
+   "category":"창 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":295,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 폴암
+```json
+{
+   "name":"아케인셰이드 폴암",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFGG.png",
+   "category":"폴암 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":264,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 데스페라도
+```json
+{
+   "name":"아케인셰이드 데스페라도",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGMF.png",
+   "category":"데스페라도 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "hp":2500,
+      "atk":264,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 엘라하
+```json
+{
+   "name":"아케인셰이드 엘라하",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHKH.png",
+   "category":"건틀렛 리볼버 (두손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":221,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 * 아케인셰이드 튜너
+```json
+{
+   "name":"아케인셰이드 튜너",
+   "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHNB.png",
+   "category":"튜너 (한손무기)",
+   "upgrade":0,
+   "base":{
+      "str":100,
+      "dex":100,
+      "atk":295,
+      "bossDmg":30,
+      "ignoreDef":20
+   },
+   "scroll":{
+
+   },
+   "grade":"unique",
+   "star":0,
+   "flame":{
+
+   }
+ }
+ ```
 #### 1-3-2. 아케인셰이드 무기(궁수)
 * 아케인셰이드 보우
 ```json
    {
       "name":"아케인셰이드 보우",
-         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIE.png",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFII.png",
          "category":"활 (두손무기)",
          "upgrade":0,
          "base":{
@@ -185,15 +1940,215 @@ https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
       }
 ```
 * 아케인셰이드 크로스보우
+```json
+   {
+      "name":"아케인셰이드 크로스보우",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFLF.png",
+         "category":"석궁 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":283,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 듀얼보우건
-* 아케인 에인션트 보우
+```json
+   {
+      "name":"아케인셰이드 듀얼보우건",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGLF.png",
+         "category":"듀얼 보우건 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":276,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
+* 아케인셰이드 에인션트 보우
+```json
+   {
+      "name":"아케인셰이드 에인션트 보우",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMB.png",
+         "category":"에인션트 보우 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":276,
+            "speed":19,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 브레스 슈터
 #### 1-3-3. 아케인셰이드 무기(마법사)
 * 아케인셰이드 완드
+```json
+   {
+      "name":"아케인셰이드 완드",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFNI.png",
+         "category":"완드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":100,
+            "luk":100,
+            "atk":206,
+            "mAtk":347,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 스태프
+```json
+   {
+      "name":"아케인셰이드 스태프",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFJH.png",
+         "category":"스태프 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":100,
+            "luk":100,
+            "atk":216,
+            "mAtk":353,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 샤이닝로드
-* 아케인셰이드 ESP 리미터
+```json
+   {
+      "name":"아케인셰이드 샤이닝로드",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGNA.png",
+         "category":"샤이닝 로드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":100,
+            "luk":100,
+            "atk":206,
+            "mAtk":347,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
+* 아케인셰이드 ESP리미터
+```json
+   {
+      "name":"아케인셰이드 ESP 리미터",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHLC.png",
+         "category":"ESP 리미터 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":100,
+            "luk":100,
+            "atk":206,
+            "mAtk":347,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 * 아케인셰이드 매직 건틀렛
+```json
+   {
+      "name":"아케인셰이드 매직 건틀렛",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHKC.png",
+         "category":"매직 건틀렛 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "int":100,
+            "luk":100,
+            "atk":206,
+            "mAtk":347,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+         },
+         "grade":"none",
+         "star":0,
+         "flame":{
+         },
+         "soul":{
+         },
+         "scissors":10
+      }
+```
 #### 1-3-4. 아케인셰이드 무기(도적)
 * 아케인셰이드 대거
 ```json
@@ -220,18 +2175,271 @@ https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png
       }
 ```
 * 아케인셰이드 가즈
+```json
+{
+         "name":"아케인셰이드 가즈",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFJG.png",
+         "category":"아대 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":149,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 케인
+```json
+{
+         "name":"아케인셰이드 케인",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKB.png",
+         "category":"케인 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":283,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 에너지체인
+```json
+{
+         "name":"아케인셰이드 에너지체인",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKE.png",
+         "category":"에너지소드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":221,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 체인
+```json
+{
+         "name":"아케인셰이드 체인",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHKC.png",
+         "category":"체인 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":276,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 초선
+```json
+{
+         "name":"아케인셰이드 초선",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHNB.png",
+         "category":"부채 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":276,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 차크람
+```json
+{
+         "name":"아케인셰이드 차크람",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPJ.png",
+         "category":"차크람 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "dex":100,
+            "luk":100,
+            "atk":276,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 #### 1-3-5. 아케인셰이드 무기(해적)
 * 아케인셰이드 피스톨
+```json
+{
+         "name":"아케인셰이드 피스톨",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFKG.png",
+         "category":"건 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":216,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 클로
-https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
+```json
+{
+         "name":"아케인셰이드 피스톨",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png",
+         "category":"건 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":216,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 시즈건
+```json
+{
+         "name":"아케인셰이드 시즈건",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGLB.png",
+         "category":"핸드캐논 (두손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":302,
+            "def":200,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 소울슈터
+```json
+{
+         "name":"아케인셰이드 소울슈터",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGMF.png",
+         "category":"소울 슈터 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":221,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 * 아케인셰이드 에너지체인
+```json
+{
+         "name":"아케인셰이드 에너지체인",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKE.png",
+         "category":"에너지소드 (한손무기)",
+         "upgrade":0,
+         "base":{
+            "str":100,
+            "dex":100,
+            "atk":221,
+            "bossDmg":30,
+            "ignoreDef":20
+         },
+         "scroll":{
+            
+         },
+         "grade":"nothing",
+         "star":0,
+         "flame":{
+            
+         }
+      }
+```
 ### 1-4. 제네시스 무기
 #### 1-4-1. 제네시스 무기(전사)
 * 제네시스 세이버
@@ -378,7 +2586,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"제네시스 투핸드해머",
-         "imageUrl":"https://i.namu.wiki/i/CSw9UoC0iFmL03503Sq_1JD9NUrqEvbXrJw_NCYq6_CGsg7ahJzz5NjfJN9t8pypjtQiOtLzoqYhgZJcgA412Q.png",
+         "imageUrl":"",
          "category":"두손둔기 (두손무기)",
          "upgrade":0,
          "base":{
@@ -518,7 +2726,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"제네시스 튜너",
-         "imageUrl":"imageUrl:https://avatar.maplestory.nexon.com/ItemIcon/KENDIHMD.png",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHMD.png",
          "category":"튜너 (한손무기)",
          "upgrade":0,
          "base":{
@@ -755,7 +2963,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"제네시스 샤이닝로드",
-         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGNE.png",
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGMI.png",
          "category":"샤이닝 로드 (한손무기)",
          "upgrade":0,
          "base":{
@@ -4714,7 +6922,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 시그너스 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLPOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4739,7 +6947,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 레지스탕스 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLBOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4764,7 +6972,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 데몬 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLAOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4790,7 +6998,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"하이브리드 하트",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLFOA.png",
          "category":"파워소스",
          "upgrade":0,
          "base":{
@@ -4814,7 +7022,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 히어로즈 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCPA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4839,7 +7047,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"드래곤 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLHOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4862,7 +7070,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 히트맨 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLF.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4887,7 +7095,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 에이전트 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCNB.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4912,7 +7120,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"엔젤 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLGOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4936,7 +7144,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 나이트 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLD.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4961,7 +7169,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 크리스탈 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCND.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -4986,7 +7194,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 체이서 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCIC.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -5011,7 +7219,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 어비스 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCKB.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -5036,7 +7244,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"금빛 풍수사 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCIA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -5061,7 +7269,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"금빛 천지인 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLB.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -5086,7 +7294,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"이터널 타임 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLOOB.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -5111,7 +7319,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```json
 {
          "name":"골드 키네시스 엠블렘",
-         "imageUrl":,
+         "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLKHOA.png",
          "category":"엠블렘",
          "upgrade":0,
          "base":{
@@ -6260,7 +8468,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```
 * 앱솔랩스 아처글러브
 ```json
-      {
+{
          "name":"앱솔랩스 아처글러브",
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
@@ -6271,14 +8479,14 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
             "atk":5,
             "def":150
          },
-         "scroll":
+         "scroll":{
          },
          "grade":"nothing",
          "star":0,
          "flame":{
          },
          "scissors":10
-      }
+}
 ```
 * 앱솔랩스 메이지글러브
 ```json
@@ -7236,6 +9444,27 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ## 5. 장신구
 ### 5-1. 반지
 * 실버블라썸 링
+```json
+{
+   "name": "실버블라썸 링",
+   "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIGKI.png",
+   "category": "반지",
+   "upgrade": 0,
+   "base": {
+         "str": 5,
+         "dex": 5,
+         "int": 5,
+         "luk": 5,
+         "atk": 2,
+         "mAtk": 2
+         },
+   "scroll": {
+   },
+   "grade": "nothing",
+   "star": 0,
+   "flame": {}
+        }
+```
 * 고귀한 이피아의 반지
 ```json
 {
@@ -7256,7 +9485,7 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
       
@@ -7504,8 +9733,86 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ### 5-2. 포켓아이템
 * 핑크빛 성배
 * 저주받은 적의 마도서
+```json
+{
+    "name":"저주받은 적의 마도서",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGB.png",
+    "category":"포켓 아이템",
+    "upgrade":0,
+    "base":{
+       "str":20,
+       "dex":10,
+       "int":10,
+       "luk":10,
+       "hp":100,
+       "mp":100,
+       "atk":10,
+       "mAtk":10
+    },
+    "scroll":{
+       
+    },
+    "grade":"nothing",
+    "star":0,
+    "flame":{
+  
+    }
+ }
+```
 * 저주받은 녹의 마도서
+```json
+{
+    "name":"저주받은 녹의 마도서",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGD.png",
+    "category":"포켓 아이템",
+    "upgrade":0,
+    "base":{
+       "str":10,
+       "dex":20,
+       "int":10,
+       "luk":10,
+       "hp":100,
+       "mp":100,
+       "atk":10,
+       "mAtk":10
+    },
+    "scroll":{
+       
+    },
+    "grade":"nothing",
+    "star":0,
+    "flame":{
+  
+    }
+ }
+```
 * 저주받은 청의 마도서
+```json
+{
+    "name":"저주받은 청의 마도서",
+    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGA.png",
+    "category":"포켓 아이템",
+    "upgrade":0,
+    "base":{
+       "str":10,
+       "dex":10,
+       "int":20,
+       "luk":10,
+       "hp":100,
+       "mp":100,
+       "atk":10,
+       "mAtk":10
+    },
+    "scroll":{
+       
+    },
+    "grade":"nothing",
+    "star":0,
+    "flame":{
+  
+    }
+ }
+```
 * 저주받은 황의 마도서
 ```json
 {
@@ -7534,7 +9841,6 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
  }
 ```
 ### 5-3. 펜던트
-* 카오스 혼테일의 목걸이
 * 매커네이터 펜던트
 ```json
    {"name":"매커네이터 펜던트",
@@ -8102,6 +10408,27 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 ```
 ### 5-6. 눈장식
 * 아쿠아틱 레터 눈장식
+```json
+{
+    "name": "아쿠아틱 레터 눈장식",
+    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFNA.png",
+    "category": "눈장식",
+    "upgrade": 0,
+    "base": {
+        "str": 6,
+        "dex": 6,
+        "int": 6,
+        "luk": 6,
+        "atk": 1,
+        "mAtk": 1,
+        "def": 100
+    },
+    "scroll": {},
+    "grade": "nothing",
+    "star": 0,
+    "flame": {}
+}
+```
 * 블랙빈 마크
 ```json
 {
@@ -8286,7 +10613,6 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
         "scissors": 5
     }
 ```
-* 마이스터 이어링
 * 커맨드 포스 이어링
 ```json
 {
@@ -8390,6 +10716,29 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
 }
 ```
 ### 5-9. 훈장
+* ♣메이플 모멘트리♣
+```json
+{
+    "name": "♣메이플 모멘트리♣",
+    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOGIFIH.png",
+    "category": "훈장",
+    "upgrade": 0,
+    "base": {
+        "str": 19,
+        "dex": 19,
+        "int": 19,
+        "luk": 19,
+        "hp": 950,
+        "mp": 950,
+        "atk": 7,
+        "mAtk": 7
+    },
+    "scroll": {},
+    "grade": "nothing",
+    "star": 0,
+    "flame": {}
+}
+```
 * 본 투 비 레 드
 ```json
 {
@@ -8413,6 +10762,28 @@ https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png
         "star": 0,
         "flame": {}
     }
+```
+* 칠요의 몬스터파커
+```json
+{
+    "name": "칠요의 몬스터파커",
+    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOGJOMD.png",
+    "category": "훈장",
+    "upgrade": 0,
+    "base": {
+        "str": 7,
+        "dex": 7,
+        "int": 7,
+        "luk": 7,
+        "atk": 7,
+        "mAtk": 7,
+        "ignoreDef": 10
+    },
+    "scroll": {},
+    "grade": "nothing",
+    "star": 0,
+    "flame": {}
+}
 ```
 ### 5-10. 기계심장
 * 페어리 하트
