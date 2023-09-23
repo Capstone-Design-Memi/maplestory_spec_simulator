@@ -8,9 +8,17 @@ const Main = () => {
   return (
     <div>
       <h2>메인</h2>
-      <EquipmentInventory />
-      <StatWindow />
-      <ItemList />
+      <Row>
+        <Col>
+          <EquipmentInventory />
+        </Col>
+        <Col>
+          <ItemList />
+        </Col>
+        {/* <Col>
+          <StatWindow />
+        </Col> */}
+      </Row>
     </div>
   );
 };
