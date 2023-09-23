@@ -54,7 +54,7 @@ export const DotLine = styled.div`
   background-image: url("${DotLine_img}");
 `;
 
-const ItemStat = ({ item, extraInfo }) => {
+const ItemStat = ({ item, extraInfo, eqItem }) => {
   return (
     <Wrapper>
       <TopFrame />

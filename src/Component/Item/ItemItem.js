@@ -3,11 +3,15 @@ import { ChractersInfo } from "../../Util/CharatersData";
 import { DefaultItems } from "../../Util/ItemDatas";
 import { InventoryWrap, ItemBoxWrap } from "../../Style/Item";
 import { useCookies } from "react-cookie";
+import { Modal } from "antd";
+import StatWindow from "../Stat/StatWindow";
+import ItemStat from "../ItemDetail/ItemStat";
 
 const ItemItem = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
+  const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const inventoryItem = DefaultItems;
 
@@ -19,14 +23,33 @@ const ItemItem = () => {
 
   const v = allKeyMap.map((item) => {
     return (
-      <InventoryWrap>
+      <InventoryWrap
+        onMouseOver={() => {
+          setHoverItem(item);
+          setHover(true);
+        }}
+        onMouseOut={() => {
+          setHoverItem();
+          setHover(false);
+        }}
+      >
         <img src={item[0]?.imageUrl} />
       </InventoryWrap>
     );
   });
   const testInventoryItem = inventoryItem.map((it) => {
     return (
-      <InventoryWrap>
+      <InventoryWrap
+        onMouseOver={() => {
+          setHoverItem(it);
+          setHover(true);
+          console.log(hover);
+        }}
+        onMouseOut={() => {
+          setHoverItem();
+          setHover(false);
+        }}
+      >
         <img src={it.imageUrl} />
       </InventoryWrap>
     );
@@ -47,25 +70,22 @@ const ItemItem = () => {
   // 데이터가 JSON형태로 들어가 있어 가져올떄는 파싱을 통해 객체로 가져옴
   // const testLocal = JSON.parse(localStorage.getItem("test"));
   // console.log(testLocal);
+
+  // const testEqItems = testCharacterData.
+  const testEquiItems = ChractersInfo[0].equipments;
+  const testEquiItemMap = testEquiItems?.map((item) => {
+    if (item.category == allKeyMap[0][0].category) {
+      return item;
+    }
+  });
+
+  const testEqiItem = testEquiItemMap.filter(
+    (element) => element !== undefined
+  );
+
+  useEffect(() => {}, []);
   return (
     <div>
-      <button
-        onClick={() => {
-          // 객체를 localstorage에 담을 때 object로 저장이 되어 객체를 JSON형태로 파싱
-          localStorage.setItem("test", JSON.stringify({ inventoryItem }));
-        }}
-      >
-        로컬 생성
-      </button>
-      <button
-        onClick={() => {
-          localStorage.removeItem("test");
-        }}
-      >
-        로컬 삭제
-      </button>
-      <h3>장착비교</h3>
-      <div></div>
       <h3>인벤</h3>
       <div
         style={{
@@ -83,9 +103,16 @@ const ItemItem = () => {
         {allKeys.length !== 0 ? (
           <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
-          <>아이템이 없습니다</>
+          <div style={{ width: "120px" }}>아이템이 없습니다</div>
         )}
       </div>
+      {hover ? (
+        <div>
+          <StatWindow item={hoverItem[0]} eqItem={testEqiItem[0]} />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
