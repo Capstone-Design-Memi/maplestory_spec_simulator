@@ -52,7 +52,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -76,7 +76,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -100,7 +100,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -124,7 +124,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -148,7 +148,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -172,7 +172,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -196,7 +196,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -220,7 +220,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -244,7 +244,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -268,7 +268,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -292,7 +292,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -317,7 +317,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -341,7 +341,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -365,7 +365,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -389,7 +389,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -413,7 +413,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -439,7 +439,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -464,7 +464,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -489,7 +489,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -514,7 +514,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -539,7 +539,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -564,7 +564,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -588,7 +588,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -612,7 +612,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -636,7 +636,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -660,7 +660,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -684,7 +684,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -708,7 +708,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -733,7 +733,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -757,7 +757,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -782,7 +782,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -806,7 +806,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -830,7 +830,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -856,7 +856,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -880,7 +880,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -904,7 +904,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -928,7 +928,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -952,7 +952,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -976,7 +976,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1000,7 +1000,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1024,7 +1024,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1048,7 +1048,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1072,7 +1072,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1096,7 +1096,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1122,7 +1122,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1147,7 +1147,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1172,7 +1172,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1197,7 +1197,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1222,7 +1222,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1248,7 +1248,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1273,7 +1273,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1298,7 +1298,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1323,7 +1323,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1348,7 +1348,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1373,7 +1373,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1397,7 +1397,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1421,7 +1421,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1445,7 +1445,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1469,7 +1469,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1493,7 +1493,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1517,7 +1517,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1542,7 +1542,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1566,7 +1566,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1591,7 +1591,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1615,7 +1615,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -1639,7 +1639,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -7483,7 +7483,7 @@
          "scroll":{
 
          },
-         "grade":"legendary",
+         "grade":"nothing",
          "star":0,
          "flame":{
 
@@ -7535,7 +7535,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -7587,7 +7587,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -8008,7 +8008,7 @@
       "scroll":{
 
       },
-      "grade":"legendary",
+      "grade":"nothing",
       "star":0,
       "flame":{
    
@@ -8033,7 +8033,7 @@
     "scroll":{
      
     },
-    "grade":"legendary",
+    "grade":"nothing",
     "star":0,
     "flame":{
 
@@ -8058,7 +8058,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -8234,7 +8234,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -8259,7 +8259,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -8283,7 +8283,7 @@
    "scroll":{
 
    },
-   "grade":"legendary",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
@@ -8308,7 +8308,7 @@
    "scroll":{
 
    },
-   "grade":"unique",
+   "grade":"nothing",
    "star":0,
    "flame":{
 
