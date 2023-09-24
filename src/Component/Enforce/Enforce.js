@@ -2,13 +2,17 @@ import React from "react";
 import styled from 'styled-components';
 import {useState, useEffect} from "react";
 import ItemStat from "../ItemDetail/ItemStat";
-import EnforceTab from "./EnforceTab";
 import AccStarForceData from "../../Util/AccStarForceData";
+import FlameData from "../../Util/flameData";
+import StarforceTab from "./StarforceTab";
+import FlameTab from "./FlameTab";
 
 const Enforce = (props) => {
     const accArr = ["벨트","귀고리","반지","펜던트","포켓아이템","눈장식","얼굴장식","기계심장"];
     const amrArr = ["모자","상의","하의","신발","어깨장식","망토","장갑"];
     // 힘덱인럭 곱셈배율
+    const canFlame = ["포켓아이템","펜던트","벨트","모자","상의","눈장식","얼굴장식","상의","하의","신발","귀고리","어깨장식","장갑","망토"];
+
 
     let mainStatMul = [0,0,0,0];
     if(extraInfo.mainStat === "str") {
@@ -31,6 +35,16 @@ const Enforce = (props) => {
             for(let j=0; j<AccStarForceData.length; j++) {
                 if(extraInfo.reqLev === AccStarForceData[j].reqLev) {
                     starForceInfo = AccStarForceData[j];
+                }
+            }
+        }
+    }
+
+    for(let i=0; i<canFlame.length; i++) {
+        if(item.category === canFlame[i]) {
+            for(let j=0; j<FlameData.length; j++) {
+                if(extraInfo.reqLev === FlameData[j].reqLev) {
+                    flameInfo = FlameData[j];
                 }
             }
         }
@@ -79,12 +93,13 @@ const Enforce = (props) => {
                 <ItemStat item={item} extraInfo={extraInfo}/>
             </div>
             <div style={{float:"left"}}>
-                <EnforceTab item={item} extraInfo={extraInfo} 
+                <StarforceTab item={item} extraInfo={extraInfo} 
                 onAddStar={handleAddStar}
                 onSubStar={handleSubStar}
                 onAdd10Star={handleAdd10Star}
                 onSub10Star={handleSub10Star}
                 star={item.star}/>
+                <FlameTab flameInfo={flameInfo}/>
             </div>
         </div>
     )
@@ -97,6 +112,21 @@ const extraInfo = {
   stateChageAmount : 2010914,
   reqLev : 140,
   mainStat : "luk",
+}
+
+let flameInfo = {///방어구
+    "reqLev" : 0,
+    "mainStat" : [],
+    "mainAndSub" : [],
+    "hp" : [],
+    "mp" : [],
+    "allStatP" : [],
+    "atk" : [],
+    "mAtk" : [],
+    "speed" : [],
+    "jump" : [],
+    "def" : [],
+    "reqLevDecrease" : []
 }
 
 let starForceInfo = {

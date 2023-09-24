@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import {useState, useEffect} from "react";
 
-const EnforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star, onSub10Star}) => {
+const StarforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star, onSub10Star}) => {
     let disableSub = false;
     let disableAdd = false;
     let disable10Sub = false;
@@ -35,4 +35,4 @@ const EnforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star, o
     )
 }
 
-export default EnforceTab;
+export default StarforceTab;
