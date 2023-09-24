@@ -1,8 +1,10 @@
 import { Button } from "antd";
 import React from "react";
+import { Cookies, useCookies } from "react-cookie";
 import { Outlet, useNavigate } from "react-router-dom";
 
 const TopMenu = () => {
+  const [cookies, setCookie, removeCookie] = useCookies();
   const navigator = useNavigate();
   return (
     <>
@@ -24,7 +26,11 @@ const TopMenu = () => {
         <Button
           style={{ float: "right" }}
           onClick={() => {
-            navigator("/makeitem");
+            if (!cookies || localStorage.length == 0) {
+              alert("캐릭터 정보가 없습니다");
+            } else {
+              navigator("/makeitem");
+            }
           }}
         >
           아이템 제작
@@ -32,7 +38,11 @@ const TopMenu = () => {
         <Button
           style={{ float: "right" }}
           onClick={() => {
-            navigator("/main");
+            if (!cookies || localStorage.length == 0) {
+              alert("캐릭터 정보가 없습니다");
+            } else {
+              navigator("/main");
+            }
           }}
         >
           메인
