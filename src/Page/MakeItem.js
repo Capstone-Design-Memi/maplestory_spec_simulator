@@ -8,7 +8,6 @@ import Enforce from "../Component/Enforce/Enforce";
 const MakeItem = () => {
   const [itemId, setItemId] = useState(0);
   const navigator = useNavigate();
-
   const testLocal = JSON.parse(localStorage.getItem("test"));
   const allKeys = Object.keys(localStorage);
   const allKeyMap = allKeys.map((item) => {
@@ -16,10 +15,15 @@ const MakeItem = () => {
   });
   const testId = allKeys[allKeys.length - 1];
   useEffect(() => {
-    const testReplace = testId?.replace("test", "");
-    setItemId(parseInt(testReplace) + 1);
-    console.log(itemId);
+    if (allKeys.length !== 0) {
+      const testReplace = testId?.replace("test", "");
+      setItemId(parseInt(testReplace) + 1);
+      console.log(itemId);
+    } else {
+      setItemId(0);
+    }
   }, []);
+  console.log(itemId);
 
   const onFinish = (value) => {
     const defaultItemMap = DefaultItems.map((item) => {
@@ -32,14 +36,20 @@ const MakeItem = () => {
       }
     });
   };
+
+  const optionItems = DefaultItems.map((item) => {
+    const optionItem = { value: item.name, label: item.name };
+    return optionItem;
+  });
   return (
     <div>
       <h2>아이템 제작</h2>
       <Form onFinish={onFinish}>
         <Form.Item label="makeItem" name="makeItem">
-          <Cascader options={DefaultItems} />
+          <Cascader options={optionItems} />
         </Form.Item>
-        <Enforce/>
+
+        <Enforce />
         <Form.Item>
           <Button type="primary" htmlType="submit">
             제작

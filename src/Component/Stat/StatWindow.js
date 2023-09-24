@@ -1,10 +1,11 @@
 import React from "react";
+import { InventoryWrap } from "../../Style/Item";
 import StatItem from "./StatItem";
 
-const StatWindow = () => {
+const StatWindow = ({ item, eqItem }) => {
   return (
     <div>
-      <StatItem />
+      <StatItem item={item} eqItem={eqItem} />
     </div>
   );
 };
