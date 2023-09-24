@@ -34,8 +34,6 @@ const ItemItem = () => {
           setHover(false);
         }}
       >
-      <InventoryWrap key={idx}>
-
         <img src={item[0]?.imageUrl} />
       </InventoryWrap>
     );
@@ -54,7 +52,6 @@ const ItemItem = () => {
           setHover(false);
         }}
       >
-      <InventoryWrap key={idx}>
         <img src={it.imageUrl} />
       </InventoryWrap>
     );
