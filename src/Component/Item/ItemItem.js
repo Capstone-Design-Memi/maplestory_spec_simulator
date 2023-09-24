@@ -17,16 +17,16 @@ const ItemItem = () => {
     return JSON.parse(localStorage.getItem(item));
   });
 
-  const v = allKeyMap.map((item) => {
+  const v = allKeyMap.map((item, idx) => {
     return (
-      <InventoryWrap>
+      <InventoryWrap key={idx}>
         <img src={item[0]?.imageUrl} />
       </InventoryWrap>
     );
   });
-  const testInventoryItem = inventoryItem.map((it) => {
+  const testInventoryItem = inventoryItem.map((it, idx) => {
     return (
-      <InventoryWrap>
+      <InventoryWrap key={idx}>
         <img src={it.imageUrl} />
       </InventoryWrap>
     );

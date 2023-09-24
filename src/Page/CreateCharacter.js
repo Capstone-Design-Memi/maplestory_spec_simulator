@@ -1,20 +1,30 @@
 import { Button, Cascader, Input, Form } from "antd";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Class } from "../Util/Class";
 import axios from "axios";
 import { LOAD_MAPLE_CHRACTER_REQUEST } from "../constants/actionTypes";
 import { useDispatch } from "react-redux";
+import equipmentsData from "../Util/CharatersData2.json";
+import { v4 as uuidv4 } from "uuid";
 
 const CreateCharacter = () => {
   const [createcharacterToggle, setCreatecharacterToggle] = useState(false);
   const [chracterInfo, setChracterInfo] = useState();
+  const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
 
   const onFinishCreate = (values) => {
     console.log("Success:", values.job[1]);
   };
   const onFinishLoad = (values) => {
+    if (localStorage.getItem("equipments")) {
+      const newArray = equipments.map((item) => {
+        return { ...item, id: uuidv4() };
+      });
+
+      localStorage.setItem("equipments", JSON.stringify(newArray));
+    }
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
       data: values.username,
@@ -22,6 +32,12 @@ const CreateCharacter = () => {
   };
 
   const navigator = useNavigate();
+
+  useEffect(() => {
+    const getEquipments = JSON.parse(localStorage.getItem("equipments"));
+    setEquipments(getEquipments);
+  }, []);
+
   return (
     <div>
       <Button
