@@ -23,7 +23,6 @@ const ItemItem = () => {
 
   const v = allKeyMap.map((item, idx) => {
     return (
-
       <InventoryWrap
         onMouseOver={() => {
           setHoverItem(item);
@@ -40,7 +39,6 @@ const ItemItem = () => {
   });
   const testInventoryItem = inventoryItem.map((it, idx) => {
     return (
-
       <InventoryWrap
         onMouseOver={() => {
           setHoverItem(it);
@@ -76,7 +74,7 @@ const ItemItem = () => {
   // const testEqItems = testCharacterData.
   const testEquiItems = ChractersInfo[0].equipments;
   const testEquiItemMap = testEquiItems?.map((item) => {
-    if (item.category == allKeyMap[0][0].category) {
+    if (item.category == allKeyMap[0][0]?.category) {
       return item;
     }
   });
