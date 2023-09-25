@@ -51,6 +51,7 @@ const Enforce = (props) => {
     }
 
     const [starHandler, setStarHandler] = useState(item.star);
+    const [flameHandler, setFlameHandler] = useState(item.flame);
 
     const itemEdit = () => {
         let star = item.star;
@@ -87,6 +88,10 @@ const Enforce = (props) => {
         itemEdit();
     }
 
+    const handleFlameChange = (sumOfFlame) => {
+        item.flame = sumOfFlame;
+        setFlameHandler(sumOfFlame);
+    }
     return (
         <div style={{clear:"both"}}>
             <div style={{float: "left"}}>
@@ -99,7 +104,7 @@ const Enforce = (props) => {
                 onAdd10Star={handleAdd10Star}
                 onSub10Star={handleSub10Star}
                 star={item.star}/>
-                <FlameTab flameInfo={flameInfo}/>
+                <FlameTab flameInfo={flameInfo} handleFlameChange={handleFlameChange}/>
             </div>
         </div>
     )

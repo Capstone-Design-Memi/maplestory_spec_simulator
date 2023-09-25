@@ -1,3 +1,5 @@
+import React from "react";
+
 const flameData = [
     {///방어구
         "reqLev" : 100,
@@ -57,10 +59,10 @@ const flameData = [
     },
     {
         "reqLev" : 140,
-        "mainStat" : [24, 32,, 40, 48, 56],
+        "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
         "hp" : [1260, 1680, 2100, 2520, 2940],
-        "mp" : [1260, 1680, 2100, 2520, 2940],
+        "mp" : [1260, 1680, 2100, 520, 2940],
         "allStatP" : [3, 4, 5, 6, 7],
         "atk" : [3, 4, 5, 6, 7],
         "mAtk" : [3, 4, 5, 6, 7],
@@ -127,4 +129,5 @@ const flameData = [
     },
 ];
 
+export default flameData;
 //100,110,120,130,140,150,160,200,250

@@ -23,7 +23,7 @@ const StarforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star,
     
 
     return (
-        <div style={{width:"300px", height:"700px",border:"1px solid lime"}}>
+        <div>
             <div>
             <button onClick={onSub10Star} disabled={disable10Sub}>-10</button>
             <button onClick={onSubStar} disabled={disableSub}>-1</button>
