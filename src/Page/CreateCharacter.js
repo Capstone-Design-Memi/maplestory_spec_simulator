@@ -4,16 +4,21 @@ import { useNavigate } from "react-router-dom";
 import { Class } from "../Util/Class";
 import axios from "axios";
 import { LOAD_MAPLE_CHRACTER_REQUEST } from "../constants/actionTypes";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import equipmentsData from "../Util/CharatersData2.json";
 import { v4 as uuidv4 } from "uuid";
+import { useCookies } from "react-cookie";
 
 const CreateCharacter = () => {
-  const [createcharacterToggle, setCreatecharacterToggle] = useState(false);
+  const { characterInfo } = useSelector((state) => state.maple);
+  const [cookies, setCookie, removeCookie] = useCookies();
+  const [id, setId] = useState(0);
+  const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
+    useState(false);
+  const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
   const [chracterInfo, setChracterInfo] = useState();
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
-
   const onFinishCreate = (values) => {
     console.log("Success:", values.job[1]);
   };
@@ -22,14 +27,39 @@ const CreateCharacter = () => {
       const newArray = equipments.map((item) => {
         return { ...item, id: uuidv4() };
       });
-
       localStorage.setItem("equipments", JSON.stringify(newArray));
     }
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
       data: values.username,
     });
+    setCharacterInfoLoadSuccess(true);
   };
+
+  useEffect(() => {
+    if (characterInfoLoadSuccess) {
+      const localItemData = [{ id: id, data: characterInfo.equipments }];
+      localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
+      delete characterInfo.equipments;
+      const { equipments, ...otherData } = characterInfo;
+      const cookieCharacterData = [{ id: id, data: otherData }];
+      console.log(cookieCharacterData);
+      setCookie(`testChInfo${id}`, [cookieCharacterData]);
+      setId(id + 1);
+
+      setCharacterInfoLoadSuccess(false);
+    }
+  }, [characterInfoLoadSuccess]);
+
+  // useEffect(() => {
+  //   console.log(characterInfo);
+  //   setCookie("testChInfo", {
+  //     ...characterInfo,
+  //     characterInfo: characterInfo,
+  //     id: id,
+  //   });
+  //   setId(id + 1);
+  // }, [chracterInfoLoadSuccess]);
 
   const navigator = useNavigate();
 
