@@ -6,10 +6,10 @@ import {
 } from "../constants/actionTypes";
 
 export const initialState = {
-  loadMapleCharacterLoading: false, //
+  loadMapleCharacterLoading: false,
   loadMapleCharacterDone: false,
   loadMapleCharacterError: null,
-  Likers: [],
+  characterInfo: [], // 캐릭터 정보
 };
 
 const reducer = (state = initialState, action) =>
