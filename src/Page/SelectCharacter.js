@@ -3,6 +3,7 @@ import CharaterList from "../Component/SelectCharacter/CharaterList";
 import { Button } from "antd";
 import CreateCharacter from "./CreateCharacter";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const SelectCharacter = () => {
   const [toggle, setToggle] = useState(false);

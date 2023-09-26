@@ -58,7 +58,7 @@ const ItemStat = ({ item, extraInfo, eqItem }) => {
   return (
     <Wrapper>
       <TopFrame />
-      <StarLine currentStar={item.star} maxStar={extraInfo?.maxStar} />
+      <StarLine currentStar={item?.star} maxStar={extraInfo?.maxStar} />
       <Line3 />
       <ItemName name={item.name} />
       <ItemGrade grade={item.grade} />
