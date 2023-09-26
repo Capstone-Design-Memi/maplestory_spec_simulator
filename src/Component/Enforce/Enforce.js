@@ -132,7 +132,6 @@ const extraInfo = {
 
 let flameInfo = {///방어구
     "reqLev" : 0,
-   
 }
 
 let starForceInfo = {
