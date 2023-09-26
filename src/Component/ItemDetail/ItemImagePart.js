@@ -120,7 +120,7 @@ const ItemImagePart = (props) => {
     );
   }
 
-  if(grade === "nothing") {
+  if(grade === "nothing" || grade === undefined) {
     return(
       <Line>
         <GradeNone>

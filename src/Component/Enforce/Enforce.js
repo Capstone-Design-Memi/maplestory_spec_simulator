@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {useState, useEffect} from "react";
 import ItemStat from "../ItemDetail/ItemStat";
 import AccStarForceData from "../../Util/AccStarForceData";
+import ArmStarForceData from "../../Util/ArmStarForceData";
 import FlameData from "../../Util/flameData";
 import StarforceTab from "./StarforceTab";
 import FlameTab from "./FlameTab";
@@ -11,7 +12,7 @@ const Enforce = (props) => {
     const accArr = ["벨트","귀고리","반지","펜던트","포켓아이템","눈장식","얼굴장식","기계심장"];
     const amrArr = ["모자","상의","하의","신발","어깨장식","망토","장갑"];
     // 힘덱인럭 곱셈배율
-    const canFlame = ["포켓아이템","펜던트","벨트","모자","상의","눈장식","얼굴장식","상의","하의","신발","귀고리","어깨장식","장갑","망토"];
+    const canFlame = ["포켓 아이템","펜던트","벨트","모자","상의","눈장식","얼굴장식","상의","하의","신발","귀고리","어깨장식","장갑","망토"];
 
 
     let mainStatMul = [0,0,0,0];
@@ -30,11 +31,21 @@ const Enforce = (props) => {
     }
 
     let category = '';
-    for(let i=0; i<amrArr.length; i++) {
+    for(let i=0; i<accArr.length; i++) {
         if(item.category === accArr[i]) {
             for(let j=0; j<AccStarForceData.length; j++) {
                 if(extraInfo.reqLev === AccStarForceData[j].reqLev) {
                     starForceInfo = AccStarForceData[j];
+                }
+            }
+        }
+    }
+
+    for(let i=0; i<amrArr.length; i++) {
+        if(item.category === amrArr[i]) {
+            for(let j=0; j<ArmStarForceData.length; j++) {
+                if(extraInfo.reqLev === ArmStarForceData[j].reqLev) {
+                    starForceInfo = ArmStarForceData[j];
                 }
             }
         }
@@ -115,23 +126,13 @@ export default Enforce;
 const extraInfo = {
   maxStar : 25,
   stateChageAmount : 2010914,
-  reqLev : 140,
+  reqLev : 160,
   mainStat : "luk",
 }
 
 let flameInfo = {///방어구
     "reqLev" : 0,
-    "mainStat" : [],
-    "mainAndSub" : [],
-    "hp" : [],
-    "mp" : [],
-    "allStatP" : [],
-    "atk" : [],
-    "mAtk" : [],
-    "speed" : [],
-    "jump" : [],
-    "def" : [],
-    "reqLevDecrease" : []
+   
 }
 
 let starForceInfo = {
@@ -145,52 +146,46 @@ let starForceInfo = {
 }
 
 const item = 
-    {
-    "name": "골든 클로버 벨트",
-    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFJD.png",
-    "category": "벨트",
+{
+    "name": "여명의 가디언 엔젤 링",
+    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
+    "category": "반지",
     "upgrade": 0,
     "base": {
-        "str": 15,
-        "dex": 15,
-        "int": 15,
-        "luk": 15,
-        "hp": 150,
-        "mp": 150,
-        "atk": 1,
-        "mAtk": 1,
-        "def": 150
+        "str": 5,
+        "dex": 5,
+        "int": 5,
+        "luk": 5,
+        "hp": 200,
+        "mp": 200,
+        "atk": 2,
+        "mAtk": 2
     },
     "scroll": {
-        "str": 94,
-        "dex": 94,
-        "int": 94,
-        "luk": 94,
+        "str": 66,
+        "dex": 66,
+        "int": 66,
+        "luk": 66,
         "hp": 255,
-        "atk": 63,
-        "mAtk": 63,
-        "def": 284
+        "atk": 21,
+        "mAtk": 21,
+        "def": 18
     },
     "grade": "legendary",
-    "star": 21,
+    "star": 17,
     "potential": {
         "grade": "legendary",
         "effects": [
             {
-                "lukP": 12
+                "meso": 20
             },
             {
-                "hpP": 9
+                "lukP": 9
             },
             {
                 "lukP": 9
             }
         ]
     },
-    "flame": {
-        "dex": 20,
-        "int": 40,
-        "luk": 60,
-        "allStatP": 6
-    }
+    "flame": {}
 }
