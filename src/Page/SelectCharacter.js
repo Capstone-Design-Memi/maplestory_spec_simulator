@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CharaterList from "../Component/SelectCharacter/CharaterList";
 import { Button } from "antd";
 import CreateCharacter from "./CreateCharacter";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useCookies } from "react-cookie";
 
 const SelectCharacter = () => {
+  const [cookies, setcookie, removecookie] = useCookies();
   const [toggle, setToggle] = useState(false);
   const navigator = useNavigate();
+
   return (
     <div>
       <Button
