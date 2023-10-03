@@ -34,12 +34,16 @@ const CreateCharacter = () => {
       data: values.username,
     });
     setCharacterInfoLoadSuccess(true);
+    localStorage.setItem(
+      `InventoryItem${id}`,
+      JSON.stringify([{ id: id, data: [] }])
+    );
   };
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
-      // const localItemData = [{ id: id, data: characterInfo.equipments }];
-      // localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
+      const localItemData = [{ id: id, data: characterInfo.equipments }];
+      localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,
         data: [

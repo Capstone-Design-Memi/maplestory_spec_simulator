@@ -8,26 +8,26 @@ import { Cookies, useCookies } from "react-cookie";
 
 const MakeItem = () => {
   const [cookies, setcookie, removecookie] = useCookies();
+  const [input, setInput] = useState();
   const [itemId, setItemId] = useState(0);
   const navigator = useNavigate();
   const testLocal = JSON.parse(localStorage.getItem("test"));
 
   const allKeys = Object.keys(localStorage);
-  const allKeyMap = allKeys.map((item) => {
-    return JSON.parse(localStorage.getItem(item));
-  });
+  // const allKeyMap = allKeys.map((item) => {
+  //   return JSON.parse(localStorage.getItem(item));
+  // });
 
   //
-  const localstorageMap = Object.keys(localStorage).map((key) => {
-    const outPut = localStorage[key];
-    return JSON.parse(outPut);
-  });
+  // const localstorageMap = Object.keys(localStorage).map((key) => {
+  //   const outPut = localStorage[key];
+  //   return JSON.parse(outPut);
+  // });
   const testId = allKeys[allKeys.length - 1];
 
   useEffect(() => {
     if (allKeys.length !== 0) {
       const testReplace = testId?.replace("InventoryItem", "");
-      console.log(testReplace);
       setItemId(parseInt(testReplace) + 1);
     } else {
       setItemId(0);
@@ -38,14 +38,31 @@ const MakeItem = () => {
     // 현재 선택된 캐릭터 아이디 판별 필요
     const defaultItemMap = DefaultItems.map((item) => {
       if (item.name == value.makeItem) {
-        const testItemId = { itemId: itemId };
-        const testInput = [item].concat([testItemId]);
-        console.log(testInput);
+        setInput(localStorage?.getItem("InventoryItem0"));
+        console.log(JSON?.parse(input));
+        const nowItem = JSON?.parse(input)?.data;
+        console.log(nowItem);
+        const addItem = nowItem?.concat(item);
+        console.log(addItem);
+        const inputLocalInventoryItem = {
+          id: JSON.parse(input).id,
+          data: nowItem.concat(addItem),
+        };
         localStorage.setItem(
-          `InventoryItem${itemId}`,
-          JSON.stringify(testInput)
+          "InventoryItem0",
+          JSON?.stringify(inputLocalInventoryItem)
         );
-        setItemId(itemId + 1);
+
+        // const inputItemData = (JSON?.parse(input))[0].data;
+        // const testItemId = { itemId: itemId };
+        // const testInput = [item].concat([testItemId]);
+        // setInput(localStorage.getItem("InventoryItem0"));
+        // console.log(JSON.parse(input));
+        // localStorage.setItem(
+        //   `InventoryItem0`,
+        //   input.concat(JSON.stringify(testInput))
+        // );
+        // setItemId(itemId + 1);
       }
     });
   };

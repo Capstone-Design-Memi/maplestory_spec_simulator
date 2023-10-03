@@ -14,28 +14,41 @@ const ItemItem = () => {
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const inventoryItem = DefaultItems;
+  const chId = 0;
 
-  // const test = JSON.parse(localStorage);
+  // 로컬의 장착 아이템
+  const localEqItemMap = Object.keys(localStorage).map(
+    (key) => localStorage[key]
+  );
+
   const allKeys = Object.keys(localStorage);
   const allKeyMap = allKeys.map((item) => {
-    return JSON.parse(localStorage.getItem(item));
+    if (item == `InventoryItem0`) {
+      return JSON.parse(localStorage.getItem(item));
+    }
   });
 
-  const v = allKeyMap.map((item, idx) => {
-    return (
-      <InventoryWrap
-        onMouseOver={() => {
-          setHoverItem(item);
-          setHover(true);
-        }}
-        onMouseOut={() => {
-          setHoverItem();
-          setHover(false);
-        }}
-      >
-        <img src={item[0]?.imageUrl} />
-      </InventoryWrap>
-    );
+  const v = allKeyMap.map((item) => {
+    console.log(item);
+    const inventoryItems = item?.data;
+    const inventoryItemMap = inventoryItems?.map((it) => {
+      console.log(it.imageUrl);
+      return (
+        <InventoryWrap
+          onMouseOver={() => {
+            setHoverItem(it);
+            setHover(true);
+          }}
+          onMouseOut={() => {
+            setHoverItem();
+            setHover(false);
+          }}
+        >
+          <img src={it?.imageUrl} />
+        </InventoryWrap>
+      );
+    });
+    return inventoryItemMap;
   });
   const testInventoryItem = inventoryItem.map((it, idx) => {
     return (
@@ -60,21 +73,15 @@ const ItemItem = () => {
     const inventoryItemCategoryMap = inventoryItem.map((it) => {
       const inventoryItemCategory = it.category;
       if (item.category == it.category) {
-        // console.log(`item : ${item.category}`);
-        // console.log(`it : ${it.category}`);
         return item.category;
       }
     });
   });
-  // console.log(myItemMap);
-  // 데이터가 JSON형태로 들어가 있어 가져올떄는 파싱을 통해 객체로 가져옴
-  // const testLocal = JSON.parse(localStorage.getItem("test"));
-  // console.log(testLocal);
 
-  // const testEqItems = testCharacterData.
-  const testEquiItems = ChractersInfo[0].equipments;
+  //
+  const testEquiItems = localEqItemMap;
   const testEquiItemMap = testEquiItems?.map((item) => {
-    if (item.category == allKeyMap[0][0]?.category) {
+    if (item.category == allKeyMap[0]?.category) {
       return item;
     }
   });
@@ -86,6 +93,22 @@ const ItemItem = () => {
   useEffect(() => {}, []);
   return (
     <div>
+      <button
+        onClick={() => {
+          setCookie("testCh11", { id: 11 });
+          setCookie("testCh12", { id: 12 });
+        }}
+      >
+        테스트 캐릭터ID 생성
+      </button>
+      <button
+        onClick={() => {
+          removeCookie("testCh11");
+          removeCookie("testCh12");
+        }}
+      >
+        테스트 캐릭터ID 삭제
+      </button>
       <h3>인벤</h3>
       <div
         style={{
