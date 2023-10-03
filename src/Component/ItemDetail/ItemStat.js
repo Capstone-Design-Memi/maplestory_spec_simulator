@@ -60,16 +60,16 @@ const ItemStat = ({ item, extraInfo, eqItem }) => {
       <TopFrame />
       <StarLine currentStar={item?.star} maxStar={extraInfo?.maxStar} />
       <Line3 />
-      <ItemName name={item.name} />
-      <ItemGrade grade={item.grade} />
+      <ItemName name={item?.name} />
+      <ItemGrade grade={item?.grade} />
       <EquipDisable />
       <Line7 />
       <DotLine />
       <Line7 />
       <Line3 />
       <ItemImagePart
-        grade={item.grade}
-        imgUrl={item.imageUrl}
+        grade={item?.grade}
+        imgUrl={item?.imageUrl}
         stateChageAmount={extraInfo?.stateChageAmount}
         reqLev={extraInfo?.reqLev}
       />
@@ -79,14 +79,14 @@ const ItemStat = ({ item, extraInfo, eqItem }) => {
       <DotLine />
       <Line3 />
       <BaseAndFlame
-        category={item.category}
-        base={item.base}
-        flame={item.flame}
-        scroll={item.scroll}
+        category={item?.category}
+        base={item?.base}
+        flame={item?.flame}
+        scroll={item?.scroll}
       />
       <Line7 />
       <DotLine />
-      <PotentialLine grade={item.grade} potential={item?.potential} />
+      <PotentialLine grade={item?.grade} potential={item?.potential} />
       <Line7 />
       <BottomFrame />
     </Wrapper>
