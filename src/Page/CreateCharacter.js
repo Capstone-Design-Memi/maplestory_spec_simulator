@@ -23,12 +23,12 @@ const CreateCharacter = () => {
     console.log("Success:", values.job[1]);
   };
   const onFinishLoad = (values) => {
-    if (localStorage.getItem("equipments")) {
-      const newArray = equipments.map((item) => {
-        return { ...item, id: uuidv4() };
-      });
-      localStorage.setItem("equipments", JSON.stringify(newArray));
-    }
+    // if (localStorage.getItem("equipments")) {
+    //   const newArray = equipments.map((item) => {
+    //     return { ...item, id: uuidv4() };
+    //   });
+    //   localStorage.setItem("equipments", JSON.stringify(newArray));
+    // }
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
       data: values.username,
@@ -42,6 +42,7 @@ const CreateCharacter = () => {
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
+      console.log(id);
       const localItemData = [{ id: id, data: characterInfo.equipments }];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
@@ -49,7 +50,7 @@ const CreateCharacter = () => {
         data: [
           {
             arcanes: characterInfo.arcanes,
-            cashEquipments: characterInfo.cashEquipments,
+            // cashEquipments: characterInfo.cashEquipments,
             guild: characterInfo.guild,
             imageUrl: characterInfo.imageUrl,
             job: characterInfo.job,
