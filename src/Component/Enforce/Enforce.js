@@ -7,6 +7,7 @@ import ArmStarForceData from "../../Util/ArmStarForceData";
 import FlameData from "../../Util/flameData";
 import StarforceTab from "./StarforceTab";
 import FlameTab from "./FlameTab";
+import PotentialTab from "./PotentialTab";
 
 const Enforce = (props) => {
     const accArr = ["벨트","귀고리","반지","펜던트","포켓아이템","눈장식","얼굴장식","기계심장"];
@@ -103,6 +104,11 @@ const Enforce = (props) => {
         item.flame = sumOfFlame;
         setFlameHandler(sumOfFlame);
     }
+
+    const handlePotentialChange = () => {
+        
+    }
+
     return (
         <div style={{clear:"both"}}>
             <div style={{float: "left"}}>
@@ -116,6 +122,7 @@ const Enforce = (props) => {
                 onSub10Star={handleSub10Star}
                 star={item.star}/>
                 <FlameTab flameInfo={flameInfo} handleFlameChange={handleFlameChange}/>
+                <PotentialTab item={item} handlePotentialChange={handlePotentialChange}/>
             </div>
         </div>
     )
@@ -146,45 +153,49 @@ let starForceInfo = {
 
 const item = 
 {
-    "name": "여명의 가디언 엔젤 링",
-    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
-    "category": "반지",
+    "name": "트와일라이트 마크",
+    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJALG.png",
+    "category": "얼굴장식",
     "upgrade": 0,
     "base": {
         "str": 5,
         "dex": 5,
         "int": 5,
         "luk": 5,
-        "hp": 200,
-        "mp": 200,
-        "atk": 2,
-        "mAtk": 2
+        "atk": 5,
+        "mAtk": 5,
+        "def": 100
     },
     "scroll": {
-        "str": 66,
-        "dex": 66,
-        "int": 66,
-        "luk": 66,
-        "hp": 255,
-        "atk": 21,
-        "mAtk": 21,
-        "def": 18
+        "str": 76,
+        "dex": 76,
+        "int": 76,
+        "luk": 76,
+        "atk": 38,
+        "mAtk": 38,
+        "def": 168
     },
     "grade": "legendary",
-    "star": 17,
+    "star": 19,
     "potential": {
         "grade": "legendary",
         "effects": [
             {
-                "meso": 20
+                "lukP": 12
             },
             {
-                "lukP": 9
+                "allStatP": 9
             },
             {
-                "lukP": 9
+                "allStatP": 6
             }
         ]
     },
-    "flame": {}
+    "flame": {
+        "dex": 20,
+        "luk": 68,
+        "hp": 2520,
+        "allStatP": 5
+    },
+    "scissors": 10
 }
