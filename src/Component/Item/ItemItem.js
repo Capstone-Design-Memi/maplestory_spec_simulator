@@ -14,7 +14,8 @@ const ItemItem = () => {
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const inventoryItem = DefaultItems;
-  const chId = 0;
+  const chracterId = 0;
+  const testItem = JSON.parse(localStorage.getItem(`testChItem${chracterId}`));
 
   // 로컬의 장착 아이템
   const localEqItemMap = Object.keys(localStorage).map(
@@ -29,10 +30,9 @@ const ItemItem = () => {
   });
 
   const v = allKeyMap.map((item) => {
-    console.log(item);
+    console.log(item?.data);
     const inventoryItems = item?.data;
     const inventoryItemMap = inventoryItems?.map((it) => {
-      console.log(it.imageUrl);
       return (
         <InventoryWrap
           onMouseOver={() => {
@@ -50,13 +50,12 @@ const ItemItem = () => {
     });
     return inventoryItemMap;
   });
-  const testInventoryItem = inventoryItem.map((it, idx) => {
+  const testInventoryItem = inventoryItem.map((it) => {
     return (
       <InventoryWrap
         onMouseOver={() => {
           setHoverItem(it);
           setHover(true);
-          console.log(hover);
         }}
         onMouseOut={() => {
           setHoverItem();
@@ -131,7 +130,7 @@ const ItemItem = () => {
       </div>
       {hover ? (
         <div>
-          <StatWindow item={hoverItem[0]} eqItem={testEqiItem[0]} />
+          <StatWindow item={hoverItem} eqItem={testItem[0].data} />
         </div>
       ) : (
         <></>
