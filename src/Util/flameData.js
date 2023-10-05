@@ -129,7 +129,7 @@ const flameData = [
     },
     ////무기
     {
-        "name" : "Fafnir Risk Holder",//파프니르 리스크홀더
+        "name" : ["파프니르 리스크홀더"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -144,7 +144,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Fafnir Zeliska",//파프니르 첼리스카
+        "name" : ["파프니르 첼리스카"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -159,7 +159,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Fafnir Big Mountain", "Fafnir Perry Talon", "Fafnir Angelic Shooter", "Fafnir Split Edge"],//파프니르 빅마운틴, 파프니르 펜리르탈론, 파프니르 엔젤릭슈터, 파프니르 스플릿엣지
+        "name" : ["파프니르 빅마운틴", "파프니르 펜리르탈론", "파프니르 엔젤릭슈터", "파프니르 스플릿엣지"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -174,7 +174,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Fafnir Moon Glavie",//파프니르 문글레이브
+        "name" : ["파프니르 문글레이브"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -189,7 +189,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Fafnir Damascus", "Fafnir Dual Windwing", "Fafnir Dragon Ritual Fan", "Fafnir Nightchaser", "Fafnir Acient Bow", "Fafnir Chakram", "Fafnir Chain", "Fafnir Windchaser"],//파프니르 다마스커스, 파프니르 듀얼윈드윙, 파프니르 용선, 파프니르 나이트체이서, 파프니르 에이션트 보우, 파프니르 차크람, 파프니르 체인, 파프니르 윈드체이서
+        "name" : ["파프니르 다마스커스", "파프니르 듀얼윈드윙", "파프니르 용선", "파프니르 나이트체이서", "파프니르 에이션트 보우", "파프니르 차크람", "파프니르 체인", "파프니르 윈드체이서"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -204,7 +204,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Fafnir Windwing Shooter", "Fafnir Claire Ciel", "Fafnir Mistilteinn", "Fafnir Twin Cleaver", "Fafnir Guardian Hammer"],//파프니르 윈드윙슈터, 파프니르 클레르시엘, 파프니르 미스틸테인, 파프니르 트윈클리버, 파프니르 골디언해머
+        "name" : ["파프니르 윈드윙슈터", "파프니르 클레르시엘", "파프니르 미스틸테인", "파프니르 트윈클리버", "파프니르 골디언해머"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -219,7 +219,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Fafnir Death Bringer", "Fafnir Penitensia", "Fafnir Battle Cleaver", "Fafnir Lightninger", "Fafnir Brionak", "Fafnir Forgiveness"],//파프니르 데스브링어, 파프니르 페니텐시아, 파프니르 배틀클리버, 파프니르 라이트닝어, 파프니르 브류나크, 파프니르 포기브니스
+        "name" : ["파프니르 데스브링어", "파프니르 페니텐시아", "파프니르 배틀클리버", "파프니르 라이트닝어", "파프니르 브류나크", "파프니르 포기브니스"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -234,7 +234,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Fafnir Lost Cannon",//파프니르 러스터캐논
+        "name" : ["파프니르 러스터캐논"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -249,7 +249,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Fafnir Magic Gauntlet", "Fafnir Mana Cradle", "Fafnir Mana Taker", "Fafnir ESP limiter"],//파프니르 매직건틀렛, 파프니르 마나크래들 , 파프니르 마나테이커, 파프니르 ESP리미터
+        "name" : ["파프니르 매직건틀렛", "파프니르 마나크래들", "파프니르 마나테이커", "파프니르 ESP리미터"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -264,7 +264,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Fafnir Mana Crown",//파프니르 마나크라운
+        "name" : ["파프니르 마나크라운"],
         "reqLev" : 150,
         "mainStat" : [24, 32, 40, 48, 56],
         "mainAndSub" : [12, 16, 20, 24, 28],
@@ -280,7 +280,7 @@ const flameData = [
     },
     ///앱솔랩스
     {
-        "name" : "AbsoLab Revenge Guard",//앱솔랩스 리벤지가즈
+        "name" : ["앱솔랩스 리벤지가즈"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -295,7 +295,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "AbsoLab Pointing Gun",//앱솔랩스 포인팅건
+        "name" : ["앱솔랩스 포인팅건"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -310,7 +310,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["AbsoLab Pile God", "AbsoLab Blow Knuckle", "AbsoLab Soul Shooter", "AbsoLab Energy Chain"],//앱솔랩스 파일갓, 앱솔랩스 블로우너클, 앱솔랩스 소울슈터, 앱솔랩스 에너지체인
+        "name" : ["앱솔랩스 파일갓", "앱솔랩스 블로우너클", "앱솔랩스 소울슈터", "앱솔랩스 에너지체인"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -325,7 +325,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "AbsoLab halberd",//앱솔랩스 핼버드
+        "name" : ["앱솔랩스 핼버드"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -340,7 +340,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["AbsoLab Slasher", "AbosLab Dual Bowgun", "AbsoLab Monster Ritual Fan", "AbsoLab Breath Shooter", "AbsoLab Acient Bow", "AbsoLab Chakram", "AbsoLab Chain", "AbsoLab Shooting Bow"],//앱솔랩스 슬래셔, 앱솔랩스 듀얼보우건, 앱솔랩스 괴선, 앱솔랩스 브레스 슈터, 앱솔랩스 에이션트 보우, 앱솔랩스 차크람, 앱솔랩스 체인, 앱솔랩스 슈팅보우
+        "name" : ["앱솔랩스 슬래셔", "앱솔랩스 듀얼보우건", "앱솔랩스 괴선", "앱솔랩스 브레스 슈터", "앱솔랩스 에이션트 보우", "앱솔랩스 차크람", "앱솔랩스 체인", "앱솔랩스 슈팅보우"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -355,7 +355,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["AbsoLab CrossBow", "AbsoLab Pincher Cane", "AbsoLab Saber", "AbsoLab Axe", "AbsoLab Bit Hammer"],//앱솔랩스 크로스보우, 앱솔랩스 핀쳐케인, 앱솔랩스 세이버, 앱솔랩스 엑스, 앱솔랩스 비트해머
+        "name" : ["앱솔랩스 크로스보우", "앱솔랩스 핀쳐케인", "앱솔랩스 세이버", "앱솔랩스 엑스", "앱솔랩스 비트해머"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -370,7 +370,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["AbsoLab Desperado", "AbsoLab Broad Saber", "AbsoLab Broad Axe", "AbsoLab Broad Hammer", "AbsoLab Piercing Spear", "AbsoLab Tuner"],//앱솔랩스 데스페라도, 앱솔랩스 브로드세이버, 앱솔랩스 브로드엑스, 앱솔랩스 브로드해머, 앱솔랩스 피어싱스피어, 앱솔랩스 튜너
+        "name" : ["앱솔랩스 데스페라도", "앱솔랩스 브로드세이버", "앱솔랩스 브로드엑스", "앱솔랩스 브로드해머", "앱솔랩스 피어싱스피어", "앱솔랩스 튜너"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -385,7 +385,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "AbsoLab Blast Cannon",//앱솔랩스 블래스트캐논
+        "name" : ["앱솔랩스 블래스트캐논"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -400,7 +400,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["AbsoLab Magic Gauntlet", "AbsoLab Shining Rod", "AbsoLab Spelling Wand", "AbsoLab ESP limiter"],//앱솔랩스 매직 건틀렛, 앱솔랩스 샤이닝로드, 앱솔랩스 스펠링완드, 앱솔랩스 ESP 리미터
+        "name" : ["앱솔랩스 매직 건틀렛", "앱솔랩스 샤이닝로드", "앱솔랩스 스펠링완드", "앱솔랩스 ESP 리미터"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -415,7 +415,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "AbsoLab Spelling Staff",//앱솔랩스 스펠링스태프
+        "name" : ["앱솔랩스 스펠링스태프"],
         "reqLev" : 160,
         "mainStat" : [27, 36, 45, 54, 63],
         "mainAndSub" : [15, 20, 25, 30, 35],
@@ -431,7 +431,7 @@ const flameData = [
     },
     //아케인셰이드
     {
-        "name" : "Acane Shade Guard",//아케인셰이드 가즈
+        "name" : ["아케인셰이드 가즈"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -446,7 +446,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Acane Shade Pistol",//아케인셰이드 피스톨
+        "name" : ["아케인셰이드 피스톨"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -461,7 +461,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Acane Shade Ellaha", "Acane Shade Claw", "Acane Shade Soul Shooter", "Acane Shade Energy Chain"],//아케인셰이드 엘라하, 아케인셰이드 클로, 아케인셰이드 소울슈터, 아케인셰이드 에너지체인
+        "name" : ["아케인셰이드 엘라하", "아케인셰이드 클로", "아케인셰이드 소울슈터", "아케인셰이드 에너지체인"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -476,7 +476,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Acane Shade Polearm",//아케인셰이드 폴암
+        "name" : ["아케인셰이드 폴암"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -491,7 +491,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Acane Shade Dagger", "Acane Shade Dual Bowgun", "Acane Shade Super Ritual Fan", "Acane Shade Breath Shooter", "Acane Shade Acient Bow", "Acane Shade Chakram", "Acane Shade Chain", "Acane Shade Bow"],//아케인셰이드 대거, 아케인셰이드 듀얼보우건, 아케인셰이드 초선, 아케인셰이드 브레스 슈터, 아케인셰이드 에이션트 보우, 아케인셰이드 차크람, 아케인셰이드 체인, 아케인셰이드 보우
+        "name" : ["아케인셰이드 대거", "아케인셰이드 듀얼보우건", "아케인셰이드 초선", "아케인셰이드 브레스 슈터", "아케인셰이드 에이션트 보우", "아케인셰이드 차크람", "아케인셰이드 체인", "아케인셰이드 보우"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -506,7 +506,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Acane Shade CrossBow", "Acane Shade Cane", "Acane Shade Saber", "Acane Shade Axe", "Acane Shade Hammer"],//아케인셰이드 크로스보우, 아케인셰이드 케인, 아케인셰이드 세이버, 아케인셰이드 엑스, 아케인셰이드 해머
+        "name" : ["아케인셰이드 크로스보우", "아케인셰이드 케인", "아케인셰이드 세이버", "아케인셰이드 엑스", "아케인셰이드 해머"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -521,7 +521,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Acane Shade Desperado", "Acane Shade Two Hand Sword", "Acane Shade Two Hand Axe", "Acane Shade Two Hand Hammer", "Acane Shade Spear", "Acane Shade Tuner"],//아케인셰이드 데스페라도, 아케인셰이드 투핸드소드, 아케인셰이드 투핸드엑스, 아케인셰이드 투핸드해머, 아케인셰이드 스피어, 아케인셰이드 튜너
+        "name" : ["아케인셰이드 데스페라도", "아케인셰이드 투핸드소드", "아케인셰이드 투핸드엑스", "아케인셰이드 투핸드해머", "아케인셰이드 스피어", "아케인셰이드 튜너"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -536,7 +536,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Acane Shade Siege Gun",//아케인셰이드 시즈건
+        "name" : ["아케인셰이드 시즈건"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -551,7 +551,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Acane Shade Magic Gauntlet", "Acane Shade Shining Rod", "Acane Shade Wand", "Acane Shade ESP limiter"],//아케인셰이드 매직 건틀렛, 아케인셰이드 샤이닝로드, 아케인셰이드 완드, 아케인셰이드 ESP 리미터
+        "name" : ["아케인셰이드 매직 건틀렛", "아케인셰이드 샤이닝로드", "아케인셰이드 완드","아케인셰이드 ESP 리미터"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -566,7 +566,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Acane Shade Staff",//아케인 셰이드 스태프
+        "name" : ["아케인 셰이드 스태프"],
         "reqLev" : 200,
         "mainStat" : [33, 44, 55, 66, 77],
         "mainAndSub" : [18, 24, 30, 36, 42],
@@ -582,7 +582,7 @@ const flameData = [
     },
     //제네시스
     {
-        "name" : "Genesis Guard",//제네시스 가즈
+        "name" : ["제네시스 가즈"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -597,7 +597,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Genesis Pistol",//제네시스 피스톨
+        "name" : ["제네시스 피스톨"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -612,7 +612,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Genesis Ellaha", "Genesis Claw", "Genesis Soul Shooter", "Genesis Energy Chain"],//제네시스 엘라하, 제네시스 클로, 제네시스 소울슈터, 제네시스 에너지체인
+        "name" : ["제네시스 엘라하", "제네시스 클로", "제네시스 소울슈터", "제네시스 에너지체인"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -627,7 +627,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Genesis Polearm",//제네시스 폴암
+        "name" : "제네시스 폴암",
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -642,7 +642,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Genesis Dagger", "Genesis Dual Bowgun", "Genesis Ritual Fan", "Genesis Breath Shooter", "Genesis Acient Bow", "Genesis Chakram", "Genesis Chain", "Genesis Bow"],//제네시스 대거, 제네시스 듀얼보우건,제네시스 창세선, 제네시스 브레스 슈터, 제네시스 에이션트 보우, 제네시스 차크람, 제네시스 체인, 제네시스 보우
+        "name" : ["제네시스 대거", "제네시스 듀얼보우건", "제네시스 창세선", "제네시스 브레스 슈터", "제네시스 에이션트 보우", "제네시스 차크람", "제네시스 체인", "제네시스 보우"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -657,7 +657,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Genesis CrossBow", "Genesis Cane", "Genesis Saber", "Genesis Axe", "Genesis Hammer"],//제네시스 크로스보우, 제네시스 케인, 제네시스 세이버, 제네시스 엑스, 제네시스 해머
+        "name" : ["제네시스 크로스보우", "제네시스 케인", "제네시스 세이버", "제네시스 엑스", "제네시스 해머"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -672,7 +672,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Genesis Desperado", "Genesis Two Hand Sword", "Genesis Two Hand Axe", "Genesis Two Hand Hammer", "Genesis Spear", "Genesis Tuner"],//제네시스 데스페라도, 제네시스 투핸드소드, 제네시스 투핸드엑스, 제네시스 투핸드해머, 제네시스 스피어, 제네시스 튜너
+        "name" : ["제네시스 데스페라도", "제네시스 투핸드소드", "제네시스 투핸드엑스", "제네시스 투핸드해머", "제네시스 스피어", "제네시스 튜너"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -687,7 +687,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Genesis Siege Gun",//제네시스 시즈건
+        "name" : ["제네시스 시즈건"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -702,7 +702,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : ["Genesis Shade Magic Gauntlet", "Genesis Shining Rod", "Genesis Wand", "Genesis ESP limiter"],//제네시스 매직 건틀렛, 제네시스 샤이닝로드, 제네시스 완드, 제네시스 ESP 리미터
+        "name" : ["제네시스 매직 건틀렛", "제네시스 샤이닝로드", "제네시스 완드", "제네시스 ESP 리미터"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
@@ -717,7 +717,7 @@ const flameData = [
         "reqLevDecrease" : [15, 20, 25, 30 ,35]
     },
     {
-        "name" : "Genesis Staff",//제네시스 스태프
+        "name" : ["제네시스 스태프"],
         "reqLev" : 250,
         "mainStat" : [36, 48, 60, 72, 84],
         "mainAndSub" : [21, 28, 35, 42, 49],
