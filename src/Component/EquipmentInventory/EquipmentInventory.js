@@ -16,7 +16,6 @@ export const Background = styled.div`
 const EquipmentInventory = (props) => {
   const chracterId = 0;
   const testItem = JSON.parse(localStorage.getItem(`testChItem${chracterId}`));
-  console.log(testItem[0].data);
 
   return (
     <Background>
