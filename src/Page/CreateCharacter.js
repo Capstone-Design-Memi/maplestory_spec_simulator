@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import equipmentsData from "../Util/CharatersData2.json";
 import { v4 as uuidv4 } from "uuid";
 import { useCookies } from "react-cookie";
+import { ChractersInfo } from "../Util/CharatersData";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -16,33 +17,26 @@ const CreateCharacter = () => {
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
-  const [chracterInfo, setChracterInfo] = useState();
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
   const onFinishCreate = (values) => {
     console.log("Success:", values.job[1]);
   };
   const onFinishLoad = (values) => {
-    // if (localStorage.getItem("equipments")) {
-    //   const newArray = equipments.map((item) => {
-    //     return { ...item, id: uuidv4() };
-    //   });
-    //   localStorage.setItem("equipments", JSON.stringify(newArray));
-    // }
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
       data: values.username,
     });
     setCharacterInfoLoadSuccess(true);
-    localStorage.setItem(
-      `InventoryItem${id}`,
-      JSON.stringify([{ id: id, data: [] }])
-    );
   };
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
-      console.log(id);
+      console.log(characterInfo);
+      localStorage.setItem(
+        `InventoryItem${id}`,
+        JSON.stringify([{ id: id, data: [] }])
+      );
       const localItemData = [{ id: id, data: characterInfo.equipments }];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
@@ -65,7 +59,7 @@ const CreateCharacter = () => {
       setId(id + 1);
       setCharacterInfoLoadSuccess(false);
     }
-  }, [characterInfoLoadSuccess]);
+  }, [characterInfo]);
 
   const navigator = useNavigate();
 
