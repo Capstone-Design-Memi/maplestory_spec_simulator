@@ -30,25 +30,27 @@ const ItemItem = () => {
   });
 
   const v = allKeyMap.map((item) => {
-    console.log(item?.data);
     const inventoryItems = item?.data;
-    const inventoryItemMap = inventoryItems?.map((it) => {
-      return (
-        <InventoryWrap
-          onMouseOver={() => {
-            setHoverItem(it);
-            setHover(true);
-          }}
-          onMouseOut={() => {
-            setHoverItem();
-            setHover(false);
-          }}
-        >
-          <img src={it?.imageUrl} />
-        </InventoryWrap>
-      );
-    });
-    return inventoryItemMap;
+    if (item != undefined) {
+      const inventoryItemMap = inventoryItems?.map((it) => {
+        console.log(it);
+        return (
+          <InventoryWrap
+            onMouseOver={() => {
+              setHoverItem(it);
+              setHover(true);
+            }}
+            onMouseOut={() => {
+              setHoverItem();
+              setHover(false);
+            }}
+          >
+            <img src={it?.imageUrl} />
+          </InventoryWrap>
+        );
+      });
+      return inventoryItemMap;
+    }
   });
   const testInventoryItem = inventoryItem.map((it) => {
     return (
@@ -88,33 +90,23 @@ const ItemItem = () => {
   const testEqiItem = testEquiItemMap.filter(
     (element) => element !== undefined
   );
-
-  useEffect(() => {}, []);
   return (
     <div>
-      <button
-        onClick={() => {
-          setCookie("testCh11", { id: 11 });
-          setCookie("testCh12", { id: 12 });
-        }}
-      >
-        테스트 캐릭터ID 생성
-      </button>
-      <button
-        onClick={() => {
-          removeCookie("testCh11");
-          removeCookie("testCh12");
-        }}
-      >
-        테스트 캐릭터ID 삭제
-      </button>
       <h3>인벤</h3>
       <div
         style={{
-          width: `${allKeys.length >= 10 ? 475 : 51 * allKeys.length}px`,
+          width: `${
+            localStorage.getItem(`inventoryItem1`)?.length >= 10
+              ? 475
+              : 51 * localStorage.getItem(`inventoryItem1`)?.length
+          }px`,
           height: `${
-            allKeys.length >= 10
-              ? ((allKeys.length - (allKeys.length % 10)) / 10 + 1) * 51
+            localStorage.getItem(`inventoryItem1`)?.length >= 10
+              ? ((localStorage.getItem(`inventoryItem1`)?.length -
+                  (localStorage.getItem(`inventoryItem1`)?.length % 10)) /
+                  10 +
+                  1) *
+                51
               : 51
           }px`,
           border: "1px solid #C4C4C4",
@@ -122,7 +114,7 @@ const ItemItem = () => {
           borderRadius: "5px",
         }}
       >
-        {allKeys.length !== 0 ? (
+        {localStorage.getItem(`inventoryItem1`)?.length !== 0 ? (
           <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
           <div style={{ width: "120px" }}>아이템이 없습니다</div>
