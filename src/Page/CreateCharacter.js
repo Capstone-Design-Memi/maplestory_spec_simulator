@@ -67,16 +67,6 @@ const CreateCharacter = () => {
     }
   }, [characterInfoLoadSuccess]);
 
-  // useEffect(() => {
-  //   console.log(characterInfo);
-  //   setcookie("testChInfo", {
-  //     ...characterInfo,
-  //     characterInfo: characterInfo,
-  //     id: id,
-  //   });
-  //   setId(id + 1);
-  // }, [chracterInfoLoadSuccess]);
-
   const navigator = useNavigate();
 
   useEffect(() => {
