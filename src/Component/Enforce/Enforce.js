@@ -114,7 +114,7 @@ const Enforce = (props) => {
             <div style={{float: "left"}}>
                 <ItemStat item={item} extraInfo={extraInfo}/>
             </div>
-            <div style={{float:"left"}}>
+            <div style={{float:"left", border:"1px solid lime", width: "250px"}}>
                 <StarforceTab item={item} extraInfo={extraInfo} 
                 onAddStar={handleAddStar}
                 onSubStar={handleSubStar}

@@ -309,12 +309,6 @@ const AccPotentialData = [
                     },
                     {
                         "hpHeal": 30
-                    },
-                    {
-                        //모든 스킬의 MP 소모 : -15%
-                    },
-                    {
-                        //모든 스킬의 MP 소모 : -30%
                     }
                 ]
             }
