@@ -40,7 +40,7 @@ const MakeItem = () => {
       if (item.name == value.makeItem) {
         setInput(localStorage?.getItem("InventoryItem0"));
         console.log(JSON?.parse(input));
-        const nowItem = JSON?.parse(input)?.data;
+        const nowItem = JSON?.parse(input)[0]?.data;
         console.log(nowItem);
         const addItem = nowItem?.concat(item);
         console.log(addItem);
