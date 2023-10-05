@@ -11,7 +11,7 @@ import { useCookies } from "react-cookie";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
-  const [cookies, setCookie, removeCookie] = useCookies();
+  const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
@@ -23,37 +23,53 @@ const CreateCharacter = () => {
     console.log("Success:", values.job[1]);
   };
   const onFinishLoad = (values) => {
-    if (localStorage.getItem("equipments")) {
-      const newArray = equipments.map((item) => {
-        return { ...item, id: uuidv4() };
-      });
-      localStorage.setItem("equipments", JSON.stringify(newArray));
-    }
+    // if (localStorage.getItem("equipments")) {
+    //   const newArray = equipments.map((item) => {
+    //     return { ...item, id: uuidv4() };
+    //   });
+    //   localStorage.setItem("equipments", JSON.stringify(newArray));
+    // }
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
       data: values.username,
     });
     setCharacterInfoLoadSuccess(true);
+    localStorage.setItem(
+      `InventoryItem${id}`,
+      JSON.stringify([{ id: id, data: [] }])
+    );
   };
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
+      console.log(id);
       const localItemData = [{ id: id, data: characterInfo.equipments }];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
-      delete characterInfo.equipments;
-      const { equipments, ...otherData } = characterInfo;
-      const cookieCharacterData = [{ id: id, data: otherData }];
-      console.log(cookieCharacterData);
-      setCookie(`testChInfo${id}`, [cookieCharacterData]);
+      const cookieInputData = {
+        id: id,
+        data: [
+          {
+            arcanes: characterInfo.arcanes,
+            // cashEquipments: characterInfo.cashEquipments,
+            guild: characterInfo.guild,
+            imageUrl: characterInfo.imageUrl,
+            job: characterInfo.job,
+            level: characterInfo.level,
+            name: characterInfo.name,
+            petEquipments: characterInfo.petEquipments,
+            spec: characterInfo.spec,
+          },
+        ],
+      };
+      setcookie(`testChInfo${id}`, { cookieInputData });
       setId(id + 1);
-
       setCharacterInfoLoadSuccess(false);
     }
   }, [characterInfoLoadSuccess]);
 
   // useEffect(() => {
   //   console.log(characterInfo);
-  //   setCookie("testChInfo", {
+  //   setcookie("testChInfo", {
   //     ...characterInfo,
   //     characterInfo: characterInfo,
   //     id: id,

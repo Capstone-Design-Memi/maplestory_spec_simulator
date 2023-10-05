@@ -1,6 +1,6 @@
 import { Avatar, Button, Card, List } from "antd";
 import React, { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
+import { useCookies, withCookies } from "react-cookie";
 import { json, useNavigate } from "react-router-dom";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { useSelector } from "react-redux";
@@ -11,7 +11,6 @@ const CharacterItem = ({ toggle }) => {
   const [input, setInput] = useState(cookies.characters);
   const [id, setId] = useState(0);
   const navigator = useNavigate();
-
   console.log(characterInfo);
   // console.log(characterInfo.data.name);
 
@@ -19,6 +18,9 @@ const CharacterItem = ({ toggle }) => {
 
   const CharacterInfos = ChractersInfo[0];
   const CharacterItem = ChractersInfo[0].equipments;
+
+  // 객체 상태인 cookie값 배열로 변환
+  const cookieMap = Object.keys(cookies).map((key) => cookies[key]);
 
   const ontestMakeCookie = () => {
     if (!cookies.test) {
@@ -49,52 +51,30 @@ const CharacterItem = ({ toggle }) => {
   });
   return (
     <>
-      <button
-        onClick={() => {
-          localStorage.setItem("testCh", JSON.stringify({ CharacterInfos }));
-          localStorage.setItem("testItem", JSON.stringify({ CharacterItem }));
-          setId(id + 1);
-        }}
-      >
-        생성
-      </button>
-      <button
-        onClick={() => {
-          // removeCookie("characters");
-          localStorage.removeItem(`test`);
-        }}
-      >
-        삭제
-      </button>
       <List
-        dataSource={characterInfo?.data}
+        dataSource={cookieMap}
         renderItem={(item) => {
-          for (var i = 0; i < 11; i++) {
-            return (
-              <>
-                <Card hoverable>
-                  <img src={item?.imageUrl} />
-                  <p>이름 : {item?.name}</p>
-                  <p>직업 : {item?.job}</p>
-                  <p>레벨 :{item?.level}.lv</p>
-                  {!toggle ? (
-                    <Button
-                      onClick={() => {
-                        navigator("/main");
-                      }}
-                    >
-                      선택
-                    </Button>
-                  ) : (
-                    <Button>삭제</Button>
-                  )}
-                </Card>
-              </>
-            );
-          }
+          return (
+            <>
+              <Card hoverable>
+                <img src={item?.cookieInputData.data[0].imageUrl} />
+                <p>{item?.cookieInputData.data[0].name}</p>
+                {!toggle ? (
+                  <Button
+                    onClick={() => {
+                      navigator("/main");
+                    }}
+                  >
+                    선택
+                  </Button>
+                ) : (
+                  <Button>삭제</Button>
+                )}
+              </Card>
+            </>
+          );
         }}
       ></List>
-      {characterInfo?.name}
     </>
   );
 };
