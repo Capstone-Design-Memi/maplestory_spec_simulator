@@ -16,7 +16,17 @@ const ItemItem = () => {
   const inventoryItem = DefaultItems;
   const chracterId = 0;
   const testItem = JSON.parse(localStorage.getItem(`testChItem${chracterId}`));
-
+  const eqItemMap = testItem[0].data.map((item) => {
+    if (hoverItem?.category == item?.category) {
+      return item;
+    }
+  });
+  const eqItem = eqItemMap.filter((it) => {
+    if (it != undefined) {
+      return it;
+    }
+  });
+  console.log(eqItem);
   // 로컬의 장착 아이템
   const localEqItemMap = Object.keys(localStorage).map(
     (key) => localStorage[key]
@@ -122,7 +132,7 @@ const ItemItem = () => {
       </div>
       {hover ? (
         <div>
-          <StatWindow item={hoverItem} eqItem={testItem[0].data} />
+          <StatWindow item={hoverItem} eqItem={eqItem[0]} />
         </div>
       ) : (
         <></>
