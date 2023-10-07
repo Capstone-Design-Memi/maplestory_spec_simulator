@@ -49,6 +49,13 @@ const CharacterItem = ({ toggle }) => {
   const testCharacterMap = testCharacters?.map((item) => {
     return item;
   });
+
+  const onRemoveCharacter = (value) => {
+    const characterRemoveId = value.cookieInputData.id;
+    removeCookie(`testChInfo${characterRemoveId}`);
+    localStorage.removeItem(`testChItem${characterRemoveId}`);
+    localStorage.removeItem(`InventoryItem${characterRemoveId}`);
+  };
   return (
     <>
       <List
@@ -68,7 +75,13 @@ const CharacterItem = ({ toggle }) => {
                     선택
                   </Button>
                 ) : (
-                  <Button>삭제</Button>
+                  <Button
+                    onClick={() => {
+                      onRemoveCharacter(item);
+                    }}
+                  >
+                    삭제
+                  </Button>
                 )}
               </Card>
             </>
