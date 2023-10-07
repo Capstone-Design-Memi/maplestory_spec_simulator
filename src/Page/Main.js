@@ -1,8 +1,9 @@
 import { Col, Row } from "antd";
-import React from "react";
+import React, { useContext } from "react";
 import ItemList from "../Component/Item/ItemList";
 import StatWindow from "../Component/Stat/StatWindow";
 import EquipmentInventory from "../Component/EquipmentInventory/EquipmentInventory";
+import { AppContext } from "../App";
 
 const Main = () => {
   return (

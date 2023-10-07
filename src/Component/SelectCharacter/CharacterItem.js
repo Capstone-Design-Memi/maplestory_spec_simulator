@@ -1,20 +1,18 @@
 import { Avatar, Button, Card, List } from "antd";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useCookies, withCookies } from "react-cookie";
 import { json, useNavigate } from "react-router-dom";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { useSelector } from "react-redux";
+import { AppContext } from "../../App";
 
 const CharacterItem = ({ toggle }) => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setCookie, removeCookie] = useCookies();
   const [input, setInput] = useState(cookies.characters);
   const [id, setId] = useState(0);
+  const { cId, setCId } = useContext(AppContext);
   const navigator = useNavigate();
-  console.log(characterInfo);
-  // console.log(characterInfo.data.name);
-
-  // const arrString = JSON.stringify(arr);
 
   const CharacterInfos = ChractersInfo[0];
   const CharacterItem = ChractersInfo[0].equipments;
@@ -49,6 +47,13 @@ const CharacterItem = ({ toggle }) => {
   const testCharacterMap = testCharacters?.map((item) => {
     return item;
   });
+
+  const onRemoveCharacter = (value) => {
+    const characterRemoveId = value.cookieInputData.id;
+    removeCookie(`testChInfo${characterRemoveId}`);
+    localStorage.removeItem(`testChItem${characterRemoveId}`);
+    localStorage.removeItem(`InventoryItem${characterRemoveId}`);
+  };
   return (
     <>
       <List
@@ -63,12 +68,19 @@ const CharacterItem = ({ toggle }) => {
                   <Button
                     onClick={() => {
                       navigator("/main");
+                      setCId(item.cookieInputData.id);
                     }}
                   >
                     선택
                   </Button>
                 ) : (
-                  <Button>삭제</Button>
+                  <Button
+                    onClick={() => {
+                      onRemoveCharacter(item);
+                    }}
+                  >
+                    삭제
+                  </Button>
                 )}
               </Card>
             </>

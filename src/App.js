@@ -1,22 +1,32 @@
 import { Route, Routes } from "react-router-dom";
-import { useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 import Main from "./Page/Main";
 import CreateCharacter from "./Page/CreateCharacter";
 import SelectCharacter from "./Page/SelectCharacter";
 import TopMenu from "./Component/TopMenu/TopMenu";
 import MakeItem from "./Page/MakeItem";
+import { Provider } from "react-redux";
+
+export const AppContext = createContext();
 
 function App() {
+  const [cId, setCId] = useState(0);
   return (
     <div className="App">
-      <Routes>
-        <Route element={<TopMenu />}>
-          <Route exact path="/" element={<SelectCharacter />} />
-          <Route exact path="/createcharacter" element={<CreateCharacter />} />
-          <Route exact path="/main" element={<Main />} />
-          <Route exact path="/makeitem" element={<MakeItem />} />
-        </Route>
-      </Routes>
+      <AppContext.Provider value={{ cId, setCId }}>
+        <Routes>
+          <Route element={<TopMenu />}>
+            <Route exact path="/" element={<SelectCharacter />} />
+            <Route
+              exact
+              path="/createcharacter"
+              element={<CreateCharacter />}
+            />
+            <Route exact path="/main" element={<Main />} />
+            <Route exact path="/makeitem" element={<MakeItem />} />
+          </Route>
+        </Routes>
+      </AppContext.Provider>
     </div>
   );
 }

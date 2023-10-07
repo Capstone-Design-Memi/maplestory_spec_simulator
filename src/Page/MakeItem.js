@@ -1,15 +1,17 @@
 import { Button, Cascader, Form, Select } from "antd";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ItemStat from "../Component/ItemDetail/ItemStat";
 import { DefaultItems } from "../Util/ItemDatas";
 import Enforce from "../Component/Enforce/Enforce";
 import { Cookies, useCookies } from "react-cookie";
+import { AppContext } from "../App";
 
 const MakeItem = () => {
   const [cookies, setcookie, removecookie] = useCookies();
   const [input, setInput] = useState();
   const [itemId, setItemId] = useState(0);
+  const { cId } = useContext(AppContext);
   const navigator = useNavigate();
   const testLocal = JSON.parse(localStorage.getItem("test"));
 
@@ -38,7 +40,7 @@ const MakeItem = () => {
     // 현재 선택된 캐릭터 아이디 판별 필요
     const defaultItemMap = DefaultItems.map((item) => {
       if (item.name == value.makeItem) {
-        setInput(localStorage?.getItem("InventoryItem0"));
+        setInput(localStorage?.getItem(`InventoryItem${cId}`));
         console.log(JSON?.parse(input));
         const nowItem = JSON?.parse(input)[0]?.data;
         console.log(nowItem);
@@ -49,17 +51,17 @@ const MakeItem = () => {
           data: nowItem.concat(addItem),
         };
         localStorage.setItem(
-          "InventoryItem0",
+          `InventoryItem${cId}`,
           JSON?.stringify(inputLocalInventoryItem)
         );
 
         // const inputItemData = (JSON?.parse(input))[0].data;
         // const testItemId = { itemId: itemId };
         // const testInput = [item].concat([testItemId]);
-        // setInput(localStorage.getItem("InventoryItem0"));
+        // setInput(localStorage.getItem(`InventoryItem${cId}`));
         // console.log(JSON.parse(input));
         // localStorage.setItem(
-        //   `InventoryItem0`,
+        //   `InventoryItem${cId}`,
         //   input.concat(JSON.stringify(testInput))
         // );
         // setItemId(itemId + 1);

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import BackgroundImg from "../../images/frame/equipmentInventory.png";
 import DepartmentDiv from "./DepartmentDiv";
 import { useCookies } from "react-cookie";
+import { AppContext } from "../../App";
 
 export const Background = styled.div`
   margin: 0px;
@@ -14,8 +15,9 @@ export const Background = styled.div`
 `;
 
 const EquipmentInventory = (props) => {
-  const chracterId = 0;
-  const testItem = JSON.parse(localStorage.getItem(`testChItem${chracterId}`));
+  const { cId } = useContext(AppContext);
+  const testItem = JSON.parse(localStorage.getItem(`testChItem${cId}`));
+  console.log(testItem[0].data);
 
   return (
     <Background>
