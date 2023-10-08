@@ -4,10 +4,10 @@ import AccPotentialData from "../../Util/AccPotentialData";
 import Convert from "../../Util/Convert";
 
 const PotentialTab = ({item, handlePotentialChange}) => {
-    const firstOption = [];
-    let potentialData = [];
+    const firstOption = [{}];
+    const secondOption = [];
 
-    firstOption.push({value: "null", name: "---"});
+    let potentialData = [];
     const accCategory = ["반지","귀고리","눈장식","얼굴장식","펜던트"];
     for(let i=0; i<accCategory.length; i++) {
         if(item.category === accCategory[i]) {
@@ -28,32 +28,15 @@ const PotentialTab = ({item, handlePotentialChange}) => {
     }
 
     const displayOptions = (grade) => {
-        let firstOptions;
-        let secondOptions;
-        let convertFirstOptions;
-        let convertSecondOptions;
 
         for(let key in potentialData) {
             if(potentialData[key].grade === grade) {
-                firstOptions = potentialData[key].effects[0].first;
-                secondOptions = potentialData[key].effects[0].second;
+                firstOption.push(potentialData[key].effects[0].first);
+                //secondOption = potentialData[key].effects[0].second;
             }
         }
 
-        for(let i=0; i<firstOptions.length; i++) {
-            for(let key in firstOptions[i]) {
-                for(let j=0; j<Convert.length; j++) {
-                    if(Convert[j].value === key) {
-                        firstOption.push({
-                            value : key,
-                            first : Convert[j].first,
-                            result : firstOptions[i][key],
-                            persent : Convert[j].persent,
-                        });
-                    }
-                }
-            }
-        }
+        
         console.log(firstOption);
     }
 
@@ -77,14 +60,7 @@ const PotentialTab = ({item, handlePotentialChange}) => {
                 </option>
             </select>
             <select onChange={handleFirstChange} value={firstValue}>
-                {firstOption.map((potentialValue, index)=> {
-                    <option
-                        key={index}
-                        value={index}
-                    >
-                        123{`${potentialValue.first} : ${potentialValue.result}`}
-                    </option>
-                })}
+                
             </select>
         </>
     )

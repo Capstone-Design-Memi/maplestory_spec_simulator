@@ -12,10 +12,10 @@ import PotentialTab from "./PotentialTab";
 const Enforce = (props) => {
     const accArr = ["벨트","귀고리","반지","펜던트","포켓아이템","눈장식","얼굴장식","기계심장"];
     const amrArr = ["모자","상의","하의","신발","어깨장식","망토","장갑"];
-    // 힘덱인럭 곱셈배율
+    
     const canFlame = ["포켓 아이템","펜던트","벨트","모자","상의","눈장식","얼굴장식","상의","하의","신발","귀고리","어깨장식","장갑","망토"];
 
-
+    // 힘덱인럭 곱셈배율
     let mainStatMul = [0,0,0,0];
     if(extraInfo.mainStat === "str") {
         mainStatMul[0] = 1;
