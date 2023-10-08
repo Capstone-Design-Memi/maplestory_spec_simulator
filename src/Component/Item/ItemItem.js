@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { DefaultItems } from "../../Util/ItemDatas";
 import { InventoryWrap, ItemBoxWrap } from "../../Style/Item";
@@ -6,16 +6,19 @@ import { useCookies } from "react-cookie";
 import { Modal } from "antd";
 import StatWindow from "../Stat/StatWindow";
 import ItemStat from "../ItemDetail/ItemStat";
+import { AppContext } from "../../App";
 
 const ItemItem = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
+  const { cId } = useContext(AppContext);
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
+  const [testItem, setTestItem] = useState(
+    JSON.parse(localStorage.getItem(`testChItem${cId}`))
+  );
   const inventoryItem = DefaultItems;
-  const chracterId = 0;
-  const testItem = JSON.parse(localStorage.getItem(`testChItem${chracterId}`));
   const eqItemMap = testItem[0].data.map((item) => {
     if (hoverItem?.category == item?.category) {
       return item;
@@ -26,7 +29,6 @@ const ItemItem = () => {
       return it;
     }
   });
-  console.log(eqItem);
   // 로컬의 장착 아이템
   const localEqItemMap = Object.keys(localStorage).map(
     (key) => localStorage[key]
@@ -34,7 +36,7 @@ const ItemItem = () => {
 
   const allKeys = Object.keys(localStorage);
   const allKeyMap = allKeys.map((item) => {
-    if (item == `InventoryItem0`) {
+    if (item == `InventoryItem${cId}`) {
       return JSON.parse(localStorage.getItem(item));
     }
   });
@@ -100,20 +102,24 @@ const ItemItem = () => {
   const testEqiItem = testEquiItemMap.filter(
     (element) => element !== undefined
   );
+
+  useEffect(() => {
+    setTestItem(JSON.parse(localStorage.getItem(`testChItem${cId}`)));
+  }, [cId]);
   return (
     <div>
       <h3>인벤</h3>
       <div
         style={{
           width: `${
-            localStorage.getItem(`inventoryItem1`)?.length >= 10
+            localStorage.getItem(`inventoryItem${cId}`)?.length >= 10
               ? 475
-              : 51 * localStorage.getItem(`inventoryItem1`)?.length
+              : 51 * localStorage.getItem(`inventoryItem${cId}`)?.length
           }px`,
           height: `${
-            localStorage.getItem(`inventoryItem1`)?.length >= 10
-              ? ((localStorage.getItem(`inventoryItem1`)?.length -
-                  (localStorage.getItem(`inventoryItem1`)?.length % 10)) /
+            localStorage.getItem(`inventoryItem${cId}`)?.length >= 10
+              ? ((localStorage.getItem(`inventoryItem${cId}`)?.length -
+                  (localStorage.getItem(`inventoryItem${cId}`)?.length % 10)) /
                   10 +
                   1) *
                 51
@@ -124,7 +130,7 @@ const ItemItem = () => {
           borderRadius: "5px",
         }}
       >
-        {localStorage.getItem(`inventoryItem1`)?.length !== 0 ? (
+        {localStorage.getItem(`inventoryItem${cId}`)?.length !== 0 ? (
           <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
           <div style={{ width: "120px" }}>아이템이 없습니다</div>
