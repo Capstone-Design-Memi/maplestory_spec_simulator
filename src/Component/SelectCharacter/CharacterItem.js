@@ -78,6 +78,7 @@ const CharacterItem = ({ toggle }) => {
                     onClick={() => {
                       onRemoveCharacter(item);
                     }}
+                    danger
                   >
                     삭제
                   </Button>

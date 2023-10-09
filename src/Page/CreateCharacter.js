@@ -17,7 +17,7 @@ const CreateCharacter = () => {
   const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
-    useState(false);
+    useState(true);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
@@ -87,6 +87,7 @@ const CreateCharacter = () => {
             onClick={() => {
               setCreatecharacterToggle(false);
             }}
+            disabled
           >
             내 캐릭터 불러오기
           </Button>

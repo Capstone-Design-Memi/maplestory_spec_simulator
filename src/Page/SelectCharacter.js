@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CharaterList from "../Component/SelectCharacter/CharaterList";
-import { Button } from "antd";
+import { Button, Radio } from "antd";
 import CreateCharacter from "./CreateCharacter";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -15,22 +15,20 @@ const SelectCharacter = () => {
     <div>
       <Button
         onClick={() => {
-          if (toggle) {
-            setToggle(false);
-          } else if (!toggle) {
-            setToggle(true);
-          }
-        }}
-      >
-        캐릭터 삭제
-      </Button>
-      <Button
-        onClick={() => {
           navigator("/createcharacter");
         }}
       >
         캐릭터 생성
       </Button>
+      <Radio.Group
+        value={toggle}
+        onChange={(e) => {
+          setToggle(e.target.value);
+        }}
+      >
+        <Radio value={false}>생성</Radio>
+        <Radio value={true}>삭제</Radio>
+      </Radio.Group>
       <h2>캐릭터 선택</h2>
       <CharaterList toggle={toggle} />
     </div>
