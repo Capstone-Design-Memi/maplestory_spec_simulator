@@ -27,6 +27,8 @@ const ChooseCharacterForm = () => {
   const onFinishCreate = (values) => {
     if (values.level >= 301) {
       alert("최고 레벨은 300입니다.");
+    } else if (values.level <= 0) {
+      alert("최저 레벨은 1입니다.");
     } else {
       localStorage.setItem(
         `InventoryItem${id}`,
