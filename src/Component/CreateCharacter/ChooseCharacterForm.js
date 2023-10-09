@@ -3,6 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Class } from "../../Util/Class";
 import { useSelector } from "react-redux";
 import { useCookies } from "react-cookie";
+import {
+  jobValidate,
+  validateLevel,
+  validatename,
+} from "../../Util/ChooseCharacterValidator";
 
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -20,31 +25,34 @@ const ChooseCharacterForm = () => {
   const [hp, setHp] = useState(5);
 
   const onFinishCreate = (values) => {
-    console.log(values);
-    localStorage.setItem(
-      `InventoryItem${id}`,
-      JSON.stringify([{ id: id, data: [] }])
-    );
-    const localItemData = [{ id: id, data: [] }];
-    localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
-    const cookieInputData = {
-      id: id,
-      data: [
-        {
-          arcanes: "없음",
-          guild: "없음",
-          imageUrl: "없음",
-          job: values.job[2],
-          level: values.level,
-          name: values.username,
-          petEquipments: "없음",
-          spec: "없음",
-        },
-      ],
-    };
-    setcookie(`testChInfo${id}`, { cookieInputData });
-    setId(id + 1);
-    setCharacterInfoLoadSuccess(false);
+    if (values.level >= 301) {
+      alert("최고 레벨은 300입니다.");
+    } else {
+      localStorage.setItem(
+        `InventoryItem${id}`,
+        JSON.stringify([{ id: id, data: [] }])
+      );
+      const localItemData = [{ id: id, data: [] }];
+      localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
+      const cookieInputData = {
+        id: id,
+        data: [
+          {
+            arcanes: "없음",
+            guild: "없음",
+            imageUrl: "없음",
+            job: values.job[2],
+            level: values.level,
+            name: values.username,
+            petEquipments: "없음",
+            spec: chStat,
+          },
+        ],
+      };
+      setcookie(`testChInfo${id}`, { cookieInputData });
+      setId(id + 1);
+      setCharacterInfoLoadSuccess(false);
+    }
   };
 
   useEffect(() => {
@@ -68,22 +76,24 @@ const ChooseCharacterForm = () => {
       }
     }
     setChstat({
-      lv: lv,
       str: str,
       dex: dex,
       int: int,
       luk: luk,
       hp: hp,
-      equipments: [],
     });
     console.log(chStat);
   }, [lv]);
   return (
     <Form name="basic" onFinish={onFinishCreate}>
-      <Form.Item label="Username" name="username">
+      <Form.Item
+        label="Username"
+        name="username"
+        rules={[{ validator: validatename }]}
+      >
         <Input />
       </Form.Item>
-      <Form.Item name="job">
+      <Form.Item name="job" rules={[{ validator: jobValidate }]}>
         <Cascader
           options={Class}
           placeholder="Please select"
@@ -92,7 +102,11 @@ const ChooseCharacterForm = () => {
           }}
         />
       </Form.Item>
-      <Form.Item label="Level" name="level">
+      <Form.Item
+        label="Level"
+        name="level"
+        rules={[{ validator: validateLevel }]}
+      >
         <Input
           onChange={(e) => {
             setLv(parseInt(e.target.value));
