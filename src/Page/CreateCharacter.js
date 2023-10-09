@@ -22,9 +22,6 @@ const CreateCharacter = () => {
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
 
-  const onFinishCreate = (values) => {
-    console.log(values);
-  };
   const onFinishLoad = (values) => {
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
@@ -35,7 +32,6 @@ const CreateCharacter = () => {
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
-      console.log(characterInfo);
       localStorage.setItem(
         `InventoryItem${id}`,
         JSON.stringify([{ id: id, data: [] }])
@@ -94,7 +90,7 @@ const CreateCharacter = () => {
           >
             내 캐릭터 불러오기
           </Button>
-          <ChooseCharacterForm onFinishCreate={onFinishCreate} />
+          <ChooseCharacterForm />
         </div>
       )}
     </div>
