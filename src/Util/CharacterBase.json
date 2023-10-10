@@ -1,0 +1,86 @@
+{
+  "cookieInputData": {
+    "id": 0,
+    "data": [
+      {
+        "arcanes": [
+          {
+            "name": "아케인심볼 : 아르카나",
+            "stat": { "int": 1800 },
+            "level": 16,
+            "experience": 390,
+            "requiredExperience": 267
+          },
+          {
+            "name": "아케인심볼 : 모라스",
+            "stat": { "int": 1800 },
+            "level": 16,
+            "experience": 353,
+            "requiredExperience": 267
+          }
+        ],
+        "guild": "띠링",
+        "imageUrl": "https://avatar.maplestory.nexon.com/Character/180/GDAOKBNJDDDBEKOHFLFDFNPFDKGEDGNIFMKKKJMPGJOAILAFIKDIOEEMABMEOOAGNLECHDCGGOIBPNLIOLFLABPNEHPPEMGECHOFLECFFMFEMLOLMINDPNMGPBNJGAONBJCBPPHEOEPGGIINFOECECEDBKDEHDDKBMMMMNOIEDNIGDNHKPEDLHELABPEGIOJLMFJCCBEABIHGCDBJOMDECFMKFJJMFNLNJFEKOKEADKMLGEFLAPAHBEMGELHONDM.png",
+        "job": "비숍",
+        "level": 267,
+        "name": "든국이",
+        "petEquipments": [
+          {
+            "name": "햄씨",
+            "upgrade": 6,
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEHCJBJG.png",
+            "category": "펫장비",
+            "scroll": { "mAtk": 13 },
+            "base": {}
+          },
+          {
+            "name": "햄씨",
+            "upgrade": 10,
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEHCJBJG.png",
+            "category": "펫장비",
+            "scroll": { "mAtk": 25 },
+            "base": {}
+          },
+          {
+            "name": "햄씨",
+            "upgrade": 10,
+            "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEHCJBJG.png",
+            "category": "펫장비",
+            "scroll": { "mAtk": 24 },
+            "base": {}
+          }
+        ],
+        "spec": {
+          "statAtkLow": 25899743,
+          "statAtkHigh": 27262884,
+          "hp": 53259,
+          "mp": 100905,
+          "str": 2807,
+          "dex": 2480,
+          "int": 34444,
+          "luk": 3926,
+          "critDmg": 62,
+          "bossDmg": 295,
+          "ignoreDef": 91,
+          "resistance": 82,
+          "stance": 100,
+          "def": 14330,
+          "speed": 140,
+          "jump": 123,
+          "starForce": 233,
+          "arcaneForce": 1160,
+          "hypers": {
+            "atk": 30,
+            "mAtk": 30,
+            "int": 300,
+            "critDmg": 10,
+            "ignoreDef": 30,
+            "dmg": 39,
+            "bossDmg": 35
+          },
+          "abilities": { "buff": 50, "drop": 9, "statusDmg": 7 }
+        }
+      }
+    ]
+  }
+}

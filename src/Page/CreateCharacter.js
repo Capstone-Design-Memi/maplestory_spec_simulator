@@ -9,19 +9,19 @@ import equipmentsData from "../Util/CharatersData2.json";
 import { v4 as uuidv4 } from "uuid";
 import { useCookies } from "react-cookie";
 import { ChractersInfo } from "../Util/CharatersData";
+import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterForm";
+import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
-    useState(false);
+    useState(true);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
-  const onFinishCreate = (values) => {
-    console.log("Success:", values.job[1]);
-  };
+
   const onFinishLoad = (values) => {
     dispatch({
       type: LOAD_MAPLE_CHRACTER_REQUEST,
@@ -32,7 +32,6 @@ const CreateCharacter = () => {
 
   useEffect(() => {
     if (characterInfoLoadSuccess) {
-      console.log(characterInfo);
       localStorage.setItem(
         `InventoryItem${id}`,
         JSON.stringify([{ id: id, data: [] }])
@@ -70,47 +69,30 @@ const CreateCharacter = () => {
 
   return (
     <div>
-      <Button
-        onClick={() => {
-          setCreatecharacterToggle(true);
-        }}
-      >
-        내 캐릭터 불러오기
-      </Button>
-      <Button
-        onClick={() => {
-          setCreatecharacterToggle(false);
-        }}
-      >
-        새 캐릭터 생성하기
-      </Button>
       <h2>캐릭터 생성</h2>
       {!createcharacterToggle ? (
-        <Form name="basic" onFinish={onFinishCreate}>
-          <Form.Item label="Username" name="username">
-            <Input />
-          </Form.Item>
-
-          <Form.Item name="job">
-            <Cascader options={Class} placeholder="Please select" />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
+        <div>
+          <Button
+            onClick={() => {
+              setCreatecharacterToggle(true);
+            }}
+          >
+            새 캐릭터 생성하기
+          </Button>
+          <LoadCharacterForm onFinishLoad={onFinishLoad} />
+        </div>
       ) : (
-        <Form name="basic" onFinish={onFinishLoad}>
-          <Form.Item label="Username" name="username">
-            <Input />
-          </Form.Item>
-          <Form.Item>
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
+        <div>
+          <Button
+            onClick={() => {
+              setCreatecharacterToggle(false);
+            }}
+            disabled
+          >
+            내 캐릭터 불러오기
+          </Button>
+          <ChooseCharacterForm />
+        </div>
       )}
     </div>
   );

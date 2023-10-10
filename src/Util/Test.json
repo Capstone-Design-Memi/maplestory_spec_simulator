@@ -1,0 +1,89 @@
+{
+  "cookieInputData": {
+    "id": 1,
+    "data": [
+      {
+        "arcanes": [
+          {
+            "name": "아케인심볼 : 소멸의 여로",
+            "stat": { "str": 1700 },
+            "level": 15,
+            "experience": 142,
+            "requiredExperience": 236
+          },
+          {
+            "name": "아케인심볼 : 츄츄 아일랜드",
+            "stat": { "str": 1800 },
+            "level": 16,
+            "experience": 177,
+            "requiredExperience": 267
+          },
+          {
+            "name": "아케인심볼 : 레헬른",
+            "stat": { "str": 1700 },
+            "level": 15,
+            "experience": 26,
+            "requiredExperience": 236
+          },
+          {
+            "name": "아케인심볼 : 아르카나",
+            "stat": { "str": 1700 },
+            "level": 15,
+            "experience": 160,
+            "requiredExperience": 236
+          },
+          {
+            "name": "아케인심볼 : 모라스",
+            "stat": { "str": 1500 },
+            "level": 13,
+            "experience": 76,
+            "requiredExperience": 180
+          },
+          {
+            "name": "아케인심볼 : 에스페라",
+            "stat": { "str": 1400 },
+            "level": 12,
+            "experience": 133,
+            "requiredExperience": 155
+          }
+        ],
+        "guild": "본투비",
+        "imageUrl": "https://avatar.maplestory.nexon.com/Character/180/MGFHOFBHEIPIFLCFBEKAMFHEOOGOGBINBKKEAHFBHGCJELCBBNADOEENPGABFOBPAOAJKPNFEAHDJECPBEMHHBKBJNONNPPOIIANMCBJCNHPLFFFPEOKMECJHICCJIBOKDKIPNDCIKEPPOOHPOOHFLOCEJHMDJBNMOAAOODEBMNKKBKMHDBKHJCPHEDFAPCHAHNEMFBKLHKPJHLMFBMOPJBIOBDDCNKMBMLBIAPBKFLEJKJKBCLCEBKIONHMNODD.png",
+        "job": "바이퍼",
+        "level": 250,
+        "name": "바이퍼병장님",
+        "petEquipments": [],
+        "spec": {
+          "statAtkLow": 9637603,
+          "statAtkHigh": 10708445,
+          "hp": 68222,
+          "mp": 41571,
+          "str": 20231,
+          "dex": 2926,
+          "int": 1502,
+          "luk": 2143,
+          "critDmg": 64,
+          "bossDmg": 257,
+          "ignoreDef": 90,
+          "resistance": 36,
+          "stance": 100,
+          "def": 39265,
+          "speed": 153,
+          "jump": 123,
+          "starForce": 235,
+          "arcaneForce": 1010,
+          "hypers": {
+            "atk": 15,
+            "mAtk": 15,
+            "str": 150,
+            "critDmg": 12,
+            "ignoreDef": 30,
+            "dmg": 30,
+            "bossDmg": 43
+          },
+          "abilities": { "drop": 20, "int": 5, "luk": 3 }
+        }
+      }
+    ]
+  }
+}
