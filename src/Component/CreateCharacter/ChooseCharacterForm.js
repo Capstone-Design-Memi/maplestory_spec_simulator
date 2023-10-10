@@ -12,17 +12,18 @@ import {
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setcookie, removecookie] = useCookies();
-  const [id, setId] = useState(0);
+  const [id, setId] = useState(2);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
   const [userClass, setUserClass] = useState();
   const [chStat, setChstat] = useState();
   const [lv, setLv] = useState(1);
-  const [str, setStr] = useState(5);
-  const [dex, setDex] = useState(5);
-  const [int, setInt] = useState(5);
-  const [luk, setLuk] = useState(5);
-  const [hp, setHp] = useState(5);
+  const [str, setStr] = useState(4);
+  const [dex, setDex] = useState(4);
+  const [int, setInt] = useState(4);
+  const [luk, setLuk] = useState(4);
+  const [hp, setHp] = useState(4);
+  const [mp, setMp] = useState(4);
 
   const onFinishCreate = (values) => {
     if (values.level >= 301) {
@@ -83,6 +84,7 @@ const ChooseCharacterForm = () => {
       int: int,
       luk: luk,
       hp: hp,
+      mp: mp,
     });
     console.log(chStat);
   }, [lv]);
