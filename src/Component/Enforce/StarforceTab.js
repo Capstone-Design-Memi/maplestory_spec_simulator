@@ -46,7 +46,7 @@ const StarforceTab = ({item, extraInfo, onAddStar, onSubStar, star, onAdd10Star,
             <button onClick={onAdd10Star} disabled={disable10Add} 
             onMouseOver={() => {setMouseHoverPTen(true);}}
             onMouseLeave={() => { setMouseHoverPTen(false);}}
-            style={{backgroundColor:`${mouseHoverPTen ? "blue" : "white"}`, textAlign:"center", color:`${mouseHover ? "white" : "blue"}`, margin:"2px",borderStyle:"solid",borderColor:"blue",width:"50px",padding:"10px"}}>+10</button>
+            style={{backgroundColor:`${mouseHoverPTen ? "blue" : "white"}`, textAlign:"center", color:`${mouseHoverPTen ? "white" : "blue"}`, margin:"2px",borderStyle:"solid",borderColor:"blue",width:"50px",padding:"10px"}}>+10</button>
             </div>
         </div>
     )
