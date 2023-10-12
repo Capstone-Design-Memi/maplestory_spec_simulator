@@ -12,7 +12,7 @@ import {
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setcookie, removecookie] = useCookies();
-  const [id, setId] = useState(2);
+  const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
   const [userClass, setUserClass] = useState();
