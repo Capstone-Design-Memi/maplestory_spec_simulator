@@ -87,7 +87,7 @@ const CreateCharacter = () => {
             onClick={() => {
               setCreatecharacterToggle(false);
             }}
-            disabled
+            
           >
             내 캐릭터 불러오기
           </Button>
