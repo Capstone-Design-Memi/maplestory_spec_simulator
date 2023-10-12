@@ -15,15 +15,6 @@ const MakeItem = () => {
   const navigator = useNavigate();
 
   const allKeys = Object.keys(localStorage);
-  // const allKeyMap = allKeys.map((item) => {
-  //   return JSON.parse(localStorage.getItem(item));
-  // });
-
-  //
-  // const localstorageMap = Object.keys(localStorage).map((key) => {
-  //   const outPut = localStorage[key];
-  //   return JSON.parse(outPut);
-  // });
   const testId = allKeys[allKeys.length - 1];
 
   useEffect(() => {
@@ -35,37 +26,6 @@ const MakeItem = () => {
     }
   }, []);
 
-  // const onFinish = (value) => {
-  // 현재 선택된 캐릭터 아이디 판별 필요
-  // const defaultItemMap = DefaultItems.map((item) => {
-  // if (item.name == value.makeItem) {
-  // setInput(localStorage?.getItem(`InventoryItem${cId}`));
-  // console.log(JSON?.parse(input));
-  // const nowItem = JSON?.parse(input)[0]?.data;
-  // console.log(nowItem);
-  // const addItem = nowItem?.concat(item);
-  // console.log(addItem);
-  // const inputLocalInventoryItem = {
-  //   id: JSON.parse(input).id,
-  //   data: nowItem.concat(addItem),
-  // };
-  // localStorage.setItem(
-  //   `InventoryItem${cId}`,
-  //   JSON?.stringify(inputLocalInventoryItem)
-  // );
-  // const inputItemData = (JSON?.parse(input))[0].data;
-  // const testItemId = { itemId: itemId };
-  // const testInput = [item].concat([testItemId]);
-  // setInput(localStorage.getItem(`InventoryItem${cId}`));
-  // console.log(JSON.parse(input));
-  // localStorage.setItem(
-  //   `InventoryItem${cId}`,
-  //   input.concat(JSON.stringify(testInput))
-  // );
-  // setItemId(itemId + 1);
-  // }
-  // });
-  // };
   const onFinish = (values) => {
     let localInventoryItem;
     if (
