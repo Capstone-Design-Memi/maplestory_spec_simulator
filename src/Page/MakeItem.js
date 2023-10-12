@@ -67,12 +67,23 @@ const MakeItem = () => {
   // });
   // };
   const onFinish = (values) => {
-    const localInventoryItem = JSON.parse(
-      localStorage.getItem(`InventoryItem${cId}`)
-    )?.data;
+    let localInventoryItem;
+    if (
+      JSON.parse(localStorage.getItem(`InventoryItem${cId}`))?.data !==
+      undefined
+    ) {
+      localInventoryItem = JSON.parse(
+        localStorage.getItem(`InventoryItem${cId}`)
+      )?.data;
+    } else {
+      localInventoryItem = JSON.parse(
+        localStorage.getItem(`InventoryItem${cId}`)
+      )[0]?.data;
+    }
     let inputLocalInventoryItem;
     const defaultItemInputMap = DefaultItems.map((item) => {
       if (item.name === values.makeItem[0]) {
+        console.log(localInventoryItem);
         inputLocalInventoryItem = localInventoryItem.concat(item);
       }
     });
