@@ -17,7 +17,7 @@ const CreateCharacter = () => {
   const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
-    useState(true);
+    useState(false);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();

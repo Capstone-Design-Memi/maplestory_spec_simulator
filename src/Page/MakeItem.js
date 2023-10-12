@@ -13,7 +13,6 @@ const MakeItem = () => {
   const [itemId, setItemId] = useState(0);
   const { cId } = useContext(AppContext);
   const navigator = useNavigate();
-  const testLocal = JSON.parse(localStorage.getItem("test"));
 
   const allKeys = Object.keys(localStorage);
   // const allKeyMap = allKeys.map((item) => {
@@ -36,37 +35,51 @@ const MakeItem = () => {
     }
   }, []);
 
-  const onFinish = (value) => {
-    // 현재 선택된 캐릭터 아이디 판별 필요
-    const defaultItemMap = DefaultItems.map((item) => {
-      if (item.name == value.makeItem) {
-        setInput(localStorage?.getItem(`InventoryItem${cId}`));
-        console.log(JSON?.parse(input));
-        const nowItem = JSON?.parse(input)[0]?.data;
-        console.log(nowItem);
-        const addItem = nowItem?.concat(item);
-        console.log(addItem);
-        const inputLocalInventoryItem = {
-          id: JSON.parse(input).id,
-          data: nowItem.concat(addItem),
-        };
-        localStorage.setItem(
-          `InventoryItem${cId}`,
-          JSON?.stringify(inputLocalInventoryItem)
-        );
-
-        // const inputItemData = (JSON?.parse(input))[0].data;
-        // const testItemId = { itemId: itemId };
-        // const testInput = [item].concat([testItemId]);
-        // setInput(localStorage.getItem(`InventoryItem${cId}`));
-        // console.log(JSON.parse(input));
-        // localStorage.setItem(
-        //   `InventoryItem${cId}`,
-        //   input.concat(JSON.stringify(testInput))
-        // );
-        // setItemId(itemId + 1);
+  // const onFinish = (value) => {
+  // 현재 선택된 캐릭터 아이디 판별 필요
+  // const defaultItemMap = DefaultItems.map((item) => {
+  // if (item.name == value.makeItem) {
+  // setInput(localStorage?.getItem(`InventoryItem${cId}`));
+  // console.log(JSON?.parse(input));
+  // const nowItem = JSON?.parse(input)[0]?.data;
+  // console.log(nowItem);
+  // const addItem = nowItem?.concat(item);
+  // console.log(addItem);
+  // const inputLocalInventoryItem = {
+  //   id: JSON.parse(input).id,
+  //   data: nowItem.concat(addItem),
+  // };
+  // localStorage.setItem(
+  //   `InventoryItem${cId}`,
+  //   JSON?.stringify(inputLocalInventoryItem)
+  // );
+  // const inputItemData = (JSON?.parse(input))[0].data;
+  // const testItemId = { itemId: itemId };
+  // const testInput = [item].concat([testItemId]);
+  // setInput(localStorage.getItem(`InventoryItem${cId}`));
+  // console.log(JSON.parse(input));
+  // localStorage.setItem(
+  //   `InventoryItem${cId}`,
+  //   input.concat(JSON.stringify(testInput))
+  // );
+  // setItemId(itemId + 1);
+  // }
+  // });
+  // };
+  const onFinish = (values) => {
+    const localInventoryItem = JSON.parse(
+      localStorage.getItem(`InventoryItem${cId}`)
+    )?.data;
+    let inputLocalInventoryItem;
+    const defaultItemInputMap = DefaultItems.map((item) => {
+      if (item.name === values.makeItem[0]) {
+        inputLocalInventoryItem = localInventoryItem.concat(item);
       }
     });
+    const inputData = { id: cId, data: inputLocalInventoryItem };
+    console.log(inputData);
+    localStorage.removeItem(`InventoryItem${cId}`);
+    localStorage.setItem(`InventoryItem${cId}`, JSON.stringify(inputData));
   };
 
   const optionItems = DefaultItems.map((item) => {
