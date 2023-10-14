@@ -45,7 +45,6 @@ const ItemItem = () => {
     const inventoryItems = item?.data;
     if (item != undefined) {
       const inventoryItemMap = inventoryItems?.map((it) => {
-        console.log(it);
         return (
           <InventoryWrap
             onMouseOver={() => {

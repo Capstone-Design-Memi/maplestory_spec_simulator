@@ -9,21 +9,42 @@ import { AppContext } from "../App";
 
 const MakeItem = () => {
   const [cookies, setcookie, removecookie] = useCookies();
+  const [changeEnforce, setChangeEnforce] = useState([]);
   const [input, setInput] = useState();
   const [itemId, setItemId] = useState(0);
   const { cId } = useContext(AppContext);
   const navigator = useNavigate();
+  let enforceItem;
+
+  DefaultItems.forEach((item) => {
+    if (item.name === changeEnforce[0]) {
+      enforceItem = item;
+    }
+  });
 
   const allKeys = Object.keys(localStorage);
   const testId = allKeys[allKeys.length - 1];
 
+  // useEffect(() => {
+  //   if (allKeys.length !== 0) {
+  //     const testReplace = testId?.replace("InventoryItem", "");
+  //     setItemId(parseInt(testReplace) + 1);
+  //   } else {
+  //     setItemId(0);
+  //   }
+  // }, []);
   useEffect(() => {
-    if (allKeys.length !== 0) {
-      const testReplace = testId?.replace("InventoryItem", "");
-      setItemId(parseInt(testReplace) + 1);
-    } else {
-      setItemId(0);
+    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`)).data) {
+      const lastInventoryItem = JSON.parse(
+        localStorage.getItem(`InventoryItem${cId}`)
+      ).data.length;
+      setItemId(
+        JSON.parse(localStorage.getItem(`InventoryItem${cId}`)).data[
+          lastInventoryItem - 1
+        ].id + 1
+      );
     }
+    console.log(itemId);
   }, []);
 
   const onFinish = (values) => {
@@ -44,8 +65,12 @@ const MakeItem = () => {
     const defaultItemInputMap = DefaultItems.map((item) => {
       if (item.name === values.makeItem[0]) {
         console.log(localInventoryItem);
-        inputLocalInventoryItem = localInventoryItem.concat(item);
+        inputLocalInventoryItem = localInventoryItem.concat({
+          ...item,
+          id: itemId,
+        });
       }
+      setItemId(itemId + 1);
     });
     const inputData = { id: cId, data: inputLocalInventoryItem };
     console.log(inputData);
@@ -63,10 +88,15 @@ const MakeItem = () => {
       <h2>아이템 제작</h2>
       <Form onFinish={onFinish}>
         <Form.Item label="makeItem" name="makeItem">
-          <Cascader options={optionItems} />
+          <Cascader
+            options={optionItems}
+            onChange={(e) => {
+              setChangeEnforce(e);
+            }}
+          />
         </Form.Item>
 
-        <Enforce />
+        <Enforce enforceItem={enforceItem} />
         <Form.Item>
           <Button type="primary" htmlType="submit">
             제작
