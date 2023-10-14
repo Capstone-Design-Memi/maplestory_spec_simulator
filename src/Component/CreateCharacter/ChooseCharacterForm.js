@@ -86,8 +86,17 @@ const ChooseCharacterForm = () => {
       hp: hp,
       mp: mp,
     });
-    console.log(chStat);
   }, [lv]);
+  useEffect(() => {
+    if (cookies) {
+      const characterIds = Object.keys(cookies);
+      const lastCharacterId = characterIds[characterIds.length - 1].replace(
+        "testChInfo",
+        ""
+      );
+      setId(parseInt(lastCharacterId) + 1);
+    }
+  }, []);
   return (
     <Form name="basic" onFinish={onFinishCreate}>
       <Form.Item
