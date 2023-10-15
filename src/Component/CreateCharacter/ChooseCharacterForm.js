@@ -8,6 +8,7 @@ import {
   validateLevel,
   validatename,
 } from "../../Util/ChooseCharacterValidator";
+import { useNavigate } from "react-router-dom";
 
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -15,7 +16,7 @@ const ChooseCharacterForm = () => {
   const [id, setId] = useState(0);
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
-  const [userClass, setUserClass] = useState();
+  const [userClass, setUserClass] = useState([]);
   const [chStat, setChstat] = useState();
   const [lv, setLv] = useState(1);
   const [str, setStr] = useState(4);
@@ -24,6 +25,8 @@ const ChooseCharacterForm = () => {
   const [luk, setLuk] = useState(4);
   const [hp, setHp] = useState(4);
   const [mp, setMp] = useState(4);
+
+  const navigator = useNavigate();
 
   const onFinishCreate = (values) => {
     if (values.level >= 301) {
@@ -45,6 +48,7 @@ const ChooseCharacterForm = () => {
             guild: "없음",
             imageUrl: "없음",
             job: values.job[2],
+            class: values.job[1],
             level: values.level,
             name: values.username,
             petEquipments: "없음",
@@ -56,6 +60,7 @@ const ChooseCharacterForm = () => {
       setId(id + 1);
       setCharacterInfoLoadSuccess(false);
     }
+    navigator("/");
   };
 
   useEffect(() => {
@@ -88,14 +93,14 @@ const ChooseCharacterForm = () => {
     });
   }, [lv]);
   useEffect(() => {
-    if (cookies.length !== undefined) {
+    if (cookies.testChInfo0) {
       const characterIds = Object.keys(cookies);
       const lastCharacterId = characterIds[characterIds.length - 1]?.replace(
         "testChInfo",
         ""
       );
       setId(parseInt(lastCharacterId) + 1);
-    } else if (!cookies) {
+    } else {
       setId(0);
     }
   }, []);

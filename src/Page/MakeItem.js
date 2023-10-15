@@ -15,7 +15,6 @@ const MakeItem = () => {
   const { cId } = useContext(AppContext);
   const navigator = useNavigate();
   let enforceItem;
-
   DefaultItems.forEach((item) => {
     if (item.name === changeEnforce[0]) {
       enforceItem = item;
@@ -44,7 +43,6 @@ const MakeItem = () => {
         ].id + 1
       );
     }
-    console.log(itemId);
   }, []);
 
   const onFinish = (values) => {
@@ -64,7 +62,6 @@ const MakeItem = () => {
     let inputLocalInventoryItem;
     const defaultItemInputMap = DefaultItems.map((item) => {
       if (item.name === values.makeItem[0]) {
-        console.log(localInventoryItem);
         inputLocalInventoryItem = localInventoryItem.concat({
           ...item,
           id: itemId,
