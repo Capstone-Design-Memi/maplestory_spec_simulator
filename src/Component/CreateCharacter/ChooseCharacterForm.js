@@ -88,15 +88,18 @@ const ChooseCharacterForm = () => {
     });
   }, [lv]);
   useEffect(() => {
-    if (cookies) {
+    if (cookies.length !== undefined) {
       const characterIds = Object.keys(cookies);
-      const lastCharacterId = characterIds[characterIds.length - 1].replace(
+      const lastCharacterId = characterIds[characterIds.length - 1]?.replace(
         "testChInfo",
         ""
       );
       setId(parseInt(lastCharacterId) + 1);
+    } else if (!cookies) {
+      setId(0);
     }
   }, []);
+
   return (
     <Form name="basic" onFinish={onFinishCreate}>
       <Form.Item

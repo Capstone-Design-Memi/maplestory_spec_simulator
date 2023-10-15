@@ -62,7 +62,11 @@ const CharacterItem = ({ toggle }) => {
           return (
             <>
               <Card hoverable>
-                <img src={item?.cookieInputData.data[0].imageUrl} />
+                {item.imageUrl ? (
+                  <img src={item?.cookieInputData.data[0].imageUrl} />
+                ) : (
+                  <img src="../../assets/defaultAvatar.png" />
+                )}
                 <p>{item?.cookieInputData.data[0].name}</p>
                 {!toggle ? (
                   <Button
