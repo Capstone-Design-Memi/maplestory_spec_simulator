@@ -26,7 +26,7 @@ const SelectCharacter = () => {
           setToggle(e.target.value);
         }}
       >
-        <Radio value={false}>생성</Radio>
+        <Radio value={false}>선택</Radio>
         <Radio value={true}>삭제</Radio>
       </Radio.Group>
       <h2>캐릭터 선택</h2>
