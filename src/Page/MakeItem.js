@@ -33,7 +33,7 @@ const MakeItem = () => {
   //   }
   // }, []);
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`)).data) {
+    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`))?.data) {
       const lastInventoryItem = JSON.parse(
         localStorage.getItem(`InventoryItem${cId}`)
       ).data.length;

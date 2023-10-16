@@ -10,7 +10,7 @@ import { Provider } from "react-redux";
 export const AppContext = createContext();
 
 function App() {
-  const [cId, setCId] = useState(0);
+  const [cId, setCId] = useState(50);
   return (
     <div className="App">
       <AppContext.Provider value={{ cId, setCId }}>
