@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
+import { AppContext } from "../../App";
+import StatWindow from "../Stat/StatWindow";
 
 // const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
 //                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
@@ -150,6 +152,10 @@ export const ItemSlot = styled.div`
 `;
 
 const DepartmentDiv = (props) => {
+  const [hover, setHover] = useState(false);
+  const [hoverUrl, setHoverUrl] = useState();
+  const [hoverItem, setHoverItem] = useState();
+  const { cId } = useContext(AppContext);
   const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
@@ -188,6 +194,22 @@ const DepartmentDiv = (props) => {
       }
     }
   }
+  const test = JSON.parse(localStorage.getItem(`testChItem${cId}`))[0].data;
+  // const testMap = test[0].data.map((item) => {
+  //   if (item.imageUrl === hoverUrl) {
+  //     setHoverItem(item);
+  //   }
+  // });
+
+  useEffect(() => {
+    test.forEach((item) => {
+      if (item.imageUrl === hoverUrl) {
+        // setHoverItem(item);
+        setHoverItem(item);
+        console.log(hoverItem);
+      }
+    });
+  }, [hover]);
 
   return (
     <div>
@@ -197,11 +219,30 @@ const DepartmentDiv = (props) => {
             <div></div>
           ) : (
             <div style={gradeArr[index]}>
-              <img src={ItemArr[index]} alt="item Image" />
+              <img
+                src={ItemArr[index]}
+                onMouseOver={(e) => {
+                  setHover(true);
+                  setHoverUrl(ItemArr[index]);
+                  console.log(hoverItem);
+                }}
+                onMouseLeave={() => {
+                  setHover(false);
+                  setHoverUrl();
+                }}
+                alt="item Image"
+              />
             </div>
           )}
         </ItemSlot>
       ))}
+      {hover ? (
+        <div>
+          <StatWindow item={hoverItem} />
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
