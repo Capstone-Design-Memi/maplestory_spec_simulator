@@ -15,16 +15,14 @@ const ItemItem = () => {
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
-  const [testItem, setTestItem] = useState(
-    JSON.parse(localStorage.getItem(`testChItem${cId}`))
-  );
+  const [testItem, setTestItem] = useState([]);
   const inventoryItem = DefaultItems;
-  const eqItemMap = testItem[0].data.map((item) => {
+  const eqItemMap = testItem[0]?.data.map((item) => {
     if (hoverItem?.category == item?.category) {
       return item;
     }
   });
-  const eqItem = eqItemMap.filter((it) => {
+  const eqItem = eqItemMap?.filter((it) => {
     if (it != undefined) {
       return it;
     }
@@ -105,6 +103,9 @@ const ItemItem = () => {
   useEffect(() => {
     setTestItem(JSON.parse(localStorage.getItem(`testChItem${cId}`)));
   }, [cId]);
+  useEffect(() => {
+    setTestItem(JSON.parse(localStorage.getItem(`testChItem${cId}`)));
+  }, []);
   return (
     <div>
       <h3>인벤</h3>
