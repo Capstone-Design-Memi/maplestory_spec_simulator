@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { AppContext } from "../../App";
 import StatWindow from "../Stat/StatWindow";
+import StatInventory from "../Stat/StatInventory";
 
 // const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
 //                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
@@ -155,6 +156,7 @@ const DepartmentDiv = (props) => {
   const [hover, setHover] = useState(false);
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
+  const [hoverNum, setHoverNum] = useState(300);
   const { cId } = useContext(AppContext);
   const exampleData = props.exampleData;
   for (let key in exampleData) {
@@ -224,7 +226,9 @@ const DepartmentDiv = (props) => {
                 onMouseOver={(e) => {
                   setHover(true);
                   setHoverUrl(ItemArr[index]);
-                  console.log(hoverItem);
+                  setHoverNum(index);
+                  console.log(hoverNum);
+
                 }}
                 onMouseLeave={() => {
                   setHover(false);
@@ -237,8 +241,11 @@ const DepartmentDiv = (props) => {
         </ItemSlot>
       ))}
       {hover ? (
-        <div>
-          <StatWindow item={hoverItem} />
+        <div style={{ 
+          position: "absolute",
+          left: (hoverNum) % 5 * 42 + 50,
+          top: (hoverNum + 1) / 6 * 42}}>
+          <StatInventory item={hoverItem} />
         </div>
       ) : (
         <></>
