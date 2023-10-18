@@ -73,6 +73,7 @@ const MakeItem = () => {
     console.log(inputData);
     localStorage.removeItem(`InventoryItem${cId}`);
     localStorage.setItem(`InventoryItem${cId}`, JSON.stringify(inputData));
+    navigator("/main");
   };
 
   const optionItems = DefaultItems.map((item) => {
