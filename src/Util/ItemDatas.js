@@ -1,49 +1,30 @@
 export const DefaultItems = [
   {
-    name: "데아 시두스 이어링",
-    imageUrl: "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
-    category: "귀고리",
-    upgrade: 0,
-    base: {
-      str: 5,
-      dex: 5,
-      int: 5,
-      luk: 5,
-      atk: 2,
-      mAtk: 2,
-      def: 50,
+    label: "골든 클로버 벨트",
+    value: "골든 클로버 벨트",
+    name:"골든 클로버 벨트",
+    imageUrl:"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFJD.png",
+    category:"벨트",
+    upgrade:0,
+    base:{
+       str:15,
+       dex:15,
+       int:15,
+       luk:15,
+       hp:150,
+       mp:150,
+       atk:1,
+       mAtk:1,
+       def:150
     },
-    scroll: {
-      str: 75,
-      dex: 75,
-      int: 75,
-      luk: 75,
-      atk: 45,
-      mAtk: 45,
-      def: 99,
+    scroll:{
+     
     },
-    grade: "legendary",
-    star: 20,
-    potential: {
-      grade: "legendary",
-      effects: [
-        {
-          allStatP: 9,
-        },
-        {
-          lukP: 9,
-        },
-        {
-          lukP: 9,
-        },
-      ],
-    },
-    flame: {
-      luk: 21,
-      mp: 1950,
-      speed: 4,
-      allStatP: 6,
-    },
+    grade:"nothing",
+    star:0,
+    flame:{
+ 
+    }
   },
   {
     label: "하이네스 어새신보닛",
