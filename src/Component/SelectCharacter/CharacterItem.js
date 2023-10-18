@@ -59,10 +59,11 @@ const CharacterItem = ({ toggle }) => {
       <List
         dataSource={cookieMap}
         renderItem={(item) => {
+          console.log(item?.cookieInputData.data[0].imageUrl);
           return (
             <>
               <Card hoverable>
-                {item.imageUrl ? (
+                {item.cookieInputData.data[0].imageUrl ? (
                   <img src={item?.cookieInputData.data[0].imageUrl} />
                 ) : (
                   <img src="../../assets/defaultAvatar.png" />
