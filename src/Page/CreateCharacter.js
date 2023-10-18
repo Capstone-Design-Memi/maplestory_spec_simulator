@@ -55,16 +55,22 @@ const CreateCharacter = () => {
         ],
       };
       setcookie(`testChInfo${id}`, { cookieInputData });
-      setId(id + 1);
       setCharacterInfoLoadSuccess(false);
     }
   }, [characterInfo]);
 
   const navigator = useNavigate();
-
   useEffect(() => {
-    const getEquipments = JSON.parse(localStorage.getItem("equipments"));
-    setEquipments(getEquipments);
+    if (cookies.length !== undefined) {
+      const characterIds = Object.keys(cookies);
+      const lastCharacterId = characterIds[characterIds.length - 1]?.replace(
+        "testChInfo",
+        ""
+      );
+      setId(parseInt(lastCharacterId) + 1);
+    } else if (!cookies) {
+      setId(0);
+    }
   }, []);
 
   return (
@@ -87,7 +93,6 @@ const CreateCharacter = () => {
             onClick={() => {
               setCreatecharacterToggle(false);
             }}
-            
           >
             내 캐릭터 불러오기
           </Button>
