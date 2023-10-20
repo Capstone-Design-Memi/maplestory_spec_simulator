@@ -86,8 +86,8 @@ const Enforce = ({ enforceItem }) => {
     }
   }
 
-  const [starHandler, setStarHandler] = useState(enforceItem.star);
-  const [flameHandler, setFlameHandler] = useState(enforceItem.flame);
+  const [starHandler, setStarHandler] = useState(enforceItem?.star);
+  const [flameHandler, setFlameHandler] = useState(enforceItem?.flame);
 
   const itemEdit = () => {
     let star = enforceItem.star;
@@ -138,7 +138,7 @@ const Enforce = ({ enforceItem }) => {
   };
 
   const handlePotentialChange = () => {};
-  console.log(enforceItem.star);
+
   return (
     <div style={{ clear: "both" }}>
       <div style={{ float: "left" }}>

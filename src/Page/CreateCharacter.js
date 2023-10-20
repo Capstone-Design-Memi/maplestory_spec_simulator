@@ -78,15 +78,14 @@ const CreateCharacter = () => {
         <div>
           <Button
             onClick={() => {
-              if (cookies) {
-                console.log(true);
+              console.log(cookies.testChInfo0);
+              if (cookies.testChInfo0) {
                 const characterIds = Object.keys(cookies);
                 const lastCharacterId = characterIds[
                   characterIds.length - 1
                 ]?.replace("testChInfo", "");
                 setId(parseInt(lastCharacterId) + 1);
               } else {
-                console.log(false);
                 setId(0);
               }
               setCreatecharacterToggle(false);
