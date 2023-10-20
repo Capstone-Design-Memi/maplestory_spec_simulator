@@ -39,7 +39,9 @@ const PotentialTab = ({ item, handlePotentialChange }) => {
   return (
     <>
       <select
-        onChange={handleGradeSelect}
+        onChange={(e) => {
+          handleGradeSelect(e);
+        }}
         value={grade}
         style={{ width: "100px" }}
       >
