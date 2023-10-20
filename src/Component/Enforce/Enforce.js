@@ -86,49 +86,49 @@ const Enforce = ({ enforceItem }) => {
     }
   }
 
-  const [starHandler, setStarHandler] = useState(item.star);
-  const [flameHandler, setFlameHandler] = useState(item.flame);
+  const [starHandler, setStarHandler] = useState(enforceItem.star);
+  const [flameHandler, setFlameHandler] = useState(enforceItem.flame);
 
   const itemEdit = () => {
-    let star = item.star;
-    item.scroll.str =
+    let star = enforceItem.star;
+    enforceItem.scroll.str =
       starForceInfo.allStat[star] +
       starForceInfo.mainStat[star] * mainStatMul[0];
-    item.scroll.dex =
+    enforceItem.scroll.dex =
       starForceInfo.allStat[star] +
       starForceInfo.mainStat[star] * mainStatMul[1];
-    item.scroll.int =
+    enforceItem.scroll.int =
       starForceInfo.allStat[star] +
       starForceInfo.mainStat[star] * mainStatMul[2];
-    item.scroll.luk =
+    enforceItem.scroll.luk =
       starForceInfo.allStat[star] +
       starForceInfo.mainStat[star] * mainStatMul[3];
-    item.scroll.hp = starForceInfo.hp[star];
-    item.scroll.atk = starForceInfo.atk[star];
-    item.scroll.mAtk = starForceInfo.mAtk[star];
-    item.scroll.def = starForceInfo.def[star];
+    enforceItem.scroll.hp = starForceInfo.hp[star];
+    enforceItem.scroll.atk = starForceInfo.atk[star];
+    enforceItem.scroll.mAtk = starForceInfo.mAtk[star];
+    enforceItem.scroll.def = starForceInfo.def[star];
     setStarHandler(star);
   };
 
   //const handle
 
   const handleAddStar = () => {
-    item.star++;
+    enforceItem.star++;
     itemEdit();
   };
 
   const handleSubStar = () => {
-    item.star--;
+    enforceItem.star--;
     itemEdit();
   };
 
   const handleAdd10Star = () => {
-    item.star = item.star + 10;
+    enforceItem.star = enforceItem.star + 10;
     itemEdit();
   };
 
   const handleSub10Star = () => {
-    item.star = item.star - 10;
+    enforceItem.star = enforceItem.star - 10;
     itemEdit();
   };
 
@@ -138,7 +138,7 @@ const Enforce = ({ enforceItem }) => {
   };
 
   const handlePotentialChange = () => {};
-
+  console.log(enforceItem.star);
   return (
     <div style={{ clear: "both" }}>
       <div style={{ float: "left" }}>
