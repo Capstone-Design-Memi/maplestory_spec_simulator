@@ -21,6 +21,7 @@ const Wrapper = styled.div`
   margin: 0em;
   width: 261px;
   background-image: url("${Cover_img}");
+  background-repeat: no-repeat;
   background-position: left top;
 `;
 

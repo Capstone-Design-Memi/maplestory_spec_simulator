@@ -16,6 +16,8 @@ export const Background = styled.div`
 
 const EquipmentInventory = (props) => {
   const { cId } = useContext(AppContext);
+  const [hover, setHover] = useState(false);
+  const [hoverItem, setHoverItem] = useState();
   const testItem = JSON.parse(localStorage.getItem(`testChItem${cId}`));
 
   return (

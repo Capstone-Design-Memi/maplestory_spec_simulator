@@ -33,7 +33,7 @@ const MakeItem = () => {
   //   }
   // }, []);
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`)).data) {
+    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`))?.data) {
       const lastInventoryItem = JSON.parse(
         localStorage.getItem(`InventoryItem${cId}`)
       ).data.length;
@@ -61,7 +61,7 @@ const MakeItem = () => {
     }
     let inputLocalInventoryItem;
     const defaultItemInputMap = DefaultItems.map((item) => {
-      if (item.name === values.makeItem[0]) {
+      if (item?.name === values?.makeItem[0]) {
         inputLocalInventoryItem = localInventoryItem.concat({
           ...item,
           id: itemId,
@@ -73,6 +73,7 @@ const MakeItem = () => {
     console.log(inputData);
     localStorage.removeItem(`InventoryItem${cId}`);
     localStorage.setItem(`InventoryItem${cId}`, JSON.stringify(inputData));
+    navigator("/main");
   };
 
   const optionItems = DefaultItems.map((item) => {
@@ -83,7 +84,7 @@ const MakeItem = () => {
   return (
     <div>
       <h2>아이템 제작</h2>
-      <Form onFinish={onFinish}>
+      <Form name="basic" onFinish={onFinish}>
         <Form.Item label="makeItem" name="makeItem">
           <Cascader
             options={optionItems}
@@ -92,7 +93,6 @@ const MakeItem = () => {
             }}
           />
         </Form.Item>
-
         <Enforce enforceItem={enforceItem} />
         <Form.Item>
           <Button type="primary" htmlType="submit">

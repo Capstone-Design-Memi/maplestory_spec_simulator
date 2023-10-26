@@ -44,14 +44,14 @@ const ChooseCharacterForm = () => {
         id: id,
         data: [
           {
-            arcanes: "없음",
-            guild: "없음",
-            imageUrl: "없음",
+            arcanes: false,
+            guild: false,
+            imageUrl: false,
             job: values.job[2],
             class: values.job[1],
             level: values.level,
             name: values.username,
-            petEquipments: "없음",
+            petEquipments: false,
             spec: chStat,
           },
         ],

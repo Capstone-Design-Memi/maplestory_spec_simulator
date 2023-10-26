@@ -11,7 +11,7 @@ import { act } from "react-dom/test-utils";
 
 function loadCharacterAPI(data) {
   //단일 게시글 로딩
-  return axios.get(`characters?name=${data}&scopes=pet,equip,cash,symbol`, {
+  return axios.get(`character/${data}`, {
     headers: {},
   });
 }

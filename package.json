@@ -1,5 +1,5 @@
 {
-  "proxy": "https://mapleutils-parser-api.vercel.app",
+  "proxy": "http://localhost:3030",
   "name": "maplestory_spec_simulator",
   "version": "0.1.0",
   "private": true,
