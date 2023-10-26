@@ -62,33 +62,31 @@ const CharacterItem = ({ toggle }) => {
           console.log(item?.cookieInputData.data[0].imageUrl);
           return (
             <>
-              <Card hoverable>
-                {item.cookieInputData.data[0].imageUrl ? (
-                  <img src={item?.cookieInputData.data[0].imageUrl} />
-                ) : (
-                  <img src="../../assets/defaultAvatar.png" />
-                )}
-                <p>{item?.cookieInputData.data[0].name}</p>
-                {!toggle ? (
-                  <Button
-                    onClick={() => {
-                      navigator("/main");
-                      setCId(item.cookieInputData.id);
-                    }}
-                  >
-                    선택
-                  </Button>
-                ) : (
-                  <Button
-                    onClick={() => {
-                      onRemoveCharacter(item);
-                    }}
-                    danger
-                  >
-                    삭제
-                  </Button>
-                )}
-              </Card>
+              {item.cookieInputData.data[0].imageUrl ? (
+                <img src={item?.cookieInputData.data[0].imageUrl} />
+              ) : (
+                <img src="../../assets/defaultAvatar.png" />
+              )}
+              <p>{item?.cookieInputData.data[0].name}</p>
+              {!toggle ? (
+                <Button
+                  onClick={() => {
+                    navigator("/main");
+                    setCId(item.cookieInputData.id);
+                  }}
+                >
+                  선택
+                </Button>
+              ) : (
+                <Button
+                  onClick={() => {
+                    onRemoveCharacter(item);
+                  }}
+                  danger
+                >
+                  삭제
+                </Button>
+              )}
             </>
           );
         }}
