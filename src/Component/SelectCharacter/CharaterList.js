@@ -4,7 +4,7 @@ import { Button } from "antd";
 
 const CharaterList = ({ toggle }) => {
   return (
-    <div>
+    <div style={{ marginLeft: "30vh" }}>
       <CharacterItem toggle={toggle} />
     </div>
   );

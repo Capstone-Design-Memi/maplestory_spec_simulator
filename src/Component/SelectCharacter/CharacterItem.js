@@ -59,33 +59,20 @@ const CharacterItem = ({ toggle }) => {
       <List
         dataSource={cookieMap}
         renderItem={(item) => {
-          console.log(item?.cookieInputData.data[0].imageUrl);
           return (
             <>
               {item.cookieInputData.data[0].imageUrl ? (
-                <img src={item?.cookieInputData.data[0].imageUrl} />
+                <img
+                  src={item?.cookieInputData.data[0].imageUrl}
+                  style={{
+                    marginTop: "4.3vh",
+                    marginLeft: "3vh",
+                    width: "20vh",
+                    textAlign: "center",
+                  }}
+                />
               ) : (
                 <img src="../../assets/defaultAvatar.png" />
-              )}
-              <p>{item?.cookieInputData.data[0].name}</p>
-              {!toggle ? (
-                <Button
-                  onClick={() => {
-                    navigator("/main");
-                    setCId(item.cookieInputData.id);
-                  }}
-                >
-                  선택
-                </Button>
-              ) : (
-                <Button
-                  onClick={() => {
-                    onRemoveCharacter(item);
-                  }}
-                  danger
-                >
-                  삭제
-                </Button>
               )}
             </>
           );
