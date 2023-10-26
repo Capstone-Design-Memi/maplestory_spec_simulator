@@ -10,15 +10,21 @@ import {
 import { act } from "react-dom/test-utils";
 
 function loadCharacterAPI(data) {
-  //단일 게시글 로딩
-  return axios.get(`character/${data}`, {
-    headers: {},
-  });
+  console.log(data);
+  return axios.get(
+    `/character/${data}`
+    // , {
+    //   headers: {
+    //     proxy: "http://localhost:3030",
+    //   },
+    // }
+  );
 }
 
 function* loadCharacter(action) {
   try {
     const result = yield call(loadCharacterAPI, action.data);
+    console.log(result);
     yield put({
       type: LOAD_MAPLE_CHRACTER_SUCCESS,
       data: result.data,
