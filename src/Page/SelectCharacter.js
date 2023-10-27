@@ -29,24 +29,37 @@ const SelectCharacter = () => {
           <div>캐릭터 스텟 및 선택버튼</div>
         </Col>
       </Row>
-      <Row style={{ transform: "translateY(25rem)", height: "13.3rem" }}>
+      <Row
+        style={{
+          transform: "translateY(25rem)",
+          height: "13.3rem",
+          textAlign: "center",
+        }}
+      >
         <Col xs={24} md={24}>
           <Button
+            type="primary"
             onClick={() => {
               navigator("/createcharacter");
             }}
           >
-            캐릭터 생성
+            + 캐릭터 생성
           </Button>
-          <Radio.Group
-            value={toggle}
-            onChange={(e) => {
-              setToggle(e.target.value);
-            }}
+          {/* <Radio.Group */}
+          <Button
+            type="primary"
+            danger
+            onClick={() => {}}
+            // value={toggle}
+            // onChange={(e) => {
+            //   setToggle(e.target.value);
+            // }}
           >
-            <Radio value={false}>선택</Radio>
+            X 캐릭터 삭제
+            {/* <Radio value={false}>선택</Radio>
             <Radio value={true}>삭제</Radio>
-          </Radio.Group>
+          </Radio.Group> */}
+          </Button>
         </Col>
       </Row>
     </div>
