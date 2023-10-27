@@ -956,7 +956,7 @@ extraInfos: [
     "job" : "나이트로드"
   },
   {
-    "name" : "슬래싱 섀도어",
+    "name" : "슬래싱 섀도우",
     "reqLev" : 100,
     "class" : "도적",
     "job" : "섀도어"
@@ -1276,6 +1276,12 @@ extraInfos: [
     "class" : "궁수",
     "job" : "와일드헌터"
   },
+    {
+    "name" : "블랙 맥시마이즈 볼",
+    "reqLev" : 100,
+    "class" : "마법사",
+    "job" : "배틀메이지"
+  },
   {
     "name" : "블랙 매그넘",
     "reqLev" : 100,
@@ -1361,14 +1367,14 @@ extraInfos: [
     "job" : "엔젤릭버스터"
   },
   {
-    "name" : "블랙 브레이브슬릿",
+    "name" : "블랙 샤이니 브레이슬릿",
     "reqLev" : 100,
     "setEffect" : "블랙 세트",
     "class" : "전사",
     "job" : "아델"
   },
   {
-    "name" : "블랙 일리움",
+    "name" : "블랙 매직윙",
     "reqLev" : 100,
     "setEffect" : "블랙 세트",
     "class" : "마법사",
@@ -1470,7 +1476,7 @@ extraInfos: [
     "job" : "나이트로드"
   },
   {
-    "name" : "이볼빙 슬래싱 섀도어",
+    "name" : "이볼빙 슬래싱 섀도우",
     "reqLev" : 100,
     "class" : "도적",
     "job" : "섀도어"
@@ -1707,7 +1713,7 @@ extraInfos: [
     "job" : "나이트로드"
   },
   {
-    "name" : "메이플 트레져 섀도어",
+    "name" : "메이플 트레져 섀도우",
     "reqLev" : 110,
     "setEffect" : "메이플 트레져 세트",
     "class" : "도적",
@@ -2415,6 +2421,11 @@ extraInfos: [
     "reqLev" : 200,
     "setEffect" : "아케인셰이드 세트",
     "class" : "해적"
+  },
+  {
+    "name" : "마이스터 숄더",
+    "reqLev" : 140,
+    "class" : "모두"
   },
   {
     "name" : "앱솔랩스 나이트숄더",

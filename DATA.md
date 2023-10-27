@@ -39,6 +39,7 @@
 ```json
 {
    "name":"파프니르 미스틸테인",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELC.png",
    "category":"한손검 (한손무기)",
    "upgrade":0,
@@ -63,6 +64,7 @@
 ```json
 {
    "name":"파프니르 트윈클리버",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png",
    "category":"한손도끼 (한손무기)",
    "upgrade":0,
@@ -87,6 +89,7 @@
 ```json
 {
    "name":"파프니르 골디언해머",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFID.png",
    "category":"한손둔기 (한손무기)",
    "upgrade":0,
@@ -111,6 +114,7 @@
 ```json
 {
    "name":"파프니르 페니텐시아",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIH.png",
    "category":"두손검 (두손무기)",
    "upgrade":0,
@@ -135,6 +139,7 @@
 ```json
 {
    "name":"파프니르 배틀클리버",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPB.png",
    "category":"두손도끼 (두손무기)",
    "upgrade":0,
@@ -159,6 +164,7 @@
 ```json
 {
    "name":"파프니르 라이트닝어",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELAJGKB.png",
    "category":"두손둔기 (두손무기)",
    "upgrade":0,
@@ -183,6 +189,7 @@
 ```json
 {
    "name":"파프니르 브류나크",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFME.png",
    "category":"창 (두손무기)",
    "upgrade":0,
@@ -207,6 +214,7 @@
 ```json
 {
    "name":"파프니르 문글레이브",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFGC.png",
    "category":"폴암 (두손무기)",
    "upgrade":0,
@@ -231,6 +239,7 @@
 ```json
 {
    "name":"파프니르 데스브링어",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGMC.png",
    "category":"데스페라도 (한손무기)",
    "upgrade":0,
@@ -255,6 +264,7 @@
 ```json
 {
    "name":"파프니르 빅 마운틴",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHKD.png",
    "category":"건틀렛 리볼버 (두손무기)",
    "upgrade":0,
@@ -279,6 +289,7 @@
 ```json
 {
    "name":"파프니르 포기브니스",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHNI.png",
    "category":"튜너 (한손무기)",
    "upgrade":0,
@@ -304,6 +315,7 @@
 ```json
 {
    "name":"파프니르 윈드체이서",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIF.png",
    "category":"활 (두손무기)",
    "upgrade":0,
@@ -328,6 +340,7 @@
 ```json
 {
    "name":"파프니르 윈드윙슈터",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFLH.png",
    "category":"석궁 (두손무기)",
    "upgrade":0,
@@ -352,6 +365,7 @@
 ```json
 {
    "name":"파프니르 듀얼윈드윙",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGLC.png",
    "category":"듀얼 보우건 (두손무기)",
    "upgrade":0,
@@ -376,6 +390,7 @@
 ```json
 {
    "name":"파프니르 에인션트 보우",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMI.png",
    "category":"에인션트 보우 (두손무기)",
    "upgrade":0,
@@ -400,6 +415,7 @@
 ```json
 {
    "name":"파프니르 나이트체이서",
+   "level":150,
    "imageUrl":"",
    "category":"브레스 슈터 (한손무기)",
    "upgrade":0,
@@ -425,6 +441,7 @@
 ```json
 {
    "name":"파프니르 마나테이커",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFNE.png",
    "category":"완드 (한손무기)",
    "upgrade":0,
@@ -450,6 +467,7 @@
 ```json
 {
    "name":"파프니르 마나크라운",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFJJ.png",
    "category":"스테프 (한손무기)",
    "upgrade":0,
@@ -475,6 +493,7 @@
 ```json
 {
    "name":"파프니르 마나크래들",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGNB.png",
    "category":"샤아닝 로드 (한손무기)",
    "upgrade":0,
@@ -500,6 +519,7 @@
 ```json
 {
    "name":"파프니르 ESP리미터",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHLH.png",
    "category":"ESP리미터 (한손무기)",
    "upgrade":0,
@@ -525,6 +545,7 @@
 ```json
 {
    "name":"파프니르 매직 건틀렛",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHKA.png",
    "category":"매직 건틀렛 (한손무기)",
    "upgrade":0,
@@ -551,6 +572,7 @@
 ```json
 {
    "name":"파프니르 다마스커스",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGG.png",
    "category":"단검 (한손무기)",
    "upgrade":0,
@@ -575,6 +597,7 @@
 ```json
 {
    "name":"파프니르 리스크홀더",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFJC.png",
    "category":"아대 (한손무기)",
    "upgrade":0,
@@ -599,6 +622,7 @@
 ```json
 {
    "name":"파프니르 클레르시엘",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKG.png",
    "category":"케인 (한손무기)",
    "upgrade":0,
@@ -623,6 +647,7 @@
 ```json
 {
    "name":"파프니르 스플릿엣지",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKC.png",
    "category":"에너지소드 (한손무기)",
    "upgrade":0,
@@ -647,6 +672,7 @@
 ```json
 {
    "name":"파프니르 체인",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHKA.png",
    "category":"체인 (한손무기)",
    "upgrade":0,
@@ -671,6 +697,7 @@
 ```json
 {
    "name":"파프니르 용선",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHNI.png",
    "category":"부채 (한손무기)",
    "upgrade":0,
@@ -695,6 +722,7 @@
 ```json
 {
    "name":"파프니르 차크람",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPH.png",
    "category":"차크람 (한손무기)",
    "upgrade":0,
@@ -720,6 +748,7 @@
 ```json
 {
    "name":"파프니르 첼리스카",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFKC.png",
    "category":"건 (두손무기)",
    "upgrade":0,
@@ -744,6 +773,7 @@
 ```json
 {
    "name":"파프니르 펜리르탈론",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFNB.png",
    "category":"너클 (두손무기)",
    "upgrade":0,
@@ -768,6 +798,7 @@
 ```json
 {
    "name":"파프니르 러스터캐논",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGLE.png",
    "category":"핸드캐논 (두손무기)",
    "upgrade":0,
@@ -793,6 +824,7 @@
 ```json
 {
    "name":"파프니르 엔젤릭슈터",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGMB.png",
    "category":"소울 슈터 (한손무기)",
    "upgrade":0,
@@ -817,6 +849,7 @@
 ```json
 {
    "name":"파프니르 스플릿엣지",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKC.png",
    "category":"에너지소드 (한손무기)",
    "upgrade":0,
@@ -843,6 +876,7 @@
 ```json
 {
    "name":"앱솔랩스 세이버",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELA.png",
    "category":"한손검 (한손무기)",
    "upgrade":0,
@@ -867,6 +901,7 @@
 ```json
 {
    "name":"앱솔랩스 엑스",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFOF.png",
    "category":"한손도끼 (한손무기)",
    "upgrade":0,
@@ -891,6 +926,7 @@
 ```json
 {
    "name":"앱솔랩스 비트해머",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png",
    "category":"한손둔기 (한손무기)",
    "upgrade":0,
@@ -915,6 +951,7 @@
 ```json
 {
    "name":"앱솔랩스 브로드세이버",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIB.png",
    "category":"두손검 (두손무기)",
    "upgrade":0,
@@ -939,6 +976,7 @@
 ```json
 {
    "name":"앱솔랩스 브로드엑스",
+   "level":160,
    "imageUrl":"",
    "category":"두손도끼 (두손무기)",
    "upgrade":0,
@@ -963,6 +1001,7 @@
 ```json
 {
    "name":"앱솔랩스 브로드해머",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFLB.png",
    "category":"두손둔기 (두손무기)",
    "upgrade":0,
@@ -987,6 +1026,7 @@
 ```json
 {
    "name":"앱솔랩스 피어싱스피어",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFAF.png",
    "category":"창 (두손무기)",
    "upgrade":0,
@@ -1011,6 +1051,7 @@
 ```json
 {
    "name":"앱솔랩스 핼버드",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFIJ.png",
    "category":"폴암 (두손무기)",
    "upgrade":0,
@@ -1035,6 +1076,7 @@
 ```json
 {
    "name":"앱솔랩스 데스페라도",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGAF.png",
    "category":"데스페라도 (한손무기)",
    "upgrade":0,
@@ -1059,6 +1101,7 @@
 ```json
 {
    "name":"앱솔랩스 파일 갓",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHAG.png",
    "category":"건틀렛 리볼버 (두손무기)",
    "upgrade":0,
@@ -1083,6 +1126,7 @@
 ```json
 {
    "name":"앱솔랩스 튜너",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHMJ.png",
    "category":"튜너 (한손무기)",
    "upgrade":0,
@@ -1108,6 +1152,7 @@
 ```json
 {
    "name":"앱솔랩스 슈팅보우",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFLD.png",
    "category":"활 (두손무기)",
    "upgrade":0,
@@ -1133,6 +1178,7 @@
 ```json
 {
    "name":"앱솔랩스 크로스보우",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFKF.png",
    "category":"석궁 (두손무기)",
    "upgrade":0,
@@ -1158,6 +1204,7 @@
 ```json
 {
    "name":"앱솔랩스 듀얼보우건",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGKF.png",
    "category":"듀얼 보우건 (두손무기)",
    "upgrade":0,
@@ -1183,6 +1230,7 @@
 ```json
 {
    "name":"앱솔랩스 에인션트 보우",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMJ.png",
    "category":"에인션트 보우 (두손무기)",
    "upgrade":0,
@@ -1208,6 +1256,7 @@
 ```json
 {
    "name":"앱솔랩스 브레스 슈터",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDPHMJ.png",
    "category":"브레스 슈터 (한손무기)",
    "upgrade":0,
@@ -1234,6 +1283,7 @@
 ```json
 {
    "name":"앱솔랩스 스펠링완드",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFMI.png",
    "category":"완드 (한손무기)",
    "upgrade":0,
@@ -1259,6 +1309,7 @@
 ```json
 {
    "name":"앱솔랩스 스펠링스태프",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFIH.png",
    "category":"스태프 (한손무기)",
    "upgrade":0,
@@ -1284,6 +1335,7 @@
 ```json
 {
    "name":"앱솔랩스 샤이닝로드",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGAE.png",
    "category":"샤이닝 로드 (한손무기)",
    "upgrade":0,
@@ -1309,6 +1361,7 @@
 ```json
 {
    "name":"앱솔랩스 ESP리미터",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHAG.png",
    "category":"ESP 리미터 (한손무기)",
    "upgrade":0,
@@ -1334,6 +1387,7 @@
 ```json
 {
    "name":"앱솔랩스 매직 건틀렛",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHAH.png",
    "category":"매직 건틀렛 (한손무기)",
    "upgrade":0,
@@ -1360,6 +1414,7 @@
 ```json
 {
    "name":"앱솔랩스 슬래셔",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGB.png",
    "category":"단검 (한손무기)",
    "upgrade":0,
@@ -1384,6 +1439,7 @@
 ```json
 {
    "name":"앱솔랩스 리벤지가즈",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFIA.png",
    "category":"아대 (한손무기)",
    "upgrade":0,
@@ -1408,6 +1464,7 @@
 ```json
 {
    "name":"앱솔랩스 핀쳐케인",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKA.png",
    "category":"케인 (한손무기)",
    "upgrade":0,
@@ -1432,6 +1489,7 @@
 ```json
 {
    "name":"앱솔랩스 에너지소드",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGMB.png",
    "category":"에너지소드 (한손무기)",
    "upgrade":0,
@@ -1456,6 +1514,7 @@
 ```json
 {
    "name":"앱솔랩스 체인",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHMA.png",
    "category":"체인 (한손무기)",
    "upgrade":0,
@@ -1504,6 +1563,7 @@
 ```json
 {
    "name":"앱솔랩스 차크람",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPG.png",
    "category":"차크람 (두손무기)",
    "upgrade":0,
@@ -1529,6 +1589,7 @@
 ```json
 {
    "name":"앱솔랩스 포인팅건",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFNA.png",
    "category":"건 (두손무기)",
    "upgrade":0,
@@ -1553,6 +1614,7 @@
 ```json
 {
    "name":"앱솔랩스 블로우너클",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMD.png",
    "category":"너클 (두손무기)",
    "upgrade":0,
@@ -1577,6 +1639,7 @@
 ```json
 {
    "name":"앱솔랩스 블래스트캐논",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGKF.png",
    "category":"핸드캐논 (두손무기)",
    "upgrade":0,
@@ -1602,6 +1665,7 @@
 ```json
 {
    "name":"앱솔랩스 소울슈터",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGAF.png",
    "category":"소울슈터 (두손무기)",
    "upgrade":0,
@@ -1626,6 +1690,7 @@
 ```json
 {
    "name":"앱솔랩스 에너지소드",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGMB.png",
    "category":"에너지소드 (한손무기)",
    "upgrade":0,
@@ -1652,6 +1717,7 @@
 ```json
 {
    "name":"아케인셰이드 세이버",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELI.png",
    "category":"한손검 (한손무기)",
    "upgrade":0,
@@ -1676,6 +1742,7 @@
 ```json
 {
    "name":"아케인셰이드 엑스",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPE.png",
    "category":"한손도끼 (한손무기)",
    "upgrade":0,
@@ -1700,6 +1767,7 @@
 ```json
 {
    "name":"아케인셰이드 해머",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIH.png",
    "category":"한손둔기 (한손무기)",
    "upgrade":0,
@@ -1724,6 +1792,7 @@
 ```json
 {
    "name":"아케인셰이드 투핸드소드",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFJA.png",
    "category":"두손검 (두손무기)",
    "upgrade":0,
@@ -1748,6 +1817,7 @@
 ```json
 {
    "name":"아케인셰이드 투핸드엑스",
+   "level":200,
    "imageUrl":"",
    "category":"두손도끼 (두손무기)",
    "upgrade":0,
@@ -1772,6 +1842,7 @@
 ```json
 {
    "name":"아케인셰이드 투핸드해머",
+   "level":200,
    "imageUrl":"",
    "category":"두손둔기 (두손무기)",
    "upgrade":0,
@@ -1796,6 +1867,7 @@
 ```json
 {
    "name":"아케인셰이드 스피어",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFMI.png",
    "category":"창 (두손무기)",
    "upgrade":0,
@@ -1820,6 +1892,7 @@
 ```json
 {
    "name":"아케인셰이드 폴암",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFGG.png",
    "category":"폴암 (두손무기)",
    "upgrade":0,
@@ -1844,6 +1917,7 @@
 ```json
 {
    "name":"아케인셰이드 데스페라도",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGMF.png",
    "category":"데스페라도 (한손무기)",
    "upgrade":0,
@@ -1868,6 +1942,7 @@
 ```json
 {
    "name":"아케인셰이드 엘라하",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHKH.png",
    "category":"건틀렛 리볼버 (두손무기)",
    "upgrade":0,
@@ -1892,6 +1967,7 @@
 ```json
 {
    "name":"아케인셰이드 튜너",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHNB.png",
    "category":"튜너 (한손무기)",
    "upgrade":0,
@@ -1917,6 +1993,7 @@
 ```json
    {
       "name":"아케인셰이드 보우",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFII.png",
          "category":"활 (두손무기)",
          "upgrade":0,
@@ -1943,6 +2020,7 @@
 ```json
    {
       "name":"아케인셰이드 크로스보우",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFLF.png",
          "category":"석궁 (두손무기)",
          "upgrade":0,
@@ -1969,6 +2047,7 @@
 ```json
    {
       "name":"아케인셰이드 듀얼보우건",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGLF.png",
          "category":"듀얼 보우건 (두손무기)",
          "upgrade":0,
@@ -1995,6 +2074,7 @@
 ```json
    {
       "name":"아케인셰이드 에인션트 보우",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMB.png",
          "category":"에인션트 보우 (두손무기)",
          "upgrade":0,
@@ -2023,6 +2103,7 @@
 ```json
    {
       "name":"아케인셰이드 완드",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFNI.png",
          "category":"완드 (한손무기)",
          "upgrade":0,
@@ -2049,6 +2130,7 @@
 ```json
    {
       "name":"아케인셰이드 스태프",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFJH.png",
          "category":"스태프 (한손무기)",
          "upgrade":0,
@@ -2075,6 +2157,7 @@
 ```json
    {
       "name":"아케인셰이드 샤이닝로드",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGNA.png",
          "category":"샤이닝 로드 (한손무기)",
          "upgrade":0,
@@ -2101,6 +2184,7 @@
 ```json
    {
       "name":"아케인셰이드 ESP 리미터",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHLC.png",
          "category":"ESP 리미터 (한손무기)",
          "upgrade":0,
@@ -2127,6 +2211,7 @@
 ```json
    {
       "name":"아케인셰이드 매직 건틀렛",
+      "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHKC.png",
          "category":"매직 건틀렛 (한손무기)",
          "upgrade":0,
@@ -2154,6 +2239,7 @@
 ```json
 {
          "name":"아케인셰이드 대거",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGJ.png",
          "category":"단검 (한손무기)",
          "upgrade":0,
@@ -2178,6 +2264,7 @@
 ```json
 {
          "name":"아케인셰이드 가즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFJG.png",
          "category":"아대 (두손무기)",
          "upgrade":0,
@@ -2202,6 +2289,7 @@
 ```json
 {
          "name":"아케인셰이드 케인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKB.png",
          "category":"케인 (한손무기)",
          "upgrade":0,
@@ -2226,6 +2314,7 @@
 ```json
 {
          "name":"아케인셰이드 에너지체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKE.png",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
@@ -2250,6 +2339,7 @@
 ```json
 {
          "name":"아케인셰이드 체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHKC.png",
          "category":"체인 (한손무기)",
          "upgrade":0,
@@ -2274,6 +2364,7 @@
 ```json
 {
          "name":"아케인셰이드 초선",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHNB.png",
          "category":"부채 (한손무기)",
          "upgrade":0,
@@ -2298,6 +2389,7 @@
 ```json
 {
          "name":"아케인셰이드 차크람",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCPHPJ.png",
          "category":"차크람 (두손무기)",
          "upgrade":0,
@@ -2323,6 +2415,7 @@
 ```json
 {
          "name":"아케인셰이드 피스톨",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFKG.png",
          "category":"건 (두손무기)",
          "upgrade":0,
@@ -2346,14 +2439,15 @@
 * 아케인셰이드 클로
 ```json
 {
-         "name":"아케인셰이드 피스톨",
+         "name":"아케인셰이드 클로",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFMA.png",
-         "category":"건 (두손무기)",
+         "category":"너클 (두손무기)",
          "upgrade":0,
          "base":{
             "str":100,
             "dex":100,
-            "atk":216,
+            "atk":221,
             "bossDmg":30,
             "ignoreDef":20
          },
@@ -2371,6 +2465,7 @@
 ```json
 {
          "name":"아케인셰이드 시즈건",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGLB.png",
          "category":"핸드캐논 (두손무기)",
          "upgrade":0,
@@ -2396,6 +2491,7 @@
 ```json
 {
          "name":"아케인셰이드 소울슈터",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGMF.png",
          "category":"소울 슈터 (한손무기)",
          "upgrade":0,
@@ -2420,6 +2516,7 @@
 ```json
 {
          "name":"아케인셰이드 에너지체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKE.png",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
@@ -2446,6 +2543,7 @@
 ```json
 {
          "name":"제네시스 세이버",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELE.png",
          "category":"한손검 (한손무기)",
          "upgrade":0,
@@ -2474,6 +2572,7 @@
 ```json
 {
          "name":"제네시스 엑스",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMDJFPC.png",
          "category":"한손도끼 (한손무기)",
          "upgrade":0,
@@ -2502,6 +2601,7 @@
 ```json
 {
          "name":"제네시스 해머",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMAJFIF.png",
          "category":"한손둔기 (한손무기)",
          "upgrade":0,
@@ -2530,6 +2630,7 @@
 ```json
 {
          "name":"제네시스 투핸드소드",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELCJFIJ.png",
          "category":"두손검 (두손무기)",
          "upgrade":0,
@@ -2558,6 +2659,7 @@
 ```json
 {
          "name":"제네시스 투핸드엑스",
+         "level":200,
          "imageUrl":"https://i.namu.wiki/i/rVQ3P-gV4AvmGU02Vi65PFgaj0b-9W50SDnGTZEj9t4-MFdiEFOyhuhpt24450V6LLsSXVsewiaZD4Clv1Xyow.png",
          "category":"두손도끼 (두손무기)",
          "upgrade":0,
@@ -2586,6 +2688,7 @@
 ```json
 {
          "name":"제네시스 투핸드해머",
+         "level":200,
          "imageUrl":"",
          "category":"두손둔기 (두손무기)",
          "upgrade":0,
@@ -2614,6 +2717,7 @@
 ```json
 {
          "name":"제네시스 스피어",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELBJFMG.png",
          "category":"창 (두손무기)",
          "upgrade":0,
@@ -2642,6 +2746,7 @@
 ```json
 {
          "name":"제네시스 폴암",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELGJFGE.png",
          "category":"폴암 (두손무기)",
          "upgrade":0,
@@ -2670,6 +2775,7 @@
 ```json
 {
          "name":"제네시스 데스페라도",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENBJGMD.png",
          "category":"데스페라도 (한손무기)",
          "upgrade":0,
@@ -2698,6 +2804,7 @@
 ```json
 {
          "name":"제네시스 엘라하",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKKJHKF.png",
          "category":"건틀렛 리볼버 (두손무기)",
          "upgrade":0,
@@ -2726,6 +2833,7 @@
 ```json
 {
          "name":"제네시스 튜너",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDIHMD.png",
          "category":"튜너 (한손무기)",
          "upgrade":0,
@@ -2755,6 +2863,7 @@
 ```json
 {
          "name":"제네시스 보우",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELHJFIH.png",
          "category":"활 (두손무기)",
          "upgrade":0,
@@ -2785,6 +2894,7 @@
 ```json
 {
          "name":"제네시스 크로스보우",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELEJFLD.png",
          "category":"석궁 (두손무기)",
          "upgrade":0,
@@ -2814,6 +2924,7 @@
 ```json
 {
          "name":"제네시스 듀얼보우건",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKAJGLD.png",
          "category":"듀얼보우건 (두손무기)",
          "upgrade":0,
@@ -2843,6 +2954,7 @@
 ```json
 {
          "name":"제네시스 에인션트 보우",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKLJHMD.png",
          "category":"에인션트 보우 (두손무기)",
          "upgrade":0,
@@ -2872,6 +2984,7 @@
 ```json
 {
          "name":"제네시스 브레스 슈터",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDPHMD.png",
          "category":"브레스 슈터 (한손무기)",
          "upgrade":0,
@@ -2903,6 +3016,7 @@
 ```json
 {
          "name":"제네시스 완드",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMFJFNH.png",
          "category":"완드 (한손무기)",
          "upgrade":0,
@@ -2933,6 +3047,7 @@
 ```json
 {
          "name":"제네시스 스태프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMKJFJF.png",
          "category":"스태프 (한손무기)",
          "upgrade":0,
@@ -2963,6 +3078,7 @@
 ```json
 {
          "name":"제네시스 샤이닝로드",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENDJGMI.png",
          "category":"샤이닝 로드 (한손무기)",
          "upgrade":0,
@@ -2993,6 +3109,7 @@
 ```json
 {
          "name":"제네시스 ESP 리미터",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENEJHLA.png",
          "category":"ESP 리미터 (한손무기)",
          "upgrade":0,
@@ -3023,6 +3140,7 @@
 ```json
 {
          "name":"제네시스 매직 건틀렛",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENKJHKB.png",
          "category":"매직 건틀렛 (한손무기)",
          "upgrade":0,
@@ -3054,6 +3172,7 @@
 ```json
 {
          "name":"제네시스 대거",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMBJFGI.png",
          "category":"단검 (한손무기)",
          "upgrade":0,
@@ -3082,6 +3201,7 @@
 ```json
 {
          "name":"제네시스 가즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELFJFJE.png",
          "category":"아대 (두손무기)",
          "upgrade":0,
@@ -3110,6 +3230,7 @@
 ```json
 {
          "name":"제네시스 케인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMEJGKI.png",
          "category":"케인 (한손무기)",
          "upgrade":0,
@@ -3138,6 +3259,7 @@
 ```json
 {
          "name":"제네시스 에너지체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKA.png",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
@@ -3167,6 +3289,7 @@
 ```json
 {
          "name":"제네시스 체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENFJHKB.png",
          "category":"체인 (한손무기)",
          "upgrade":0,
@@ -3195,6 +3318,7 @@
 ```json
 {
          "name":"제네시스 창세선",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENLJHMD.png",
          "category":"부채 (한손무기)",
          "upgrade":0,
@@ -3223,6 +3347,7 @@
 ```json
 {
          "name":"제네시스 이클립스",
+         "level":200,
          "imageUrl":"https://i.namu.wiki/i/SsiyoJYNqZckVj4xK7kuxF9E1UT-z-UxQ67rBdypbVH6TEjatqA3RwI2iCc4xpnqNhA0Ti4cAOJ-pQzLdA-RWA.webp",
          "category":"차크람 (두손무기)",
          "upgrade":0,
@@ -3252,6 +3377,7 @@
 ```json
 {
          "name":"제네시스 피스톨",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELLJFKE.png",
          "category":"건 (두손무기)",
          "upgrade":0,
@@ -3280,6 +3406,7 @@
 ```json
 {
          "name":"제네시스 클로",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KELKJFND.png",
          "category":"너클 (두손무기)",
          "upgrade":0,
@@ -3308,6 +3435,7 @@
 ```json
 {
          "name":"제네시스 시즈건",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEKBJGLG.png",
          "category":"핸드캐논 (두손무기)",
          "upgrade":0,
@@ -3336,6 +3464,7 @@
 ```json
 {
          "name":"제네시스 소울슈터",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENAJGMD.png",
          "category":"소울 슈터 (한손무기)",
          "upgrade":0,
@@ -3364,6 +3493,7 @@
 ```json
 {
          "name":"제네시스 에너지체인",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KENGJGKA.png",
          "category":"에너지소드 (한손무기)",
          "upgrade":0,
@@ -3396,6 +3526,7 @@
 ```json
 {
          "name":"버츄스 메달",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOD.png",
          "category":"메달",
          "upgrade":0,
@@ -3418,6 +3549,7 @@
 ```json
 {
          "name":"세이크리드 로자리오",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPD.png",
          "category":"로자리오",
          "upgrade":0,
@@ -3440,6 +3572,7 @@
 ```json
 {
          "name":"버서크 체인",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMD.png",
          "category":"쇠사슬",
          "upgrade":0,
@@ -3462,6 +3595,7 @@
 ```json
 {
          "name":"적녹의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNC.png",
          "category":"마도서",
          "upgrade":0,
@@ -3484,6 +3618,7 @@
 ```json
 {
          "name":"청은의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKD.png",
          "category":"마도서",
          "upgrade":0,
@@ -3506,6 +3641,7 @@
 ```json
 {
          "name":"백금의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFLD.png",
          "category":"마도서",
          "upgrade":0,
@@ -3528,6 +3664,7 @@
 ```json
 {
          "name":"블라스트 페더",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFID.png",
          "category":"화살깃",
          "upgrade":0,
@@ -3550,6 +3687,7 @@
 ```json
 {
          "name":"전발적중",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFJD.png",
          "category":"활골무",
          "upgrade":0,
@@ -3572,6 +3710,7 @@
 ```json
 {
          "name":"퍼펙트 렐릭",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIAOC.png",
          "category":"렐릭",
          "upgrade":0,
@@ -3594,6 +3733,7 @@
 ```json
 {
          "name":"파사부",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFHD.png",
          "category":"부적",
          "upgrade":0,
@@ -3616,6 +3756,7 @@
 ```json
 {
          "name":"슬래싱 섀도우",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFGD.png",
          "category":"단검용 검집",
          "upgrade":0,
@@ -3638,6 +3779,7 @@
 ```json
 {
          "name":"리스트 아머",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOOC.png",
          "category":"리스트 밴드",
          "upgrade":0,
@@ -3660,6 +3802,7 @@
 ```json
 {
          "name":"팔콘아이",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOPC.png",
          "category":"조준기",
          "upgrade":0,
@@ -3682,6 +3825,7 @@
 ```json
 {
          "name":"봄버드 센터파이어",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOMD.png",
          "category":"화약통",
          "upgrade":0,
@@ -3705,6 +3849,7 @@
 ```json
 {
          "name":"에레브의 광휘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOJD.png",
          "category":"보석",
          "upgrade":0,
@@ -3730,6 +3875,7 @@
 ```json
 {
          "name":"정의의 소울실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLDHOI.png",
          "category":"소울실드",
          "upgrade":0,
@@ -3755,6 +3901,7 @@
 ```json
 {
          "name":"익스플로시브 필<3호>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIDOC.png",
          "category":"장약",
          "upgrade":0,
@@ -3777,6 +3924,7 @@
 ```json
 {
          "name":"맥시마이즈 볼",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOLD.png",
          "category":"마법구슬",
          "upgrade":0,
@@ -3799,6 +3947,7 @@
 ```json
 {
          "name":"와일드 팡",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOID.png",
          "category":"화살촉",
          "upgrade":0,
@@ -3821,6 +3970,7 @@
 ```json
 {
          "name":"이터널 매그넘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJAOC.png",
          "category":"매그넘",
          "upgrade":0,
@@ -3841,6 +3991,7 @@
 ```json
 {
          "name":"극한의 포스실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPG.png",
          "category":"포스실드",
          "upgrade":0,
@@ -3864,6 +4015,7 @@
 ```json
 {
          "name":"옥타코어 컨트롤러",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIHOF.png",
          "category":"컨트롤러",
          "upgrade":0,
@@ -3891,6 +4043,7 @@
 ```json
 {
          "name":"천룡추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOQC.png",
          "category":"무게추",
          "upgrade":0,
@@ -3913,6 +4066,7 @@
 ```json
 {
          "name":"드래곤마스터의 유산",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOKD.png",
          "category":"문서",
          "upgrade":0,
@@ -3935,6 +4089,7 @@
 ```json
 {
          "name":"카르마 오브",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJDOC.png",
          "category":"오브",
          "upgrade":0,
@@ -3955,6 +4110,7 @@
 ```json
 {
          "name":"무한의 마법화살",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJHOC.png",
          "category":"마법화살",
          "upgrade":0,
@@ -3975,6 +4131,7 @@
 ```json
 {
          "name":"데르니에 카르트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJGOC.png",
          "category":"카드",
          "upgrade":0,
@@ -3995,6 +4152,7 @@
 ```json
 {
          "name":"황금빛 여우구슬",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOJ.png",
          "category":"여우구슬",
          "upgrade":0,
@@ -4018,6 +4176,7 @@
 ```json
 {
          "name":"진리의 노바의 정수",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJCOC.png",
          "category":"용의 정수",
          "upgrade":0,
@@ -4042,6 +4201,7 @@
 ```json
 {
          "name":"D100 커스텀 웨폰 벨트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHPC.png",
          "category":"웨폰 벨트",
          "upgrade":0,
@@ -4064,6 +4224,7 @@
 ```json
 {
          "name":"트랜스미터 type:A",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIEOC.png",
          "category":"무기 전송장치",
          "upgrade":0,
@@ -4086,6 +4247,7 @@
 ```json
 {
          "name":"그린 소울링",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJBOF.png",
          "category":"소울링",
          "upgrade":0,
@@ -4112,6 +4274,7 @@
 ```json
 {
          "name":"노블 브레이슬릿",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHOC.png",
          "category":"브레이슬릿",
          "upgrade":0,
@@ -4134,6 +4297,7 @@
 ```json
 {
          "name":"글로리 매직윙",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHICOC.png",
          "category":"매직윙",
          "upgrade":0,
@@ -4156,6 +4320,7 @@
 ```json
 {
          "name":"인피니트 헥스시커",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHNH.png",
          "category":"헥스시커",
          "upgrade":0,
@@ -4178,6 +4343,7 @@
 ```json
 {
          "name":"얼티밋 패스",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIBOC.png",
          "category":"패스 오브 어비스",
          "upgrade":0,
@@ -4201,6 +4367,7 @@
 ```json
 {
          "name":"빛나는 사옥 노리개",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHMH.png",
          "category":"노리개",
          "upgrade":0,
@@ -4223,6 +4390,7 @@
 ```json
 {
          "name":"월장석 선추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIPOH.png",
          "category":"선추",
          "upgrade":0,
@@ -4247,6 +4415,7 @@
 ```json
 {
          "name":"체스피스 디 퀸",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIFOC.png",
          "category":"체스피스",
          "upgrade":0,
@@ -4270,6 +4439,7 @@
 ```json
 {
          "name":"파프니르 래피드엣지",
+         "level":150,
          "imageUrl":,
          "category":"블레이드",
          "upgrade":0,
@@ -4291,6 +4461,7 @@
 ```json
 {
          "name":"앱솔랩스 블레이드",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMGJGOA.png",
          "category":"블레이드",
          "upgrade":0,
@@ -4312,6 +4483,7 @@
 ```json
 {
          "name":"아케인셰이드 블레이드",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMGJGOF.png",
          "category":"블레이드",
          "upgrade":0,
@@ -4334,6 +4506,7 @@
 ```json
 {
          "name":"블랙 메달",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOE.png",
          "category":"메달",
          "upgrade":0,
@@ -4357,6 +4530,7 @@
 ```json
 {
          "name":"블랙 로자리오",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPE.png",
          "category":"로자리오",
          "upgrade":0,
@@ -4380,6 +4554,7 @@
 ```json
 {
          "name":"블랙 체인",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMD.png",
          "category":"쇠사슬",
          "upgrade":0,
@@ -4426,6 +4601,7 @@
 ```json
 {
          "name":"청은의 서 <블랙>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKE.png",
          "category":"마도서",
          "upgrade":0,
@@ -4449,6 +4625,7 @@
 ```json
 {
          "name":"백금의 서 <블랙>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFLE.png",
          "category":"마도서",
          "upgrade":0,
@@ -4472,6 +4649,7 @@
 ```json
 {
          "name":"블랙 페더",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFIE.png",
          "category":"화살깃",
          "upgrade":0,
@@ -4495,6 +4673,7 @@
 ```json
 {
          "name":"블랙 전발적중",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFJE.png",
          "category":"활골무",
          "upgrade":0,
@@ -4518,6 +4697,7 @@
 ```json
 {
          "name":"블랙 렐릭",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIAOF.png",
          "category":"렐릭",
          "upgrade":0,
@@ -4541,6 +4721,7 @@
 ```json
 {
          "name":"블랙 파사부",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFHE.png",
          "category":"부적",
          "upgrade":0,
@@ -4564,6 +4745,7 @@
 ```json
 {
          "name":"블랙 섀도우",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFGE.png",
          "category":"단검용 검집",
          "upgrade":0,
@@ -4587,6 +4769,7 @@
 ```json
 {
          "name":"블랙 리스트 아머",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOOE.png",
          "category":"리스트 밴드",
          "upgrade":0,
@@ -4610,6 +4793,7 @@
 ```json
 {
          "name":"블랙 팔콘아이",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOPE.png",
          "category":"조준기",
          "upgrade":0,
@@ -4633,6 +4817,7 @@
 ```json
 {
          "name":"블랙 센터파이어",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOMG.png",
          "category":"화약통",
          "upgrade":0,
@@ -4656,6 +4841,7 @@
 ```json
 {
          "name":"블랙 에레브의 광휘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOJF.png",
          "category":"보석",
          "upgrade":0,
@@ -4682,6 +4868,7 @@
 ```json
 {
          "name":"블랙 소울실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLDHOE.png",
          "category":"소울실드",
          "upgrade":0,
@@ -4707,6 +4894,7 @@
 ```json
 {
          "name":"블랙 익스플로시브 필",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIDOF.png",
          "category":"장약",
          "upgrade":0,
@@ -4730,6 +4918,7 @@
 ```json
 {
          "name":"블랙 맥시마이즈 볼",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOLE.png",
          "category":"마법구슬",
          "upgrade":0,
@@ -4753,6 +4942,7 @@
 ```json
 {
          "name":"블랙 와일드 팡",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOIE.png",
          "category":"화살촉",
          "upgrade":0,
@@ -4776,6 +4966,7 @@
 ```json
 {
          "name":"블랙 매그넘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJAOE.png",
          "category":"매그넘",
          "upgrade":0,
@@ -4798,6 +4989,7 @@
 ```json
 {
          "name":"블랙 포스실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPC.png",
          "category":"포스실드",
          "upgrade":0,
@@ -4823,6 +5015,7 @@
 ```json
 {
          "name":"블랙 옥타코어 컨트롤러",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIHOG.png",
          "category":"컨트롤러",
          "upgrade":0,
@@ -4850,6 +5043,7 @@
 ```json
 {
          "name":"블랙 드래곤마스터의 유산",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOKF.png",
          "category":"문서",
          "upgrade":0,
@@ -4873,6 +5067,7 @@
 ```json
 {
          "name":"블랙 천룡추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOQD.png",
          "category":"무게추",
          "upgrade":0,
@@ -4896,6 +5091,7 @@
 ```json
 {
          "name":"블랙 오브",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJDOG.png",
          "category":"오브",
          "upgrade":0,
@@ -4918,6 +5114,7 @@
 ```json
 {
          "name":"블랙 마법 화살",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJHOJ.png",
          "category":"마법화살",
          "upgrade":0,
@@ -4940,6 +5137,7 @@
 ```json
 {
          "name":"블랙 카르트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJGOJ.png",
          "category":"카드",
          "upgrade":0,
@@ -4962,6 +5160,7 @@
 ```json
 {
          "name":"블랙 여우구슬",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOH.png",
          "category":"여우구슬",
          "upgrade":0,
@@ -4985,6 +5184,7 @@
 ```json
 {
          "name":"블랙 노바의 정수",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJCOE.png",
          "category":"용의 정수",
          "upgrade":0,
@@ -5010,6 +5210,7 @@
 ```json
 {
          "name":"블랙 D100 웨폰 벨트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHPE.png",
          "category":"웨폰 벨트",
          "upgrade":0,
@@ -5033,6 +5234,7 @@
 ```json
 {
          "name":"블랙 트랜스미터",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIEOE.png",
          "category":"무기 전송장치",
          "upgrade":0,
@@ -5056,6 +5258,7 @@
 ```json
 {
          "name":"블랙 소울링",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJBOG.png",
          "category":"소울링",
          "upgrade":0,
@@ -5082,6 +5285,7 @@
 ```json
 {
          "name":"블랙 샤이니 브레이슬릿",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHOE.png",
          "category":"브레이슬릿",
          "upgrade":0,
@@ -5105,6 +5309,7 @@
 ```json
 {
          "name":"블랙 매직윙",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHICOF.png",
          "category":"매직윙",
          "upgrade":0,
@@ -5128,6 +5333,7 @@
 ```json
 {
          "name":"블랙 인피니트 헥스시커",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHNF.png",
          "category":"헥스시커",
          "upgrade":0,
@@ -5151,6 +5357,7 @@
 ```json
 {
          "name":"블랙 패스",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIBOE.png",
          "category":"패스 오브 어비스",
          "upgrade":0,
@@ -5174,6 +5381,7 @@
 ```json
 {
          "name":"블랙 사옥 노리개",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHMF.png",
          "category":"노리개",
          "upgrade":0,
@@ -5197,6 +5405,7 @@
 ```json
 {
          "name":"블랙 황수정 선추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIPOF.png",
          "category":"선추",
          "upgrade":0,
@@ -5220,6 +5429,7 @@
 ```json
 {
          "name":"체스피스 블랙 퀸",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIFOF.png",
          "category":"체스피스",
          "upgrade":0,
@@ -5244,6 +5454,7 @@
 ```json
 {
          "name":"이볼빙 버츄스 메달",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOD.png",
          "category":"메달",
          "upgrade":0,
@@ -5267,6 +5478,7 @@
 ```json
 {
          "name":"이볼빙 세이크리드 로자리오",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPD.png",
          "category":"로자리오",
          "upgrade":0,
@@ -5290,6 +5502,7 @@
 ```json
 {
          "name":"이볼빙 버서크 체인",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMD.png",
          "category":"쇠사슬",
          "upgrade":0,
@@ -5313,6 +5526,7 @@
 ```json
 {
          "name":"이볼빙 적녹의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNC.png",
          "category":"마도서",
          "upgrade":0,
@@ -5336,6 +5550,7 @@
 ```json
 {
          "name":"이볼빙 청은의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKD.png",
          "category":"마도서",
          "upgrade":0,
@@ -5359,6 +5574,7 @@
 ```json
 {
          "name":"이볼빙 백금의 서 <종장>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFLD.png",
          "category":"마도서",
          "upgrade":0,
@@ -5382,6 +5598,7 @@
 ```json
 {
          "name":"이볼빙 블라스트 페더",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFID.png",
          "category":"화살깃",
          "upgrade":0,
@@ -5405,6 +5622,7 @@
 ```json
 {
          "name":"이볼빙 전발적중",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFJD.png",
          "category":"활골무",
          "upgrade":0,
@@ -5428,6 +5646,7 @@
 ```json
 {
          "name":"이볼빙 퍼펙트 렐릭",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIAOC.png",
          "category":"렐릭",
          "upgrade":0,
@@ -5451,6 +5670,7 @@
 ```json
 {
          "name":"이볼빙 파사부",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFHD.png",
          "category":"부적",
          "upgrade":0,
@@ -5474,6 +5694,7 @@
 ```json
 {
          "name":"이볼빙 슬래싱 섀도우",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFGD.png",
          "category":"단검용 검집",
          "upgrade":0,
@@ -5497,6 +5718,7 @@
 ```json
 {
          "name":"이볼빙 리스트 아머",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOOC.png",
          "category":"리스트 밴드",
          "upgrade":0,
@@ -5520,6 +5742,7 @@
 ```json
 {
          "name":"이볼빙 팔콘아이",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOPC.png",
          "category":"조준기",
          "upgrade":0,
@@ -5543,6 +5766,7 @@
 ```json
 {
          "name":"이볼빙 봄버드 센터파이어",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOMD.png",
          "category":"화약통",
          "upgrade":0,
@@ -5566,6 +5790,7 @@
 ```json
 {
          "name":"이볼빙 에레브의 광휘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOJD.png",
          "category":"보석",
          "upgrade":0,
@@ -5592,6 +5817,7 @@
 ```json
 {
          "name":"이볼빙 정의의 소울실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLDHOI.png",
          "category":"소울실드",
          "upgrade":0,
@@ -5618,6 +5844,7 @@
 ```json
 {
          "name":"이볼빙 익스플로시브 필<3호>",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIDOC.png",
          "category":"장약",
          "upgrade":0,
@@ -5641,6 +5868,7 @@
 ```json
 {
          "name":"이볼빙 맥시마이즈 볼",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOLD.png",
          "category":"마법구슬",
          "upgrade":0,
@@ -5664,6 +5892,7 @@
 ```json
 {
          "name":"이볼빙 와일드 팡",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOID.png",
          "category":"화살촉",
          "upgrade":0,
@@ -5687,6 +5916,7 @@
 ```json
 {
          "name":"이볼빙 이터널 매그넘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJAOC.png",
          "category":"매그넘",
          "upgrade":0,
@@ -5709,6 +5939,7 @@
 ```json
 {
          "name":"이볼빙 극한의 포스실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPG.png",
          "category":"포스실드",
          "upgrade":0,
@@ -5735,6 +5966,7 @@
 ```json
 {
          "name":"이볼빙 옥타코어 컨트롤러",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIHOF.png",
          "category":"컨트롤러",
          "upgrade":0,
@@ -5763,6 +5995,7 @@
 ```json
 {
          "name":"이볼빙 천룡추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOQC.png",
          "category":"무게추",
          "upgrade":0,
@@ -5786,6 +6019,7 @@
 ```json
 {
          "name":"이볼빙 드래곤마스터의 유산",
+         "level":100,      
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOKD.png",
          "category":"문서",
          "upgrade":0,
@@ -5809,6 +6043,7 @@
 ```json
 {
          "name":"이볼빙 카르마 오브",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJDOC.png",
          "category":"오브",
          "upgrade":0,
@@ -5830,6 +6065,7 @@
 ```json
 {
          "name":"이볼빙 무한의 마법 화살",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJHOC.png",
          "category":"마법화살",
          "upgrade":0,
@@ -5851,6 +6087,7 @@
 ```json
 {
          "name":"이볼빙 데르니에 카르트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJGOC.png",
          "category":"카드",
          "upgrade":0,
@@ -5872,6 +6109,7 @@
 ```json
 {
          "name":"이볼빙 황금빛 여우구슬",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOJ.png",
          "category":"여우구슬",
          "upgrade":0,
@@ -5895,6 +6133,7 @@
 ```json
 {
          "name":"이볼빙 진리의 노바의 정수",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJCOC.png",
          "category":"용의 정수",
          "upgrade":0,
@@ -5921,6 +6160,7 @@
 ```json
 {
          "name":"이볼빙 D100 웨폰 벨트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHPC.png",
          "category":"웨폰 벨트",
          "upgrade":0,
@@ -5944,6 +6184,7 @@
 ```json
 {
          "name":"이볼빙 트랜스미터 type:A",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIEOC.png",
          "category":"무기 전송장치",
          "upgrade":0,
@@ -5967,6 +6208,7 @@
 ```json
 {
          "name":"이볼빙 그린 소울링",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJBOF.png",
          "category":"소울링",
          "upgrade":0,
@@ -5994,6 +6236,7 @@
 ```json
 {
          "name":"이볼빙 노블 브레이슬릿",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHOC.png",
          "category":"브레이슬릿",
          "upgrade":0,
@@ -6017,6 +6260,7 @@
 ```json
 {
          "name":"이볼빙 글로리 매직윙",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHICOC.png",
          "category":"매직윙",
          "upgrade":0,
@@ -6040,6 +6284,7 @@
 ```json
 {
          "name":"이볼빙 인피니트 헥스시커",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHNH.png",
          "category":"헥스시커",
          "upgrade":0,
@@ -6063,6 +6308,7 @@
 ```json
 {
          "name":"이볼빙 얼티밋 패스",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIBOC.png",
          "category":"패스 오브 어비스",
          "upgrade":0,
@@ -6086,6 +6332,7 @@
 ```json
 {
          "name":"이볼빙 사옥 노리개",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHPHMH.png",
          "category":"노리개",
          "upgrade":0,
@@ -6109,6 +6356,7 @@
 ```json
 {
          "name":"이볼빙 월장석 선추",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIPOH.png",
          "category":"선추",
          "upgrade":0,
@@ -6132,6 +6380,7 @@
 ```json
 {
          "name":"이볼빙 체스피스 디 퀸",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIFOC.png",
          "category":"체스피스",
          "upgrade":0,
@@ -6155,6 +6404,7 @@
 ```json
 {
          "name":"메이플 트레져 메달",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFOJ.png",
          "category":"메달",
          "upgrade":0,
@@ -6178,6 +6428,7 @@
 ```json
 {
          "name":"메이플 트레져 로자리오",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFPJ.png",
          "category":"로자리오",
          "upgrade":0,
@@ -6201,6 +6452,7 @@
 ```json
 {
          "name":"메이플 트레져 체인",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFMJ.png",
          "category":"쇠사슬",
          "upgrade":0,
@@ -6224,6 +6476,7 @@
 ```json
 {
          "name":"적녹의 서 <메이플 트레져>",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFNJ.png",
          "category":"마도서",
          "upgrade":0,
@@ -6247,6 +6500,7 @@
 ```json
 {
          "name":"청은의 서 <메이플 트레져>",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFKJ.png",
          "category":"마도서",
          "upgrade":0,
@@ -6270,6 +6524,7 @@
 ```json
 {
          "name":"백금의 서 <메이플 트레져>",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFLJ.png",
          "category":"마도서",
          "upgrade":0,
@@ -6293,6 +6548,7 @@
 ```json
 {
          "name":"메이플 트레져 페더",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFIJ.png",
          "category":"화살깃",
          "upgrade":0,
@@ -6316,6 +6572,7 @@
 ```json
 {
          "name":"메이플 트레져 전발적중",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFJJ.png",
          "category":"활골무",
          "upgrade":0,
@@ -6339,6 +6596,7 @@
 ```json
 {
          "name":"메이플 트레져 파사부",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJFHJ.png",
          "category":"부적",
          "upgrade":0,
@@ -6385,6 +6643,7 @@
 ```json
 {
          "name":"메이플 트레져 리스트아머",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOOJ.png",
          "category":"리스트 밴드",
          "upgrade":0,
@@ -6408,6 +6667,7 @@
 ```json
 {
          "name":"메이플 트레져 팔콘아이",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOPJ.png",
          "category":"조준기",
          "upgrade":0,
@@ -6431,6 +6691,7 @@
 ```json
 {
          "name":"메이플 트레져 센터파이어",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOMG.png",
          "category":"화약통",
          "upgrade":0,
@@ -6454,6 +6715,7 @@
 ```json
 {
          "name":"메이플 트레져 에레브의 광휘",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOJG.png",
          "category":"보석",
          "upgrade":0,
@@ -6480,6 +6742,7 @@
 ```json
 {
          "name":"메이플 트레져 소울실드",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLDHOJ.png",
          "category":"소울실드",
          "upgrade":0,
@@ -6504,6 +6767,7 @@
 ```json
 {
          "name":"메이플 트레져 메모라이즈볼",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOLI.png",
          "category":"마법구슬",
          "upgrade":0,
@@ -6527,6 +6791,7 @@
 ```json
 {
          "name":"메이플 트레져 와일드 팡",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOII.png",
          "category":"화살촉",
          "upgrade":0,
@@ -6550,6 +6815,7 @@
 ```json
 {
          "name":"메이플 트레져 매그넘",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJAOI.png",
          "category":"매그넘",
          "upgrade":0,
@@ -6572,6 +6838,7 @@
 ```json
 {
          "name":"메이플 트레져 포스실드",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPF.png",
          "category":"포스실드",
          "upgrade":0,
@@ -6596,6 +6863,7 @@
 ```json
 {
          "name":"메이플 트레져 컨트롤러",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIHOJ.png",
          "category":"컨트롤러",
          "upgrade":0,
@@ -6622,6 +6890,7 @@
 ```json
 {
          "name":"메이플 트레져 천룡추",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOQG.png",
          "category":"무게추",
          "upgrade":0,
@@ -6645,6 +6914,7 @@
 ```json
 {
          "name":"메이플 트레져의 유산",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJOKG.png",
          "category":"문서",
          "upgrade":0,
@@ -6668,6 +6938,7 @@
 ```json
 {
          "name":"메이플 트레져 오브",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJDOJ.png",
          "category":"오브",
          "upgrade":0,
@@ -6690,6 +6961,7 @@
 ```json
 {
          "name":"메이플 트레져 마법 화살",
+         "level":110,
          "imageUrl":,
          "category":"마법화살",
          "upgrade":0,
@@ -6712,6 +6984,7 @@
 ```json
 {
          "name":"메이플 트레져 카르트",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJGOC.png",
          "category":"카드",
          "upgrade":0,
@@ -6734,6 +7007,7 @@
 ```json
 {
          "name":"메이플 트레져 여우구슬",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHIGOG.png",
          "category":"여우구슬",
          "upgrade":0,
@@ -6782,6 +7056,7 @@
 ```json
 {
          "name":"메이플 트레져 소울링",
+         "level":110,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEMHJBOJ.png",
          "category":"소울링",
          "upgrade":0,
@@ -6807,6 +7082,7 @@
 ```json
 {
          "name":"데이모스 세이지 실드",
+         "level":130,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLJHHD.png",
          "category":"방패",
          "upgrade":0,
@@ -6828,6 +7104,7 @@
 ```json
 {
          "name":"데이모스 워리어 실드",
+         "level":130,
          "imageUrl":,
          "category":"방패",
          "upgrade":0,
@@ -6850,6 +7127,7 @@
 ```json
 {
     "name":"데이모스 다크니스 실드",
+    "level":130,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLJHGJ.png",
     "category":"방패",
     "upgrade":0,
@@ -6871,6 +7149,7 @@
 ```json
 {
          "name":"루인 포스실드",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPLCHPE.png",
          "category":"포스실드",
          "upgrade":0,
@@ -6897,6 +7176,7 @@
 ```json
 {
          "name":"골드 메이플리프 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLEOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -6922,6 +7202,7 @@
 ```json
 {
          "name":"골드 시그너스 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLPOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -6947,6 +7228,7 @@
 ```json
 {
          "name":"골드 레지스탕스 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLBOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -6972,6 +7254,7 @@
 ```json
 {
          "name":"골드 데몬 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLAOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -6998,6 +7281,7 @@
 ```json
 {
          "name":"하이브리드 하트",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLFOA.png",
          "category":"파워소스",
          "upgrade":0,
@@ -7022,6 +7306,7 @@
 ```json
 {
          "name":"골드 히어로즈 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCPA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7047,6 +7332,7 @@
 ```json
 {
          "name":"드래곤 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLHOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7070,6 +7356,7 @@
 ```json
 {
          "name":"골드 히트맨 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLF.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7095,6 +7382,7 @@
 ```json
 {
          "name":"골드 에이전트 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCNB.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7120,6 +7408,7 @@
 ```json
 {
          "name":"엔젤 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLGOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7144,6 +7433,7 @@
 ```json
 {
          "name":"골드 나이트 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLD.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7169,6 +7459,7 @@
 ```json
 {
          "name":"골드 크리스탈 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCND.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7194,6 +7485,7 @@
 ```json
 {
          "name":"골드 체이서 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCIC.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7219,6 +7511,7 @@
 ```json
 {
          "name":"골드 어비스 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCKB.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7244,6 +7537,7 @@
 ```json
 {
          "name":"금빛 풍수사 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCIA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7269,6 +7563,7 @@
 ```json
 {
          "name":"금빛 천지인 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLB.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7294,6 +7589,7 @@
 ```json
 {
          "name":"이터널 타임 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLOOB.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7319,6 +7615,7 @@
 ```json
 {
          "name":"골드 키네시스 엠블렘",
+         "level":100,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLKHOA.png",
          "category":"엠블렘",
          "upgrade":0,
@@ -7345,6 +7642,7 @@
 ```json
 {
    "name":"미트라의 분노 : 전사",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLE.png",
    "category":"엠블렘",
    "upgrade":0,
@@ -7369,6 +7667,7 @@
 ```json
 {
    "name":"미트라의 분노 : 궁수",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLH.png",
    "category":"엠블렘",
    "upgrade":0,
@@ -7393,6 +7692,7 @@
 ```json
 {
    "name":"미트라의 분노 : 마법사",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLG.png",
    "category":"엠블렘",
    "upgrade":0,
@@ -7417,6 +7717,7 @@
 ```json
 {
    "name":"미트라의 분노 : 도적",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLJ.png",
    "category":"엠블렘",
    "upgrade":0,
@@ -7441,6 +7742,7 @@
 ```json
 {
    "name":"미트라의 분노 : 해적",
+   "level":200,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOLLCLI.png",
    "category":"엠블렘",
    "upgrade":0,
@@ -7468,6 +7770,7 @@
 ```json
 {
          "name":"하이네스 워리어헬름",
+         "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIAHG.png",
          "category":"모자",
          "upgrade":0,
@@ -7495,6 +7798,7 @@
 ```json
 {
       "name":"하이네스 레인져베레",
+      "level":150,
       "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIAHI.png",
       "category":"모자",
       "upgrade":0,
@@ -7520,6 +7824,7 @@
 ```json
 {
    "name":"하이네스 던위치햇",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIAHJ.png",
    "category":"모자",
    "upgrade":0,
@@ -7547,6 +7852,7 @@
 ```json
     {
          "name":"하이네스 어새신보닛",
+         "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOB.png",
          "category":"모자",
          "upgrade":0,
@@ -7572,6 +7878,7 @@
 ```json
 {
    "name":"하이네스 원더러햇",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCIPOA.png",
    "category":"모자",
    "upgrade":0,
@@ -7600,6 +7907,7 @@
 ```json
     {
          "name":"앱솔랩스 나이트헬름",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPDMD.png",
          "category":"모자",
          "upgrade":0,
@@ -7623,6 +7931,7 @@
 ```json
     {
          "name":"앱솔랩스 아처후드",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPDMF.png",
          "category":"모자",
          "upgrade":0,
@@ -7646,6 +7955,7 @@
 ```json
     {
          "name":"앱솔랩스 메이지크라운",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPDMC.png",
          "category":"모자",
          "upgrade":0,
@@ -7669,6 +7979,7 @@
 ```json
     {
          "name":"앱솔랩스 시프캡",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPDME.png",
          "category":"모자",
          "upgrade":0,
@@ -7692,6 +8003,7 @@
 ```json
     {
          "name":"앱솔랩스 파이렛페도라",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPDMH.png",
          "category":"모자",
          "upgrade":0,
@@ -7716,6 +8028,7 @@
 ```json
     {
          "name":"아케인셰이드 나이트햇",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPPOJ.png",
          "category":"모자",
          "upgrade":0,
@@ -7739,6 +8052,7 @@
 ```json
     {
          "name":"아케인셰이드 아처햇",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPPPB.png",
          "category":"모자",
          "upgrade":0,
@@ -7762,6 +8076,7 @@
 ```json
     {
          "name":"아케인셰이드 메이지햇",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPPOI.png",
          "category":"모자",
          "upgrade":0,
@@ -7785,6 +8100,7 @@
 ```json
     {
          "name":"아케인셰이드 시프햇",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPPPA.png",
          "category":"모자",
          "upgrade":0,
@@ -7808,6 +8124,7 @@
 ```json
     {
          "name":"아케인셰이드 파이렛햇",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCPPPD.png",
          "category":"모자",
          "upgrade":0,
@@ -7832,6 +8149,7 @@
 ```json
     {
          "name":"에테르넬 나이트헬름",
+         "level":250,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCOOGB.png",
          "category":"모자",
          "upgrade":0,
@@ -7855,6 +8173,7 @@
 ```json
     {
          "name":"에테르넬 아처햇",
+         "level":250,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCOOGD.png",
          "category":"모자",
          "upgrade":0,
@@ -7878,6 +8197,7 @@
 ```json
     {
          "name":"에테르넬 메이지햇",
+         "level":250,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCOOGA.png",
          "category":"모자",
          "upgrade":0,
@@ -7901,6 +8221,7 @@
 ```json
     {
          "name":"에테르넬 시프반다나",
+         "level":250,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPCOOGC.png",
          "category":"모자",
          "upgrade":0,
@@ -7924,6 +8245,7 @@
 ```json
     {
          "name":"에테르넬 파이렛햇",
+         "level":250,
          "imageUrl":"hhttps://avatar.maplestory.nexon.com/ItemIcon/KEPCOOGF.png",
          "category":"모자",
          "upgrade":0,
@@ -7949,6 +8271,7 @@
 ```json
       {
          "name":"이글아이 워리어아머",
+         "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLF.png",
          "category":"상의",
          "upgrade":0,
@@ -7972,6 +8295,7 @@
 ```json
    {
       "name":"이글아이 레인져후드",
+      "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLH.png",
          "category":"상의",
          "upgrade":0,
@@ -7995,6 +8319,7 @@
 ```json
    {
       "name":"이글아이 던위치로브",
+      "level":150,
       "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLE.png",
       "category":"상의",
       "upgrade":0,
@@ -8020,6 +8345,7 @@
 ```json
 {
     "name":"이글아이 어새신셔츠",
+    "level":150,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLG.png",
     "category":"상의",
     "upgrade":0,
@@ -8045,6 +8371,7 @@
 ```json
 {
    "name":"이글아이 원더러코트",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJFLJ.png",
    "category":"상의",
    "upgrade":0,
@@ -8071,6 +8398,7 @@
 ```json
 {
    "name":"에테르넬 나이트아머",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJDNC.png",
    "category":"상의",
    "upgrade":0,
@@ -8096,6 +8424,7 @@
 ```json
 {
    "name":"에테르넬 아처후드",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJDNE.png",
    "category":"상의",
    "upgrade":0,
@@ -8121,6 +8450,7 @@
 ```json
 {
    "name":"에테르넬 메이지로브",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJDNF.png",
    "category":"상의",
    "upgrade":0,
@@ -8146,6 +8476,7 @@
 ```json
 {
    "name":"에테르넬 시프셔츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJDNH.png",
    "category":"상의",
    "upgrade":0,
@@ -8171,6 +8502,7 @@
 ```json
 {
    "name":"에테르넬 파이렛코트",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPGJDNG.png",
    "category":"상의",
    "upgrade":0,
@@ -8198,6 +8530,7 @@
 ```json
       {
          "name":"트릭스터 워리어팬츠",
+         "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIE.png",
          "category":"하의",
          "upgrade":0,
@@ -8221,6 +8554,7 @@
 ```json
 {
    "name":"트릭스터 레인져팬츠",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIG.png",
    "category":"하의",
    "upgrade":0,
@@ -8246,6 +8580,7 @@
 ```json
 {
    "name":"트릭스터 던위치팬츠",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIH.png",
    "category":"하의",
    "upgrade":0,
@@ -8270,6 +8605,7 @@
 ```json
 {
    "name":"트릭스터 어새신팬츠",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGIJ.png",
    "category":"하의",
    "upgrade":0,
@@ -8295,6 +8631,7 @@
 ```json
 {
    "name":"트릭스터 원더러팬츠",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJGII.png",
    "category":"하의",
    "upgrade":0,
@@ -8321,6 +8658,7 @@
 ```json
 {
    "name":"에테르넬 나이트팬츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJFGE.png",
    "category":"하의",
    "upgrade":0,
@@ -8346,6 +8684,7 @@
 ```json
 {
    "name":"에테르넬 아처팬츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJFGG.png",
    "category":"하의",
    "upgrade":0,
@@ -8371,6 +8710,7 @@
 ```json
 {
    "name":"에테르넬 메이지팬츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJFGH.png",
    "category":"하의",
    "upgrade":0,
@@ -8396,6 +8736,7 @@
 ```json
 {
    "name":"에테르넬 시프팬츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJFGJ.png",
    "category":"하의",
    "upgrade":0,
@@ -8421,6 +8762,7 @@
 ```json
 {
    "name":"에테르넬 파이렛팬츠",
+   "level":250,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPEJFGI.png",
    "category":"하의",
    "upgrade":0,
@@ -8448,6 +8790,7 @@
 ```json
       {
          "name":"앱솔랩스 나이트글러브",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
          "upgrade":0,
@@ -8470,6 +8813,7 @@
 ```json
 {
          "name":"앱솔랩스 아처글러브",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
          "upgrade":0,
@@ -8492,6 +8836,7 @@
 ```json
       {
          "name":"앱솔랩스 메이지글러브",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
          "upgrade":0,
@@ -8514,6 +8859,7 @@
 ```json
       {
          "name":"앱솔랩스 시프글러브",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
          "upgrade":0,
@@ -8536,6 +8882,7 @@
 ```json
       {
          "name":"앱솔랩스 파이렛글러브",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBKB.png",
          "category":"장갑",
          "upgrade":0,
@@ -8559,6 +8906,7 @@
 ```json
    {
          "name":"아케인셰이드 나이트글러브",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
          "category":"장갑",
          "upgrade":0,
@@ -8581,6 +8929,7 @@
 ```json
    {
          "name":"아케인셰이드 아처글러브",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
          "category":"장갑",
          "upgrade":0,
@@ -8603,6 +8952,7 @@
 ```json
    {
          "name":"아케인셰이드 메이지글러브",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
          "category":"장갑",
          "upgrade":0,
@@ -8625,6 +8975,7 @@
 ```json
    {
          "name":"아케인셰이드 시프글러브",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
          "category":"장갑",
          "upgrade":0,
@@ -8647,6 +8998,7 @@
 ```json
    {
          "name":"아케인셰이드 파이렛글러브",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPKJBHG.png",
          "category":"장갑",
          "upgrade":0,
@@ -8673,6 +9025,7 @@
 ```json
       {
          "name":"앱솔랩스 나이트케이프",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
          "category":"망토",
          "upgrade":0,
@@ -8698,6 +9051,7 @@
 ```json
       {
          "name":"앱솔랩스 아처케이프",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
          "category":"망토",
          "upgrade":0,
@@ -8723,6 +9077,7 @@
 ```json
       {
          "name":"앱솔랩스 메이지케이프",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
          "category":"망토",
          "upgrade":0,
@@ -8748,6 +9103,7 @@
 ```json
       {
          "name":"앱솔랩스 시프케이프",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
          "category":"망토",
          "upgrade":0,
@@ -8773,6 +9129,7 @@
 ```json
       {
          "name":"앱솔랩스 파이렛케이프",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJAHG.png",
          "category":"망토",
          "upgrade":0,
@@ -8799,6 +9156,7 @@
 ```json
       {
          "name":"아케인셰이드 나이트케이프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
          "category":"망토",
          "upgrade":0,
@@ -8824,6 +9182,7 @@
 ```json
       {
          "name":"아케인셰이드 아처케이프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
          "category":"망토",
          "upgrade":0,
@@ -8849,6 +9208,7 @@
 ```json
       {
          "name":"아케인셰이드 메이지케이프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
          "category":"망토",
          "upgrade":0,
@@ -8874,6 +9234,7 @@
 ```json
       {
          "name":"아케인셰이드 시프케이프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
          "category":"망토",
          "upgrade":0,
@@ -8899,6 +9260,7 @@
 ```json
       {
          "name":"아케인셰이드 파이렛케이프",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOCJOKC.png",
          "category":"망토",
          "upgrade":0,
@@ -8926,6 +9288,7 @@
 ```json
       {
          "name":"앱솔랩스 나이트슈즈",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
          "category":"신발",
          "upgrade":0,
@@ -8950,6 +9313,7 @@
 ```json
       {
          "name":"앱솔랩스 아처슈즈",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
          "category":"신발",
          "upgrade":0,
@@ -8974,6 +9338,7 @@
 ```json
       {
          "name":"앱솔랩스 메이지슈즈",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
          "category":"신발",
          "upgrade":0,
@@ -8998,6 +9363,7 @@
 ```json
       {
          "name":"앱솔랩스 시프슈즈",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
          "category":"신발",
          "upgrade":0,
@@ -9022,6 +9388,7 @@
 ```json
       {
          "name":"앱솔랩스 파이렛슈즈",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIHNB.png",
          "category":"신발",
          "upgrade":0,
@@ -9047,6 +9414,7 @@
 ```json
       {
          "name":"아케인셰이드 나이트슈즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
          "category":"신발",
          "upgrade":0,
@@ -9071,6 +9439,7 @@
 ```json
       {
          "name":"아케인셰이드 아처슈즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
          "category":"신발",
          "upgrade":0,
@@ -9095,6 +9464,7 @@
 ```json
       {
          "name":"아케인셰이드 메이지슈즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
          "category":"신발",
          "upgrade":0,
@@ -9119,6 +9489,7 @@
 ```json
       {
          "name":"아케인셰이드 시프슈즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
          "category":"신발",
          "upgrade":0,
@@ -9143,6 +9514,7 @@
 ```json
       {
          "name":"아케인셰이드 파이렛슈즈",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPFIGIA.png",
          "category":"신발",
          "upgrade":0,
@@ -9169,6 +9541,7 @@
 ```json
 {
    "name":"앱솔랩스 나이트숄더",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
    "category":"어깨장식",
    "upgrade":0,
@@ -9193,6 +9566,7 @@
 ```json
 {
    "name":"앱솔랩스 아처숄더",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
    "category":"어깨장식",
    "upgrade":0,
@@ -9217,6 +9591,7 @@
 ```json
 {
    "name":"앱솔랩스 메이지숄더",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
    "category":"어깨장식",
    "upgrade":0,
@@ -9241,6 +9616,7 @@
 ```json
 {
    "name":"앱솔랩스 시프숄더",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
    "category":"어깨장식",
    "upgrade":0,
@@ -9265,6 +9641,7 @@
 ```json
 {
    "name":"앱솔랩스 파이렛숄더",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGJI.png",
    "category":"어깨장식",
    "upgrade":0,
@@ -9290,6 +9667,7 @@
 ```json
       {
          "name":"아케인셰이드 나이트숄더",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
          "category":"어깨장식",
          "upgrade":0,
@@ -9315,6 +9693,7 @@
 ```json
       {
          "name":"아케인셰이드 아처숄더",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
          "category":"어깨장식",
          "upgrade":0,
@@ -9340,6 +9719,7 @@
 ```json
       {
          "name":"아케인셰이드 메이지숄더",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
          "category":"어깨장식",
          "upgrade":0,
@@ -9365,6 +9745,7 @@
 ```json
       {
          "name":"아케인셰이드 시프숄더",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
          "category":"어깨장식",
          "upgrade":0,
@@ -9390,6 +9771,7 @@
 ```json
       {
          "name":"아케인셰이드 파이렛숄더",
+         "level":200,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGHI.png",
          "category":"어깨장식",
          "upgrade":0,
@@ -9422,6 +9804,7 @@
 ```json
 {
         "name": "마이스터 숄더",
+        "level":140,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOHJGLF.png",
         "category": "어깨장식",
         "upgrade": 2,
@@ -9447,6 +9830,7 @@
 ```json
 {
    "name": "실버블라썸 링",
+   "level":110,
    "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIGKI.png",
    "category": "반지",
    "upgrade": 0,
@@ -9469,6 +9853,7 @@
 ```json
 {
    "name":"고귀한 이피아의 반지",
+   "level":120,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIFGD.png",
    "category":"반지",
    "upgrade":0,
@@ -9496,6 +9881,7 @@
 ```json
    {
       "name":"이터널 플레임 링",
+      "level":120,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMF.png",
          "category":"반지",
          "upgrade":0,
@@ -9523,6 +9909,7 @@
 ```json
 {
    "name":"리부트 어웨이크 링(4단계)",
+   "level":120,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEMD.png",
    "category":"반지",
    "upgrade":0,
@@ -9550,6 +9937,7 @@
 ```json
    {
          "name":"리부트 테네브리스 원정대 반지(완성)",
+         "level":120,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEPA.png",
          "category":"반지",
          "upgrade":0,
@@ -9575,6 +9963,7 @@
 ```json
 {
     "name":"글로리온 링 : 슈프림",
+    "level":120,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODPEPH.png",
     "category":"반지",
     "upgrade":0,
@@ -9602,6 +9991,7 @@
 ```json
  {
          "name":"마이스터링",
+         "level":120,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIHLE.png",
          "category":"반지",
          "upgrade":0,
@@ -9628,7 +10018,8 @@
 * 가디언 엔젤 링
 ```json
 {
-    "name":"여명의 가디언 엔젤 링",
+    "name":"가디언 엔젤 링",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
     "category":"반지",
     "upgrade":0,
@@ -9656,6 +10047,7 @@
 ```json
 {
     "name":"여명의 가디언 엔젤 링",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIEPH.png",
     "category":"반지",
     "upgrade":0,
@@ -9683,6 +10075,7 @@
 ```json
 {
         "name": "거대한 공포",
+        "level":200,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEODIEOH.png",
         "category": "반지",
         "upgrade": 0,
@@ -9709,6 +10102,7 @@
 ```json
 {
     "name":"리스트레인트 링",
+    "level":110,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEODIHHJ.png",
     "category":"반지",
     "upgrade":0,
@@ -9736,6 +10130,7 @@
 ```json
 {
     "name":"저주받은 적의 마도서",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGB.png",
     "category":"포켓 아이템",
     "upgrade":0,
@@ -9763,6 +10158,7 @@
 ```json
 {
     "name":"저주받은 녹의 마도서",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGD.png",
     "category":"포켓 아이템",
     "upgrade":0,
@@ -9790,6 +10186,7 @@
 ```json
 {
     "name":"저주받은 청의 마도서",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGA.png",
     "category":"포켓 아이템",
     "upgrade":0,
@@ -9817,6 +10214,7 @@
 ```json
 {
     "name":"저주받은 황의 마도서",
+    "level":160,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOEJHGC.png",
     "category":"포켓 아이템",
     "upgrade":0,
@@ -9844,6 +10242,7 @@
 * 매커네이터 펜던트
 ```json
    {"name":"매커네이터 펜던트",
+   "level":120,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJFLF.png",
          "category":"펜던트",
          "upgrade":0,
@@ -9871,6 +10270,7 @@
 ```json
 {
     "name":"도미네이터 펜던트",
+    "level":140,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJGLB.png",
     "category":"펜던트",
     "upgrade":0,
@@ -9897,6 +10297,7 @@
 ```json
 {
         "name": "베어스 퍼플 펜던트",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJHHI.png",
         "category": "펜던트",
         "upgrade": 0,
@@ -9918,6 +10319,7 @@
 ```json
 {
         "name": "울프스 퍼플 펜던트",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJHHI.png",
         "category": "펜던트",
         "upgrade": 0,
@@ -9939,6 +10341,7 @@
 ```json
 {
         "name": "아울스 퍼플 펜던트",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJHHI.png",
         "category": "펜던트",
         "upgrade": 0,
@@ -9960,6 +10363,7 @@
 ```json
 {
         "name": "피콕스 퍼플 펜던트",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJHHI.png",
         "category": "펜던트",
         "upgrade": 0,
@@ -9981,6 +10385,7 @@
 ```json
 {
         "name": "데이브레이크 펜던트",
+        "level":140,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOAJDKC.png",
         "category": "펜던트",
         "upgrade": 6,
@@ -10005,6 +10410,7 @@
 ```json
 {
    "name":"고통의 근원",
+   "level":160,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOAJDNB.png",
    "category":"펜던트",
    "upgrade":0,
@@ -10032,6 +10438,7 @@
 ```json
 {
    "name":"골든 클로버 벨트",
+   "level":140,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFJD.png",
    "category":"벨트",
    "upgrade":0,
@@ -10060,6 +10467,7 @@
 ```json
       {
          "name":"분노한 자쿰의 벨트",
+         "level":150,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJFHH.png",
          "category":"벨트",
          "upgrade":0,
@@ -10087,6 +10495,7 @@
 ```json
 {
     "name": "타일런트 히아데스 벨트",
+    "level":150,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJGJG.png",
     "category": "벨트",
     "upgrade": 0,
@@ -10114,6 +10523,7 @@
 ```json
 {
     "name": "타일런트 헤르메스 벨트",
+    "level":150,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJGJG.png",
     "category": "벨트",
     "upgrade": 0,
@@ -10141,6 +10551,7 @@
 ```json
 {
     "name": "타일런트 케이론 벨트",
+    "level":150,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJGJG.png",
     "category": "벨트",
     "upgrade": 0,
@@ -10168,6 +10579,7 @@
 ```json
 {
     "name": "타일런트 리카온 벨트",
+    "level":150,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJGJG.png",
     "category": "벨트",
     "upgrade": 0,
@@ -10195,6 +10607,7 @@
 ```json
 {
     "name": "타일런트 알테어 벨트",
+    "level":150,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOBJGJG.png",
     "category": "벨트",
     "upgrade": 0,
@@ -10222,6 +10635,7 @@
 ```json
 {
    "name":"몽환의 벨트",
+   "level":150,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOBJEOJ.png",
    "category":"벨트",
    "upgrade":0,
@@ -10249,6 +10663,7 @@
 ```json
 {
    "name":"응축된 힘의 결정석",
+   "level":110,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDJJ.png",
    "category":"얼굴장식",
    "upgrade":0,
@@ -10275,6 +10690,7 @@
 ```json
 {
         "name": "샤이니 레드 시프 마이스터 심볼",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDOF.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10297,6 +10713,7 @@
 ```json
 {
         "name": "샤이니 레드 아처 마이스터 심볼",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDOF.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10319,6 +10736,7 @@
 ```json
 {
         "name": "샤이니 레드 매지션 마이스터 심볼",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDOF.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10341,6 +10759,7 @@
 ```json
 {
         "name": "샤이니 레드 시프 마이스터 심볼",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDOF.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10363,6 +10782,7 @@
 ```json
 {
         "name": "샤이니 레드 파이렛 마이스터 심볼",
+        "level":130,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJDOF.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10385,6 +10805,7 @@
 ```json
 {
         "name": "루즈 컨트롤 머신 마크",
+        "level":160,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPDJBND.png",
         "category": "얼굴장식",
         "upgrade": 0,
@@ -10411,6 +10832,7 @@
 ```json
 {
     "name": "아쿠아틱 레터 눈장식",
+    "level":100,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFNA.png",
     "category": "눈장식",
     "upgrade": 0,
@@ -10433,6 +10855,7 @@
 ```json
 {
    "name":"블랙빈 마크",
+   "level":135,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFND.png",
    "category":"눈장식",
    "upgrade":0,
@@ -10459,6 +10882,7 @@
 ```json
 {
         "name": "파풀라투스 마크",
+        "level":145,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFJG.png",
         "category": "눈장식",
         "upgrade": 0,
@@ -10484,6 +10908,7 @@
 ```json
 {
         "name": "마력이 깃든 안대",
+        "level":160,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPAJFJJ.png",
         "category": "눈장식",
         "upgrade": 0,
@@ -10510,6 +10935,7 @@
 ```json
 {
     "name":"데아 시두스 이어링",
+    "level":130,
     "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFKA.png",
     "category":"귀고리",
     "upgrade":0,
@@ -10536,6 +10962,7 @@
 ```json
       {
          "name":"지옥의 불꽃",
+         "level":130,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJGNH.png",
          "category":"귀고리",
          "upgrade":0,
@@ -10563,6 +10990,7 @@
 ```json
    {
          "name":"에스텔라 이어링",
+         "level":160,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEPBJENB.png",
          "category":"귀고리",
          "upgrade":0,
@@ -10590,6 +11018,7 @@
 ```json
 {
         "name": "오션 글로우 이어링",
+        "level":150,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJFND.png",
         "category": "귀고리",
         "upgrade": 0,
@@ -10617,6 +11046,7 @@
 ```json
 {
         "name": "커맨더 포스 이어링",
+        "level":200,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEPBJEPH.png",
         "category": "귀고리",
         "upgrade": 0,
@@ -10643,6 +11073,7 @@
 ```json
    {
          "name":"크리스탈 웬투스 뱃지",
+         "level":130,
          "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOKJHGG.png",
          "category":"뱃지",
          "upgrade":0,
@@ -10670,6 +11101,7 @@
 ```json
 {
    "name":"칠요의 뱃지",
+   "level":100,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEOKJFOB.png",
    "category":"뱃지",
    "upgrade":0,
@@ -10696,6 +11128,7 @@
 ```json
 {
     "name": "창세의 뱃지",
+    "level":130,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOKJFGE.png",
     "category": "뱃지",
     "upgrade": 0,
@@ -10720,6 +11153,7 @@
 ```json
 {
     "name": "♣메이플 모멘트리♣",
+    "level":0,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOGIFIH.png",
     "category": "훈장",
     "upgrade": 0,
@@ -10743,6 +11177,7 @@
 ```json
 {
         "name": "본 투 비 레드",
+        "level":0,
         "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOGIFOC.png",
         "category": "훈장",
         "upgrade": 0,
@@ -10767,6 +11202,7 @@
 ```json
 {
     "name": "칠요의 몬스터파커",
+    "level":0,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEOGJOMD.png",
     "category": "훈장",
     "upgrade": 0,
@@ -10790,6 +11226,7 @@
 ```json
 {
    "name":"페어리 하트",
+   "level":0,
    "imageUrl":"https://avatar.maplestory.nexon.com/ItemIcon/KEJFJHJI.png",
    "category":"기계 심장",
    "upgrade":0,
@@ -10810,6 +11247,7 @@
 ```json
 {
     "name": "블랙 하트",
+    "level":0,
     "imageUrl": "https://avatar.maplestory.nexon.com/ItemIcon/KEJFJHGD.png",
     "category": "기계 심장",
     "upgrade": 0,
