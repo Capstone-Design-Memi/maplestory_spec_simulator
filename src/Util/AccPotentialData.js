@@ -278,10 +278,10 @@ const AccPotentialData = [
                         "drop": 20
                     },
                     {
-                        //모든 스킬의 MP 소모 : -15%
+                        "allSkillDecreaseMp" : -15
                     },
                     {
-                        //모든 스킬의 MP 소모 : -30%
+                        "allSkillDecreaseMp" : -30
                     }
                 ]
             },
