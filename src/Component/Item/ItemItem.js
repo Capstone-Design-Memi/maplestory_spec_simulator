@@ -10,7 +10,6 @@ import { AppContext } from "../../App";
 
 const ItemItem = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
-  const { cId } = useContext(AppContext);
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
@@ -34,7 +33,7 @@ const ItemItem = () => {
 
   const allKeys = Object.keys(localStorage);
   const allKeyMap = allKeys.map((item) => {
-    if (item == `InventoryItem${cId}`) {
+    if (item == `InventoryItem${cookies.cId.cId}`) {
       return JSON.parse(localStorage.getItem(item));
     }
   });
@@ -101,10 +100,14 @@ const ItemItem = () => {
   );
 
   useEffect(() => {
-    setTestItem(JSON.parse(localStorage.getItem(`testChItem${cId}`)));
-  }, [cId]);
+    setTestItem(
+      JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))
+    );
+  }, [cookies.cId.cId]);
   useEffect(() => {
-    setTestItem(JSON.parse(localStorage.getItem(`testChItem${cId}`)));
+    setTestItem(
+      JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))
+    );
   }, []);
   return (
     <div>
@@ -112,14 +115,20 @@ const ItemItem = () => {
       <div
         style={{
           width: `${
-            localStorage.getItem(`inventoryItem${cId}`)?.length >= 10
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
               ? 475
-              : 51 * localStorage.getItem(`inventoryItem${cId}`)?.length
+              : 51 *
+                localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length
           }px`,
           height: `${
-            localStorage.getItem(`inventoryItem${cId}`)?.length >= 10
-              ? ((localStorage.getItem(`inventoryItem${cId}`)?.length -
-                  (localStorage.getItem(`inventoryItem${cId}`)?.length % 10)) /
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
+              ? ((localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                  ?.length -
+                  (localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                    ?.length %
+                    10)) /
                   10 +
                   1) *
                 51
@@ -130,7 +139,8 @@ const ItemItem = () => {
           borderRadius: "5px",
         }}
       >
-        {localStorage.getItem(`inventoryItem${cId}`)?.length !== 0 ? (
+        {localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length !==
+        0 ? (
           <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
           <div style={{ width: "120px" }}>아이템이 없습니다</div>

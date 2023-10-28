@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AppContext } from "../../App";
 import StatWindow from "../Stat/StatWindow";
 import StatInventory from "../Stat/StatInventory";
+import { useCookies } from "react-cookie";
 
 // const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
 //                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
@@ -157,7 +158,7 @@ const DepartmentDiv = (props) => {
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
   const [hoverNum, setHoverNum] = useState(300);
-  const { cId } = useContext(AppContext);
+  const [cookies] = useCookies();
   const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
@@ -196,7 +197,9 @@ const DepartmentDiv = (props) => {
       }
     }
   }
-  const test = JSON.parse(localStorage.getItem(`testChItem${cId}`))[0].data;
+  const test = JSON.parse(
+    localStorage.getItem(`testChItem${cookies.cId.cId}`)
+  )[0]?.data;
   // const testMap = test[0].data.map((item) => {
   //   if (item.imageUrl === hoverUrl) {
   //     setHoverItem(item);
@@ -228,7 +231,6 @@ const DepartmentDiv = (props) => {
                   setHoverUrl(ItemArr[index]);
                   setHoverNum(index);
                   console.log(hoverNum);
-
                 }}
                 onMouseLeave={() => {
                   setHover(false);
@@ -241,10 +243,13 @@ const DepartmentDiv = (props) => {
         </ItemSlot>
       ))}
       {hover ? (
-        <div style={{ 
-          position: "absolute",
-          left: (hoverNum) % 5 * 42 + 50,
-          top: (hoverNum + 1) / 6 * 42}}>
+        <div
+          style={{
+            position: "absolute",
+            left: (hoverNum % 5) * 42 + 50,
+            top: ((hoverNum + 1) / 6) * 42,
+          }}
+        >
           <StatInventory item={hoverItem} />
         </div>
       ) : (
