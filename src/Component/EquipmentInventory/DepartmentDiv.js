@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { AppContext } from "../../App";
 import StatWindow from "../Stat/StatWindow";
 import StatInventory from "../Stat/StatInventory";
+import SubWeaponData from "../../Util/SubWeaponData";
 
 // const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
 //                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",

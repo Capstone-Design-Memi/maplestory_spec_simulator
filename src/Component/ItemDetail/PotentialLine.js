@@ -173,7 +173,6 @@ const PotentialLine = (props) => {
     "LUK",
     "최대 HP",
     "최대 HP",
-    "최대 HP",
     "최대 MP",
     "최대 MP",
     "공격력",
