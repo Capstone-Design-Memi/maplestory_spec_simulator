@@ -4,6 +4,8 @@ import { AppContext } from "../../App";
 import StatWindow from "../Stat/StatWindow";
 import StatInventory from "../Stat/StatInventory";
 import { useCookies } from "react-cookie";
+import SubWeaponData from "../../Util/SubWeaponData";
+
 
 // const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
 //                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
@@ -180,7 +182,7 @@ const DepartmentDiv = (props) => {
           break;
         } else {
         }
-      } else if (exampleData[key].category === "방패") {
+      } else if (SubWeaponData.includes(exampleData[key].category)) {
         ItemArr[19] = exampleData[key].imageUrl;
         if (exampleData[key].grade === "nothing") {
           gradeArr[19] = nothingBorder;
@@ -192,6 +194,20 @@ const DepartmentDiv = (props) => {
           gradeArr[19] = uniqueBorder;
         } else if (exampleData[key].grade === "legendary") {
           gradeArr[19] = legendaryBorder;
+        } else {
+        }
+      } else if (exampleData[key].category.endsWith("무기)")) {
+        ItemArr[16] = exampleData[key].imageUrl;
+        if (exampleData[key].grade === "nothing") {
+          gradeArr[16] = nothingBorder;
+        } else if (exampleData[key].grade === "rare") {
+          gradeArr[16] = rareBorder;
+        } else if (exampleData[key].grade === "epic") {
+          gradeArr[16] = epicBorder;
+        } else if (exampleData[key].grade === "unique") {
+          gradeArr[16] = uniqueBorder;
+        } else if (exampleData[key].grade === "legendary") {
+          gradeArr[16] = legendaryBorder;
         } else {
         }
       }

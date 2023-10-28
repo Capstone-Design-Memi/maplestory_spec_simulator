@@ -89,7 +89,7 @@ const Enforce = ({ enforceItem }) => {
   const [starHandler, setStarHandler] = useState(enforceItem?.star);
   const [flameHandler, setFlameHandler] = useState(enforceItem?.flame);
   const [gradeHandler, setGradeHandler] = useState(enforceItem?.grade);
-  const [potentailHandler, setPotentailHandler] = useState(enforceItem?.potentail?.effects);
+  const [potentialHandler, setPotentialHandler] = useState(enforceItem?.potentail?.effects);
 
   const itemEdit = () => {
     let star = enforceItem.star;
@@ -144,9 +144,16 @@ const Enforce = ({ enforceItem }) => {
     setGradeHandler(grade);
   }
 
-  const handlePotentailChange = (potentialArr) => {
+  const handlePotentialChange = (potentialArr) => {
+    if("potential" in enforceItem) {
     enforceItem.potential.effects = potentialArr;
-    setPotentailHandler(potentialArr);
+    } else {
+      enforceItem.potential = {
+        "grade" : gradeHandler,
+        "effects" : [],
+      }
+    }
+    setPotentialHandler(potentialArr);
   };
 
   return (
@@ -168,7 +175,7 @@ const Enforce = ({ enforceItem }) => {
         <PotentialTab
           item={enforceItem}
           handleGradeChange={handleGradeChange}
-          handlePotentialChange={handlePotentailChange}
+          handlePotentialChange={handlePotentialChange}
         />
       </div>
     </div>
