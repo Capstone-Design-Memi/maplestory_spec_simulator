@@ -10,14 +10,17 @@ export const Class = [
           {
             value: "히어로",
             label: "히어로",
+            main: "str",
           },
           {
             value: "팔라딘",
             label: "팔라딘",
+            main: "str",
           },
           {
             value: "다크나이트",
             label: "다크나이트",
+            main: "str",
           },
         ],
       },
@@ -28,14 +31,17 @@ export const Class = [
           {
             value: "썬콜",
             label: "썬콜",
+            main: "int",
           },
           {
             value: "불독",
             label: "불독",
+            main: "int",
           },
           {
             value: "비숍",
             label: "비숍",
+            main: "int",
           },
         ],
       },
@@ -46,14 +52,17 @@ export const Class = [
           {
             value: "보우마스터",
             label: "보우마스터",
+            main: "dex",
           },
           {
             value: "신궁",
             label: "신궁",
+            main: "dex",
           },
           {
             value: "패스파인더",
             label: "패스파인더",
+            main: "dex",
           },
         ],
       },
@@ -64,14 +73,17 @@ export const Class = [
           {
             value: "나이트로드",
             label: "나이트로드",
+            main: "luk",
           },
           {
             value: "섀도어",
             label: "섀도어",
+            main: "luk",
           },
           {
             value: "듀얼블레이드",
             label: "듀얼블레이드",
+            main: "luk",
           },
         ],
       },
@@ -82,14 +94,17 @@ export const Class = [
           {
             value: "캡틴",
             label: "캡틴",
+            main: "dex",
           },
           {
             value: "바이퍼",
             label: "바이퍼",
+            main: "str",
           },
           {
             value: "캐논슈터",
             label: "캐논슈터",
+            main: "str",
           },
         ],
       },
@@ -106,10 +121,12 @@ export const Class = [
           {
             value: "소울마스터",
             label: "소울마스터",
+            main: "str",
           },
           {
             value: "미하일",
             label: "미하일",
+            main: "str",
           },
         ],
       },
@@ -120,6 +137,7 @@ export const Class = [
           {
             value: "플레임위자드",
             label: "플레임위자드",
+            main: "int",
           },
         ],
       },
@@ -130,6 +148,7 @@ export const Class = [
           {
             value: "위드브레이커",
             label: "위드브레이커",
+            main: "dex",
           },
         ],
       },
@@ -140,6 +159,7 @@ export const Class = [
           {
             value: "나이트워커",
             label: "나이트워커",
+            main: "luk",
           },
         ],
       },
@@ -150,6 +170,7 @@ export const Class = [
           {
             value: "스트라이커",
             label: "스트라이커",
+            main: "str",
           },
         ],
       },
@@ -166,6 +187,7 @@ export const Class = [
           {
             value: "블래스터",
             label: "블래스터",
+            main: "str",
           },
         ],
       },
@@ -176,6 +198,7 @@ export const Class = [
           {
             value: "배틀메이지",
             label: "배틀메이지",
+            main: "int",
           },
         ],
       },
@@ -186,6 +209,7 @@ export const Class = [
           {
             value: "와일드헌터",
             label: "와일드헌터",
+            main: "dex",
           },
         ],
       },
@@ -196,6 +220,7 @@ export const Class = [
           {
             value: "메카닉",
             label: "메카닉",
+            main: "dex",
           },
         ],
       },
@@ -212,6 +237,7 @@ export const Class = [
           {
             value: "아란",
             label: "아란",
+            main: "str",
           },
         ],
       },
@@ -222,10 +248,12 @@ export const Class = [
           {
             value: "루미너스",
             label: "루미너스",
+            main: "int",
           },
           {
             value: "에반",
             label: "에반",
+            main: "int",
           },
         ],
       },
@@ -236,6 +264,7 @@ export const Class = [
           {
             value: "메르세데스",
             label: "메르세데스",
+            main: "dex",
           },
         ],
       },
@@ -246,10 +275,18 @@ export const Class = [
           {
             value: "팬텀",
             label: "팬텀",
+            main: "luk",
           },
+        ],
+      },
+      {
+        value: "해적",
+        label: "해적",
+        children: [
           {
             value: "은월",
             label: "은월",
+            main: "str",
           },
         ],
       },
@@ -262,10 +299,12 @@ export const Class = [
       {
         value: "전사",
         label: "전사",
+        main: "str",
         children: [
           {
             value: "카이저",
             label: "카이저",
+            main: "str",
           },
         ],
       },
@@ -276,6 +315,7 @@ export const Class = [
           {
             value: "카인",
             label: "카인",
+            main: "dex",
           },
         ],
       },
@@ -286,6 +326,7 @@ export const Class = [
           {
             value: "카데나",
             label: "카데나",
+            main: "luk",
           },
         ],
       },
@@ -296,6 +337,7 @@ export const Class = [
           {
             value: "엔젤릭버스터",
             label: "엔젤릭버스터",
+            main: "dex",
           },
         ],
       },
@@ -312,6 +354,7 @@ export const Class = [
           {
             value: "아델",
             label: "아델",
+            main: "str",
           },
         ],
       },
@@ -322,6 +365,7 @@ export const Class = [
           {
             value: "일리움",
             label: "일리움",
+            main: "int",
           },
         ],
       },
@@ -332,6 +376,7 @@ export const Class = [
           {
             value: "칼리",
             label: "칼리",
+            main: "luk",
           },
         ],
       },
@@ -342,6 +387,7 @@ export const Class = [
           {
             value: "아크",
             label: "아크",
+            main: "str",
           },
         ],
       },
@@ -358,6 +404,7 @@ export const Class = [
           {
             value: "라라",
             label: "라라",
+            main: "int",
           },
         ],
       },
@@ -368,6 +415,7 @@ export const Class = [
           {
             value: "호영",
             label: "호영",
+            main: "luk",
           },
         ],
       },
@@ -384,6 +432,7 @@ export const Class = [
           {
             value: "제로",
             label: "제로",
+            main: "str",
           },
         ],
       },
@@ -394,6 +443,7 @@ export const Class = [
           {
             value: "키네시스",
             label: "키네시스",
+            main: "int",
           },
         ],
       },
