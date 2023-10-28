@@ -5,6 +5,7 @@ import CreateCharacter from "./CreateCharacter";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useCookies } from "react-cookie";
+import CharacterStat from "../Component/SelectCharacter/CharacterStat";
 
 const SelectCharacter = () => {
   const [cookies, setcookie, removecookie] = useCookies();
@@ -26,7 +27,7 @@ const SelectCharacter = () => {
           <CharaterList toggle={toggle} />
         </Col>
         <Col xs={6} md={6}>
-          <div>캐릭터 스텟 및 선택버튼</div>
+          <CharacterStat />
         </Col>
       </Row>
       <Row
@@ -38,27 +39,39 @@ const SelectCharacter = () => {
       >
         <Col xs={24} md={24}>
           <Button
-            type="primary"
+            style={{
+              color: "#F2C12E",
+              fontSize: "25px",
+              fontWeight: "bold",
+              backgroundColor: "#705545",
+              width: "20vh",
+              height: "7vh",
+              borderRadius: "30px",
+              border: "1px solid #705545",
+              marginLeft: "-30px",
+              cursor: "pointer",
+            }}
             onClick={() => {
-              navigator("/createcharacter");
+              navigator(`/createcharacter`);
             }}
           >
             + 캐릭터 생성
           </Button>
-          {/* <Radio.Group */}
           <Button
-            type="primary"
-            danger
-            onClick={() => {}}
-            // value={toggle}
-            // onChange={(e) => {
-            //   setToggle(e.target.value);
-            // }}
+            style={{
+              color: "#F2C12E",
+              fontSize: "25px",
+              fontWeight: "bold",
+              backgroundColor: "#705545",
+              width: "20vh",
+              height: "7vh",
+              borderRadius: "30px",
+              border: "1px solid #705545",
+              marginLeft: "30px",
+              cursor: "pointer",
+            }}
           >
             X 캐릭터 삭제
-            {/* <Radio value={false}>선택</Radio>
-            <Radio value={true}>삭제</Radio>
-          </Radio.Group> */}
           </Button>
         </Col>
       </Row>
