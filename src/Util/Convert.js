@@ -38,7 +38,7 @@ const Convert = [
     },
     {
         value: "lukP",
-        first: "luk",
+        first: "LUK",
         persent: true,
     },
     {
@@ -161,6 +161,11 @@ const Convert = [
         first: "HP 회복 아이템 및 회복 스킬 효율",
         persent: true,
     },
+    {
+        value: "allSkillDecreaseMp",
+        first: "모든 스킬의 MP 소모",
+        persent: true,
+    }
 ];
 
 export default Convert;
