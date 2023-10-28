@@ -20,6 +20,19 @@ const CharacterItem = ({ toggle }) => {
   // 객체 상태인 cookie값 배열로 변환
   const cookieMap = Object.keys(cookies).map((key) => cookies[key]);
 
+  // cookieMap에서 cookieInputData가 들어간 이름만 걸러서 return
+  const cookieIncludeTestChInfo = cookieMap.map((item) => {
+    // cookieMap의 object의 key값만 따로 배열화
+    if (Object.keys(item).includes(`cookieInputData`)) {
+      return item;
+    }
+  });
+
+  // cookieIncludeTestChInfo의 undefined제거 후 return
+  const cookiesFilterUndefined = cookieIncludeTestChInfo.filter(
+    (item) => item != undefined
+  );
+
   const ontestMakeCookie = () => {
     if (!cookies.test) {
       setCookie(`characters${id}`, [
@@ -57,7 +70,7 @@ const CharacterItem = ({ toggle }) => {
   return (
     <>
       <List
-        dataSource={cookieMap}
+        dataSource={cookiesFilterUndefined}
         renderItem={(item) => {
           return (
             <>
@@ -66,9 +79,16 @@ const CharacterItem = ({ toggle }) => {
                   src={item?.cookieInputData.data[0].imageUrl}
                   style={{
                     marginTop: "4.3vh",
-                    marginLeft: "3vh",
-                    width: "20vh",
+                    width: "30vh",
                     textAlign: "center",
+                  }}
+                  onClick={() => {
+                    if (cId) {
+                      removeCookie(cId);
+                      setCookie("cId", { cId: item.cookieInputData.id });
+                    } else {
+                      setCookie("cId", { cId: item.cookieInputData.id });
+                    }
                   }}
                 />
               ) : (
@@ -77,7 +97,7 @@ const CharacterItem = ({ toggle }) => {
             </>
           );
         }}
-      ></List>
+      />
     </>
   );
 };
