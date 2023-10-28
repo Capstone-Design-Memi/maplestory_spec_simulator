@@ -1,6 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import AccPotentialData from "../../Util/AccPotentialData";
+import ArmPotentialData from "../../Util/ArmPotentialData";
+import BotPotentialData from "../../Util/BotPotentialData";
+import EmPotentialData from "../../Util/EmPotentialData";
+import FsPotentialData from "../../Util/FsPotentialData";
+import GlovePotentialData from "../../Util/GlovePotentialData";
+import HatPotentialData from "../../Util/HatPotentialData";
+import HeartPotentialData from "../../Util/HeartPotentialData";
+import ShoesPotentialData from "../../Util/ShoesPotentialData";
+import SubPotentialData from "../../Util/SubPotentialData";
+import SubWeaponData from "../../Util/SubWeaponData";
 import Convert from "../../Util/Convert";
 import PotentialDetail from "./PotentialDetail";
 
@@ -19,10 +29,46 @@ const PotentialTab = ({ item, handlePotentialChange, handleGradeChange }) => {
 
   let potentialData = [];
   const accCategory = ["반지", "귀고리", "눈장식", "얼굴장식", "펜던트"];
-  for (let i = 0; i < accCategory.length; i++) {
-    if (item?.category === accCategory[i]) {
-      potentialData = AccPotentialData;
-    }
+
+  if (accCategory.includes(item?.category)) {
+    potentialData = AccPotentialData;
+  }
+
+
+  if(SubWeaponData.includes(item?.category)) {
+    potentialData = SubPotentialData;
+  }
+
+  if(item?.category === "모자") {
+    potentialData = HatPotentialData;
+  }
+
+  if(item?.category === "상의") {
+    potentialData = ArmPotentialData;
+  }
+
+  if(item?.category === "하의") {
+    potentialData = BotPotentialData;
+  }
+
+  if(item?.category === "엠블렘") {
+    potentialData = EmPotentialData;
+  }
+
+  if(item?.category === "포스실드" || "소울링") {
+    potentialData = FsPotentialData;
+  }
+
+  if(item?.category === "장갑") {
+    potentialData = GlovePotentialData;
+  }
+
+  if(item?.category === "기계심장") {
+    potentialData = HeartPotentialData;
+  }
+
+  if(item?.category === "신발") {
+    potentialData = ShoesPotentialData;
   }
 
   const [grade, setGrade] = useState(item?.grade);
