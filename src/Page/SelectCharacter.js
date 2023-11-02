@@ -8,7 +8,7 @@ import { useCookies } from "react-cookie";
 import CharacterStat from "../Component/SelectCharacter/CharacterStat";
 
 const SelectCharacter = () => {
-  const [cookies, setCookie, removecookie] = useCookies();
+  const [cookies, setCookie, removeCookie] = useCookies();
   const [toggle, setToggle] = useState(false);
   const navigator = useNavigate();
 
@@ -58,6 +58,16 @@ const SelectCharacter = () => {
             + 캐릭터 생성
           </Button>
           <Button
+            onClick={() => {
+              if (cookies.cId !== undefined) {
+                removeCookie(`testChInfo${cookies.cId.cId}`);
+                localStorage.removeItem(`testChItem${cookies.cId.cId}`);
+                localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
+                removeCookie(`cId`);
+              } else {
+                alert("캐릭터를 클릭해주세요");
+              }
+            }}
             style={{
               color: "#F2C12E",
               fontSize: "25px",
