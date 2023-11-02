@@ -8,7 +8,7 @@ import { useCookies } from "react-cookie";
 import CharacterStat from "../Component/SelectCharacter/CharacterStat";
 
 const SelectCharacter = () => {
-  const [cookies, setcookie, removecookie] = useCookies();
+  const [cookies, setCookie, removecookie] = useCookies();
   const [toggle, setToggle] = useState(false);
   const navigator = useNavigate();
 
