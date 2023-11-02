@@ -24,23 +24,16 @@ const MakeItem = () => {
   const allKeys = Object.keys(localStorage);
   const testId = allKeys[allKeys.length - 1];
 
-  // useEffect(() => {
-  //   if (allKeys.length !== 0) {
-  //     const testReplace = testId?.replace("InventoryItem", "");
-  //     setItemId(parseInt(testReplace) + 1);
-  //   } else {
-  //     setItemId(0);
-  //   }
-  // }, []);
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem(`InventoryItem${cId}`))?.data) {
+    if (
+      JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))?.data
+    ) {
       const lastInventoryItem = JSON.parse(
-        localStorage.getItem(`InventoryItem${cId}`)
+        localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
       ).data.length;
       setItemId(
-        JSON.parse(localStorage.getItem(`InventoryItem${cId}`)).data[
-          lastInventoryItem - 1
-        ].id + 1
+        JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
+          .data[lastInventoryItem - 1].id + 1
       );
     }
   }, []);
@@ -48,17 +41,18 @@ const MakeItem = () => {
   const onFinish = (values) => {
     let localInventoryItem;
     if (
-      JSON.parse(localStorage.getItem(`InventoryItem${cId}`))?.data !==
-      undefined
+      JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
+        ?.data !== undefined
     ) {
       localInventoryItem = JSON.parse(
-        localStorage.getItem(`InventoryItem${cId}`)
+        localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
       )?.data;
     } else {
       localInventoryItem = JSON.parse(
-        localStorage.getItem(`InventoryItem${cId}`)
+        localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
       )[0]?.data;
     }
+
     let inputLocalInventoryItem;
     const defaultItemInputMap = DefaultItems.map((item) => {
       if (item?.name === values?.makeItem[0]) {
@@ -71,8 +65,11 @@ const MakeItem = () => {
     });
     const inputData = { id: cId, data: inputLocalInventoryItem };
     console.log(inputData);
-    localStorage.removeItem(`InventoryItem${cId}`);
-    localStorage.setItem(`InventoryItem${cId}`, JSON.stringify(inputData));
+    localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
+    localStorage.setItem(
+      `InventoryItem${cookies.cId.cId}`,
+      JSON.stringify(inputData)
+    );
     navigator("/main");
   };
 
