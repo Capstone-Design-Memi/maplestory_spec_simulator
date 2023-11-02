@@ -11,12 +11,12 @@ const TopMenu = () => {
   const navigator = useNavigate();
 
   useEffect(() => {
-    if (cId !== 50) {
+    if (cookies.cId !== undefined) {
       setIsButtonAble(false);
     } else {
       setIsButtonAble(true);
     }
-  }, [cId]);
+  }, [cookies]);
 
   return (
     <>
