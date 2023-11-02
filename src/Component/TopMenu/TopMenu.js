@@ -16,7 +16,6 @@ const TopMenu = () => {
     } else {
       setIsButtonAble(true);
     }
-    console.log(cId);
   }, [cId]);
 
   return (

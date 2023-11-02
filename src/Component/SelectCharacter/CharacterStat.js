@@ -1,30 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { useNavigate } from "react-router-dom";
 import { Class } from "../../Util/Class";
 
 const CharacterStat = () => {
-  const [cookies] = useCookies();
+  const [cookies, setCookie] = useCookies();
   const navigator = useNavigate();
   let str = 4;
   let int = 4;
   let dex = 4;
   let luk = 4;
   const jobClass = Class;
-  const cId = cookies.cId.cId;
-  const chInfoArry = Object.values(cookies);
+  const cId = cookies.cId === undefined ? false : cookies.cId.cId;
+  const chInfoArry = cookies.cId === undefined ? [{}] : Object.values(cookies);
   let test;
 
   const chInfoMap = chInfoArry.map((item) => {
-    if (item.cookieInputData?.id == cId) {
-      return item;
+    if (cookies.cId !== undefined) {
+      if (item.cookieInputData?.id == cId) {
+        return item;
+      } else {
+        return {
+          cookieInputData: { data: [{ message: "캐릭터를 선택해주세요" }] },
+        };
+      }
+    } else {
+      return {
+        cookieInputData: { data: [{ message: "캐릭터를 선택해주세요" }] },
+      };
     }
   });
 
   const chInfoMapFilterUndefined = chInfoMap.filter(
     (item) => item != undefined
   );
-
   const chInfo = chInfoMapFilterUndefined[0].cookieInputData.data[0];
 
   const mainStat = jobClass.map((item) => {
@@ -47,8 +56,7 @@ const CharacterStat = () => {
     });
   });
 
-  console.log(test);
-  return (
+  return cookies.cId !== undefined ? (
     <div style={{ backgroundColor: "white" }}>
       <ul>
         <li>name:{chInfo.name}</li>
@@ -62,6 +70,8 @@ const CharacterStat = () => {
         </ul>
       </ul>
     </div>
+  ) : (
+    <div style={{ backgroundColor: "white" }}>캐릭터를 선택해주세요</div>
   );
 };
 
