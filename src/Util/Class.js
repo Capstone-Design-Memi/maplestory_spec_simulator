@@ -11,16 +11,82 @@ export const Class = [
             value: "히어로",
             label: "히어로",
             main: "str",
+            spec: {
+              "atkSpeed" : [7, 8], //두손 무기, 한손 무기
+              "숙련도" : 90,
+              "str" : 80,
+              "dex" : 30,
+              "atk" : 30,
+              "dmg" : [0,5], // 도끼 착용 시 5
+              "endDmg" : 10,
+              "ignoreDef" : 50,
+              "def" : 200,
+              "상태이상내성" : 30,
+              "모든속성내성" : 30,
+              "stance" : 100,
+              "dcreDmg" : 10, //데미지 감소
+              "crit" : 20,
+              "hp" : 1800, //바디 오브 스틸 패시브 1500
+              "hpP" : 20,
+              "speed" : 10,
+              "maxSpeed" : 10,
+              "jump" : 10
+            }
           },
           {
             value: "팔라딘",
             label: "팔라딘",
+
             main: "str",
+            spec: {
+              "atkSpeed" : [7, 8], //두손 무기, 한손 무기
+              "숙련도" : [91, 94], //두손무기, 한손무기
+              "str" : 80,
+              "dex" : 30,
+              "atk" : 10,
+              "endDmg" : 42,
+              "ignoreDef" : [31, 41], //둔기 착용시 10%증가
+              "defP" : 250,
+              "def" : 620,
+              "상태이상내성" : 40,
+              "모든속성내성" : 40,
+              "stance" : 100,
+              "dcreDmg" : 10, //데미지 감소
+              "crit" : 42,
+              "critDmg" : [20, 21], //두손검/둔기, 한손검
+              "hp" : 1800, // 바디 오브 스틸 패시브 1500
+              "hpP" : 20,
+              "speed" : 10,
+              "maxSpeed" : 10,
+              "jump" : 10
+            }
           },
           {
             value: "다크나이트",
             label: "다크나이트",
             main: "str",
+            spec: {
+              "atkSpeed" : 7,
+              "숙련도" : 90,
+              "str" : 80,
+              "dex" : 30,
+              "atk" : 30,
+              "dmg" : [0, 5], //창 사용시 5
+              "endDmg" : 103,
+              "ignoreDef" : 30,
+              "def" : 470,
+              "상태이상내성" : 20,
+              "모든속성내성" : 20,
+              "stance" : 100,
+              "dcreDmg" : 10, //데미지 감소
+              "crit" : 60,
+              "critDmg" : 38,
+              "hp" : 1800, // 바디 오브 스틸 패시브 1500
+              "hpP" : 80,
+              "speed" : 30,
+              "maxSpeed" : 10,
+              "jump" : 10
+            }
           },
         ],
       },
@@ -32,6 +98,23 @@ export const Class = [
             value: "썬콜",
             label: "썬콜",
             main: "int",
+            spec: {
+              "atkSpeed" : 7,
+              "숙련도" : 95,
+              "int" : 90,
+              "mAtk" : 40,
+              "dmg" : 50,
+              "endDmg" : 40,
+              "ignoreDef" : 20,
+              "def" : 90,
+              "상태이상내성" : 20,
+              "모든속성내성" : 20,
+              "stance" : 100,
+              "crit" : [30, 35], //완드 착용시 + 5
+              "critDmg" : 13,
+              "mpP" : 20,
+              "mp" : 2400,
+            }
           },
           {
             value: "불독",
