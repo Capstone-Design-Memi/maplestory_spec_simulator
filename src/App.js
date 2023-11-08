@@ -5,6 +5,7 @@ import CreateCharacter from "./Page/CreateCharacter";
 import SelectCharacter from "./Page/SelectCharacter";
 import TopMenu from "./Component/TopMenu/TopMenu";
 import MakeItem from "./Page/MakeItem";
+import Test from "./Parser/testpage/test";
 import { Provider } from "react-redux";
 
 export const AppContext = createContext();
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <AppContext.Provider value={{ cId, setCId }}>
         <Routes>
+          <Route exact path="/test" element={<Test />}/>
           <Route element={<TopMenu />}>
             <Route exact path="/" element={<SelectCharacter />} />
             <Route
