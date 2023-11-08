@@ -15,10 +15,12 @@ export const Background = styled.div`
 `;
 
 const EquipmentInventory = (props) => {
+  const [cookies] = useCookies();
   const { cId } = useContext(AppContext);
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
-  const testItem = JSON.parse(localStorage.getItem(`testChItem${cId}`));
+  const testItem = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`));
+  console.log(testItem);
 
   return (
     <Background>

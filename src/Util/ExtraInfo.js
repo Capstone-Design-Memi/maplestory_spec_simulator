@@ -1,4 +1,4 @@
-extraInfos: [
+const ExtraInfo =  [
   {
     "name" : "파프니르 미스틸테인",
     "reqLev" : 150,
@@ -2016,7 +2016,7 @@ extraInfos: [
     "class" : "마법사"
   },
   {
-    "name" : "하이네스 어쌔신보닛",
+    "name" : "하이네스 어새신보닛",
     "reqLev" : 150,
     "setEffect" : "루타비스 세트",
     "class" : "도적"
@@ -2136,7 +2136,7 @@ extraInfos: [
     "class" : "마법사"
   },
   {
-    "name" : "이글아이 어쌔신셔츠",
+    "name" : "이글아이 어새신셔츠",
     "reqLev" : 150,
     "setEffect" : "루타비스 세트",
     "class" : "도적"
@@ -2196,7 +2196,7 @@ extraInfos: [
     "class" : "마법사"
   },
   {
-    "name" : "트릭스터 어쌔신팬츠",
+    "name" : "트릭스터 어새신팬츠",
     "reqLev" : 150,
     "setEffect" : "루타비스 세트",
     "class" : "전사"
@@ -2762,6 +2762,12 @@ extraInfos: [
     "class" : "모두"
   },
   {
+    "name" : "트와일라이트 마크",
+    "reqLev" : 140,
+    "setEffect" : "여명의 보스 세트",
+    "class" : "모두"
+  },
+  {
     "name" : "마력이 깃든 안대",
     "reqLev" : 160,
     "setEffect" : "칠흑의 보스 세트",
@@ -2849,3 +2855,5 @@ extraInfos: [
     "class" : "모두"
   }
 ]
+
+export default ExtraInfo;

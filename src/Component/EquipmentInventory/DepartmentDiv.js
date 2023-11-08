@@ -227,7 +227,6 @@ const DepartmentDiv = (props) => {
       if (item.imageUrl === hoverUrl) {
         // setHoverItem(item);
         setHoverItem(item);
-        console.log(hoverItem);
       }
     });
   }, [hover]);
@@ -246,7 +245,6 @@ const DepartmentDiv = (props) => {
                   setHover(true);
                   setHoverUrl(ItemArr[index]);
                   setHoverNum(index);
-                  console.log(hoverNum);
                 }}
                 onMouseLeave={() => {
                   setHover(false);
