@@ -25,16 +25,21 @@ const MakeItem = () => {
   const testId = allKeys[allKeys.length - 1];
 
   useEffect(() => {
-    if (
-      JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))?.data
-    ) {
-      const lastInventoryItem = JSON.parse(
-        localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
-      ).data.length;
-      setItemId(
+    if (cookies.cId === undefined) {
+      navigator("/");
+    } else {
+      if (
         JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
-          .data[lastInventoryItem - 1].id + 1
-      );
+          ?.data
+      ) {
+        const lastInventoryItem = JSON.parse(
+          localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
+        ).data.length;
+        setItemId(
+          JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
+            .data[lastInventoryItem - 1].id + 1
+        );
+      }
     }
   }, []);
 
