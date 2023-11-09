@@ -3,6 +3,7 @@ import React, { useContext, useEffect } from "react";
 import ItemList from "../Component/Item/ItemList";
 import StatWindow from "../Component/Stat/StatWindow";
 import EquipmentInventory from "../Component/EquipmentInventory/EquipmentInventory";
+import StatInformation from "../Component/Stat/StatInformation";
 import { AppContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
@@ -28,6 +29,9 @@ const Main = () => {
         {/* <Col>
           <StatWindow />
         </Col> */}
+        <Col>
+          <StatInformation />
+        </Col>
       </Row>
     </div>
   );

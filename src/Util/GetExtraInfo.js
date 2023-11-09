@@ -3,7 +3,7 @@ import { Class } from "./Class";
 import SubWeaponData from "./SubWeaponData";
 
 const cannotStarfoce = [...SubWeaponData, "엠블렘", "뱃지", "훈장", "안드로이드", "포켓 아이템", "반지"];
-const canStarfoceRing = ["가디언 엔젤 링", "여명의 가디언 엔젤 링", "마이스터 링", "거대한 공포", "실버블라썸 링", "고귀한 이피아의 반지"];
+const canStarfoceRing = ["가디언 엔젤 링", "여명의 가디언 엔젤 링", "마이스터링", "거대한 공포", "실버블라썸 링", "고귀한 이피아의 반지"];
 
 const GetExtraInfo = (enforceItem, jobName) => {
     let maxStar = 0;
