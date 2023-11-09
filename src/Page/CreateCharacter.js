@@ -38,7 +38,7 @@ const CreateCharacter = () => {
         JSON.stringify([{ id: id, data: [] }])
       );
       const localItemData = [{ id: id, data: characterInfo.equipments }];
-      localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
+      localStorage.setItem(`testChItem${id}`, localItemData);
       const cookieInputData = {
         id: id,
         data: [
