@@ -14,6 +14,7 @@ export const initialState = {
 
 const reducer = (state = initialState, action) =>
   produce(state, (draft) => {
+    console.log(action);
     switch (action.type) {
       case LOAD_MAPLE_CHRACTER_REQUEST:
         draft.loadMapleCharacterLoading = true;
