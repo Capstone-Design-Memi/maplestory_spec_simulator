@@ -11,58 +11,16 @@ import {
 import { act } from "react-dom/test-utils";
 
 function loadCharacterAPI(data) {
-  console.log(data);
-  return axios.get(
-    
-  );
+  return data;
 }
-
-function parseCharacter(data) {
-  const parser = MapleUtilsParser.new();
-    parser.getCharacter({
-            name: data,
-            cash: true,
-            pet: true,
-            equip: true,
-            symbol: true
-    }).then((character) => {
-      console.log(character);
-      return(character);
-    });
-    
-    parser.getCharacterWithErrors({
-        name: data,
-        cash: true,
-        pet: true,
-        equip: true,
-        symbol: true
-    }).then(({data: character, errors}) => {
-        console.log(character);
-        //return(character);
-        if(errors?.equipments) {
-            errors?.equipments()?.then(equipments => console.log(equipments));
-        }
-        if(errors?.arcanes) {
-            errors?.arcanes()?.then(symbols => console.log(symbols));
-        }
-        if(errors?.petEquipments) {
-            errors.petEquipments()?.then(petEquipments => console.log(petEquipments));
-        }
-        if(errors?.cashEquipments) {
-            errors?.cashEquipments()?.then(cashEquipments => console.log(cashEquipments));
-        }
-    })
-}
-
-
 
 function* loadCharacter(action) {
   try {
-    const result = yield call(parseCharacter, action.data);
+    const result = yield call(loadCharacterAPI, action.data);
     console.log(result);
     yield put({
       type: LOAD_MAPLE_CHRACTER_SUCCESS,
-      data: result.data,
+      data: result,
     });
   } catch (err) {
     console.error(err);

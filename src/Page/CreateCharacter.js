@@ -11,6 +11,7 @@ import { useCookies } from "react-cookie";
 import { ChractersInfo } from "../Util/CharatersData";
 import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterForm";
 import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
+import { MapleUtilsParser } from "../Parser/maple-util-parser";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -24,10 +25,56 @@ const CreateCharacter = () => {
   const navigator = useNavigate();
 
   const onFinishLoad = (values) => {
-    dispatch({
-      type: LOAD_MAPLE_CHRACTER_REQUEST,
-      data: values.username,
-    });
+    const parser = MapleUtilsParser.new();
+    let isReturnAble = false;
+    let returnData;
+    parser
+      .getCharacter({
+        name: values.username,
+        cash: true,
+        pet: true,
+        equip: true,
+        symbol: true,
+      })
+      .then((character) => {
+        dispatch({
+          type: LOAD_MAPLE_CHRACTER_REQUEST,
+          data: character,
+        });
+      });
+
+    parser
+      .getCharacterWithErrors({
+        name: values.username,
+        cash: true,
+        pet: true,
+        equip: true,
+        symbol: true,
+      })
+      .then(({ data: character, errors }) => {
+        console.log(character);
+        //return(character);
+        if (errors?.equipments) {
+          errors?.equipments()?.then((equipments) => console.log(equipments));
+        }
+        if (errors?.arcanes) {
+          errors?.arcanes()?.then((symbols) => console.log(symbols));
+        }
+        if (errors?.petEquipments) {
+          errors
+            .petEquipments()
+            ?.then((petEquipments) => console.log(petEquipments));
+        }
+        if (errors?.cashEquipments) {
+          errors
+            ?.cashEquipments()
+            ?.then((cashEquipments) => console.log(cashEquipments));
+        }
+      });
+    //   dispatch({
+    //     type: LOAD_MAPLE_CHRACTER_REQUEST,
+    //     data: values.username,
+    //   });
     setCharacterInfoLoadSuccess(true);
   };
 
