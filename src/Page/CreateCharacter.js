@@ -41,6 +41,9 @@ const CreateCharacter = () => {
           type: LOAD_MAPLE_CHRACTER_REQUEST,
           data: character,
         });
+        setCharacterInfoLoadSuccess(true);
+        console.log(character);
+        console.log(characterInfoLoadSuccess);
       });
 
     parser
@@ -75,17 +78,20 @@ const CreateCharacter = () => {
     //     type: LOAD_MAPLE_CHRACTER_REQUEST,
     //     data: values.username,
     //   });
-    setCharacterInfoLoadSuccess(true);
   };
 
   useEffect(() => {
+    console.log(characterInfoLoadSuccess);
+    console.log(characterInfo);
     if (characterInfoLoadSuccess) {
+      console.log(characterInfo);
       localStorage.setItem(
         `InventoryItem${id}`,
         JSON.stringify([{ id: id, data: [] }])
       );
+      console.log(characterInfo.equipments);
       const localItemData = [{ id: id, data: characterInfo.equipments }];
-      localStorage.setItem(`testChItem${id}`, localItemData);
+      localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,
         data: [
