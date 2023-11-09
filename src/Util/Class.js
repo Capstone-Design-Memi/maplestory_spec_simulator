@@ -740,6 +740,66 @@ export const Class = [
     ],
   },
   {
+    value: "데몬",
+    label: "데몬",
+    children: [
+      {
+        value: "전사",
+        label: "전사",
+        children: [
+          {
+            value: "데몬 슬레이어",
+            label: "데몬 슬레이어",
+            main: "str",
+            spec: {
+              "atkSpeed" : 8,
+              "mastery" : 90,
+              "str" : 50,
+              "dex" : 30,
+              "atk" : 100,
+              "bossDmg" : 15,
+              "endDmg" : 43,
+              "ignoreDef" : 30,
+              "defP" : 100,
+              "conditionResist" : 64,
+              "allAttributeResit" : 60,
+              "stance" : 100,
+              "dcreDmg" : 20,
+              "crit" : 25,
+              "critDmg" : 15,
+              "hpP" : 50,
+              "speed" : 25,
+              "jump" : 20
+            }
+          },
+          {
+            value: "데몬 어벤져",
+            label: "데몬 어벤져",
+            main: "str",
+            spec: {
+              "atkSpeed" : 7,
+              "mastery" : 90,
+              "hp" : 1000,
+              "atk" : 90,
+              "dmg" : 40,
+              "endDmg" : 15,
+              "ignoreDef" : 30,
+              "defP" : 100,
+              "def" : 500,
+              "stance" : 100,
+              "crit" : 25,
+              "critDmg" : 8,
+              "hpP" : 50,
+              "speed" : 45,
+              "maxSpeed" : 20,
+              "jump" : 20
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     value: "영웅",
     label: "영웅",
     children: [
