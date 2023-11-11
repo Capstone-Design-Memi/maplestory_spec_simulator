@@ -75,7 +75,7 @@ const CharacterItem = ({ toggle }) => {
           return (
             <>
               {item.cookieInputData.data[0].imageUrl ? (
-                <img
+                <img // 불러오기 캐릭터 이미지
                   src={item?.cookieInputData.data[0].imageUrl}
                   style={{
                     marginTop: "4.3vh",
@@ -92,7 +92,15 @@ const CharacterItem = ({ toggle }) => {
                   }}
                 />
               ) : (
-                <img src="../../assets/defaultAvatar.png" />
+                <img //생성된 기본 캐릭터 이미지
+                  src="../../assets/defaultAvatar.png"
+                  style={{
+                    marginBottom: "31vh",
+                    marginRight: "8.5vw",
+                    width: "4vw",
+                    height: "12.5vh",
+                  }}
+                />
               )}
             </>
           );
