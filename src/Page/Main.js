@@ -4,6 +4,7 @@ import ItemList from "../Component/Item/ItemList";
 import StatWindow from "../Component/Stat/StatWindow";
 import EquipmentInventory from "../Component/EquipmentInventory/EquipmentInventory";
 import StatInformation from "../Component/Stat/StatInformation";
+import { Setting_Unions_Button } from "../Component/Buttons/Setting_Union_Button";
 import { AppContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
@@ -20,6 +21,9 @@ const Main = () => {
     <div>
       <h2>메인</h2>
       <Row>
+        <Col>
+          <Setting_Unions_Button />
+        </Col>
         <Col>
           <EquipmentInventory />
         </Col>

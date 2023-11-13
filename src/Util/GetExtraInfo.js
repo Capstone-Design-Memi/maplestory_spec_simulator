@@ -11,14 +11,14 @@ const GetExtraInfo = (enforceItem, jobName) => {
     let result = ExtraInfo.find(index => index.name === enforceItem.name);
     let reqLev = 0;
 
-    console.log(`level : ${enforceItem.level}`);
+    //console.log(`level : ${enforceItem.level}`);
 
     if(result) {
         reqLev = result.reqLev;
     } else {
         reqLev = enforceItem.level;
         result = {...result, "reqLev" : reqLev};
-        console.log(result);
+        //console.log(result);
     }
 
     if(cannotStarfoce.includes(enforceItem.category)) {

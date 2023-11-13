@@ -38,7 +38,7 @@ export const GetSumOfStats = (equipmentItem) => {
         "reuse" : 0,
     };
 
-    console.log(equipmentItem);
+    //console.log(equipmentItem);
     equipmentItem.map((item) => {
         const {base, flame, potential, scroll, grade} = item;
         if(base) {

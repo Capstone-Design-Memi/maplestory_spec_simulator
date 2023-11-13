@@ -29,8 +29,7 @@ export const GetAllInformation = () => {
 
     const information = chInfoMapFilterUndefined[0].cookieInputData.data[0];
     const equipmentItem = JSON.parse(
-      localStorage.getItem(`testChItem${cookies.cId.cId}`)
-    )[0]?.data;
+      localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.data;
     //console.log(information);
     return [information,equipmentItem];
 }

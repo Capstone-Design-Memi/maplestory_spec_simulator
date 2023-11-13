@@ -70,7 +70,7 @@ const ItemStat = ({ item, extraInfo, eqItem }) => {
   otherInformation.reqLev = test.reqLev;
   }
 
-  console.log(otherInformation.reqLev);
+  //console.log(otherInformation.reqLev);
   return (
     <Wrapper>
       <TopFrame />

@@ -4,6 +4,7 @@ import BackgroundImg from "../../images/frame/equipmentInventory.png";
 import DepartmentDiv from "./DepartmentDiv";
 import { useCookies } from "react-cookie";
 import { AppContext } from "../../App";
+import Arcane from "./Arcane";
 
 export const Background = styled.div`
   margin: 0px;
@@ -20,9 +21,19 @@ const EquipmentInventory = (props) => {
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const testItem = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`));
-  console.log(testItem);
+  const [isArcane, setIsArcane] = useState(false);
+  const [isAuthentic, setIsAuthentic] = useState(false);
+
+  const handleArcaneClick = () => {
+    setIsArcane(!isArcane);
+  }
+
+  const handleAuthenticClick= () => {
+    setIsAuthentic(!isAuthentic);
+  }
 
   return (
+    <div style={{display:"flex"}}>
     <Background>
       <div
         style={{
@@ -39,7 +50,15 @@ const EquipmentInventory = (props) => {
           <DepartmentDiv exampleData={exampleData} />
         )}
       </div>
+      <button style={{border:"1px solid red", width:"50px", height:"10px", position:"absolute", 
+      top:"310px", left:"120px", backgroundColor:"rgba(0,0,0,0)"}} onClick={handleAuthenticClick}></button>
+      <button style={{border:"1px solid blue", width:"45px", height:"10px", position:"absolute", 
+      top:"310px", left:"175px", backgroundColor:"rgba(0,0,0,0)"}} onClick={handleArcaneClick}></button>
     </Background>
+    {
+      isArcane && <Arcane/>
+    }
+    </div>
   );
 };
 
