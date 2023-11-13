@@ -13,6 +13,7 @@ import Symbol5 from "../../images/arcEquip/symbols/5.png";
 import Symbol6 from "../../images/arcEquip/symbols/6.png";
 import Lv from "../../images/arcEquip/textDown/lv.png";
 import box from "../../images/arcEquip/box.png";
+import Arc from "../../images/arcEquip/textUp/arcane.png";
 import disabled from "../../images/arcEquip/button_enchant/disabled.png";
 import mouseOver from "../../images/arcEquip/button_enchant/mouseOver.png";
 import normal from "../../images/arcEquip/button_enchant/normal.png";
@@ -23,6 +24,7 @@ import styled from "styled-components";
 import PrintArcaneLevel from "./PrintArcaneLevel";
 import { GetAllInformation } from "../../CalculateUtils/GetAllInformation";
 import { DefaultArcane } from "./DefaultArcane";
+import PrintARC from "./PrintARC";
 
 export const Box = styled.div`
 width: 48px;
@@ -68,9 +70,46 @@ background-image: url("${normal}");
 }
 `
 
+
 const Arcane = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChArchane${cookies.cId.cId}`))[0]?.data);
+    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChArcane${cookies.cId.cId}`))[0]?.data);
+    const mainStat = Object.keys(arcanes[0].stat)[0];
+
+    if(arcanes.length < 6) {
+        handleResetClick();
+    }
+
+    const updateArcanes = () => {
+        setArcanes(JSON.parse(localStorage.getItem(`testChArcane${cookies.cId.cId}`))[0]?.data);
+    }
+
+    const handleResetClick = () => {
+        let resetObj = DefaultArcane;
+        for(let i=0; i<resetObj.length; i++) {
+            resetObj[i].stat = {};
+            resetObj[i].stat[mainStat] = 0;
+        }
+        
+        const localArchaneData = [{ id:cookies.cId.cId, data: resetObj}];
+        localStorage.setItem(`testChArcane${cookies.cId.cId}`, JSON.stringify(localArchaneData));
+        updateArcanes();
+    }
+
+    const handleEnforceClick = (symbol) => {
+        symbol.level++;
+        symbol.stat[Object.keys(symbol.stat)[0]] = (symbol.level + 2) * 10;
+
+        const result = arcanes.map((element) => {
+            return element.name === symbol.name ? symbol : element;
+        })
+        
+        const updateArchaneData = [{ id:cookies.cId.cId, data: result}];
+        localStorage.setItem(`testChArcane${cookies.cId.cId}`, JSON.stringify(updateArchaneData));
+        updateArcanes();
+    }
+
+    console.log(arcanes);
 
     const symbol1 = arcanes.find((element) => element.name === "아케인심볼 : 소멸의 여로");
     const symbol2 = arcanes.find((element) => element.name === "아케인심볼 : 츄츄 아일랜드");
@@ -78,16 +117,21 @@ const Arcane = () => {
     const symbol4 = arcanes.find((element) => element.name === "아케인심볼 : 아르카나");
     const symbol5 = arcanes.find((element) => element.name === "아케인심볼 : 모라스");
     const symbol6 = arcanes.find((element) => element.name === "아케인심볼 : 에스페라");
-    
-    console.log(symbol1.level);
 
-    console.log(arcanes);
+    if(!(symbol1 && symbol2 && symbol3 && symbol4 && symbol5 && symbol6)){
+        handleResetClick();
+    }
+
     return (
-        <div style={{margin:"0px", padding: "0px"}}>
+        <div style={{margin:"0px", padding: "0px", textAlign:"center"}}>
             <div style={{backgroundImage: `url(${backgrnd})`, width:"189px", height:"135px", overflow:"hidden"}}>
                 <div style={{backgroundImage: `url(${background2})`, width:"164px", height:"100px", 
                              backgroundRepeat:"no-repeat", margin:"auto", borderRadius:"8px",
-                             marginTop:"25px"}}>
+                             marginTop:"25px", overflow:"hidden"}}>
+                    <div style={{textAlign:"left", width:"110px", margin:"30px auto"}}>
+                        <img src={Arc}></img>
+                        <PrintARC arcanes={arcanes}/>
+                    </div>
                 </div>
             </div>
             <div style={{backgroundImage: `url(${background4})`}}>
@@ -98,39 +142,65 @@ const Arcane = () => {
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol1}/>
                         {
-                            Symbol1.level === 20 ? <Button/> : <MaxLev/>
+                            symbol1.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol1)}></Button> 
+                            : <MaxLev/>
                         }
                     </Box>
                     <Box>
                         <Symbol src={Symbol2} />
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol2}/>
+                        {
+                            symbol2.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol2)}></Button> 
+                            : <MaxLev/>
+                        }
                     </Box>
                     <Box>
                         <Symbol src={Symbol3} />
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol3}/>
+                        {
+                            symbol3.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol3)}></Button> 
+                            : <MaxLev/>
+                        }
                     </Box>
                     <Box>
                         <Symbol src={Symbol4} />
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol4}/>
+                        {
+                            symbol4.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol4)}></Button> 
+                            : <MaxLev/>
+                        }
                     </Box>
                     <Box>
                         <Symbol src={Symbol5} />
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol5}/>
+                        {
+                            symbol5.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol5)}></Button> 
+                            : <MaxLev/>
+                        }
                     </Box>
                     <Box>
                         <Symbol src={Symbol6} />
                         <Level src={Lv}/>
                         <PrintArcaneLevel arcane={symbol6}/>
+                        {
+                            symbol6.level < 20 
+                            ? <Button onClick={()=>handleEnforceClick(symbol6)}></Button> 
+                            : <MaxLev/>
+                        }
                     </Box>
                 </div>
             </div>
-            <div style={{backgroundImage: `url(${background5})`, height:"26px", backgroundRepeat:"no-repeat"}}>
-                
-            </div>
+            <div style={{backgroundImage: `url(${background5})`, height:"26px", backgroundRepeat:"no-repeat"}}></div>
+            <button onClick={handleResetClick}>심볼 초기화</button> 
         </div>
     );
 }
