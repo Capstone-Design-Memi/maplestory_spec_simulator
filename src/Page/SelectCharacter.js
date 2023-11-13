@@ -17,7 +17,7 @@ const SelectCharacter = () => {
       style={{
         backgroundImage:
           "url(../../assets/maplestory_character_select_menu_by_pixel_rydol_de9aaup-fullview.jpg)",
-        height: "120vh",
+        height: "140vh",
         backgroundRepeat: " no-repeat",
         backgroundSize: "cover",
       }}
