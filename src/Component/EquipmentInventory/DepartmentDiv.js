@@ -260,6 +260,7 @@ const DepartmentDiv = (props) => {
         <div
           style={{
             position: "absolute",
+            zIndex: "2",
             left: (hoverNum % 5) * 42 + 50,
             top: ((hoverNum + 1) / 6) * 42,
           }}

@@ -67,7 +67,7 @@ export const Setting_Unions_Button = () => {
         <button onClick={handleClickButton} style={{width:"50px",height:"50px"}}>유니온 설정</button>
         {
             isClicked && (
-                <div style={{position:"absolute", zIndex:1, backgroundColor:"skyblue", width:"250px", left:"50px", top:"0px"}}>
+                <div style={{position:"absolute", zIndex:3, backgroundColor:"skyblue", width:"250px", left:"50px", top:"0px"}}>
                     STR : <input type="text" name="str" style={{width:"50px"}} defaultValue={unionLocalStorage.str} onChange={onChangeStat}/><br/>
                     DEX : <input type="text" name="dex" style={{width:"50px"}} defaultValue={unionLocalStorage.dex} onChange={onChangeStat}/><br/>
                     INT : <input type="text" name="int" style={{width:"50px"}} defaultValue={unionLocalStorage.int} onChange={onChangeStat}/><br/>
