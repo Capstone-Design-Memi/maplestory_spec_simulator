@@ -12,7 +12,8 @@ import Number9 from "../../images/arcEquip/textDown/9.png";
 const PrintArcaneLevel = ({arcane}) => {
     const numberArr = [Number0,Number1,Number2,Number3,Number4,
                        Number5,Number6,Number7,Number8,Number9];
-
+    //const mainStat = Object.keys(arcane[0].stat)[0];
+    //console.log(mainStat);
     let output = [];
 
     if(arcane) {
@@ -31,7 +32,7 @@ const PrintArcaneLevel = ({arcane}) => {
     <img key={element.id} src={numberArr[element.value]}></img>);
 
     return (
-        <div style={{marginTop:"5px", float:"right", marginRight: "5px"}}>
+        <div style={{marginTop:"6px", float:"right", marginRight: "5px"}}>
             {levelList}
         </div>
     )

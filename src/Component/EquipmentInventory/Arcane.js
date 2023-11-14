@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Cookies, useCookies } from "react-cookie";
 import backgrnd from "../../images/arcEquip/background/backgrnd.png";
 import background2 from "../../images/arcEquip/background/backgrnd2.png";
@@ -25,6 +25,8 @@ import PrintArcaneLevel from "./PrintArcaneLevel";
 import { GetAllInformation } from "../../CalculateUtils/GetAllInformation";
 import { DefaultArcane } from "./DefaultArcane";
 import PrintARC from "./PrintARC";
+import PrintAnimation from "./PrintAnimation";
+
 
 export const Box = styled.div`
 width: 48px;
@@ -69,12 +71,14 @@ background-image: url("${normal}");
     background-image: url("${pressed}");
 }
 `
-
+let animation = false;
 
 const Arcane = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
     const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChArcane${cookies.cId.cId}`))[0]?.data);
     const mainStat = Object.keys(arcanes[0].stat)[0];
+    const [isAnimate, setIsAnimate] = useState(false);
+    const [animationLT, setAnimationLT] = useState({left: 0, top: 0});
 
     if(arcanes.length < 6) {
         handleResetClick();
@@ -98,7 +102,7 @@ const Arcane = () => {
 
     const handleEnforceClick = (symbol) => {
         symbol.level++;
-        symbol.stat[Object.keys(symbol.stat)[0]] = (symbol.level + 2) * 10;
+        symbol.stat[Object.keys(symbol.stat)[0]] = (symbol.level + 2) * 100;
 
         const result = arcanes.map((element) => {
             return element.name === symbol.name ? symbol : element;
@@ -106,10 +110,27 @@ const Arcane = () => {
         
         const updateArchaneData = [{ id:cookies.cId.cId, data: result}];
         localStorage.setItem(`testChArcane${cookies.cId.cId}`, JSON.stringify(updateArchaneData));
+        changeLT(symbol);
+        setIsAnimate(true);
         updateArcanes();
     }
 
-    console.log(arcanes);
+    const changeLT = (symbol) => {
+        if(symbol.name === "아케인심볼 : 소멸의 여로") {
+            setAnimationLT({left: 22, top: 135});
+        }else if(symbol.name === "아케인심볼 : 츄츄 아일랜드") {
+            setAnimationLT({left: 73, top: 135});
+        }else if(symbol.name === "아케인심볼 : 레헬른") {
+            setAnimationLT({left: 124, top: 135});
+        }else if(symbol.name === "아케인심볼 : 아르카나") {
+            setAnimationLT({left: 22, top: 228});
+        }else if(symbol.name === "아케인심볼 : 모라스") {
+            setAnimationLT({left: 73, top: 228});
+        }else if(symbol.name === "아케인심볼 : 에스페라") {
+            setAnimationLT({left: 124, top: 228});
+        }
+        
+    }
 
     const symbol1 = arcanes.find((element) => element.name === "아케인심볼 : 소멸의 여로");
     const symbol2 = arcanes.find((element) => element.name === "아케인심볼 : 츄츄 아일랜드");
@@ -123,13 +144,12 @@ const Arcane = () => {
     }
 
     return (
-        <div style={{margin:"0px", padding: "0px", textAlign:"center"}}>
+        <div style={{margin:"0px", padding: "0px", textAlign:"center", position:"relative"}}>
             <div style={{backgroundImage: `url(${backgrnd})`, width:"189px", height:"135px", overflow:"hidden"}}>
                 <div style={{backgroundImage: `url(${background2})`, width:"164px", height:"100px", 
                              backgroundRepeat:"no-repeat", margin:"auto", borderRadius:"8px",
                              marginTop:"25px", overflow:"hidden"}}>
                     <div style={{textAlign:"left", width:"110px", margin:"30px auto"}}>
-                        <img src={Arc}></img>
                         <PrintARC arcanes={arcanes}/>
                     </div>
                 </div>
@@ -137,6 +157,9 @@ const Arcane = () => {
             <div style={{backgroundImage: `url(${background4})`}}>
                 <div style={{display:"grid", gridTemplateColumns:"repeat(3, 1fr)",
                              width:"150px", margin:"auto", rowGap:"8px", columnGap:"3px"}}>
+                    {
+                        isAnimate && <PrintAnimation isAnimate={isAnimate} setIsAnimate={setIsAnimate} animationLT={animationLT}/>
+                    }
                     <Box>
                         <Symbol src={Symbol1} />
                         <Level src={Lv}/>
@@ -200,7 +223,7 @@ const Arcane = () => {
                 </div>
             </div>
             <div style={{backgroundImage: `url(${background5})`, height:"26px", backgroundRepeat:"no-repeat"}}></div>
-            <button onClick={handleResetClick}>심볼 초기화</button> 
+            <button onClick={handleResetClick}>아케인심볼 초기화</button> 
         </div>
     );
 }
