@@ -27,16 +27,16 @@ const PrintAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
         {left: -52,top: -48,},
         {left: -58,top: -61,},
         {left: -68,top: -66,},
-        {left: -70,top: -68,},
-        {left: -64,top: -64,},
-        {left: -64,top: -64,},
+        {left: -72,top: -68,},
+        {left: -74,top: -64,},
+        {left: -64,top: -70,},
         {left: -64,top: -64,},
         {left: -64,top: -64,},
     ];
-    
+
     useEffect(()=> {
         for(let i=0; i<animationArr.length; i++) {
-            setTimeout(() => {
+            const ani = setTimeout(() => {
                 setCurrentFrame(animationArr[i]);
                 setCurrentLT(addLT[i]);
             }, (i + 1) * 30);
@@ -51,7 +51,8 @@ const PrintAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
 
     return (
         <img src={currentFrame} 
-            style={{position:"absolute", 
+            style={{position:"absolute",
+                pointerEvents:"none",
                 left: `${animationLT.left + currentLT.left}px`, 
                 top: `${animationLT.top + currentLT.top}px`}}/>
     )

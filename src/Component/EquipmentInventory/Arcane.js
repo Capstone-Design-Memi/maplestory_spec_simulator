@@ -26,6 +26,7 @@ import { GetAllInformation } from "../../CalculateUtils/GetAllInformation";
 import { DefaultArcane } from "./DefaultArcane";
 import PrintARC from "./PrintARC";
 import PrintAnimation from "./PrintAnimation";
+import PrintBgAnimation from "./PrintBgAnimation";
 
 
 export const Box = styled.div`
@@ -75,17 +76,20 @@ let animation = false;
 
 const Arcane = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChArcane${cookies.cId.cId}`))[0]?.data);
+    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);;
     const mainStat = Object.keys(arcanes[0].stat)[0];
     const [isAnimate, setIsAnimate] = useState(false);
     const [animationLT, setAnimationLT] = useState({left: 0, top: 0});
+    const localStorageData = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0];
+    console.log(arcanes);
+    
 
     if(arcanes.length < 6) {
         handleResetClick();
     }
 
     const updateArcanes = () => {
-        setArcanes(JSON.parse(localStorage.getItem(`testChArcane${cookies.cId.cId}`))[0]?.data);
+        setArcanes(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);
     }
 
     const handleResetClick = () => {
@@ -95,8 +99,8 @@ const Arcane = () => {
             resetObj[i].stat[mainStat] = 0;
         }
         
-        const localArchaneData = [{ id:cookies.cId.cId, data: resetObj}];
-        localStorage.setItem(`testChArcane${cookies.cId.cId}`, JSON.stringify(localArchaneData));
+        
+        localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, arcanes: resetObj}]));
         updateArcanes();
     }
 
@@ -108,8 +112,7 @@ const Arcane = () => {
             return element.name === symbol.name ? symbol : element;
         })
         
-        const updateArchaneData = [{ id:cookies.cId.cId, data: result}];
-        localStorage.setItem(`testChArcane${cookies.cId.cId}`, JSON.stringify(updateArchaneData));
+        localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, arcanes: result}]));
         changeLT(symbol);
         setIsAnimate(true);
         updateArcanes();
@@ -149,6 +152,7 @@ const Arcane = () => {
                 <div style={{backgroundImage: `url(${background2})`, width:"164px", height:"100px", 
                              backgroundRepeat:"no-repeat", margin:"auto", borderRadius:"8px",
                              marginTop:"25px", overflow:"hidden"}}>
+                    <PrintBgAnimation/>
                     <div style={{textAlign:"left", width:"110px", margin:"30px auto"}}>
                         <PrintARC arcanes={arcanes}/>
                     </div>
