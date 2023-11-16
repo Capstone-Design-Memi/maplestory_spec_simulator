@@ -10,7 +10,7 @@ import Effect8 from "../../images/arcEquip/effect_enchant/8.png";
 import Effect9 from "../../images/arcEquip/effect_enchant/9.png";
 import Effect10 from "../../images/arcEquip/effect_enchant/10.png";
 import Effect11 from "../../images/arcEquip/effect_enchant/11.png";
-import { useEffect, useState, useImperativeHandle } from "react";
+import { useEffect, useState } from "react";
 
 const PrintAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
     const [currentFrame, setCurrentFrame] = useState(Effect0);
@@ -46,8 +46,6 @@ const PrintAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
     if(currentFrame === Effect11) {
         setIsAnimate(false);
     }
-
-    console.log(animationLT.left);
 
     return (
         <img src={currentFrame} 
