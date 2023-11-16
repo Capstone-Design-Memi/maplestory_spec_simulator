@@ -17,7 +17,6 @@ const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
-  // const [chName, setChName] = useState("");
   const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
     useState(false);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
@@ -26,7 +25,6 @@ const CreateCharacter = () => {
   const navigator = useNavigate();
 
   const onFinishLoad = (values) => {
-    // setChName(values);
     const parser = MapleUtilsParser.new();
     let isReturnAble = false;
     let returnData;
@@ -84,17 +82,7 @@ const CreateCharacter = () => {
 
   useEffect(() => {
     console.log(characterInfoLoadSuccess);
-    if (cookies.testChInfo0) {
-      const characterIds = Object.keys(cookies);
-      const lastCharacterId = characterIds.filter((it) => {
-        if (it.includes("testCh")) {
-          return it;
-        }
-      });
-      setId(lastCharacterId.length);
-    } else {
-      setId(0);
-    }
+    console.log(characterInfo);
     if (characterInfoLoadSuccess) {
       console.log(characterInfo);
       localStorage.setItem(
@@ -102,13 +90,7 @@ const CreateCharacter = () => {
         JSON.stringify([{ id: id, data: [] }])
       );
       console.log(characterInfo.equipments);
-      const localItemData = [
-        {
-          id: id,
-          data: characterInfo.equipments,
-          arcanes: characterInfo.arcanes,
-        },
-      ];
+      const localItemData = [{ id: id, data: characterInfo.equipments, arcanes: characterInfo.arcanes }];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,
@@ -129,9 +111,6 @@ const CreateCharacter = () => {
       setcookie(`testChInfo${id}`, { cookieInputData });
       setCharacterInfoLoadSuccess(false);
     }
-    // else if (!characterInfoLoadSuccess) {
-    //   onFinishLoad(chName);
-    // }
   }, [characterInfo]);
 
   return (
@@ -152,6 +131,16 @@ const CreateCharacter = () => {
         <div>
           <Button
             onClick={() => {
+              console.log(cookies.testChInfo0);
+              if (cookies.testChInfo0) {
+                const characterIds = Object.keys(cookies);
+                const lastCharacterId = characterIds[
+                  characterIds.length - 1
+                ]?.replace("testChInfo", "");
+                setId(parseInt(lastCharacterId) + 1);
+              } else {
+                setId(0);
+              }
               setCreatecharacterToggle(false);
             }}
           >
