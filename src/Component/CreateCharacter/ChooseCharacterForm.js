@@ -95,11 +95,12 @@ const ChooseCharacterForm = () => {
   useEffect(() => {
     if (cookies.testChInfo0) {
       const characterIds = Object.keys(cookies);
-      const lastCharacterId = characterIds[characterIds.length - 1]?.replace(
-        "testChInfo",
-        ""
-      );
-      setId(parseInt(lastCharacterId) + 1);
+      const lastCharacterId = characterIds.filter((it) => {
+        if (it.includes("testCh")) {
+          return it;
+        }
+      });
+      setId(lastCharacterId.length);
     } else {
       setId(0);
     }
