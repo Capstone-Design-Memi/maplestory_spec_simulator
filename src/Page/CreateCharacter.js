@@ -84,6 +84,17 @@ const CreateCharacter = () => {
   useEffect(() => {
     console.log(characterInfoLoadSuccess);
     console.log(characterInfo);
+    if (cookies.testChInfo0) {
+      const characterIds = Object.keys(cookies);
+      const lastCharacterId = characterIds.filter((it) => {
+        if (it.includes("testCh")) {
+          return it;
+        }
+      });
+      setId(lastCharacterId.length);
+    } else {
+      setId(0);
+    }
     if (characterInfoLoadSuccess) {
       console.log(characterInfo);
       localStorage.setItem(
@@ -91,7 +102,15 @@ const CreateCharacter = () => {
         JSON.stringify([{ id: id, data: [] }])
       );
       console.log(characterInfo.equipments);
-      const localItemData = [{ id: id, data: characterInfo.equipments, arcanes: characterInfo.arcanes, authentics: DefaultAuthentic}];
+      const localItemData = [
+        {
+          id: id,
+          data: characterInfo.equipments,
+          arcanes: characterInfo.arcanes,
+          authentics: DefaultAuthentic,
+        },
+      ];
+
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,
