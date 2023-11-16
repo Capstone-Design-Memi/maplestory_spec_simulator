@@ -35,6 +35,8 @@ const CharacterStat = () => {
     (item) => item != undefined
   );
   const chInfo = chInfoMapFilterUndefined[0].cookieInputData.data[0];
+  console.log(cookies.cId);
+  console.log(chInfo);
 
   const mainStat = jobClass.map((item) => {
     const type = item.children;

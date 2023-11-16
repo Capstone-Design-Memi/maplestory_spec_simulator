@@ -94,6 +94,14 @@ const CharacterItem = ({ toggle }) => {
               ) : (
                 <img //생성된 기본 캐릭터 이미지
                   src="../../assets/defaultAvatar.png"
+                  onClick={() => {
+                    if (cId) {
+                      removeCookie(cId);
+                      setCookie("cId", { cId: item.cookieInputData.id });
+                    } else {
+                      setCookie("cId", { cId: item.cookieInputData.id });
+                    }
+                  }}
                   style={{
                     marginBottom: "31vh",
                     marginRight: "8.5vw",
