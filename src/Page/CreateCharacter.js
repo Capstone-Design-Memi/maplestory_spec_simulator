@@ -12,6 +12,7 @@ import { ChractersInfo } from "../Util/CharatersData";
 import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterForm";
 import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
 import { MapleUtilsParser } from "../Parser/maple-util-parser";
+import { DefaultAuthentic } from "../Component/EquipmentInventory/DefaultAuthentic";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -90,7 +91,7 @@ const CreateCharacter = () => {
         JSON.stringify([{ id: id, data: [] }])
       );
       console.log(characterInfo.equipments);
-      const localItemData = [{ id: id, data: characterInfo.equipments, arcanes: characterInfo.arcanes }];
+      const localItemData = [{ id: id, data: characterInfo.equipments, arcanes: characterInfo.arcanes, authentics: DefaultAuthentic}];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,

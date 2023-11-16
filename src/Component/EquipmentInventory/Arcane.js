@@ -76,7 +76,7 @@ let animation = false;
 
 const Arcane = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);;
+    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);
     const mainStat = Object.keys(arcanes[0].stat)[0];
     const [isAnimate, setIsAnimate] = useState(false);
     const [animationLT, setAnimationLT] = useState({left: 0, top: 0});

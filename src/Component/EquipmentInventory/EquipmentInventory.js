@@ -4,6 +4,7 @@ import BackgroundImg from "../../images/frame/equipmentInventory.png";
 import DepartmentDiv from "./DepartmentDiv";
 import { useCookies } from "react-cookie";
 import { AppContext } from "../../App";
+import Authentic from "./Authentic";
 import Arcane from "./Arcane";
 
 export const Background = styled.div`
@@ -57,6 +58,9 @@ const EquipmentInventory = (props) => {
     </Background>
     {
       isArcane && <Arcane/>
+    }
+    {
+      isAuthentic && <Authentic/>
     }
     </div>
   );
