@@ -169,6 +169,7 @@ export class MapleUtilsParser {
         //const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}`);
         console.log(rankingSearch);
         if (rankingSearch.status !== 200) throw new RankingSearchError(name);
+        
 
         const searchData = await rankingSearch.text();
         let characterLink = '';
@@ -189,7 +190,6 @@ export class MapleUtilsParser {
     private async getSpecPage(characterLink: string): Promise<string> {
         const characterSpecPage = await fetch(characterLink);
         if (characterSpecPage.status !== 200) throw new OpenPageError('캐릭터 정보');
-
         const specPageData = await characterSpecPage.text();
         this.homePageParser.ensureIsPublic(specPageData, '기본 정보');
 

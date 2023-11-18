@@ -27,7 +27,7 @@ const SelectCharacter = () => {
           <CharaterList toggle={toggle} />
         </Col>
         <Col xs={6} md={6}>
-          <CharacterStat />
+          {<CharacterStat />}
         </Col>
       </Row>
       <Row
