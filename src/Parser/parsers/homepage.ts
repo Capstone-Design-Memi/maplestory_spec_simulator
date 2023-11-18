@@ -31,13 +31,25 @@ export class HomePageParser {
      * @param rankingPageHtml 열려있는 랭킹 페이지 html
      */
     getCharacterLink(name: string, rankingPageHtml: string): string {
+        try
+        {
         const node = HTMLParser.parse(rankingPageHtml);
         const links: NhpHTMLElement[] = node.querySelectorAll(CHARACTER_LINKS_SELECTOR);
         const link = links.find((linkNode: NhpHTMLElement) => linkNode.innerText.toLowerCase() === name.toLowerCase());
-        //console.log(links);
-        //console.log(rankingPageHtml);
         if (!link) throw new NotFoundError(name);
-        return `${MAPLESTORY_HOME}${link.attrs['href']}`;
+        return (`${MAPLESTORY_HOME}${link.attrs['href']}`);
+        }
+        catch(error)
+        {
+            if(error instanceof NotFoundError)
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스:${error.characterName}');
+            }else
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스:',error);
+            }
+            return '';
+        }
     }
 
     /**
@@ -55,10 +67,23 @@ export class HomePageParser {
      * @param characterLinkPageHtml 캐릭터 정보 페이지 html
      */
     getEquipmentPageLink(characterLinkPageHtml: string): string {
+        try{
         const node = HTMLParser.parse(characterLinkPageHtml);
         const link = node.querySelector(EQUIPMENT_LINK_SELECTOR);
         if (!link) throw new NotValidSpecPageError();
         return `${MAPLESTORY_HOME}${link.attrs['href']}`;
+        }
+        catch(error)
+        {
+            if(error instanceof NotValidSpecPageError)
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink');
+            }else
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink :',error);
+            }
+            return '';
+        }
     }
 
     /**
@@ -66,10 +91,23 @@ export class HomePageParser {
      * @param characterLinkPageHtml 캐릭터 정보 페이지 html
      */
     getPetPageLink(characterLinkPageHtml: string): string {
+        try{
         const node = HTMLParser.parse(characterLinkPageHtml);
         const link = node.querySelector(PET_LINK_SELECTOR);
         if (!link) throw new NotValidSpecPageError();
         return `${MAPLESTORY_HOME}${link.attrs['href']}`;
+        }
+        catch(error)
+        {
+            if(error instanceof NotValidSpecPageError)
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getPetPageLink');
+            }else
+            {
+                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getPetPageLink:',error);
+            }
+            return '';
+        }
     }
 
     /**

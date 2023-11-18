@@ -12,6 +12,7 @@ const CHARACTER_TRAITS_SELECTOR =
 
 export class GeneralInformationParser {
     parse(specPageHtml: string): GeneralInformation {
+        try{
         const node: HTMLElement = HTMLParser.parse(specPageHtml);
         const data = node.querySelectorAll(CHARACTER_TABLE_DATA_SELECTOR);
         if (!data || data.length !== 6) throw new NotValidSpecPageError();
@@ -34,6 +35,18 @@ export class GeneralInformationParser {
             imageUrl: this.parseImageUrl(node),
             traits: this.parseTraits(node),
         };
+    }
+    catch(error)
+    {
+        if(error instanceof NotValidSpecPageError)
+        {
+            console.error('스펙이 이상합니다, 제너럴 티에스');
+        }else
+        {
+            console.error('스펙이 이상합니다, 제너럴 티에스:',error);
+        }
+        return{} as GeneralInformation;
+    }
     }
 
     private parseName(node: HTMLElement): string {
