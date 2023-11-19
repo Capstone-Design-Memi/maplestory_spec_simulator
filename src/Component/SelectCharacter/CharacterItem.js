@@ -5,6 +5,7 @@ import { json, useNavigate } from "react-router-dom";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { useSelector } from "react-redux";
 import { AppContext } from "../../App";
+import { Road, Basic } from "../Style/Img";
 
 const CharacterItem = ({ toggle }) => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -75,13 +76,8 @@ const CharacterItem = ({ toggle }) => {
           return (
             <>
               {item.cookieInputData.data[0].imageUrl ? (
-                <img // 불러오기 캐릭터 이미지
+                <Road // 불러오기 캐릭터 이미지
                   src={item?.cookieInputData.data[0].imageUrl}
-                  style={{
-                    marginTop: "4.3vh",
-                    width: "30vh",
-                    textAlign: "center",
-                  }}
                   onClick={() => {
                     if (cId) {
                       removeCookie(cId);
@@ -92,7 +88,7 @@ const CharacterItem = ({ toggle }) => {
                   }}
                 />
               ) : (
-                <img //생성된 기본 캐릭터 이미지
+                <Basic //생성된 기본 캐릭터 이미지
                   src="../../assets/defaultAvatar.png"
                   onClick={() => {
                     if (cId) {
@@ -101,12 +97,6 @@ const CharacterItem = ({ toggle }) => {
                     } else {
                       setCookie("cId", { cId: item.cookieInputData.id });
                     }
-                  }}
-                  style={{
-                    marginBottom: "31vh",
-                    marginRight: "8.5vw",
-                    width: "4vw",
-                    height: "12.5vh",
                   }}
                 />
               )}

@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import CharaterList from "../Component/SelectCharacter/CharaterList";
-import { Button, Col, Radio, Row } from "antd";
+import { Col } from "antd";
 import CreateCharacter from "./CreateCharacter";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useCookies } from "react-cookie";
 import CharacterStat from "../Component/SelectCharacter/CharacterStat";
+import { Row } from "../Component/Style/Row";
+import { Button } from "../Component/Style/Button";
+import { Background } from "../Component/Style/Background";
 
 const SelectCharacter = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
@@ -13,16 +16,8 @@ const SelectCharacter = () => {
   const navigator = useNavigate();
 
   return (
-    <div
-      style={{
-        backgroundImage:
-          "url(../../assets/maplestory_character_select_menu_by_pixel_rydol_de9aaup-fullview.jpg)",
-        height: "140vh",
-        backgroundRepeat: " no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
-      <Row style={{ transform: "translateY(25rem)", height: "34rem" }}>
+    <Background>
+      <Row>
         <Col xs={18} md={18}>
           <CharaterList toggle={toggle} />
         </Col>
@@ -32,25 +27,12 @@ const SelectCharacter = () => {
       </Row>
       <Row
         style={{
-          transform: "translateY(25rem)",
           height: "13.3rem",
           textAlign: "center",
         }}
       >
         <Col xs={24} md={24}>
           <Button
-            style={{
-              color: "#F2C12E",
-              fontSize: "25px",
-              fontWeight: "bold",
-              backgroundColor: "#705545",
-              width: "20vh",
-              height: "7vh",
-              borderRadius: "30px",
-              border: "1px solid #705545",
-              marginLeft: "-30px",
-              cursor: "pointer",
-            }}
             onClick={() => {
               navigator(`/createcharacter`);
             }}
@@ -68,24 +50,12 @@ const SelectCharacter = () => {
                 alert("캐릭터를 클릭해주세요");
               }
             }}
-            style={{
-              color: "#F2C12E",
-              fontSize: "25px",
-              fontWeight: "bold",
-              backgroundColor: "#705545",
-              width: "20vh",
-              height: "7vh",
-              borderRadius: "30px",
-              border: "1px solid #705545",
-              marginLeft: "30px",
-              cursor: "pointer",
-            }}
           >
             X 캐릭터 삭제
           </Button>
         </Col>
       </Row>
-    </div>
+    </Background>
   );
 };
 
