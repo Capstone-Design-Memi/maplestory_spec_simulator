@@ -16,17 +16,17 @@ const animationArr = [
     {src: Effect0,left: 0,top: 0},
     {src: Effect1,left: 0,top: 0},
     {src: Effect2,left: 0,top: 0},
-    {src: Effect3,left: 0,top: 0},
-    {src: Effect4,left: 0,top: 0},
-    {src: Effect5,left: 0,top: 0},
-    {src: Effect6,left: 0,top: 0},
-    {src: Effect7,left: 0,top: 0},
-    {src: Effect8,left: 0,top: 0},
-    {src: Effect9,left: 0,top: 0},
-    {src: Effect10,left: 0,top: 0},
-    {src: Effect11,left: 0,top: 0},
+    {src: Effect3,left: -51,top: -48},
+    {src: Effect4,left: -62,top: -58},
+    {src: Effect5,left: -68,top: -64},
+    {src: Effect6,left: -67,top: -60}, //
+    {src: Effect7,left: -28,top: -24},
+    {src: Effect8,left: -30,top: -26},
+    {src: Effect9,left: -27,top: -15},
+    {src: Effect10,left: -30,top: -18},
+    {src: Effect11,left: -30,top: -18},
 ];
-
+//aaAaaaa
 const PrintAutAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
     const [currentFrame, setCurrentFrame] = useState(animationArr[0]);
     console.log(animationLT);
@@ -34,10 +34,10 @@ const PrintAutAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
         for(let i=0; i<animationArr.length; i++) {
             const ani = setTimeout(() => {
                 setCurrentFrame(animationArr[i]);
-            }, (i + 1) * 1000);
+            }, (i + 1) * 30);
         } 
     }, [isAnimate]);
-
+    
     if(currentFrame.src === Effect11) {
         setIsAnimate(false);
     }

@@ -62,10 +62,10 @@ const otherInformation = {
   reqLev: 150,
 };
 
-const ItemStat = ({ item, extraInfo, eqItem }) => {
+const ItemStat = ({ item }) => {
 
   if(item){
-  let test = GetExtraInfo(item,"섀도어");
+  let test = GetExtraInfo(item);
   otherInformation.maxStar = test.maxStar;
   otherInformation.reqLev = test.reqLev;
   }

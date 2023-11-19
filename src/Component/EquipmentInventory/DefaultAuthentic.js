@@ -35,7 +35,7 @@ export const DefaultAuthentic = [
         requireExperience: 1000,
     },
     {
-        name: "어센틱 심볼 : 카르시온",
+        name: "어센틱심볼 : 카르시온",
         stat: {str: 0},
         level: 0,
         experience: 0,

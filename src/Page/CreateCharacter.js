@@ -108,6 +108,7 @@ const CreateCharacter = () => {
           data: characterInfo.equipments,
           arcanes: characterInfo.arcanes,
           authentics: DefaultAuthentic,
+          setEffects : [],
         },
       ];
 

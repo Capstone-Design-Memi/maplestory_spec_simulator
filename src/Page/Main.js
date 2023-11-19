@@ -19,7 +19,6 @@ const Main = () => {
   }, []);
   return (
     <div>
-      <h2>메인</h2>
       <Row>
         <Col>
           <Setting_Unions_Button />

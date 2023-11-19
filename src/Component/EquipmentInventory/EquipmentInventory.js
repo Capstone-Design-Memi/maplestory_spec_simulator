@@ -6,6 +6,7 @@ import { useCookies } from "react-cookie";
 import { AppContext } from "../../App";
 import Authentic from "./Authentic";
 import Arcane from "./Arcane";
+import RegistSetEffects from "../SetEffects/RegistSetEffects";
 
 export const Background = styled.div`
   margin: 0px;
@@ -32,6 +33,8 @@ const EquipmentInventory = (props) => {
   const handleAuthenticClick= () => {
     setIsAuthentic(!isAuthentic);
   }
+
+  RegistSetEffects();
 
   return (
     <div style={{display:"flex"}}>
