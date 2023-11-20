@@ -23,8 +23,8 @@ const EquipmentInventory = (props) => {
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const testItem = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`));
-  const [isArcane, setIsArcane] = useState(false);
-  const [isAuthentic, setIsAuthentic] = useState(false);
+  const [isArcane, setIsArcane] = useState(true);
+  const [isAuthentic, setIsAuthentic] = useState(true);
 
   const handleArcaneClick = () => {
     setIsArcane(!isArcane);

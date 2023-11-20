@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { AppContext } from "../../App";
-import StatWindow from "../Stat/StatWindow";
 import { useCookies } from "react-cookie";
 import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
