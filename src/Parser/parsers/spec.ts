@@ -12,7 +12,6 @@ export class SpecParser {
      * @param specPageHtml
      */
     parse(specPageHtml: string): Spec {
-        try{        
         const node: HTMLElement = HTMLParser.parse(specPageHtml);
         const data = node.querySelectorAll(SPEC_TABLE_DATA_SELECTOR);
         if (!data || data.length !== 20) throw new NotValidSpecPageError();
@@ -73,18 +72,6 @@ export class SpecParser {
             hypers: this.parseHypers(hyper),
             abilities: this.parseAbilities(ability),
         };
-    }
-    catch(error)
-    {
-        if(error instanceof NotValidSpecPageError)
-        {
-            console.error('스펙이 이상합니다, 스펙 티에스');
-        }else
-        {
-            console.error('스펙이 이상합니다, 스펙 티에스:',error);
-        }
-        return{} as Spec;
-    }
     }
 
     private parseHypers(hyper: string): Stats {
