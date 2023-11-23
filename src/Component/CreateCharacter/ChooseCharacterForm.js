@@ -9,6 +9,8 @@ import {
   validatename,
 } from "../../Util/ChooseCharacterValidator";
 import { useNavigate } from "react-router-dom";
+import { DefaultArcane } from "../EquipmentInventory/DefaultArcane";
+import { DefaultAuthentic } from "../EquipmentInventory/DefaultAuthentic";
 
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -38,7 +40,23 @@ const ChooseCharacterForm = () => {
         `InventoryItem${id}`,
         JSON.stringify([{ id: id, data: [] }])
       );
-      const localItemData = [{ id: id, data: [] }];
+      //const localItemData = [{ id: id, data: [] }];
+      const localItemData = [{
+          id: id,
+          name: values.username,
+          world: "리부트",
+          guild: "본투비",
+          job: values.job,
+          level: values.level,
+          imageUrl: "",
+          traits: [],
+          data: [],
+          cashEquipments: [],
+          petEquipments: [],
+          arcanes: DefaultArcane,
+          authentics: DefaultAuthentic,
+          setEffects : [],
+      }]
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,

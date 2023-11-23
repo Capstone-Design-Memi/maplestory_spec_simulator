@@ -5,7 +5,8 @@ import Layer_name from "../../images/statWindow/common/main/layer_name.png";
 import styled from "styled-components";
 
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
-    UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText, CharacterImg, NameText, GuildText } from "./Styles";
+    UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
+     CharacterImg, NameText, GuildText } from "./Styles";
 
 const StatInformation = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
