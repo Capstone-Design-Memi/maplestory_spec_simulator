@@ -1,10 +1,10 @@
 import React from "react";
 import ItemItem from "./ItemItem";
 
-const ItemList = () => {
+const ItemList = ({ dragDrop, setDragDrop }) => {
   return (
     <div>
-      <ItemItem />
+      <ItemItem dragDrop={dragDrop} setDragDrop={setDragDrop} />
     </div>
   );
 };

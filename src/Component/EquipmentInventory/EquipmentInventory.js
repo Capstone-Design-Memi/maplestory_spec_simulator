@@ -17,54 +17,80 @@ export const Background = styled.div`
   background-image: url("${BackgroundImg}");
 `;
 
-const EquipmentInventory = (props) => {
+const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
   const [cookies] = useCookies();
   const { cId } = useContext(AppContext);
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
-  const testItem = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`));
+  const testItem = JSON.parse(
+    localStorage.getItem(`testChItem${cookies.cId.cId}`)
+  );
   const [isArcane, setIsArcane] = useState(true);
   const [isAuthentic, setIsAuthentic] = useState(true);
 
   const handleArcaneClick = () => {
     setIsArcane(!isArcane);
-  }
+  };
 
-  const handleAuthenticClick= () => {
+  const handleAuthenticClick = () => {
     setIsAuthentic(!isAuthentic);
-  }
+  };
 
   RegistSetEffects();
 
   return (
-    <div style={{display:"flex"}}>
-    <Background>
-      <div
-        style={{
-          display: "inline-block",
-          width: "205px",
-          height: "246px",
-          marginTop: "50px",
-          marginLeft: "14px",
-        }}
-      >
-        {testItem ? (
-          <DepartmentDiv exampleData={testItem[0].data} />
-        ) : (
-          <DepartmentDiv exampleData={exampleData} />
-        )}
-      </div>
-      <button style={{border:"1px solid red", width:"50px", height:"10px", position:"absolute", 
-      top:"310px", left:"120px", backgroundColor:"rgba(0,0,0,0)"}} onClick={handleAuthenticClick}></button>
-      <button style={{border:"1px solid blue", width:"45px", height:"10px", position:"absolute", 
-      top:"310px", left:"175px", backgroundColor:"rgba(0,0,0,0)"}} onClick={handleArcaneClick}></button>
-    </Background>
-    {
-      isArcane && <Arcane/>
-    }
-    {
-      isAuthentic && <Authentic/>
-    }
+    <div style={{ display: "flex" }}>
+      <Background>
+        <div
+          style={{
+            display: "inline-block",
+            width: "205px",
+            height: "246px",
+            marginTop: "50px",
+            marginLeft: "14px",
+          }}
+        >
+          {testItem ? (
+            <DepartmentDiv
+              dragDrop={dragDrop}
+              setDragDrop={setDragDrop}
+              exampleData={testItem[0].data}
+            />
+          ) : (
+            <DepartmentDiv
+              dragDrop={dragDrop}
+              setDragDrop={setDragDrop}
+              exampleData={exampleData}
+            />
+          )}
+        </div>
+        <button
+          style={{
+            border: "1px solid red",
+            width: "50px",
+            height: "10px",
+            position: "absolute",
+            top: "310px",
+            left: "120px",
+            backgroundColor: "rgba(0,0,0,0)",
+          }}
+          onClick={handleAuthenticClick}
+        ></button>
+        <button
+          style={{
+            border: "1px solid blue",
+            width: "45px",
+            height: "10px",
+            position: "absolute",
+            top: "310px",
+            left: "175px",
+            backgroundColor: "rgba(0,0,0,0)",
+          }}
+          onClick={handleArcaneClick}
+        ></button>
+      </Background>
+      {isArcane && <Arcane />}
+      {isAuthentic && <Authentic />}
     </div>
   );
 };

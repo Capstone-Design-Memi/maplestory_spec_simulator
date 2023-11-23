@@ -4,22 +4,72 @@ import { AppContext } from "../../App";
 import { useCookies } from "react-cookie";
 import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
+import { stringify } from "rc-field-form/es/useWatch";
 
 const ItemArr = [
-  "", "", "", "", "", "",
-  "", "", "", "", "", "",
-  "", "", "", "", "", "",
-  "", "", "", "", "", "",
-  "", "", "", "", "", "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
+  "",
 ];
 
 const categoryName = [
-  "반지", "", "모자", "", "엠블렘",
-  "반지", "펜던트", "얼굴장식", "", "뱃지",
-  "반지", "펜던트", "눈장식", "귀고리", "훈장",
-  "반지", "무기", "상의", "어깨장식", "보조무기",
-  "포켓 아이템", "벨트", "하의", "장갑", "망토",
-  "", "", "신발", "안드로이드", "기계 심장",
+  "반지",
+  "",
+  "모자",
+  "",
+  "엠블렘",
+  "반지",
+  "펜던트",
+  "얼굴장식",
+  "",
+  "뱃지",
+  "반지",
+  "펜던트",
+  "눈장식",
+  "귀고리",
+  "훈장",
+  "반지",
+  "무기",
+  "상의",
+  "어깨장식",
+  "보조무기",
+  "포켓 아이템",
+  "벨트",
+  "하의",
+  "장갑",
+  "망토",
+  "",
+  "",
+  "신발",
+  "안드로이드",
+  "기계 심장",
 ];
 
 const nothingBorder = {
@@ -53,12 +103,36 @@ const legendaryBorder = {
 };
 
 const gradeArr = [
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
-  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
+  nothingBorder,
 ];
 
 export const ItemSlot = styled.div`
@@ -152,7 +226,22 @@ const DepartmentDiv = (props) => {
   return (
     <div>
       {ItemArr.map((value, index) => (
-        <ItemSlot>
+        <ItemSlot
+          onMouseUp={() => {
+            const newEqItem = JSON.parse(
+              localStorage.getItem(`testChItem${cookies.cId.cId}`)
+            )[0];
+            if (categoryName[index] == props.dragDrop.category) {
+              console.log(props.dragDrop);
+              // const test2 = { ...newEqItem, data: props.dragDrop };
+              // localStorage.setItem(
+              //   `testChItem${cookies.cId.cId}`,
+              //   JSON.stringify(test2)
+              // );
+              // console.log(test2);
+            }
+          }}
+        >
           {ItemArr[index] === "" ? (
             <div></div>
           ) : (

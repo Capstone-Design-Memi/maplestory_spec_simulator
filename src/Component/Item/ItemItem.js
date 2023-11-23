@@ -8,7 +8,7 @@ import ItemStat from "../ItemDetail/ItemStat";
 import { AppContext } from "../../App";
 import ItemStatDropDown from "../ItemStatDropDown/ItemStatDropDown";
 
-const ItemItem = () => {
+const ItemItem = ({ dragDrop, setDragDrop }) => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
@@ -44,6 +44,10 @@ const ItemItem = () => {
       const inventoryItemMap = inventoryItems?.map((it) => {
         return (
           <InventoryWrap
+            onMouseDown={() => {
+              setDragDrop(it);
+              console.log(dragDrop);
+            }}
             onMouseOver={() => {
               setHoverItem(it);
               setHover(true);

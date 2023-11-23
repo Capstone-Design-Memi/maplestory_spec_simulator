@@ -1,5 +1,5 @@
 import { Col, Row } from "antd";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ItemList from "../Component/Item/ItemList";
 import EquipmentInventory from "../Component/EquipmentInventory/EquipmentInventory";
 import StatInformation from "../Component/Stat/StatInformation";
@@ -10,6 +10,8 @@ import { useCookies } from "react-cookie";
 
 const Main = () => {
   const [cookies] = useCookies();
+  const [dragDrop, setDragDrop] = useState();
+  const [dragDropSuccess, setDragDropSuccess] = useState(false);
   const navigator = useNavigate();
   useEffect(() => {
     if (cookies.cId === undefined) {
@@ -23,18 +25,16 @@ const Main = () => {
           <Setting_Unions_Button />
         </Col>
         <Col>
-          <EquipmentInventory />
+          <EquipmentInventory dragDrop={dragDrop} setDragDrop={setDragDrop} />
         </Col>
-        <Col>
-          
-        </Col>
+        <Col></Col>
         <Col>
           <StatInformation />
         </Col>
       </Row>
       <Row>
         <Col>
-        <ItemList />
+          <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
         </Col>
       </Row>
     </div>
