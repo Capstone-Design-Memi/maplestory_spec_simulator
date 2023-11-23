@@ -32,7 +32,7 @@ const CharacterStat = () => {
   });
 
   const chInfoMapFilterUndefined = chInfoMap.filter(
-    (item) => item != undefined
+    (item) => item.cookieInputData.id != undefined
   );
   const chInfo = chInfoMapFilterUndefined[0].cookieInputData.data[0];
   console.log(cookies.cId);
