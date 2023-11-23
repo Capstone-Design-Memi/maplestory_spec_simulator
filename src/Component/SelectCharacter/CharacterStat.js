@@ -32,11 +32,11 @@ const CharacterStat = () => {
   });
 
   const chInfoMapFilterUndefined = chInfoMap.filter(
-    (item) => item != undefined
+    (item) => item.cookieInputData.id != undefined
   );
-  const chInfo = chInfoMapFilterUndefined[0].cookieInputData.data[0];
-  console.log(cookies.cId);
-  console.log(chInfo);
+  const chInfo = cookies.cId
+    ? chInfoMapFilterUndefined[0].cookieInputData.data[0]
+    : "캐릭터를 선택해주세요.";
 
   const mainStat = jobClass.map((item) => {
     const type = item.children;
