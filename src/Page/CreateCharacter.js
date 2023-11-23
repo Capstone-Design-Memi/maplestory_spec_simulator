@@ -117,7 +117,7 @@ const CreateCharacter = () => {
           petEquipments: characterInfo.petEquipments,
           arcanes: characterInfo.arcanes,
           authentics: DefaultAuthentic,
-          setEffects : [],
+          setEffects: [],
         },
       ];
 

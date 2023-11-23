@@ -6,9 +6,12 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useCookies } from "react-cookie";
 import CharacterStat from "../Component/SelectCharacter/CharacterStat";
-import { Row } from "../Component/Style/Row";
-import { Button } from "../Component/Style/Button";
-import { Background } from "../Component/Style/Background";
+import {
+  ButtonRow,
+  CharacterListRow,
+  CRButton,
+  Background,
+} from "../Style/CharacterSelectStyle";
 
 const SelectCharacter = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
@@ -17,29 +20,29 @@ const SelectCharacter = () => {
 
   return (
     <Background>
-      <Row>
+      <CharacterListRow>
         <Col xs={18} md={18}>
           <CharaterList toggle={toggle} />
         </Col>
         <Col xs={6} md={6}>
           <CharacterStat />
         </Col>
-      </Row>
-      <Row
+      </CharacterListRow>
+      <ButtonRow
         style={{
           height: "13.3rem",
           textAlign: "center",
         }}
       >
         <Col xs={24} md={24}>
-          <Button
+          <CRButton
             onClick={() => {
               navigator(`/createcharacter`);
             }}
           >
             + 캐릭터 생성
-          </Button>
-          <Button
+          </CRButton>
+          <CRButton
             onClick={() => {
               if (cookies.cId !== undefined) {
                 removeCookie(`testChInfo${cookies.cId.cId}`);
@@ -52,9 +55,9 @@ const SelectCharacter = () => {
             }}
           >
             X 캐릭터 삭제
-          </Button>
+          </CRButton>
         </Col>
-      </Row>
+      </ButtonRow>
     </Background>
   );
 };
