@@ -57,9 +57,22 @@ export class HomePageParser {
      * @param html 열려있는 페이지 html
      */
     ensureIsPublic(html: string, scope: string) {
+        try
+        {
         const node = HTMLParser.parse(html);
         const privateDiv: NhpHTMLElement | null = node.querySelector('div.private2');
         if (privateDiv) throw new PrivateInformationError(scope);
+        }catch(error)
+        {
+            if(error instanceof PrivateInformationError)
+            {
+                console.error('캐릭터가 비공개, 홈페이지 티에스 ensureIsPublic : ${error.scope}');
+            }else
+            {
+                console.error('캐릭터가 비공개, 홈페이지 티에스 ensureIsPublic : ',error);
+            }
+            return '';
+        }
     }
 
     /**
@@ -77,10 +90,10 @@ export class HomePageParser {
         {
             if(error instanceof NotValidSpecPageError)
             {
-                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink');
+                console.error('장비를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink');
             }else
             {
-                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink :',error);
+                console.error('장비를 찾을수 없습니다, 홈페이지 티에스 getEquipmentPageLink :',error);
             }
             return '';
         }
@@ -101,10 +114,10 @@ export class HomePageParser {
         {
             if(error instanceof NotValidSpecPageError)
             {
-                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getPetPageLink');
+                console.error('펫을 찾을수 없습니다, 홈페이지 티에스 getPetPageLink');
             }else
             {
-                console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스 getPetPageLink:',error);
+                console.error('펫을 찾을수 없습니다, 홈페이지 티에스 getPetPageLink:',error);
             }
             return '';
         }

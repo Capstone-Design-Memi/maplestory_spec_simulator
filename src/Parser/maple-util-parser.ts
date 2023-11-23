@@ -165,6 +165,7 @@ export class MapleUtilsParser {
     }
 
     private async getCharacterLink(name: string): Promise<string> {
+        try{
         const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}`);
         //const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}`);
         console.log(rankingSearch);
@@ -184,9 +185,21 @@ export class MapleUtilsParser {
             characterLink = this.homePageParser.getCharacterLink(name, rebootSearchData);
         }
         return characterLink;
+    }catch(error)
+    {
+        if(error instanceof RankingSearchError)
+        {
+            console.error('캐릭터를 불러오지 못했습니다, 메이플 유틸 파서 티에스 getCharacterLink : ${error.name}');
+        }else
+        {
+            console.error('캐릭터를 불러오지 못했습니다, 메이플 유틸 파서 티에스 getCharacterLink : ',error);
+        }
+        return '';
+    }
     }
 
     private async getSpecPage(characterLink: string): Promise<string> {
+        try{
         const characterSpecPage = await fetch(characterLink);
         if (characterSpecPage.status !== 200) throw new OpenPageError('캐릭터 정보');
 
@@ -194,6 +207,17 @@ export class MapleUtilsParser {
         this.homePageParser.ensureIsPublic(specPageData, '기본 정보');
 
         return specPageData;
+        }catch(error)
+        {
+            if(error instanceof OpenPageError)
+            {
+                console.error('페이지 오류, 메이플 유틸 파서 티에스 getSpecPage ');
+            }else
+            {
+                console.error('페이지 오류, 메이플 유틸 파서 티에스 getSpecPage : ',error);
+            }
+            return '';
+        }
     }
 
     private async getEquipments(equipmentLink: string, e: boolean, c: boolean, s: boolean): Promise<EquipmentsResult> {
