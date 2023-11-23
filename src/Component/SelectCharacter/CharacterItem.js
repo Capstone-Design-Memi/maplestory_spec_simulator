@@ -5,7 +5,7 @@ import { json, useNavigate } from "react-router-dom";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { useSelector } from "react-redux";
 import { AppContext } from "../../App";
-import { Road, Basic } from "../Style/Img";
+import { Basic, Load } from "../../Style/CharacterSelectStyle";
 
 const CharacterItem = ({ toggle }) => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -76,7 +76,7 @@ const CharacterItem = ({ toggle }) => {
           return (
             <>
               {item.cookieInputData.data[0].imageUrl ? (
-                <Road // 불러오기 캐릭터 이미지
+                <Load // 불러오기 캐릭터 이미지
                   src={item?.cookieInputData.data[0].imageUrl}
                   onClick={() => {
                     if (cId) {
