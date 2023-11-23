@@ -3,7 +3,7 @@ import React from "react";
 const FlameDetail = ({select, valueSelect, handleSelect, handleValueSelect, selectOptions}) => {
     return (
         <>
-        <select onChange={handleSelect} value={select}>
+        <select onChange={handleSelect} value={select} style={{ width: "250px", height:"35px"}}>
             {selectOptions.map((selectOption,index) => (
                 <option
                     key={index}
@@ -13,7 +13,7 @@ const FlameDetail = ({select, valueSelect, handleSelect, handleValueSelect, sele
                 </option>
             ))}
         </select>
-        <select onChange={handleValueSelect} value={valueSelect}>
+        <select onChange={handleValueSelect} value={valueSelect} style={{ width: "250px", height:"35px"}}>
             {selectOptions[select].values.map((flameValue, index) => (
                 <option
                     key={index}

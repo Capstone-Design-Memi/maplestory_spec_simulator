@@ -155,7 +155,8 @@ const FlameTab = ({flameInfo, handleFlameChange}) => {
                      valueSelect={firstValueSelect}
                      handleSelect={handleFirstSelect}
                      handleValueSelect={handleFirstValueSelect}
-                     selectOptions={selectOptions}/>
+                     selectOptions={selectOptions}
+                     />
         <br/>
         <FlameDetail select={secondSelect}
                      valueSelect={secondValueSelect}
@@ -174,6 +175,8 @@ const FlameTab = ({flameInfo, handleFlameChange}) => {
                      handleSelect={handleForthSelect}
                      handleValueSelect={handleForthValueSelect}
                      selectOptions={selectOptions}/>
+        <br/>
+        <br/>
         </>
     )
 }

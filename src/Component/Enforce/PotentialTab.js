@@ -141,7 +141,7 @@ const PotentialTab = ({ item, handlePotentialChange, handleGradeChange }) => {
           handleGradeSelect(e);
         }}
         value={grade}
-        style={{ width: "100px" }}
+        style={{  width: "250px", height:"35px"}}
       >
         <option value="nothing">---</option>
         <option value="rare">레어</option>
@@ -149,7 +149,8 @@ const PotentialTab = ({ item, handlePotentialChange, handleGradeChange }) => {
         <option value="unique">유니크</option>
         <option value="legendary">레전드리</option>
       </select>
-      <select onChange={(e) => {handleFirstChange(e)}} value={firstValue}>
+      <br/>
+      <select onChange={(e) => {handleFirstChange(e)}} value={firstValue} style={{ width: "250px", height:"35px"}} >
         <option>1</option>
         {currentFirsts.map((currentFirst,index) => (
         <option
@@ -161,7 +162,8 @@ const PotentialTab = ({ item, handlePotentialChange, handleGradeChange }) => {
         </option>
         ))}
       </select>
-      <select onChange={(e) => {handleSecondChage(e)}} value={secondValue}>
+      <br/>
+      <select onChange={(e) => {handleSecondChage(e)}} value={secondValue} style={{ width: "250px", height:"35px"}}>
         <option>1</option>
         {currentSeconds.map((currentSecond,index) => (
         <option
@@ -173,7 +175,8 @@ const PotentialTab = ({ item, handlePotentialChange, handleGradeChange }) => {
         </option>
         ))}
       </select>
-      <select onChange={(e) => {handleThirdChage(e)}} value={thirdValue}>
+      <br/>
+      <select onChange={(e) => {handleThirdChage(e)}} value={thirdValue} style={{ width: "250px", height:"35px"}}>
         <option>1</option>
         {currentThirds.map((currentThird,index) => (
         <option
