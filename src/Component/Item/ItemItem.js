@@ -4,9 +4,9 @@ import { DefaultItems } from "../../Util/ItemDatas";
 import { InventoryWrap, ItemBoxWrap } from "../../Style/Item";
 import { useCookies } from "react-cookie";
 import { Modal } from "antd";
-import StatWindow from "../Stat/StatWindow";
 import ItemStat from "../ItemDetail/ItemStat";
 import { AppContext } from "../../App";
+import ItemStatDropDown from "../ItemStatDropDown/ItemStatDropDown";
 
 const ItemItem = () => {
   const [cookies, setCookie, removeCookie] = useCookies();
@@ -148,7 +148,7 @@ const ItemItem = () => {
       </div>
       {hover ? (
         <div>
-          <StatWindow item={hoverItem} eqItem={eqItem[0]} />
+          <ItemStatDropDown item={hoverItem} eqItem={eqItem[0]} />
         </div>
       ) : (
         <></>

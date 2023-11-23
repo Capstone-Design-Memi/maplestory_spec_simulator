@@ -7,7 +7,7 @@ import { GetAppliedPersent } from "./GetAppliedPersent";
 export const CalculateMain = () => {
 
     const result = GetAllInformation();
-    console.log(result);
+    //console.log(result);
     const information = result[0];
     const equipmentItem = result[1];
     const mainStat = GetCharacterMainStat(information);
@@ -17,6 +17,6 @@ export const CalculateMain = () => {
     const sumOfStats = GetSumOfStats(equipmentItem);
     const appliedPerset = GetAppliedPersent(sumOfStats,base);
     
-    console.log(sumOfStats);
-    console.log(appliedPerset);
+    //console.log(sumOfStats);
+    //console.log(appliedPerset);
 }

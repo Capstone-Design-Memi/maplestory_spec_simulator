@@ -1,83 +1,25 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { AppContext } from "../../App";
-import StatWindow from "../Stat/StatWindow";
-import StatInventory from "../Stat/StatInventory";
 import { useCookies } from "react-cookie";
 import SubWeaponData from "../../Util/SubWeaponData";
-
-
-// const ItemArr = ["https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
-//                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
-//                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
-//                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
-//                 "https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png",
-//                 "","","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png","https://avatar.maplestory.nexon.com/ItemIcon/KEMCJELG.png"];
+import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
 
 const ItemArr = [
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
-  "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
+  "", "", "", "", "", "",
 ];
 
 const categoryName = [
-  "반지",
-  "",
-  "모자",
-  "",
-  "엠블렘",
-  "반지",
-  "펜던트",
-  "얼굴장식",
-  "",
-  "뱃지",
-  "반지",
-  "펜던트",
-  "눈장식",
-  "귀고리",
-  "훈장",
-  "반지",
-  "무기",
-  "상의",
-  "어깨장식",
-  "보조무기",
-  "포켓 아이템",
-  "벨트",
-  "하의",
-  "장갑",
-  "망토",
-  "",
-  "",
-  "신발",
-  "안드로이드",
-  "기계 심장",
+  "반지", "", "모자", "", "엠블렘",
+  "반지", "펜던트", "얼굴장식", "", "뱃지",
+  "반지", "펜던트", "눈장식", "귀고리", "훈장",
+  "반지", "무기", "상의", "어깨장식", "보조무기",
+  "포켓 아이템", "벨트", "하의", "장갑", "망토",
+  "", "", "신발", "안드로이드", "기계 심장",
 ];
 
 const nothingBorder = {
@@ -111,36 +53,12 @@ const legendaryBorder = {
 };
 
 const gradeArr = [
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
-  nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
+  nothingBorder, nothingBorder, nothingBorder, nothingBorder, nothingBorder,
 ];
 
 export const ItemSlot = styled.div`
@@ -265,7 +183,7 @@ const DepartmentDiv = (props) => {
             top: ((hoverNum + 1) / 6) * 42,
           }}
         >
-          <StatInventory item={hoverItem} />
+          <ItemSingleDropDown item={hoverItem} />
         </div>
       ) : (
         <></>

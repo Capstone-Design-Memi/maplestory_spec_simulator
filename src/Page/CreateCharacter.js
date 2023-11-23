@@ -105,9 +105,19 @@ const CreateCharacter = () => {
       const localItemData = [
         {
           id: id,
+          name: characterInfo.name,
+          world: characterInfo.world,
+          guild: characterInfo.guild,
+          job: characterInfo.job,
+          level: characterInfo.level,
+          imageUrl: characterInfo.imageUrl,
+          traits: characterInfo.traits,
           data: characterInfo.equipments,
+          cashEquipments: characterInfo.cashEquipments,
+          petEquipments: characterInfo.petEquipments,
           arcanes: characterInfo.arcanes,
           authentics: DefaultAuthentic,
+          setEffects : [],
         },
       ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import Line_img from '../../images/frame/line.png';
+import "../../Fonts/Font.css";
 
 export const Line = styled.div`
   margin: 0px;

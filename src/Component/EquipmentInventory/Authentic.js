@@ -119,17 +119,17 @@ const Authentic = () => {
 
     const changeLT = (symbol) => {
         if(symbol.name === "어센틱심볼 : 세르니움") {
-            setAnimationLT({left: 22, top: 115});
+            setAnimationLT({left: 22, top: 121});
         }else if(symbol.name === "어센틱심볼 : 아르크스") {
-            setAnimationLT({left: 73, top: 135});
+            setAnimationLT({left: 75, top: 139});
         }else if(symbol.name === "어센틱심볼 : 오디움") {
-            setAnimationLT({left: 124, top: 135});
+            setAnimationLT({left: 127, top: 121});
         }else if(symbol.name === "어센틱심볼 : 도원경") {
-            setAnimationLT({left: 22, top: 228});
+            setAnimationLT({left: 22, top: 210});
         }else if(symbol.name === "어센틱심볼 : 아르테리아") {
-            setAnimationLT({left: 73, top: 228});
+            setAnimationLT({left: 75, top: 229});
         }else if(symbol.name === "어센틱심볼 : 카르시온") {
-            setAnimationLT({left: 124, top: 228});
+            setAnimationLT({left: 127, top: 210});
         }    
     }
 
