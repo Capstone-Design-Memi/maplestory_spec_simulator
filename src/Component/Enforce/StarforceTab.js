@@ -3,12 +3,6 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { Button } from "antd";
 
-export const StarforceButton = styled(Button)`
-
-  height: auto;
-
-`
-
 const StarforceTab = ({
   item,
   extraInfo,
@@ -42,7 +36,7 @@ const StarforceTab = ({
   return (
     <div>
       <div>
-        <StarforceButton
+        <Button
           htmlType="button"
           onClick={onSub10Star}
           disabled={disable10Sub}
@@ -56,15 +50,16 @@ const StarforceTab = ({
             backgroundColor: `${mouseHoverMTen ? "red" : "white"}`,
             textAlign: "center",
             color: `${mouseHoverMTen ? "white" : "red"}`,
-            margin: "4px",
+            margin: "2px",
+            borderStyle: "solid",
             borderColor: "red",
-            width: "100px",
-            padding: "20px",
+            width: "50px",
+            padding: "10px",
           }}
         >
           -10
-        </StarforceButton>
-        <StarforceButton
+        </Button>
+        <Button
           htmlType="button"
           onClick={() => {
             onSubStar();
@@ -79,18 +74,18 @@ const StarforceTab = ({
           style={{
             backgroundColor: `${mouseHoverMOne ? "red" : "white"}`,
             textAlign: "center",
-            justifyItems:"center",
             color: `${mouseHoverMOne ? "white" : "red"}`,
-            margin: "4px",
+            margin: "2px",
+            borderStyle: "solid",
             borderColor: "red",
-            width: "100px",
-            padding: "20px"
+            width: "50px",
+            padding: "10px",
           }}
         >
           -1
-        </StarforceButton>
-        <span style={{ margin: "4px", width:"70px", padding: "20px", textAlign: "center" }}>{star}</span>
-        <StarforceButton
+        </Button>
+        <span style={{ margin: "5px" }}>{star}</span>
+        <Button
           htmlType="button"
           onClick={() => {
             onAddStar();
@@ -106,15 +101,16 @@ const StarforceTab = ({
             backgroundColor: `${mouseHoverPOne ? "blue" : "white"}`,
             textAlign: "center",
             color: `${mouseHoverPOne ? "white" : "blue"}`,
-            margin: "4px",
+            margin: "2px",
+            borderStyle: "solid",
             borderColor: "blue",
-            width: "100px",
-            padding: "20px"
+            width: "50px",
+            padding: "10px",
           }}
         >
           +1
-        </StarforceButton>
-        <StarforceButton
+        </Button>
+        <Button
           htmlType="button"
           onClick={onAdd10Star}
           disabled={disable10Add}
@@ -128,16 +124,16 @@ const StarforceTab = ({
             backgroundColor: `${mouseHoverPTen ? "blue" : "white"}`,
             textAlign: "center",
             color: `${mouseHoverPTen ? "white" : "blue"}`,
-            margin: "4px",
+            margin: "2px",
+            borderStyle: "solid",
             borderColor: "blue",
-            width: "100px",
-            padding: "20px"
+            width: "50px",
+            padding: "10px",
           }}
         >
           +10
-        </StarforceButton>
+        </Button>
       </div>
-      <br/>
     </div>
   );
 };
