@@ -245,6 +245,8 @@ export class EquipmentParser {
     }
 
     private parseName(node: HTMLElement, html: string): { name: string; upgrade: number; star: number } {
+        try
+        {
         const h1 = node.querySelector(ITEM_NAME_SELECTOR);
         if (!h1) {
             console.log(html);
@@ -268,5 +270,19 @@ export class EquipmentParser {
             upgrade: parseInt(upgrade?.trim() || '0'),
             star: parseInt(starNode?.text.trim() || '0'),
         };
+    }
+    catch(error)
+    {
+        if(error instanceof NotValidHtmlNodeError)
+        {
+            console.error('노드가 이상합니다, 이큅먼트 티에스');
+        }else
+        {
+            console.error('노드가 이상합니다, 이큅먼트 티에스:',error);
+        }
+        return { name: "",
+                 upgrade: 0,
+                 star: 0};
+    }
     }
 }
