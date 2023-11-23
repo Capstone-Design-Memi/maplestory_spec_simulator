@@ -13,6 +13,7 @@ import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterFor
 import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
 import { MapleUtilsParser } from "../Parser/maple-util-parser";
 import { DefaultAuthentic } from "../Component/EquipmentInventory/DefaultAuthentic";
+import { DefaultHyperStat } from "../Component/Stat/DefaultHyperStat";
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -118,6 +119,7 @@ const CreateCharacter = () => {
           arcanes: characterInfo.arcanes,
           authentics: DefaultAuthentic,
           setEffects: [],
+          hyperStat : DefaultHyperStat,
         },
       ];
 

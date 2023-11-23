@@ -11,6 +11,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { DefaultArcane } from "../EquipmentInventory/DefaultArcane";
 import { DefaultAuthentic } from "../EquipmentInventory/DefaultAuthentic";
+import { DefaultHyperStat } from "../Stat/DefaultHyperStat";
 
 const ChooseCharacterForm = () => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -56,6 +57,7 @@ const ChooseCharacterForm = () => {
           arcanes: DefaultArcane,
           authentics: DefaultAuthentic,
           setEffects : [],
+          hyperStat : DefaultHyperStat,
       }]
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {

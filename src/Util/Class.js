@@ -21,7 +21,7 @@ export const Class = [
               "endDmg" : 10,
               "ignoreDef" : 50,
               "def" : 200,
-              "conditionResist" : 30, //상태이상내성
+              "cstatusDmg" : 30, //상태이상내성
               "allAttributeResit" : 30, //모든속성내성
               "stance" : 100,
               "dcreDmg" : 10, //데미지 감소

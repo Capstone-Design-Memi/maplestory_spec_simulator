@@ -24,6 +24,15 @@ import Canvas_mainStatFont from "../../images/statWindow/common/detailStat/canva
 import Canvas_attackFont from "../../images/statWindow/common/detailStat/canvas_attackFont.png";
 import Canvas_utilityFont from "../../images/statWindow/common/detailStat/canvas_utilityFont.png";
 import Canvas_defenseFont from "../../images/statWindow/common/detailStat/canvas_defenseFont.png";
+import HyperStatUp_disabled from "../../images/statWindow/local/detailStat/button_lvUpHp/disabled.png";
+import HyperStatUp_mouseOver from "../../images/statWindow/local/detailStat/button_lvUpHp/mouseOver.png";
+import HyperStatUp_normal from "../../images/statWindow/local/detailStat/button_lvUpHp/normal.png";
+import HyperStatUp_pressed from "../../images/statWindow/local/detailStat/button_lvUpHp/pressed.png";
+import HyperStatReset_mouseOver from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/mouseOver.png"
+import HyperStatReset_disabled from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/disabled.png"
+import HyperStatReset_noraml from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/normal.png"
+import HyperStatReset_pressed from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/pressed.png"
+
 
 
 export const LevelText = styled.span`
@@ -35,6 +44,16 @@ display: flex;
 font-family : "KoPubWorld Dotum Bold";
 margin-left: 16px;
 margin-top : 35px;
+`
+
+export const HyperStatText = styled.span`
+color: #FFFFFF;
+font-size: 11px;
+justify-content: center;
+align-items: center;
+display: flex;
+font-family : "KoPubWorld Dotum Bold";
+line-height: 19px;
 `
 
 export const GuildText = styled.span`
@@ -98,6 +117,41 @@ background-image: url("${Hyper_normal}");
 }
 &:active{
     background-image: url("${Hyper_pressed}");
+}
+`
+
+export const HyperStatResetButton = styled.button`
+width: 66px;
+height: 24px;
+float: left;
+border: 0;
+outline: 0;
+border-radius: 12px;
+background-image: url("${HyperStatReset_mouseOver}");
+&:hover{
+    background-image: url("${HyperStatReset_mouseOver}");
+}
+&:active{
+    background-image: url("${HyperStatReset_pressed}");
+}
+`
+
+export const HyperStatUpButton = styled.button`
+width: 16px;
+height: 16px;
+border: 0;
+outline: 0;
+border-radius: 5px;
+margin-left: 140px;
+background-image: url("${HyperStatUp_normal}");
+&:hover{
+    background-image: url("${HyperStatUp_mouseOver}");
+}
+&:active{
+    background-image: url("${HyperStatUp_pressed}");
+}
+&:disabled{
+  background-image: url("${HyperStatUp_disabled}");
 }
 `
 

@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
-     CharacterImg, NameText, GuildText, HyperBack } from "./Styles";
+     CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton } from "./Styles";
 
 const StatInformation = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
@@ -14,6 +14,11 @@ const StatInformation = () => {
     const [hyperToggle, setHyperToggle] = useState(false);
     const [information, setInformation] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]);
 
+    const hyperStat = information.hyperStat;
+
+    const updateInformation = () => {
+        setInformation(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]);
+    }
     const showHyper = () => {
         setHyperToggle(!hyperToggle);
     }
@@ -21,6 +26,32 @@ const StatInformation = () => {
     const test = (e) => {
         setToggle(!toggle)
     }
+
+    const updateHyperStat = (e) => {
+       let levelResult = hyperStat[0].level.slice();
+       levelResult[e.target.value]++;
+       let result = [{level:levelResult},hyperStat[1]]
+       
+       let localStorageResult = {...information, hyperStat:result}
+       localStorage.setItem(`testChItem${cookies.cId.cId}`,JSON.stringify([localStorageResult]));
+       updateInformation();
+    }
+
+    const resetHyperStat = () => {
+        let levelResult = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        let result = [{level:levelResult},hyperStat[1]];
+
+        let localStorageResult = {...information, hyperStat:result}
+        localStorage.setItem(`testChItem${cookies.cId.cId}`,JSON.stringify([localStorageResult]));
+        updateInformation();
+    }
+
+    const hyperStatLine = hyperStat[0].level.map((element, index) => 
+        <div style={{height:"22px"}}>
+             <HyperStatUpButton disabled={element > 14} value={index} style={{float: "left"}} onClick={updateHyperStat}/>
+             <HyperStatText>{hyperStat[0].level[index]}</HyperStatText>
+        </div>
+    )
 
     return (
         <div>
@@ -40,7 +71,12 @@ const StatInformation = () => {
             <StatBackgrnd>
                 <Stat/>
                 {
-                    hyperToggle && <HyperBack></HyperBack>
+                    hyperToggle && <HyperBack>
+                        <div style={{marginTop:"41px", height: "374px"}}>
+                            {hyperStatLine}
+                        </div>
+                        <HyperStatResetButton onClick={resetHyperStat}/>
+                    </HyperBack>
                 }
                 <AttackBack>
                     <div style={{width:"448px", height:"35px", boxSizing:"border-box"}}></div>
@@ -52,7 +88,7 @@ const StatInformation = () => {
                         </MainStatBack>
                         <ApDistributeButton/>
                         <AttactFont>
-
+                            {information.arcanes[0].level}
                         </AttactFont>
                     </div>
                 </AttackBack>
