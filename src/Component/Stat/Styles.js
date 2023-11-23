@@ -15,6 +15,7 @@ import Ability_disabled from "../../images/statWindow/common/detailStat/button_a
 import Ability_mouseOver from "../../images/statWindow/common/detailStat/button_ability/mouseOver.png";
 import Ability_normal from "../../images/statWindow/common/detailStat/button_ability/normal.png";
 import Ability_pressed from "../../images/statWindow/common/detailStat/button_ability/pressed.png";
+import Hyper_backgrnd from "../../images/statWindow/local/detailStat/HyperStat/Window/backgrnd.png";
 import Hyper_disabled from "../../images/statWindow/common/detailStat/button_hyper/disabled.png";
 import Hyper_mouseOver from "../../images/statWindow/common/detailStat/button_hyper/mouseOver.png";
 import Hyper_normal from "../../images/statWindow/common/detailStat/button_hyper/normal.png";
@@ -67,6 +68,20 @@ background-position:center;
 background-repeat:no-repeat;
 height: 120px;
 background-size: auto;
+`
+
+export const HyperBack = styled.div`
+width: 214px;
+height: 482px;
+background-image: url(${Hyper_backgrnd});
+background-position:center;
+background-repeat:no-repeat;
+display:inline-block;
+background-size:cover;
+margin-top: 2px;
+position: absolute;
+left: -214px;
+top: 0px;
 `
 
 export const HyperButton = styled.button`
