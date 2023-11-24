@@ -230,13 +230,21 @@ const DepartmentDiv = (props) => {
           onMouseUp={() => {
             const newEqItem = information;
             if (categoryName[index] == props.dragDrop.category) {
-              console.log(props.dragDrop);
-              // const test2 = { ...newEqItem, data: props.dragDrop };
-              // localStorage.setItem(
-              //   `testChItem${cookies.cId.cId}`,
-              //   JSON.stringify(test2)
-              // );
-              // console.log(test2);
+              const asd = {
+                ...JSON.parse(
+                  localStorage.getItem(`testChItem${cookies.cId.cId}`)
+                )[0],
+                data: [
+                  ...JSON.parse(
+                    localStorage.getItem(`testChItem${cookies.cId.cId}`)
+                  )[0]?.data.concat(props.dragDrop),
+                ],
+              };
+              console.log(
+                JSON.parse(
+                  localStorage.getItem(`testChItem${cookies.cId.cId}`)
+                )[0]
+              );
             }
           }}
         >
