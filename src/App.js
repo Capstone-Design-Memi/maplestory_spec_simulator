@@ -24,8 +24,8 @@ function App() {
               path="/createcharacter"
               element={<CreateCharacter />}
             />
-            <Route exact path="/main" element={<Main />} />
-            <Route exact path="/makeitem" element={<MakeItem />} />
+              <Route exact path="/main" element={<Main />} />
+              <Route exact path="/makeitem" element={<MakeItem />} />
           </Route>
         </Routes>
       </AppContext.Provider>

@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
-import { Cookies, useCookies } from "react-cookie";
+import React, { useState, useContext } from "react";
 import backgrnd from "../../images/arcEquip/background/backgrnd.png";
 import background2 from "../../images/arcEquip/background/backgrnd2.png";
 import background3 from "../../images/arcEquip/background/backgrnd3.png";
@@ -27,6 +26,7 @@ import { DefaultArcane } from "./DefaultArcane";
 import PrintARC from "./PrintARC";
 import PrintAnimation from "./PrintAnimation";
 import PrintBgAnimation from "./PrintBgAnimation";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 
 export const Box = styled.div`
@@ -75,21 +75,14 @@ background-image: url("${normal}");
 let animation = false;
 
 const Arcane = () => {
-    const [cookies, setCookie, removeCookie] = useCookies();
-    const [arcanes,setArcanes] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);
-    const mainStat = Object.keys(arcanes[0].stat)[0];
     const [isAnimate, setIsAnimate] = useState(false);
     const [animationLT, setAnimationLT] = useState({left: 0, top: 0});
-    const localStorageData = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0];
-    console.log(arcanes);
-    
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
+    const [arcanes,setArcanes] = useState(information.arcanes);
+    const mainStat = Object.keys(arcanes[0].stat)[0];
 
     if(arcanes.length < 6) {
         handleResetClick();
-    }
-
-    const updateArcanes = () => {
-        setArcanes(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes);
     }
 
     const handleResetClick = () => {
@@ -99,9 +92,9 @@ const Arcane = () => {
             resetObj[i].stat[mainStat] = 0;
         }
         
-        
-        localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, arcanes: resetObj}]));
-        updateArcanes();
+        let localStorageResult = {...information, arcanes: resetObj}
+        setInformationHandler(localStorageResult);
+        setArcanes(information.arcanes);
     }
 
     const handleEnforceClick = (symbol) => {
@@ -112,10 +105,11 @@ const Arcane = () => {
             return element.name === symbol.name ? symbol : element;
         })
         
-        localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, arcanes: result}]));
+
+        let localStorageResult = {...information, arcanes: result}
+        setInformationHandler(localStorageResult);
         changeLT(symbol);
         setIsAnimate(true);
-        updateArcanes();
     }
 
     const changeLT = (symbol) => {

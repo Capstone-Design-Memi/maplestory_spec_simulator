@@ -29,7 +29,6 @@ const animationArr = [
 //aaAaaaa
 const PrintAutAnimation = ({isAnimate, setIsAnimate, animationLT}) => {
     const [currentFrame, setCurrentFrame] = useState(animationArr[0]);
-    console.log(animationLT);
     useEffect(()=> {
         for(let i=0; i<animationArr.length; i++) {
             const ani = setTimeout(() => {

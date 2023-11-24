@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import { Cookies, useCookies } from "react-cookie";
 import { DefaultAuthentic } from "./DefaultAuthentic";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 import backgrnd from "../../images/autEquip/backgrndExtend.png";
 import diamond from "../../images/autEquip/backgrnd2.png";
 import boximg from "../../images/autEquip/box.png";
@@ -68,9 +69,8 @@ background-image: url("${base2}");
 `
 
 const Authentic = () => {
-    const [cookies, setCookie, removeCookie] = useCookies();
-    const [authentics, setAuthentics] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.authentics);
-    const mainStat = Object.keys(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.arcanes[0].stat)[0]
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
+    const mainStat = Object.keys(information.arcanes[0].stat)[0]
     const [isAnimate, setIsAnimate] = useState(false);
     const [animationLT, setAnimationLT] = useState({left: 0, top: 0});
 
@@ -80,41 +80,32 @@ const Authentic = () => {
             resetObj[i].stat = {};
             resetObj[i].stat[mainStat] = 0;
         }
-        console.log(resetObj);
-        let localStorageInfo = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0];
-        localStorage.setItem(`testChItem${cookies.cId.cId}`,JSON.stringify([{...localStorageInfo, authentics: resetObj}]));
-        setAuthentics(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.authentics);
+        let localStorageResult = {...information, authentics: resetObj};
+        setInformationHandler(localStorageResult);
     }
 
-    if(Object.keys(authentics[0].stat)[0] !== mainStat) {
+    if(Object.keys(information.authentics[0].stat)[0] !== mainStat) {
         handleResetClick();
     }
 
-    const updateAuthentics = () => {
-        setAuthentics(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.authentics);
-    }
-
-    const symbol1 = authentics[0];
-    const symbol2 = authentics[1];
-    const symbol3 = authentics[2];
-    const symbol4 = authentics[3];
-    const symbol5 = authentics[4];
-    const symbol6 = authentics[5];
-
-    console.log(symbol1);
+    const symbol1 = information.authentics[0];
+    const symbol2 = information.authentics[1];
+    const symbol3 = information.authentics[2];
+    const symbol4 = information.authentics[3];
+    const symbol5 = information.authentics[4];
+    const symbol6 = information.authentics[5];
 
     const handleEnforceClick = (symbol) => {
         symbol.level++;
         symbol.stat[Object.keys(symbol.stat)[0]] = ((symbol.level) * 2 + 3) * 100;
 
-        const result = authentics.map((element) => {
+        const result = information.authentics.map((element) => {
             return element.name === symbol.name ? symbol : element;
         })
-        const localStorageData = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0];
-        localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, authentics: result}]));
+        let localStorageResult= {...information, authentics: result};
+        setInformationHandler(localStorageResult);
         changeLT(symbol);
         setIsAnimate(true);
-        updateAuthentics();
     }
 
     const changeLT = (symbol) => {
@@ -133,14 +124,13 @@ const Authentic = () => {
         }    
     }
 
-    console.log(authentics);
     return (
         <div style={{margin:"0px", padding: "0px", textAlign:"center", position:"relative"}}>
             <div style={{backgroundImage: `url(${backgrnd})`, width:"189px", height:"330px", overflow:"hidden"}}>
                 <div style={{backgroundImage: `url(${diamond})`, width:"103px", height:"113px", position:"absolute", left:"50%",
                              transform: "translate(-50%, 25%)"}}>
                     <div style={{textAlign:"left", width:"82px", margin:"40px 13px"}}>
-                        <PrintAUT authentics={authentics}/>
+                        <PrintAUT authentics={information.authentics}/>
                     </div>
                 </div>
                 {

@@ -7,6 +7,7 @@ import { Setting_Unions_Button } from "../Component/Buttons/Setting_Union_Button
 import { AppContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import { useCookies } from "react-cookie";
+import LocalStorageContextProvider from "../Context/LocalStorageContext";
 
 const Main = () => {
   const [cookies] = useCookies();
@@ -20,6 +21,7 @@ const Main = () => {
   }, []);
   return (
     <div>
+      <LocalStorageContextProvider>
       <Row>
         <Col>
           <Setting_Unions_Button />
@@ -37,6 +39,7 @@ const Main = () => {
           <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
         </Col>
       </Row>
+      </LocalStorageContextProvider>
     </div>
   );
 };

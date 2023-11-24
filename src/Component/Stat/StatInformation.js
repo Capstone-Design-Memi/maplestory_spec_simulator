@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useCookies } from "react-cookie";
 import Backgrnd from "../../images/statWindow/common/main/backgrnd.png";
 import Layer_name from "../../images/statWindow/common/main/layer_name.png";
 import styled from "styled-components";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
@@ -12,13 +13,10 @@ const StatInformation = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
     const [toggle, setToggle] = useState(false);
     const [hyperToggle, setHyperToggle] = useState(false);
-    const [information, setInformation] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]);
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
 
     const hyperStat = information.hyperStat;
 
-    const updateInformation = () => {
-        setInformation(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]);
-    }
     const showHyper = () => {
         setHyperToggle(!hyperToggle);
     }
@@ -33,8 +31,7 @@ const StatInformation = () => {
        let result = [{level:levelResult},hyperStat[1]]
        
        let localStorageResult = {...information, hyperStat:result}
-       localStorage.setItem(`testChItem${cookies.cId.cId}`,JSON.stringify([localStorageResult]));
-       updateInformation();
+       setInformationHandler(localStorageResult);
     }
 
     const resetHyperStat = () => {
@@ -42,8 +39,7 @@ const StatInformation = () => {
         let result = [{level:levelResult},hyperStat[1]];
 
         let localStorageResult = {...information, hyperStat:result}
-        localStorage.setItem(`testChItem${cookies.cId.cId}`,JSON.stringify([localStorageResult]));
-        updateInformation();
+        setInformationHandler(localStorageResult);
     }
 
     const hyperStatLine = hyperStat[0].level.map((element, index) => 

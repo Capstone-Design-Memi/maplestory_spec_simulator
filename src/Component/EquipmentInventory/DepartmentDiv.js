@@ -5,6 +5,7 @@ import { useCookies } from "react-cookie";
 import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
 import { stringify } from "rc-field-form/es/useWatch";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 const ItemArr = [
   "",
@@ -153,6 +154,7 @@ const DepartmentDiv = (props) => {
   const [hoverItem, setHoverItem] = useState();
   const [hoverNum, setHoverNum] = useState(300);
   const [cookies] = useCookies();
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
   const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
@@ -205,9 +207,7 @@ const DepartmentDiv = (props) => {
       }
     }
   }
-  const test = JSON.parse(
-    localStorage.getItem(`testChItem${cookies.cId.cId}`)
-  )[0]?.data;
+  const test = information.data;
   // const testMap = test[0].data.map((item) => {
   //   if (item.imageUrl === hoverUrl) {
   //     setHoverItem(item);
@@ -228,9 +228,7 @@ const DepartmentDiv = (props) => {
       {ItemArr.map((value, index) => (
         <ItemSlot
           onMouseUp={() => {
-            const newEqItem = JSON.parse(
-              localStorage.getItem(`testChItem${cookies.cId.cId}`)
-            )[0];
+            const newEqItem = information;
             if (categoryName[index] == props.dragDrop.category) {
               console.log(props.dragDrop);
               // const test2 = { ...newEqItem, data: props.dragDrop };
