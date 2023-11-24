@@ -1,10 +1,14 @@
+import React, { useContext, useEffect } from "react";
 import { Cookies, useCookies } from "react-cookie";
 import { SetEffect } from "../../Util/SetEffect";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 const RegistSetEffects = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const localStorageData = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0];
-    const items = localStorageData.data;
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
+    const items = information.data;
+
+    console.log("hi");
 
     let result = [];
     let alreadyRegisted = [];
@@ -52,7 +56,12 @@ const RegistSetEffects = () => {
         }
     }
 
-    localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([{...localStorageData, setEffects: result}]));
+
+    let localStorageResult = {...information, setEffects: result}
+    useEffect(()=> {
+        setInformationHandler(localStorageResult);
+    },[])
+    
 }
 
 export default RegistSetEffects;

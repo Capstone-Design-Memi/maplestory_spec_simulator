@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import TopFrame_img from "../../images/frame/top.png";
 import Line_img from "../../images/frame/line.png";
 import WhiteLine_img from "../../images/frame/whiteLine.png";
@@ -6,6 +7,7 @@ import styled from "styled-components";
 import { SetEffect } from "../../Util/SetEffect";
 import Convert from "../../Util/Convert";
 import BottomFrame_img from "../../images/frame/bottom.png";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 
 export const Line = styled.div`
@@ -91,9 +93,9 @@ const NotIncludeItem = styled.span`
 
 const SetEffectDropDown = ({item}) => {
     const [cookies, setCookie, removeCookie] = useCookies();
-    const setEffects = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.setEffects;
-    const allItems = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.data;
-
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
+    const setEffects = information.setEffects
+    const allItems = information.data
     let allItemsNameArr = [];
     allItems.map((element) => {
         allItemsNameArr.push(element.name);

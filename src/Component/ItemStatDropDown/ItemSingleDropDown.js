@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Cookies, useCookies } from "react-cookie";
 import ItemStat from "../ItemDetail/ItemStat";
 import SetEffectDropDown from "./SetEffectDropDown";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 
 const ItemSingleDropDown = ({ item }) => {
-  const [cookies, setCookie, removeCookie] = useCookies();
-  const setEffects = JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]?.setEffects;
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
+  const setEffects = information.setEffects;
   let showSetEffect = false
   const setItems = [];
 

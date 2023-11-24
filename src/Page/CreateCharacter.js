@@ -117,9 +117,10 @@ const CreateCharacter = () => {
           cashEquipments: characterInfo.cashEquipments,
           petEquipments: characterInfo.petEquipments,
           arcanes: characterInfo.arcanes,
-          authentics: DefaultAuthentic,
+          authentics: [...DefaultAuthentic],
           setEffects: [],
           hyperStat : DefaultHyperStat,
+          spec: characterInfo.spec,
         },
       ];
 

@@ -11,7 +11,6 @@ const LocalStorageContextProvider = ({ children }) => {
     const [information, setInformation] = useState(JSON.parse(localStorage.getItem(`testChItem${cookies.cId.cId}`))[0]);
 
     const setInformationHandler = (information) => {
-        console.log(information);
         localStorage.setItem(`testChItem${cookies.cId.cId}`, JSON.stringify([information]));
         setInformation(information)
     };

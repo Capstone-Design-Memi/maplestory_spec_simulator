@@ -7,6 +7,7 @@ import { Modal } from "antd";
 import ItemStat from "../ItemDetail/ItemStat";
 import { AppContext } from "../../App";
 import ItemStatDropDown from "../ItemStatDropDown/ItemStatDropDown";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 const ItemItem = ({ dragDrop, setDragDrop }) => {
   const [cookies, setCookie, removeCookie] = useCookies();
@@ -15,7 +16,9 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const [testItem, setTestItem] = useState([]);
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
   const inventoryItem = DefaultItems;
+
   const eqItemMap = testItem[0]?.data.map((item) => {
     if (hoverItem?.category == item?.category) {
       return item;
@@ -30,7 +33,6 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
   const localEqItemMap = Object.keys(localStorage).map(
     (key) => localStorage[key]
   );
-
   const allKeys = Object.keys(localStorage);
   const allKeyMap = allKeys.map((item) => {
     if (item == `InventoryItem${cookies.cId.cId}`) {

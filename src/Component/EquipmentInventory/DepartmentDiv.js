@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { AppContext } from "../../App";
-import { useCookies } from "react-cookie";
 import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
 import { stringify } from "rc-field-form/es/useWatch";
@@ -153,7 +152,6 @@ const DepartmentDiv = (props) => {
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
   const [hoverNum, setHoverNum] = useState(300);
-  const [cookies] = useCookies();
   const {information, setInformationHandler} = useContext(LocalStorageContext);
   const exampleData = props.exampleData;
   for (let key in exampleData) {
@@ -231,20 +229,11 @@ const DepartmentDiv = (props) => {
             const newEqItem = information;
             if (categoryName[index] == props.dragDrop.category) {
               const asd = {
-                ...JSON.parse(
-                  localStorage.getItem(`testChItem${cookies.cId.cId}`)
-                )[0],
+                ...information,
                 data: [
-                  ...JSON.parse(
-                    localStorage.getItem(`testChItem${cookies.cId.cId}`)
-                  )[0]?.data.concat(props.dragDrop),
+                  information.concat(props.dragDrop),
                 ],
               };
-              console.log(
-                JSON.parse(
-                  localStorage.getItem(`testChItem${cookies.cId.cId}`)
-                )[0]
-              );
             }
           }}
         >

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import BackgroundImg from "../../images/frame/equipmentInventory.png";
 import DepartmentDiv from "./DepartmentDiv";
@@ -7,6 +7,7 @@ import { AppContext } from "../../App";
 import Authentic from "./Authentic";
 import Arcane from "./Arcane";
 import RegistSetEffects from "../SetEffects/RegistSetEffects";
+import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
 export const Background = styled.div`
   margin: 0px;
@@ -22,9 +23,7 @@ const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
   const { cId } = useContext(AppContext);
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
-  const testItem = JSON.parse(
-    localStorage.getItem(`testChItem${cookies.cId.cId}`)
-  );
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
   const [isArcane, setIsArcane] = useState(true);
   const [isAuthentic, setIsAuthentic] = useState(true);
 
@@ -37,6 +36,7 @@ const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
   };
 
   RegistSetEffects();
+  
 
   return (
     <div style={{ display: "flex" }}>
@@ -50,11 +50,11 @@ const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
             marginLeft: "14px",
           }}
         >
-          {testItem ? (
+          {information ? (
             <DepartmentDiv
               dragDrop={dragDrop}
               setDragDrop={setDragDrop}
-              exampleData={testItem[0].data}
+              exampleData={information.data}
             />
           ) : (
             <DepartmentDiv

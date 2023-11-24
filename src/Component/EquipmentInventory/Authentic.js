@@ -75,7 +75,7 @@ const Authentic = () => {
     const [animationLT, setAnimationLT] = useState({left: 0, top: 0});
 
     const handleResetClick = () => {
-        let resetObj = DefaultAuthentic;
+        let resetObj = JSON.parse(JSON.stringify(DefaultAuthentic));
         for(let i=0; i<resetObj.length; i++) {
             resetObj[i].stat = {};
             resetObj[i].stat[mainStat] = 0;

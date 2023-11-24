@@ -81,18 +81,19 @@ const Arcane = () => {
     const [arcanes,setArcanes] = useState(information.arcanes);
     const mainStat = Object.keys(arcanes[0].stat)[0];
 
-    if(arcanes.length < 6) {
+    if(information.arcanes.length < 6) {
         handleResetClick();
     }
 
     const handleResetClick = () => {
-        let resetObj = DefaultArcane;
+        console.log(DefaultArcane);
+        let resetObj = JSON.parse(JSON.stringify(DefaultArcane));
         for(let i=0; i<resetObj.length; i++) {
             resetObj[i].stat = {};
             resetObj[i].stat[mainStat] = 0;
         }
-        
-        let localStorageResult = {...information, arcanes: resetObj}
+        console.log(resetObj);
+        let localStorageResult = {...information, arcanes: [...resetObj]}
         setInformationHandler(localStorageResult);
         setArcanes(information.arcanes);
     }
@@ -101,7 +102,7 @@ const Arcane = () => {
         symbol.level++;
         symbol.stat[Object.keys(symbol.stat)[0]] = (symbol.level + 2) * 100;
 
-        const result = arcanes.map((element) => {
+        const result = information.arcanes.map((element) => {
             return element.name === symbol.name ? symbol : element;
         })
         
@@ -128,13 +129,13 @@ const Arcane = () => {
         }
         
     }
-
-    const symbol1 = arcanes.find((element) => element.name === "아케인심볼 : 소멸의 여로");
-    const symbol2 = arcanes.find((element) => element.name === "아케인심볼 : 츄츄 아일랜드");
-    const symbol3 = arcanes.find((element) => element.name === "아케인심볼 : 레헬른");
-    const symbol4 = arcanes.find((element) => element.name === "아케인심볼 : 아르카나");
-    const symbol5 = arcanes.find((element) => element.name === "아케인심볼 : 모라스");
-    const symbol6 = arcanes.find((element) => element.name === "아케인심볼 : 에스페라");
+    
+    const symbol1 = information.arcanes.find((element) => element.name === "아케인심볼 : 소멸의 여로");
+    const symbol2 = information.arcanes.find((element) => element.name === "아케인심볼 : 츄츄 아일랜드");
+    const symbol3 = information.arcanes.find((element) => element.name === "아케인심볼 : 레헬른");
+    const symbol4 = information.arcanes.find((element) => element.name === "아케인심볼 : 아르카나");
+    const symbol5 = information.arcanes.find((element) => element.name === "아케인심볼 : 모라스");
+    const symbol6 = information.arcanes.find((element) => element.name === "아케인심볼 : 에스페라");
 
     if(!(symbol1 && symbol2 && symbol3 && symbol4 && symbol5 && symbol6)){
         handleResetClick();
@@ -148,7 +149,7 @@ const Arcane = () => {
                              marginTop:"25px", overflow:"hidden"}}>
                     <PrintBgAnimation/>
                     <div style={{textAlign:"left", width:"110px", margin:"30px auto"}}>
-                        <PrintARC arcanes={arcanes}/>
+                        <PrintARC arcanes={information.arcanes}/>
                     </div>
                 </div>
             </div>
