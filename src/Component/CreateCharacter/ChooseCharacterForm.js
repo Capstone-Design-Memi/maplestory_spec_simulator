@@ -42,7 +42,8 @@ const ChooseCharacterForm = () => {
         JSON.stringify([{ id: id, data: [] }])
       );
       //const localItemData = [{ id: id, data: [] }];
-      const localItemData = [{
+      const localItemData = [
+        {
           id: id,
           name: values.username,
           world: "리부트",
@@ -56,9 +57,10 @@ const ChooseCharacterForm = () => {
           petEquipments: [],
           arcanes: DefaultArcane,
           authentics: DefaultAuthentic,
-          setEffects : [],
-          hyperStat : DefaultHyperStat,
-      }]
+          setEffects: [],
+          hyperStat: DefaultHyperStat,
+        },
+      ];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
       const cookieInputData = {
         id: id,
