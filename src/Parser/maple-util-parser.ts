@@ -167,23 +167,19 @@ export class MapleUtilsParser {
     private async getCharacterLink(name: string): Promise<string> {
         try{
         const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}`);
-        //const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}`);
         console.log(rankingSearch);
         if (rankingSearch.status !== 200) throw new RankingSearchError(name);
-
         const searchData = await rankingSearch.text();
         let characterLink = '';
-        try {
-            characterLink = this.homePageParser.getCharacterLink(name, searchData);
-        } catch (e) {
-            const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}&w=254`);
-            //const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}&w=254`);
-            console.log(encodeURI(name));
-            console.log(encodeURIComponent(name));
-            if (rankingSearch.status !== 200) throw new RankingSearchError(name);
-            const rebootSearchData = await rebootSearch.text();
-            characterLink = this.homePageParser.getCharacterLink(name, rebootSearchData);
-        }
+        characterLink = this.homePageParser.getCharacterLink(name, searchData);
+        const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}&w=254`);
+        //const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}&w=254`);
+        console.log(encodeURI(name));
+        console.log(encodeURIComponent(name));
+        if (rankingSearch.status !== 200) throw new RankingSearchError(name);
+        const rebootSearchData = await rebootSearch.text();
+        characterLink = this.homePageParser.getCharacterLink(name, rebootSearchData);
+        
         return characterLink;
     }catch(error)
     {
