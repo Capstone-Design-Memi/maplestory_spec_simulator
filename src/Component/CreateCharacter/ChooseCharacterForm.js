@@ -59,6 +59,7 @@ const ChooseCharacterForm = () => {
           authentics: [...DefaultAuthentic],
           setEffects: [],
           hyperStat: DefaultHyperStat,
+          spec: {abilities:{},hypers:{}}
         },
       ];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));

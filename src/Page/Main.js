@@ -22,14 +22,14 @@ const Main = () => {
   return (
     <div>
       <LocalStorageContextProvider>
-      <Row style={{border: "1px solid red"}}>
+      <Row>
         <Col>
           <Setting_Unions_Button />
         </Col>
         <Col>
           <EquipmentInventory dragDrop={dragDrop} setDragDrop={setDragDrop} />
         </Col>
-        <Col style={{border: "1px solid green"}}>
+        <Col>
           <StatInformation />
         </Col>
       </Row>

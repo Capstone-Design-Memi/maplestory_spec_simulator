@@ -8,8 +8,6 @@ const RegistSetEffects = () => {
     const {information, setInformationHandler} = useContext(LocalStorageContext);
     const items = information.data;
 
-    console.log("hi");
-
     let result = [];
     let alreadyRegisted = [];
     

@@ -32,8 +32,46 @@ import HyperStatReset_mouseOver from "../../images/statWindow/local/detailStat/H
 import HyperStatReset_disabled from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/disabled.png"
 import HyperStatReset_noraml from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/normal.png"
 import HyperStatReset_pressed from "../../images/statWindow/local/detailStat/HyperStat/Window/button_reset/pressed.png"
+import Line_img from "../../images/frame/line.png";
+import TopFrame_img from "../../images/frame/top.png";
+import BottomFrame_img from "../../images/frame/bottom.png";
 
+export const Menu = styled.div`
+  width: 261px;
+  position: absolute;
+  left: ${props => `${props.xy.x}px`};
+  top: ${props => `${props.xy.y}px`};
+`
 
+export const BottomFrame = styled.div`
+  height: 13px;
+  background-image: url("${BottomFrame_img}");
+`;
+
+export const Line = styled.div`
+  margin: 0px;
+  padding: 0px;
+  background-image: url('${Line_img}');
+  justify-content : center;
+`
+
+export const TopFrame = styled.div`
+  height: 13px;
+  background-image: url("${TopFrame_img}");
+`;
+
+export const B1 = styled.div`
+width: 14px;
+height: 18px;
+`
+
+export const Section = styled.div`
+width: 207px;
+height: 18px;
+&:hover {
+  background-color: rgb(67,79,92, 100);
+}
+`
 
 export const LevelText = styled.span`
 color: #FFFFFF;
@@ -236,10 +274,12 @@ export const MainStatFont = styled.div`
   height: 53px;
   margin-top: 15px;
   margin-left: 10px;
+  position: absolute;
   background-image: url(${Canvas_mainStatFont});
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  pointer-events: none;
 `
 
 export const AttackBack = styled.div`
@@ -254,7 +294,7 @@ export const AttackBack = styled.div`
 `
 
 export const AttactFont = styled.div`
-  width: 306px;
+  width: 318px;
   height: 167px;
   margin-top: 15px;
   margin-left: 10px;

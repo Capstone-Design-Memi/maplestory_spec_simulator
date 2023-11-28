@@ -4,18 +4,32 @@ import Backgrnd from "../../images/statWindow/common/main/backgrnd.png";
 import Layer_name from "../../images/statWindow/common/main/layer_name.png";
 import styled from "styled-components";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
+import { CalculatStatLevel } from "./Util/CalculatStatLevel";
+import { HyperStatInfo } from "../../Util/HyperStatInfo";
 
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
-     CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton } from "./Styles";
+     CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton, Section, B1, TopFrame, Line } from "./Styles";
+import { DetailWindow } from "./Util/DetailWindow";
+import { Menu } from "antd";
 
 const StatInformation = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
     const [toggle, setToggle] = useState(false);
     const [hyperToggle, setHyperToggle] = useState(false);
     const {information, setInformationHandler} = useContext(LocalStorageContext);
+    const [xy, setXY] = useState({x:0, y:0});
+    const [isHovering, setIsHovering] = useState("nothing");
+    const levelArr = CalculatStatLevel();
 
-    const hyperStat = information.hyperStat;
+    const hyperStat = information.spec.hypers;
+
+    const handleMouseMove = (e) => {
+        let rect = e.target.getBoundingClientRect();
+        console.log(rect);
+        setXY({x:e.nativeEvent.offsetX, 
+               y:e.nativeEvent.offsetY});
+    }
 
     const showHyper = () => {
         setHyperToggle(!hyperToggle);
@@ -25,27 +39,33 @@ const StatInformation = () => {
         setToggle(!toggle)
     }
 
+    
+
     const updateHyperStat = (e) => {
-       let levelResult = hyperStat[0].level.slice();
-       levelResult[e.target.value]++;
-       let result = [{level:levelResult},hyperStat[1]]
-       
-       let localStorageResult = {...information, hyperStat:result}
-       setInformationHandler(localStorageResult);
-    }
+        const index = parseInt(e.target.value)
+        hyperStat[Object.keys(HyperStatInfo)[index]] = Object.values(HyperStatInfo)[index][levelArr[index]+1];
+        if(index === 14) hyperStat.mAtk = Object.values(HyperStatInfo)[index][levelArr[index]+1];
+        let localStorageResult = {...information, spec:{...information.spec, hypers: hyperStat}}
 
-    const resetHyperStat = () => {
-        let levelResult = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-        let result = [{level:levelResult},hyperStat[1]];
-
-        let localStorageResult = {...information, hyperStat:result}
         setInformationHandler(localStorageResult);
     }
 
-    const hyperStatLine = hyperStat[0].level.map((element, index) => 
+    const resetHyperStat = () => {
+        let localStorageResult = {...information, spec:{...information.spec, hypers: {}}}
+        setInformationHandler(localStorageResult);
+    }
+
+    // const hyperStatLine = hyperStat[0].level.map((element, index) => 
+    //     <div style={{height:"22px"}}>
+    //          <HyperStatUpButton disabled={element > 14} value={index} style={{float: "left"}} onClick={updateHyperStat}/>
+    //          <HyperStatText>{hyperStat[0].level[index]}</HyperStatText>
+    //     </div>
+    // )
+    
+    const hyperStatLine = levelArr.map((element, index) => 
         <div style={{height:"22px"}}>
              <HyperStatUpButton disabled={element > 14} value={index} style={{float: "left"}} onClick={updateHyperStat}/>
-             <HyperStatText>{hyperStat[0].level[index]}</HyperStatText>
+             <HyperStatText>{element}</HyperStatText>
         </div>
     )
 
@@ -64,8 +84,16 @@ const StatInformation = () => {
                     <GuildText>{information.guild}</GuildText>
                 </div>
             </CharacterInfo>
-            <StatBackgrnd>
-                <Stat/>
+            <StatBackgrnd onMouseMove={(e)=>handleMouseMove(e)}>
+                {
+                    (isHovering !== "nothing" || true) && 
+                    <div>
+                        <DetailWindow xy={xy}>
+                        
+                        </DetailWindow>
+                    </div>
+                }
+                <Stat>{xy.x} / {xy.y}</Stat>
                 {
                     hyperToggle && <HyperBack>
                         <div style={{marginTop:"41px", height: "374px"}}>
@@ -79,8 +107,29 @@ const StatInformation = () => {
                     <div style={{overflow:"hidden", marginTop:"2px"}}>
                         <MainStatBack>
                             <MainStatFont>
-
+                                
                             </MainStatFont>
+                            <div style={{margin:"9px auto", width:"430px", height:"70px", 
+                            display:"flex", flexDirection: "row", flexWrap: "wrap"}}>
+                                <Section onMouseOver={()=>setIsHovering("hp")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section><B1/>
+                                <Section onMouseOver={()=> setIsHovering("mp")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section>
+                                <Section onMouseOver={()=> setIsHovering("str")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section><B1/>
+                                <Section onMouseOver={()=> setIsHovering("dex")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section>
+                                <Section onMouseOver={()=> setIsHovering("int")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section><B1/>
+                                <Section onMouseOver={()=> setIsHovering("luk")}
+                                         onMouseOut={()=>setIsHovering("nothing")}>
+                                </Section>
+                            </div>
                         </MainStatBack>
                         <ApDistributeButton/>
                         <AttactFont>
