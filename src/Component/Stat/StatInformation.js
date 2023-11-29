@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef, useEffect } from "react";
+import React, { useState, useContext, useRef, useEffect, useMemo } from "react";
 import { useCookies } from "react-cookie";
 import Backgrnd from "../../images/statWindow/common/main/backgrnd.png";
 import Layer_name from "../../images/statWindow/common/main/layer_name.png";
@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
 import { CalculatStatLevel } from "./Util/CalculatStatLevel";
 import { HyperStatInfo } from "../../Util/HyperStatInfo";
-
+import { GetStatInformation } from "./Util/GetStatInformation";
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
      CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton, Section, B1, TopFrame, Line } from "./Styles";
@@ -32,6 +32,9 @@ const StatInformation = () => {
         setOffsetXY({x:elem.left, y:elem.top});
     },[xy])
    
+    // const statInfo = useMemo(()=> {
+    //     return GetStatInformation();
+    // })
 
     const handleMouseMove = (e) => {
         let rect = e.target.getBoundingClientRect();

@@ -59,13 +59,13 @@ const PrintAUT = ({authentics}) => {
         return {id: index, value : Number(sumOfMainStat)}
     })
 
-    const autList = autArr.map((element) => 
-        <div style={{float:"left", width:"6px", height:"14px", overflow:"hidden", marginRight:"2px"}}>
+    const autList = autArr.map((element, index) => 
+        <div key={index} style={{float:"left", width:"6px", height:"14px", overflow:"hidden", marginRight:"2px"}}>
             <img key={element.id} src={numbers[element.value]} style={{objectFit:"cover", marginRight:"4px"}}></img>
         </div>)
 
-    const mainStatList = mainStatArr.map((element) => 
-    <div style={{float:"left", width:"6px", height:"14px", overflow:"hidden", marginRight:"2px"}}>
+    const mainStatList = mainStatArr.map((element, index) => 
+    <div key={index} style={{float:"left", width:"6px", height:"14px", overflow:"hidden", marginRight:"2px"}}>
         <img key={element.id} src={numbers[element.value]} style={{objectFit:"cover", marginRight:"4px"}}></img>
     </div>)
 

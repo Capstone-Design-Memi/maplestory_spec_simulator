@@ -59,13 +59,13 @@ const PrintARC = ({arcanes}) => {
         return {id: index, value : Number(sumOfMainStat)}
     })
 
-    const arcList = arcArr.map((element) => 
-        <div style={{float:"left", width:"10px", height:"17px", overflow:"hidden"}}>
+    const arcList = arcArr.map((element, index) => 
+        <div key={index} style={{float:"left", width:"10px", height:"17px", overflow:"hidden"}}>
             <img key={element.id} src={numbers[element.value]} style={{width:"100%", height:"100%", objectFit:"cover"}}></img>
         </div>)
     
-    const mainStatList = mainStatArr.map((element) => 
-        <div style={{float:"left", width:"10px", height:"17px", overflow:"hidden"}}>
+    const mainStatList = mainStatArr.map((element, index) => 
+        <div key={index} style={{float:"left", width:"10px", height:"17px", overflow:"hidden"}}>
             <img key={element.id} src={numbers[element.value]} style={{width:"100%", height:"100%", objectFit:"cover"}}></img>
         </div>)
 

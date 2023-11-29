@@ -49,12 +49,13 @@ margin-bottom : 10px;
 export const SubText = styled.span`
 color: #FFFFFF;
 font-size: 12px;
-line-height: 15px;
+line-height: 14px;
 justify-content: left;
 align-items: center;
 display: flex;
 text-align: left;
-font-family : "KoPubWorld Dotum Light";
+font-weight: 300;
+font-family : "KoPubWorld Dotum Medium";
 `
 
 export const Menu = styled.div`

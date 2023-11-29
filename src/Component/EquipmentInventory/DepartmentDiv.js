@@ -224,7 +224,7 @@ const DepartmentDiv = (props) => {
   return (
     <div>
       {ItemArr.map((value, index) => (
-        <ItemSlot
+        <ItemSlot key={index}
           onMouseUp={() => {
             const newEqItem = information;
             if (categoryName[index] == props.dragDrop.category) {
