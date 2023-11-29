@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useRef, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import Backgrnd from "../../images/statWindow/common/main/backgrnd.png";
 import Layer_name from "../../images/statWindow/common/main/layer_name.png";
@@ -19,16 +19,24 @@ const StatInformation = () => {
     const [hyperToggle, setHyperToggle] = useState(false);
     const {information, setInformationHandler} = useContext(LocalStorageContext);
     const [xy, setXY] = useState({x:0, y:0});
+    const [offsetXY, setOffsetXY] = useState({x:0, y:0});
     const [isHovering, setIsHovering] = useState("nothing");
+    const wrapperRef = useRef();
     const levelArr = CalculatStatLevel();
 
     const hyperStat = information.spec.hypers;
+    
+    useEffect(() => {
+        const statBackground = document.querySelector('.statBackground');
+        const elem = statBackground.getBoundingClientRect();
+        setOffsetXY({x:elem.left, y:elem.top});
+    },[xy])
+   
 
     const handleMouseMove = (e) => {
         let rect = e.target.getBoundingClientRect();
-        console.log(rect);
-        setXY({x:e.nativeEvent.offsetX, 
-               y:e.nativeEvent.offsetY});
+        setXY({x : e.clientX - offsetXY.x, 
+               y : e.clientY - offsetXY.y});
     }
 
     const showHyper = () => {
@@ -70,7 +78,7 @@ const StatInformation = () => {
     )
 
     return (
-        <div>
+        <div ref={wrapperRef}>
             <CharacterInfo>
                 <div style={{flex: 1}}>
                     <NameText style={{marginTop:"40px"}}>{information.job}</NameText>
@@ -84,16 +92,12 @@ const StatInformation = () => {
                     <GuildText>{information.guild}</GuildText>
                 </div>
             </CharacterInfo>
-            <StatBackgrnd onMouseMove={(e)=>handleMouseMove(e)}>
+            <StatBackgrnd onMouseMove={(e)=>handleMouseMove(e)} className="statBackground">
                 {
-                    (isHovering !== "nothing" || true) && 
-                    <div>
-                        <DetailWindow xy={xy}>
-                        
-                        </DetailWindow>
-                    </div>
+                    (isHovering !== "nothing") && 
+                    <DetailWindow xy={xy} element={isHovering}/>
                 }
-                <Stat>{xy.x} / {xy.y}</Stat>
+                <Stat/>
                 {
                     hyperToggle && <HyperBack>
                         <div style={{marginTop:"41px", height: "374px"}}>
@@ -133,7 +137,6 @@ const StatInformation = () => {
                         </MainStatBack>
                         <ApDistributeButton/>
                         <AttactFont>
-                            {information.arcanes[0].level}
                         </AttactFont>
                     </div>
                 </AttackBack>

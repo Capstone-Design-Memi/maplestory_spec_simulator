@@ -36,6 +36,27 @@ import Line_img from "../../images/frame/line.png";
 import TopFrame_img from "../../images/frame/top.png";
 import BottomFrame_img from "../../images/frame/bottom.png";
 
+export const MainText = styled.span`
+color: #FFFFFF;
+font-size: 14px;
+justify-content: center;
+align-items: center;
+display: flex;
+font-family : "KoPubWorld Dotum Bold";
+margin-bottom : 10px;
+`
+
+export const SubText = styled.span`
+color: #FFFFFF;
+font-size: 12px;
+line-height: 15px;
+justify-content: left;
+align-items: center;
+display: flex;
+text-align: left;
+font-family : "KoPubWorld Dotum Light";
+`
+
 export const Menu = styled.div`
   width: 261px;
   position: absolute;
