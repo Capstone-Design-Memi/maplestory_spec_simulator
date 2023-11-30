@@ -1,3 +1,14 @@
+export const DefaultSumData = {
+    hp : 0, mp : 0, str : 0, dex : 0, int : 0, luk : 0,
+    statAttack : 0, dmg : 0, finalDmg : 0, bossDmg : 0,
+    ignoreDef : 0, mobDmg : 0, atk : 0, mAtk : 0,
+    crit : 0, critDmg : 0, recuse : 0, buff : 0,
+    reset : 0, allAttributeResit : 0, statusDmg : 0,
+    summonor : 0, meso : 0, starforce : 0, item : 0,
+    arc : 0, exp : 0, aut : 0, def : 0, resistance : 0,
+    speed : 0, jump : 0, stance : 0, attackSpeed : 0,
+    atkSpeed : 0,
+}
 
 export const DefaultSpecData = [
     {

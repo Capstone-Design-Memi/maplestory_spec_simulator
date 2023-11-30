@@ -6,10 +6,10 @@ import styled from "styled-components";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
 import { CalculatStatLevel } from "./Util/CalculatStatLevel";
 import { HyperStatInfo } from "../../Util/HyperStatInfo";
-import { GetStatInformation } from "./Util/GetStatInformation";
+import { GetStatInformation, GetSumOfStat } from "./Util/GetStatInformation";
 import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd, ApDistributeButton, 
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
-     CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton, Section, B1, TopFrame, Line } from "./Styles";
+     CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton, Section, B1, TopFrame, Line, SubText, SumOfStatText } from "./Styles";
 import { DetailWindow } from "./Util/DetailWindow";
 import { Menu } from "antd";
 
@@ -23,6 +23,7 @@ const StatInformation = () => {
     const [isHovering, setIsHovering] = useState("nothing");
     const wrapperRef = useRef();
     const levelArr = CalculatStatLevel();
+    const sumOfStat = GetSumOfStat();
 
     const hyperStat = information.spec.hypers;
     
@@ -126,15 +127,19 @@ const StatInformation = () => {
                                 </Section>
                                 <Section onMouseOver={()=> setIsHovering("str")}
                                          onMouseOut={()=>setIsHovering("nothing")}>
+                                            <SumOfStatText>{sumOfStat.str.toLocaleString()}</SumOfStatText>
                                 </Section><B1/>
                                 <Section onMouseOver={()=> setIsHovering("dex")}
                                          onMouseOut={()=>setIsHovering("nothing")}>
+                                            <SumOfStatText>{sumOfStat.dex.toLocaleString()}</SumOfStatText>
                                 </Section>
                                 <Section onMouseOver={()=> setIsHovering("int")}
                                          onMouseOut={()=>setIsHovering("nothing")}>
+                                            <SumOfStatText>{sumOfStat.int.toLocaleString()}</SumOfStatText>
                                 </Section><B1/>
                                 <Section onMouseOver={()=> setIsHovering("luk")}
                                          onMouseOut={()=>setIsHovering("nothing")}>
+                                            <SumOfStatText>{sumOfStat.luk.toLocaleString()}</SumOfStatText>
                                 </Section>
                             </div>
                         </MainStatBack>

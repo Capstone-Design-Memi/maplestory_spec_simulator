@@ -36,6 +36,13 @@ import Line_img from "../../images/frame/line.png";
 import TopFrame_img from "../../images/frame/top.png";
 import BottomFrame_img from "../../images/frame/bottom.png";
 
+
+export const SumOfStatText = styled.span`
+color: #FFFFFF;
+font-size: 14px;
+font-family : "KoPubWorld Dotum Bold";
+float:right;
+`
 export const MainText = styled.span`
 color: #FFFFFF;
 font-size: 14px;

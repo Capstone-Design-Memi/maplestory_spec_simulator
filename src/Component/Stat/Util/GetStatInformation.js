@@ -1,8 +1,29 @@
 import React, { useContext } from "react";
 import { LocalStorageContext } from "../../../Context/LocalStorageContext";
 import { JobList } from "./JobList";
-import { DefaultSpecData } from "./DefaultSpecData";
+import { DefaultSpecData, DefaultSumData } from "./DefaultSpecData";
 import { AllOfStatName, AllOfStatNameWithPersent } from "./AllOfStatName";
+
+export const GetSumOfStat = () => {
+
+    const statInfo = GetStatInformation();
+    const mainStatArr = ["str", "dex", "int", "luk"];
+    let result = DefaultSumData;
+    const {base, persent, noPersent} = statInfo
+    DefaultSumData.str = Math.floor((base.base.str + base.item.str + base.union.str + base.title.str) * 
+    (1 + (persent.item.strP / 100)) + noPersent.hexa.str + noPersent.union.str + noPersent.hyper.str + 
+    noPersent.arcane.int + noPersent.authentic.str);
+
+    for(let i=0; i<mainStatArr.length; i++) {
+        let index = mainStatArr[i]
+        DefaultSumData[index] = Math.floor((base.base[index] + base.skill[index] + base.item[index] + base.union[index] + base.title[index]) * 
+        (1 + (persent.item[index + "P"] / 100)) + noPersent.hexa[index] + noPersent.union[index] + noPersent.hyper[index] + 
+        noPersent.arcane[index] + noPersent.authentic[index]);
+    }
+    
+
+    return result;
+}
 
 export const GetMainStat = () => {
     const {information, setInformationHandler} = useContext(LocalStorageContext);
@@ -15,6 +36,7 @@ export const GetStatInformation = () => {
     const mainStat = GetMainStat();
 
     let newStatNames = JSON.parse(JSON.stringify(AllOfStatName));
+    let newStatPersent = JSON.parse(JSON.stringify(AllOfStatNameWithPersent));
     let union = JSON.parse(localStorage.getItem("union"));
 
     const result = {
@@ -22,15 +44,15 @@ export const GetStatInformation = () => {
             base : {str:4, dex:4, int:4, luk:4, hp:4},
             skill : {...newStatNames},
             item : {...newStatNames},
-            union : {...union[1]},
+            union : {...newStatNames,...union[1]},
             title : {...newStatNames},
         },
         persent : {
-            item : {...AllOfStatNameWithPersent},
+            item : {...newStatPersent},
         },
         noPersent : {
             hexa : {str:0,dex:0,int:0,luk: 1000},
-            union : {str:0,dex:0,int:0,luk:0,...union[0]},
+            union : {...newStatNames,...union[0]},
             hyper : {str:0,dex:0,int:0,luk:0,...information.spec.hypers},
             arcane : {str:0, dex:0, int:0, luk:0, hp: 0},
             authentic : {str:0, dex:0, int:0, luk:0, hp: 0},
