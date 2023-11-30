@@ -31,6 +31,120 @@ const ChooseCharacterForm = () => {
 
   const navigator = useNavigate();
 
+  const dsadsad = {
+    cookieInputData: {
+      id: 1,
+      data: [
+        {
+          arcanes: DefaultArcane,
+          guild: false,
+          imageUrl: false,
+          job: "보우마스터",
+          class: "궁수",
+          level: "123",
+          name: "12",
+          petEquipments: false,
+          spec: { str: 4, dex: 4, int: 4, luk: 4, hp: 4, mp: 4 },
+        },
+      ],
+    },
+  };
+
+  const wqewq = {
+    cookieInputData: {
+      id: 0,
+      data: [
+        {
+          guild: "본투비",
+          imageUrl:
+            "https://avatar.maplestory.nexon.com/Character/180/NMLPCHLPKNDMKGHCGDGLIHOGIDPDDKMDKEIJDHNOIPOKBKKLMHLIEHIJMLGDJAAIBFLDCFPCEIIOBFHHCPMNBFBECNBAEGDKNNPOHKADGGBBNOBLLEDPKAMNGMAIBKEDGNFCNOLFMAKMCDCJILOELLBJAABEGCNOGFBNJAECLCHIKFEMCOBNAKFFIJMGFLMHPEDENCBDJLFJODCGPBAEFKICLHCIIEJIMNPAMNPFHJGHKDIPNLBLCNADBODJFFKA.png",
+          job: "바이퍼",
+          level: 250,
+          name: "바이퍼병장님",
+          petEquipments: [],
+          spec: {
+            statAtkLow: 10990442,
+            statAtkHigh: 12211599,
+            hp: 69392,
+            mp: 39456,
+            str: 20691,
+            dex: 3010,
+            int: 1567,
+            luk: 2220,
+            critDmg: 94,
+            bossDmg: 277,
+            ignoreDef: 87,
+            resistance: 36,
+            stance: 100,
+            def: 40283,
+            speed: 153,
+            jump: 123,
+            starForce: 252,
+            arcaneForce: 1010,
+            hypers: {
+              atk: 15,
+              mAtk: 15,
+              str: 150,
+              critDmg: 12,
+              ignoreDef: 30,
+              dmg: 30,
+              bossDmg: 43,
+            },
+            abilities: { drop: 20, int: 5, luk: 3 },
+          },
+        },
+      ],
+    },
+  };
+
+  const ewq = {
+    cookieInputData: {
+      id: 0,
+      data: [
+        {
+          arcanes: DefaultArcane,
+          guild: "본투비",
+          imageUrl:
+            "https://avatar.maplestory.nexon.com/Character/180/NMLPCHLPKNDMKGHCGDGLIHOGIDPDDKMDKEIJDHNOIPOKBKKLMHLIEHIJMLGDJAAIBFLDCFPCEIIOBFHHCPMNBFBECNBAEGDKNNPOHKADGGBBNOBLLEDPKAMNGMAIBKEDGNFCNOLFMAKMCDCJILOELLBJAABEGCNOGFBNJAECLCHIKFEMCOBNAKFFIJMGFLMHPEDENCBDJLFJODCGPBAEFKICLHCIIEJIMNPAMNPFHJGHKDIPNLBLCNADBODJFFKA.png",
+          job: "바이퍼",
+          level: 250,
+          name: "바이퍼병장님",
+          petEquipments: [],
+          spec: {
+            statAtkLow: 10990442,
+            statAtkHigh: 12211599,
+            hp: 69392,
+            mp: 39456,
+            str: 20691,
+            dex: 3010,
+            int: 1567,
+            luk: 2220,
+            critDmg: 94,
+            bossDmg: 277,
+            ignoreDef: 87,
+            resistance: 36,
+            stance: 100,
+            def: 40283,
+            speed: 153,
+            jump: 123,
+            starForce: 252,
+            arcaneForce: 1010,
+            hypers: {
+              atk: 15,
+              mAtk: 15,
+              str: 150,
+              critDmg: 12,
+              ignoreDef: 30,
+              dmg: 30,
+              bossDmg: 43,
+            },
+            abilities: { drop: 20, int: 5, luk: 3 },
+          },
+        },
+      ],
+    },
+  };
+
   const onFinishCreate = (values) => {
     if (values.level >= 301) {
       alert("최고 레벨은 300입니다.");
@@ -45,10 +159,11 @@ const ChooseCharacterForm = () => {
       const localItemData = [
         {
           id: id,
+          arcanes: DefaultArcane,
           name: values.username,
           world: "리부트",
           guild: "본투비",
-          job: values.job,
+          job: values.job[2],
           level: values.level,
           imageUrl: "",
           traits: [],
@@ -59,7 +174,37 @@ const ChooseCharacterForm = () => {
           authentics: [...DefaultAuthentic],
           setEffects: [],
           hyperStat: DefaultHyperStat,
-          spec: {abilities:{},hypers:{}}
+          spec: {
+            statAtkLow: 0,
+            statAtkHigh: 0,
+            hp: 0,
+            mp: 0,
+            str: 0,
+            dex: 0,
+            int: 0,
+            luk: 0,
+            critDmg: 0,
+            bossDmg: 0,
+            ignoreDef: 0,
+            resistance: 0,
+            stance: 0,
+            def: 0,
+            speed: 0,
+            jump: 0,
+            starForce: 0,
+            arcaneForce: 0,
+            hypers: {
+              atk: 0,
+              mAtk: 0,
+              str: 0,
+              critDmg: 0,
+              ignoreDef: 0,
+              dmg: 0,
+              bossDmg: 0,
+            },
+            abilities: { drop: 0, int: 0, luk: 0 },
+          },
+          abilities: {},
         },
       ];
       localStorage.setItem(`testChItem${id}`, JSON.stringify(localItemData));
@@ -67,15 +212,87 @@ const ChooseCharacterForm = () => {
         id: id,
         data: [
           {
-            arcanes: false,
-            guild: false,
+            arcanes: [
+              {
+                name: "아케인심볼 : 소멸의 여로",
+                stat: { str: 1700 },
+                level: 15,
+                experience: 142,
+                requiredExperience: 236,
+              },
+              {
+                name: "아케인심볼 : 레헬른",
+                stat: { str: 1700 },
+                level: 15,
+                experience: 26,
+                requiredExperience: 236,
+              },
+              {
+                name: "아케인심볼 : 츄츄 아일랜드",
+                stat: { str: 1800 },
+                level: 16,
+                experience: 177,
+                requiredExperience: 267,
+              },
+              {
+                name: "아케인심볼 : 아르카나",
+                stat: { str: 1700 },
+                level: 15,
+                experience: 160,
+                requiredExperience: 236,
+              },
+              {
+                name: "아케인심볼 : 모라스",
+                stat: { str: 1500 },
+                level: 13,
+                experience: 76,
+                requiredExperience: 180,
+              },
+              {
+                name: "아케인심볼 : 에스페라",
+                stat: { str: 1400 },
+                level: 12,
+                experience: 133,
+                requiredExperience: 155,
+              },
+            ],
+            guild: "없음",
             imageUrl: false,
             job: values.job[2],
             class: values.job[1],
             level: values.level,
             name: values.username,
-            petEquipments: false,
-            spec: chStat,
+            petEquipments: [],
+            spec: {
+              statAtkLow: 0,
+              statAtkHigh: 0,
+              hp: 0,
+              mp: 0,
+              str: 0,
+              dex: 0,
+              int: 0,
+              luk: 0,
+              critDmg: 0,
+              bossDmg: 0,
+              ignoreDef: 0,
+              resistance: 0,
+              stance: 0,
+              def: 0,
+              speed: 0,
+              jump: 0,
+              starForce: 0,
+              arcaneForce: 0,
+              hypers: {
+                atk: 0,
+                mAtk: 0,
+                str: 0,
+                critDmg: 0,
+                ignoreDef: 0,
+                dmg: 0,
+                bossDmg: 0,
+              },
+              abilities: { drop: 0, int: 0, luk: 0 },
+            },
           },
         ],
       };
