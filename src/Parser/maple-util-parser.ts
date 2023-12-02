@@ -1,5 +1,5 @@
 import { MAPLESTORY_RANKING_SEARCH } from './constants/links';
-import { OpenPageError, RankingSearchError, RetryError } from './errors';
+import { OpenPageError, RankingSearchError, RetryError} from './errors';
 import { EquipmentParser } from './parsers/equipment';
 import { GeneralInformationParser } from './parsers/general';
 import { HomePageParser } from './parsers/homepage';
@@ -18,6 +18,22 @@ type CashEquipmentsResult = {
     error?: () => Promise<CashEquipment[]>;
 };
 
+let check = "";
+export const onSelectorChange = () => {
+    const selector = document.getElementById("rebootSelector") as HTMLSelectElement | null;
+    if(selector === null)
+    {
+        check = "normal";
+    }
+    if (selector) {
+       check = selector.value;
+      console.log("셀렉터 값이 변경되었습니다. 선택된 값:", check);
+    } else {
+      console.log("셀렉터를 찾을 수 없음");
+    }
+    
+  };
+  
 export class MapleUtilsParser {
     private homePageParser: HomePageParser;
     private equipmentParser: EquipmentParser;
@@ -165,34 +181,31 @@ export class MapleUtilsParser {
     }
 
     private async getCharacterLink(name: string): Promise<string> {
-        try{
-        const rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}`);
-        console.log(rankingSearch);
-        if (rankingSearch.status !== 200) throw new RankingSearchError(name);
+        let rankingSearch: Response;
+        console.log(check);
+        if (check == "reboot") {
+            console.log("여기");
+            rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}&w=254`);
+        } else {
+            rankingSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}`);
+        }
+
+        if (rankingSearch.status !== 200) {
+          throw new RankingSearchError(name);
+        }
+      
         const searchData = await rankingSearch.text();
         let characterLink = '';
-        characterLink = this.homePageParser.getCharacterLink(name, searchData);
-        const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${encodeURI(name)}&w=254`);
-        //const rebootSearch = await fetch(`${MAPLESTORY_RANKING_SEARCH}?c=${name}&w=254`);
-        console.log(encodeURI(name));
-        console.log(encodeURIComponent(name));
-        if (rankingSearch.status !== 200) throw new RankingSearchError(name);
-        const rebootSearchData = await rebootSearch.text();
-        characterLink = this.homePageParser.getCharacterLink(name, rebootSearchData);
-        
-        return characterLink;
-    }catch(error)
-    {
-        if(error instanceof RankingSearchError)
-        {
-            console.error('캐릭터를 불러오지 못했습니다, 메이플 유틸 파서 티에스 getCharacterLink : ${error.name}');
-        }else
-        {
-            console.error('캐릭터를 불러오지 못했습니다, 메이플 유틸 파서 티에스 getCharacterLink : ',error);
+      
+        try {
+          characterLink = this.homePageParser.getCharacterLink(name, searchData);
+        } catch (error) {
+          console.error("케릭터 검색 에러: 유틸파서 페이지-겟 케릭터 링크");
         }
-        return '';
-    }
-    }
+      
+        return characterLink;
+      }
+
 
     private async getSpecPage(characterLink: string): Promise<string> {
         try{
@@ -316,7 +329,7 @@ export class MapleUtilsParser {
                 console.log(`시도 횟수: ${count}, 남은 링크 수: ${failedLinks.length} ${count}초후 재시도`);
                 await new Promise((resolve) => setTimeout(resolve, 1000 * count));
             }
-
+            try{
             const requests = failedLinks.map((link) =>
                 fetch(link, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
                     .then((response) => {
@@ -334,13 +347,16 @@ export class MapleUtilsParser {
                         failedLinks.splice(failedLinks.indexOf(link), 1);
                     })
             );
-
             await Promise.allSettled(requests);
             count++;
+            }
+            catch(error)
+            {
+                console.error("character search error: mapleutilpaser");
+            }
         }
 
         return { success: htmls, error: failedLinks };
     }
 }
-
 export * from './errors';

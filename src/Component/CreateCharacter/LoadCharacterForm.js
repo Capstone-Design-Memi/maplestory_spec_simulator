@@ -4,7 +4,6 @@ import React from "react";
 const LoadCharacterForm = ({ onFinishLoad }) => {
   const createCookie = () => {
     const localStorageData = JSON.parse(localStorage.getItem(`testChItem0`));
-    
   }
   return (
     <Form name="basic" onFinish={onFinishLoad}>
@@ -13,7 +12,7 @@ const LoadCharacterForm = ({ onFinishLoad }) => {
       </Form.Item>
       <Form.Item>
         <Button type="primary" htmlType="submit">
-          Submit
+          검색하기
         </Button>
         <Button onClick={createCookie()}>
           enforce

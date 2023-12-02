@@ -20,7 +20,6 @@ export interface EquipmentLinks {
     cash: string[];
     symbol: string[];
 }
-let count = 0;
 /**
  * 공식 홈페이지 html에서 링크 파싱
  */
@@ -36,15 +35,8 @@ export class HomePageParser {
         const node = HTMLParser.parse(rankingPageHtml);
         const links: NhpHTMLElement[] = node.querySelectorAll(CHARACTER_LINKS_SELECTOR);
         const link = links.find((linkNode: NhpHTMLElement) => linkNode.innerText.toLowerCase() === name.toLowerCase());
-        if(count == 1)
-        {
         if (!link) throw new NotFoundError(name);
         return (`${MAPLESTORY_HOME}${link.attrs['href']}`);
-        }
-        else{
-            count+=1;
-            return "";
-        }
         }
         catch(error)
         {
@@ -55,7 +47,7 @@ export class HomePageParser {
             {
                 console.error('캐릭터를 찾을수 없습니다, 홈페이지 티에스:',error);
             }
-            return '';
+            return "";
         }
     }
 

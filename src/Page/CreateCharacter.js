@@ -11,15 +11,15 @@ import { useCookies } from "react-cookie";
 import { ChractersInfo } from "../Util/CharatersData";
 import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterForm";
 import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
-import { MapleUtilsParser } from "../Parser/maple-util-parser";
+import { MapleUtilsParser, onSelectorChange} from "../Parser/maple-util-parser";
 import { DefaultAuthentic } from "../Component/EquipmentInventory/DefaultAuthentic";
+
 
 const CreateCharacter = () => {
   const { characterInfo } = useSelector((state) => state.maple);
   const [cookies, setcookie, removecookie] = useCookies();
   const [id, setId] = useState(0);
-  const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] =
-    useState(false);
+  const [characterInfoLoadSuccess, setCharacterInfoLoadSuccess] = useState(false);
   const [createcharacterToggle, setCreatecharacterToggle] = useState(true);
   const [equipments, setEquipments] = useState();
   const dispatch = useDispatch();
@@ -155,6 +155,10 @@ const CreateCharacter = () => {
           >
             새 캐릭터 생성하기
           </Button>
+          <select id="rebootSelector" onChange={onSelectorChange}>
+            <option value="normal">일반</option>
+            <option value="reboot">리부트</option>
+            </select>
           <LoadCharacterForm onFinishLoad={onFinishLoad} />
         </div>
       ) : (
@@ -182,5 +186,4 @@ const CreateCharacter = () => {
     </div>
   );
 };
-
 export default CreateCharacter;
