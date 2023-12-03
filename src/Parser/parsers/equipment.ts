@@ -121,6 +121,7 @@ export class EquipmentParser {
         for (const optionNode of optionNodes) {
             const nameNode = optionNode.querySelector('div.stet_th')!;
             const name = nameNode.text.trim();
+            console.log(name);
             if (!name || name === '공격속도' || name === '기타') continue;
 
             const statNode = optionNode.querySelector('div.point_td')!;
@@ -151,6 +152,13 @@ export class EquipmentParser {
                 option.base.allStatP = base[1];
                 option.scroll.allStatP = scroll[1];
                 option.flame.allStatP = flame[1];
+                continue;
+            }
+            if (name.startsWith('보스') && statNode.text.includes('%')) {
+                const { base, scroll, flame } = this.parseStat(name, statNode);
+                option.base.bossDmg = base[1];
+                option.scroll.bossDmg = scroll[1];
+                option.flame.bossDmg = flame[1];
                 continue;
             }
             if (STAT_MAPPING[name]) {
