@@ -211,7 +211,9 @@ export class EquipmentParser {
         const option = textNode.text.split(':').map((s: string) => s.trim());
         if (option.length !== 2) return;
         const [name, value] = option;
-        const stat = STAT_MAPPING[name];
+        const statName = name.trim() + (value?.includes('%') ? '%' : '');
+
+        const stat = STAT_MAPPING[statName];
         if (!stat) return;
 
         return { [stat]: parseInt(value) };
