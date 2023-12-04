@@ -2,7 +2,7 @@ import React from "react";
 import {useState} from "react"; 
 
 
-const defaultUnion = [
+export const defaultUnion = [
     {
         str : 0,
         dex : 0,
