@@ -67,12 +67,53 @@ const StatInformation = () => {
         setInformationHandler(localStorageResult);
     }
 
-    // const hyperStatLine = hyperStat[0].level.map((element, index) => 
-    //     <div style={{height:"22px"}}>
-    //          <HyperStatUpButton disabled={element > 14} value={index} style={{float: "left"}} onClick={updateHyperStat}/>
-    //          <HyperStatText>{hyperStat[0].level[index]}</HyperStatText>
-    //     </div>
-    // )
+    let statArr = ["hp", "mp", "str", "dex", "int", "luk"];
+    const mainStatSections = statArr.map((element, index) =>
+    <>
+        <Section key={index} onMouseOver={()=>setIsHovering(element)}
+                 onMouseOut={()=>setIsHovering("nothing")}>
+                    <SumOfStatText>{Number(sumOfStat[element]).toLocaleString()}</SumOfStatText>
+                 </Section>
+        {index % 2 === 0 && <B1/>}
+    </>)
+
+    const toLocale = (num) => {
+        let numArr = num.toString().split("");
+        console.log(numArr.length);
+        let charArr = ['만','억'];
+        for(let i=numArr.length - 1; i>=0; i--) {
+            if(i%4 === 0) {
+                numArr.splice(numArr.length - i, 0, charArr[i / 4 - 1], " ");
+            }
+        }
+        return numArr;
+    }
+
+    let statAtkArr = ["statAtk", "dmg", "finalDmg", "bossDmg", "ignoreDef",
+    "mobDmg", "atk", "crit", "mAtk", "critDmg", "reuse", "buff", "reset", "ignoreResist",
+    "statusDmg", "summonor"];
+    let noPersent = ["atk", "mAtk", "statAtk"];
+    let isPoint = ["dmg", "finalDmg", "bossDmg", "ignoreDef", "mobDmg", "statusDmg"];
+    const statAtkSections = statAtkArr.map((element,index) =>
+    <>
+        <Section key={index} onMouseOver={()=>setIsHovering(element)}
+                 onMouseOut={()=>setIsHovering("nothing")}>
+                    <SumOfStatText>
+                    {isPoint.includes(element) ? 
+                    (Number(sumOfStat[element]).toFixed(2)).toLocaleString()
+                    : 
+                    element !== "statAtk" ? Number(sumOfStat[element]).toLocaleString()
+                    :
+                        toLocale(sumOfStat[element])
+                    }
+                    
+                {
+                    !noPersent.includes(element) && <>%</>
+                }
+                </SumOfStatText>
+        </Section>
+        {index % 2 === 0 && <B1/>}
+    </>)
     
     const hyperStatLine = levelArr.map((element, index) => 
         <div style={{height:"22px"}}>
@@ -114,38 +155,18 @@ const StatInformation = () => {
                     <div style={{width:"448px", height:"35px", boxSizing:"border-box"}}></div>
                     <div style={{overflow:"hidden", marginTop:"2px"}}>
                         <MainStatBack>
-                            <MainStatFont>
-                                
-                            </MainStatFont>
+                            <MainStatFont/>
                             <div style={{margin:"9px auto", width:"430px", height:"70px", 
                             display:"flex", flexDirection: "row", flexWrap: "wrap"}}>
-                                <Section onMouseOver={()=>setIsHovering("hp")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                </Section><B1/>
-                                <Section onMouseOver={()=> setIsHovering("mp")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                </Section>
-                                <Section onMouseOver={()=> setIsHovering("str")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                            <SumOfStatText>{sumOfStat.str.toLocaleString()}</SumOfStatText>
-                                </Section><B1/>
-                                <Section onMouseOver={()=> setIsHovering("dex")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                            <SumOfStatText>{sumOfStat.dex.toLocaleString()}</SumOfStatText>
-                                </Section>
-                                <Section onMouseOver={()=> setIsHovering("int")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                            <SumOfStatText>{sumOfStat.int.toLocaleString()}</SumOfStatText>
-                                </Section><B1/>
-                                <Section onMouseOver={()=> setIsHovering("luk")}
-                                         onMouseOut={()=>setIsHovering("nothing")}>
-                                            <SumOfStatText>{sumOfStat.luk.toLocaleString()}</SumOfStatText>
-                                </Section>
+                                {mainStatSections}
                             </div>
                         </MainStatBack>
                         <ApDistributeButton/>
-                        <AttactFont>
-                        </AttactFont>
+                        <AttactFont/>
+                        <div style={{margin:"12px 2px", width:"430px", height:"174px", 
+                            display:"flex", flexDirection: "row", flexWrap: "wrap",}}>
+                            {statAtkSections}
+                        </div>
                     </div>
                 </AttackBack>
                 <UtilityBack onWheel={(e)=> test(e)}>

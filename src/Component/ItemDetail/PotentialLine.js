@@ -253,7 +253,7 @@ const PotentialLine = (props) => {
             key2 === "speed" ||
             key2 === "jump" ||
             key2 === "allStat" ||
-            key2 === "recuse"
+            key2 === "reuse"
           ) {
           } else {
             outputArr.push(<WhiteText>%</WhiteText>);

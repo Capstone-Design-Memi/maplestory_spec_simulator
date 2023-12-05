@@ -21,6 +21,12 @@ export const AllOfStatName = {
     "meso" : 0,
     "drop" : 0,
     "reuse" : 0,
+    "finalDmg" : 0,
+    "buff" : 0,
+    "reset" : 0,
+    "ignoreResist" : 0,
+    "statusDmg" : 0,
+    "summonor" : 0
 }
 
 export const AllOfStatNameWithPersent = {

@@ -41,14 +41,17 @@ export const Setting_Unions_Button = () => {
     const [isClicked, setIsClicked] = useState(false);
     const [unionLocalStorage, setUnionLocalStorage] = useState(JSON.parse(localStorage.getItem('union')))
 
-    
+    let inputValue;
+    let inputValue2;
 
     if(!unionLocalStorage) {
+        inputValue = defaultUnion[0];
+        inputValue2 = defaultUnion[1];
         localStorage.setItem('union', JSON.stringify(defaultUnion));
+    }else {
+        inputValue = unionLocalStorage[0];
+        inputValue2 = unionLocalStorage[1];
     }
-
-    let inputValue = unionLocalStorage[0];
-    let inputValue2 = unionLocalStorage[1];
 
     const handleClickButton = () => {
         setIsClicked(!isClicked);

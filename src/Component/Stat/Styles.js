@@ -39,8 +39,8 @@ import BottomFrame_img from "../../images/frame/bottom.png";
 
 export const SumOfStatText = styled.span`
 color: #FFFFFF;
-font-size: 14px;
-font-family : "KoPubWorld Dotum Bold";
+font-size: 11px;
+font-family : "KoPubWorld Dotum Medium";
 float:right;
 `
 export const MainText = styled.span`
@@ -90,7 +90,7 @@ export const TopFrame = styled.div`
 `;
 
 export const B1 = styled.div`
-width: 14px;
+width: 10px;
 height: 18px;
 `
 
@@ -262,7 +262,7 @@ export const UtilityBack = styled.div`
   background-repeat:no-repeat;
   display:inline-block;
   background-size:cover;
-  margin-top: 2px;
+  margin-top: -9px;
 `
 
 export const UtilityFont = styled.div`
@@ -327,10 +327,12 @@ export const AttactFont = styled.div`
   height: 167px;
   margin-top: 15px;
   margin-left: 10px;
+  position: absolute;
   background-image: url(${Canvas_attackFont});
   background-position:center;
   background-repeat:no-repeat;
   background-size:cover;
+  pointer-events: none;
 `
 
 export const Stat = styled.div`
