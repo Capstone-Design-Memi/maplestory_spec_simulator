@@ -226,7 +226,8 @@ const DepartmentDiv = (props) => {
           key={index}
           onMouseUp={() => {
             const newEqItem = information;
-            if (categoryName[index] == props.dragDrop.category) {
+            console.log(123);
+            if (categoryName[index] == props.dragDrop?.category) {
               // console.log(information.data.concat(props.dragDrop));
               const asd = [
                 {
@@ -234,7 +235,7 @@ const DepartmentDiv = (props) => {
                   data: information.data.concat(props.dragDrop),
                 },
               ];
-              console.log(asd);
+              console.log(1);
               localStorage.removeItem(`testChItem${cookies.cId.cId}`);
               localStorage.setItem(
                 `testChItem${cookies.cId.cId}`,
