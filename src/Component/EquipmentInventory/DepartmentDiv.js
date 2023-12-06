@@ -154,6 +154,9 @@ const DepartmentDiv = (props) => {
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
   const [hoverNum, setHoverNum] = useState(300);
+  const nowEqItem = JSON.parse(
+    localStorage.getItem(`testChItem${cookies.cId.cId}`)
+  )[0].data;
   const { information, setInformationHandler } =
     useContext(LocalStorageContext);
   const exampleData = props.exampleData;
@@ -226,7 +229,6 @@ const DepartmentDiv = (props) => {
           key={index}
           onMouseUp={() => {
             const newEqItem = information;
-            console.log(123);
             if (categoryName[index] == props.dragDrop?.category) {
               // console.log(information.data.concat(props.dragDrop));
               const asd = [
@@ -235,13 +237,19 @@ const DepartmentDiv = (props) => {
                   data: information.data.concat(props.dragDrop),
                 },
               ];
-              console.log(1);
               localStorage.removeItem(`testChItem${cookies.cId.cId}`);
               localStorage.setItem(
                 `testChItem${cookies.cId.cId}`,
                 JSON.stringify(asd)
               );
             }
+          }}
+          onMouseDown={() => {
+            nowEqItem.map((item) => {
+              if (categoryName[index] == item.category) {
+                console.log(item.name);
+              }
+            });
           }}
         >
           {ItemArr[index] === "" ? (

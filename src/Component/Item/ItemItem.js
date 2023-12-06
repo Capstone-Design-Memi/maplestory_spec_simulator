@@ -138,6 +138,26 @@ const ItemItem = ({
     );
   });
 
+  // onMouseUp={() => {
+  //   const newEqItem = information;
+  //   console.log(123);
+  //   if (categoryName[index] == props.dragDrop?.category) {
+  //     // console.log(information.data.concat(props.dragDrop));
+  //     const asd = [
+  //       {
+  //         ...information,
+  //         data: information.data.concat(props.dragDrop),
+  //       },
+  //     ];
+  //     console.log(1);
+  //     localStorage.removeItem(`testChItem${cookies.cId.cId}`);
+  //     localStorage.setItem(
+  //       `testChItem${cookies.cId.cId}`,
+  //       JSON.stringify(asd)
+  //     );
+  //   }
+  // }}
+
   const myItemMap = myItems.map((item) => {
     const myItemCategory = item.category;
     const inventoryItemCategoryMap = inventoryItem.map((it) => {
