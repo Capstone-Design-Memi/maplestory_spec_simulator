@@ -176,7 +176,7 @@ const ItemItem = ({
       <div
         style={{
           width: `475px`,
-          height: `208spx`,
+          height: `208px`,
           border: "1px solid #C4C4C4",
           marginLeft: "5px",
           borderRadius: "5px",
