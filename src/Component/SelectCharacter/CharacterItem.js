@@ -79,6 +79,7 @@ const CharacterItem = ({ toggle }) => {
                 <Load // 불러오기 캐릭터 이미지
                   src={item?.cookieInputData.data[0].imageUrl}
                   onClick={() => {
+                    console.log(1);
                     if (cId) {
                       removeCookie(cId);
                       setCookie("cId", { cId: item.cookieInputData.id });

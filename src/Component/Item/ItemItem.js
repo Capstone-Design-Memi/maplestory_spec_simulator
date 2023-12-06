@@ -9,14 +9,21 @@ import { AppContext } from "../../App";
 import ItemStatDropDown from "../ItemStatDropDown/ItemStatDropDown";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
-const ItemItem = ({ dragDrop, setDragDrop }) => {
+const ItemItem = ({
+  dragDrop,
+  setDragDrop,
+  doubleClickItem,
+  setDoubleClickItem,
+}) => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const [testItem, setTestItem] = useState([]);
-  const {information, setInformationHandler} = useContext(LocalStorageContext);
+  const [invenItem, setInvenItem] = useState([]);
+  const { information, setInformationHandler } =
+    useContext(LocalStorageContext);
   const inventoryItem = DefaultItems;
 
   const eqItemMap = testItem[0]?.data.map((item) => {
@@ -50,6 +57,10 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
               setDragDrop(it);
               console.log(dragDrop);
             }}
+            onClick={() => {
+              setDragDrop(it);
+              console.log(dragDrop);
+            }}
             onMouseOver={() => {
               setHoverItem(it);
               setHover(true);
@@ -67,6 +78,7 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
     }
   });
   const testInventoryItem = inventoryItem.map((it) => {
+    console.log(it);
     return (
       <InventoryWrap
         onMouseOver={() => {
@@ -120,29 +132,12 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
       <h3>인벤</h3>
       <div
         style={{
-          width: `${
-            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
-            10
-              ? 475
-              : 51 *
-                localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length
-          }px`,
-          height: `${
-            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
-            10
-              ? ((localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
-                  ?.length -
-                  (localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
-                    ?.length %
-                    10)) /
-                  10 +
-                  1) *
-                51
-              : 51
-          }px`,
+          width: `475px`,
+          height: `200px`,
           border: "1px solid #C4C4C4",
           marginLeft: "5px",
           borderRadius: "5px",
+          marginBottom: "5px",
         }}
       >
         {localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length !==
@@ -156,9 +151,7 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
         <div>
           <ItemStatDropDown item={hoverItem} eqItem={eqItem[0]} />
         </div>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </div>
   );
 };

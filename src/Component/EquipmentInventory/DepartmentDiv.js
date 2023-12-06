@@ -5,6 +5,7 @@ import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
 import { stringify } from "rc-field-form/es/useWatch";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
+import { Cookies, useCookies } from "react-cookie";
 
 const ItemArr = [
   "",
@@ -148,11 +149,13 @@ export const ItemSlot = styled.div`
 `;
 
 const DepartmentDiv = (props) => {
+  const [cookies] = useCookies();
   const [hover, setHover] = useState(false);
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
   const [hoverNum, setHoverNum] = useState(300);
-  const {information, setInformationHandler} = useContext(LocalStorageContext);
+  const { information, setInformationHandler } =
+    useContext(LocalStorageContext);
   const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
@@ -206,11 +209,6 @@ const DepartmentDiv = (props) => {
     }
   }
   const test = information.data;
-  // const testMap = test[0].data.map((item) => {
-  //   if (item.imageUrl === hoverUrl) {
-  //     setHoverItem(item);
-  //   }
-  // });
 
   useEffect(() => {
     test.forEach((item) => {
@@ -224,16 +222,24 @@ const DepartmentDiv = (props) => {
   return (
     <div>
       {ItemArr.map((value, index) => (
-        <ItemSlot key={index}
+        <ItemSlot
+          key={index}
           onMouseUp={() => {
             const newEqItem = information;
             if (categoryName[index] == props.dragDrop.category) {
-              const asd = {
-                ...information,
-                data: [
-                  information.concat(props.dragDrop),
-                ],
-              };
+              // console.log(information.data.concat(props.dragDrop));
+              const asd = [
+                {
+                  ...information,
+                  data: information.data.concat(props.dragDrop),
+                },
+              ];
+              console.log(asd);
+              localStorage.removeItem(`testChItem${cookies.cId.cId}`);
+              localStorage.setItem(
+                `testChItem${cookies.cId.cId}`,
+                JSON.stringify(asd)
+              );
             }
           }}
         >

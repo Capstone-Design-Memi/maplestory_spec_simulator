@@ -18,12 +18,18 @@ export const Background = styled.div`
   background-image: url("${BackgroundImg}");
 `;
 
-const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
+const EquipmentInventory = ({
+  dragDrop,
+  setDragDrop,
+  doubleClickItem,
+  setDoubleClickItem,
+}) => {
   const [cookies] = useCookies();
   const { cId } = useContext(AppContext);
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
-  const {information, setInformationHandler} = useContext(LocalStorageContext);
+  const { information, setInformationHandler } =
+    useContext(LocalStorageContext);
   const [isArcane, setIsArcane] = useState(true);
   const [isAuthentic, setIsAuthentic] = useState(true);
 
@@ -36,7 +42,6 @@ const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
   };
 
   RegistSetEffects();
-  
 
   return (
     <div style={{ display: "flex" }}>
@@ -52,12 +57,16 @@ const EquipmentInventory = ({ dragDrop, setDragDrop }) => {
         >
           {information ? (
             <DepartmentDiv
+              doubleClickItem={doubleClickItem}
+              setDoubleClickItem={setDoubleClickItem}
               dragDrop={dragDrop}
               setDragDrop={setDragDrop}
               exampleData={information.data}
             />
           ) : (
             <DepartmentDiv
+              doubleClickItem={doubleClickItem}
+              setDoubleClickItem={setDoubleClickItem}
               dragDrop={dragDrop}
               setDragDrop={setDragDrop}
               exampleData={exampleData}
