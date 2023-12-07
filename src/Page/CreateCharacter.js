@@ -11,7 +11,10 @@ import { useCookies } from "react-cookie";
 import { ChractersInfo } from "../Util/CharatersData";
 import ChooseCharacterForm from "../Component/CreateCharacter/ChooseCharacterForm";
 import LoadCharacterForm from "../Component/CreateCharacter/LoadCharacterForm";
-import { MapleUtilsParser } from "../Parser/maple-util-parser";
+import {
+  MapleUtilsParser,
+  onSelectorChange,
+} from "../Parser/maple-util-parser";
 import { DefaultAuthentic } from "../Component/EquipmentInventory/DefaultAuthentic";
 import { DefaultHyperStat } from "../Component/Stat/DefaultHyperStat";
 
@@ -119,7 +122,7 @@ const CreateCharacter = () => {
           arcanes: characterInfo.arcanes,
           authentics: [...DefaultAuthentic],
           setEffects: [],
-          hyperStat : DefaultHyperStat,
+          hyperStat: DefaultHyperStat,
           spec: characterInfo.spec,
         },
       ];
@@ -158,6 +161,10 @@ const CreateCharacter = () => {
           >
             새 캐릭터 생성하기
           </Button>
+          <select id="rebootSelector" onChange={onSelectorChange}>
+            <option value="normal">일반</option>
+            <option value="reboot">리부트</option>
+          </select>
           <LoadCharacterForm onFinishLoad={onFinishLoad} />
         </div>
       ) : (
