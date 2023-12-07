@@ -5,7 +5,12 @@ import { json, useNavigate } from "react-router-dom";
 import { ChractersInfo } from "../../Util/CharatersData";
 import { useSelector } from "react-redux";
 import { AppContext } from "../../App";
-import { Basic, Load } from "../../Style/CharacterSelectStyle";
+import {
+  Basic,
+  LoadBox,
+  BasicBox,
+  Load,
+} from "../../Style/CharacterSelectStyle";
 
 const CharacterItem = ({ toggle }) => {
   const { characterInfo } = useSelector((state) => state.maple);
@@ -76,29 +81,33 @@ const CharacterItem = ({ toggle }) => {
           return (
             <>
               {item.cookieInputData.data[0].imageUrl ? (
-                <Load // 불러오기 캐릭터 이미지
-                  src={item?.cookieInputData.data[0].imageUrl}
-                  onClick={() => {
-                    if (cId) {
-                      removeCookie(cId);
-                      setCookie("cId", { cId: item.cookieInputData.id });
-                    } else {
-                      setCookie("cId", { cId: item.cookieInputData.id });
-                    }
-                  }}
-                />
+                <LoadBox>
+                  <Load // 불러오기 캐릭터 이미지
+                    src={item?.cookieInputData.data[0].imageUrl}
+                    onClick={() => {
+                      if (cId) {
+                        removeCookie(cId);
+                        setCookie("cId", { cId: item.cookieInputData.id });
+                      } else {
+                        setCookie("cId", { cId: item.cookieInputData.id });
+                      }
+                    }}
+                  />
+                </LoadBox>
               ) : (
-                <Basic //생성된 기본 캐릭터 이미지
-                  src="../../assets/defaultAvatar.png"
-                  onClick={() => {
-                    if (cId) {
-                      removeCookie(cId);
-                      setCookie("cId", { cId: item.cookieInputData.id });
-                    } else {
-                      setCookie("cId", { cId: item.cookieInputData.id });
-                    }
-                  }}
-                />
+                <BasicBox>
+                  <Basic //생성된 기본 캐릭터 이미지
+                    src="../../assets/defaultAvatar.png"
+                    onClick={() => {
+                      if (cId) {
+                        removeCookie(cId);
+                        setCookie("cId", { cId: item.cookieInputData.id });
+                      } else {
+                        setCookie("cId", { cId: item.cookieInputData.id });
+                      }
+                    }}
+                  />
+                </BasicBox>
               )}
             </>
           );
