@@ -11,6 +11,7 @@ import {
   CharacterListRow,
   CRButton,
   Background,
+  CharacterSel,
 } from "../Style/CharacterSelectStyle";
 
 const SelectCharacter = () => {
@@ -20,6 +21,9 @@ const SelectCharacter = () => {
 
   return (
     <Background>
+      <CharacterSel>
+        ⎷ 캐릭터 선택 <br /> CHARACTER SELECT
+      </CharacterSel>
       <CharacterListRow>
         <Col xs={18} md={18}>
           <CharaterList toggle={toggle} />
@@ -30,7 +34,7 @@ const SelectCharacter = () => {
       </CharacterListRow>
       <ButtonRow
         style={{
-          height: "13.3rem",
+          height: "3.3rem",
           textAlign: "center",
         }}
       >
