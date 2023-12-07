@@ -3,7 +3,7 @@ import CharacterItem from "./CharacterItem";
 
 const CharaterList = ({ toggle }) => {
   return (
-    <div style={{ marginLeft: "10vw" }}>
+    <div style={{ marginLeft: "-200px", marginTop: "1.5vh" }}>
       <CharacterItem toggle={toggle} />
     </div>
   );
