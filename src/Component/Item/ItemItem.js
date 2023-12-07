@@ -46,13 +46,12 @@ const ItemItem = ({
       return JSON.parse(localStorage.getItem(item));
     }
   });
-
   const h = 4;
   const w = 10;
   const itemListVer = Array(h * w)
     .fill()
     .map((arr, i) => {
-      return allKeyMap[2].data[i];
+      return allKeyMap[0][0]?.data[i];
     });
 
   //Array(h * w).fill()의 각 값(undefined)을 map()을 통해 하나씩 불러와서 i로 return

@@ -153,10 +153,14 @@ const DepartmentDiv = (props) => {
   const [hover, setHover] = useState(false);
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
+  const [newInventory, setNewInventory] = useState([]);
   const [hoverNum, setHoverNum] = useState(300);
   const nowEqItem = JSON.parse(
     localStorage.getItem(`testChItem${cookies.cId.cId}`)
   )[0].data;
+  const [nowInventory, setNowInventory] = useState(
+    JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
+  );
   const { information, setInformationHandler } =
     useContext(LocalStorageContext);
   const exampleData = props.exampleData;
@@ -243,11 +247,24 @@ const DepartmentDiv = (props) => {
                 JSON.stringify(asd)
               );
             }
+            nowInventory[0].data.map((item) => {
+              if (props.dragDrop?.id != item.id) {
+                setNewInventory([...newInventory, item]);
+              }
+            });
+            const inventoryInput = [
+              { id: cookies.cId.cId, data: newInventory },
+            ];
+            localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
+            localStorage.setItem(
+              `InventoryItem${cookies.cId.cId}`,
+              JSON.stringify(inventoryInput)
+            );
           }}
           onMouseDown={() => {
             nowEqItem.map((item) => {
               if (categoryName[index] == item.category) {
-                console.log(item.name);
+                console.log(item);
               }
             });
           }}
