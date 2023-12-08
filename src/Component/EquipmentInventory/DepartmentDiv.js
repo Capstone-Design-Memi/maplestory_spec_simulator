@@ -5,7 +5,6 @@ import SubWeaponData from "../../Util/SubWeaponData";
 import ItemSingleDropDown from "../ItemStatDropDown/ItemSingleDropDown";
 import { stringify } from "rc-field-form/es/useWatch";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
-import { Cookies, useCookies } from "react-cookie";
 
 const ItemArr = [
   "",
@@ -148,27 +147,13 @@ export const ItemSlot = styled.div`
   box-sizing: border-box;
 `;
 
-const DepartmentDiv = ({
-  exampleData,
-  dragDrop,
-  setDragDrop,
-  doubleClickItem,
-  setDoubleClickItem,
-}) => {
-  const [cookies] = useCookies();
+const DepartmentDiv = (props) => {
   const [hover, setHover] = useState(false);
   const [hoverUrl, setHoverUrl] = useState();
   const [hoverItem, setHoverItem] = useState();
-  const [newInventory, setNewInventory] = useState([]);
   const [hoverNum, setHoverNum] = useState(300);
-  const nowEqItem = JSON.parse(
-    localStorage.getItem(`testChItem${cookies.cId.cId}`)
-  )[0].data;
-  const [nowInventory, setNowInventory] = useState(
-    JSON.parse(localStorage.getItem(`InventoryItem${cookies.cId.cId}`))
-  );
-  const { information, setInformationHandler } =
-    useContext(LocalStorageContext);
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
+  const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
       if (exampleData[key].category === categoryName[i]) {
@@ -221,6 +206,11 @@ const DepartmentDiv = ({
     }
   }
   const test = information.data;
+  // const testMap = test[0].data.map((item) => {
+  //   if (item.imageUrl === hoverUrl) {
+  //     setHoverItem(item);
+  //   }
+  // });
 
   useEffect(() => {
     test.forEach((item) => {
@@ -234,45 +224,17 @@ const DepartmentDiv = ({
   return (
     <div>
       {ItemArr.map((value, index) => (
-        <ItemSlot
-          key={index}
+        <ItemSlot key={index}
           onMouseUp={() => {
             const newEqItem = information;
-            if (categoryName[index] == dragDrop?.category) {
-              // console.log(information.data.concat(dragDrop));
-              const asd = [
-                {
-                  ...information,
-                  data: information.data.concat(dragDrop),
-                },
-              ];
-              localStorage.removeItem(`testChItem${cookies.cId.cId}`);
-              localStorage.setItem(
-                `testChItem${cookies.cId.cId}`,
-                JSON.stringify(asd)
-              );
+            if (categoryName[index] == props.dragDrop.category) {
+              const asd = {
+                ...information,
+                data: [
+                  information.concat(props.dragDrop),
+                ],
+              };
             }
-            nowInventory[0].data.map((item) => {
-              if (dragDrop?.id != item.id) {
-                setNewInventory([...newInventory, item]);
-              }
-            });
-            const inventoryInput = [
-              { id: cookies.cId.cId, data: newInventory },
-            ];
-            localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
-            localStorage.setItem(
-              `InventoryItem${cookies.cId.cId}`,
-              JSON.stringify(inventoryInput)
-            );
-          }}
-          onMouseDown={() => {
-            nowEqItem.map((item) => {
-              if (categoryName[index] == item.category) {
-                setDragDrop(item);
-                console.log(dragDrop);
-              }
-            });
           }}
         >
           {ItemArr[index] === "" ? (

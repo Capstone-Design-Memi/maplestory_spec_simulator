@@ -23,10 +23,6 @@ const MakeItem = () => {
 
   const allKeys = Object.keys(localStorage);
   const testId = allKeys[allKeys.length - 1];
-  const itemLen = JSON.parse(
-    localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
-  );
-  console.log(itemLen[0].data.length);
 
   useEffect(() => {
     if (cookies.cId === undefined) {
@@ -67,12 +63,12 @@ const MakeItem = () => {
       if (item?.name === values?.makeItem[0]) {
         inputLocalInventoryItem = localInventoryItem.concat({
           ...item,
-          id: itemLen[0].data.length,
+          id: itemId,
         });
       }
       setItemId(itemId + 1);
     });
-    const inputData = [{ id: cId, data: inputLocalInventoryItem }];
+    const inputData = { id: cId, data: inputLocalInventoryItem };
     console.log(inputData);
     localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
     localStorage.setItem(
