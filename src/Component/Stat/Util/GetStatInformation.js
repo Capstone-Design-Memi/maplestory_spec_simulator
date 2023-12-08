@@ -10,48 +10,47 @@ import { AllOfStatName, AllOfStatNameWithPersent } from "./AllOfStatName";
 import flameWeaponData from "../../../Util/flameWeaponData";
 
 export const GetCombat = () => {
-  const flameGrades = {
-    파프니르: [20, 29, 39, 52, 66],
-    앱솔랩스: [29, 43, 59, 77, 99],
-    아케인셰이드: [50, 73, 101, 133, 170],
-    제네시스: [58, 84, 111, 146, 187],
-  };
-  const { information, setInformationHandler } =
-    useContext(LocalStorageContext);
 
-  const weapon = information.data.find((element) =>
-    element.category.endsWith("무기)")
-  );
-  let atkGrade = 0;
-  let mAtkGrade = 0;
-  let currentFlameAtk = 0;
-  let currentFlamemAtk = 0;
-  let weaponGrade = "파프니르";
-
-  if (weapon) {
-    const weaponFlame = flameWeaponData.find((element) =>
-      element.name.includes(weapon.name)
-    );
-    if (weapon.flame?.atk) {
-      currentFlameAtk = weapon.flame.atk;
-      weaponFlame.atk.map((element, index) => {
-        if (element === weapon.flame.atk) atkGrade = index;
-      });
+    const flameGrades = {
+        "파프니르" : [20, 29, 39, 52, 66],
+        "앱솔랩스" : [29, 43, 59, 77, 99],
+        "아케인셰이드" : [50, 73, 101, 133, 170],
+        "제네시스" : [58, 84, 111, 146, 187],
     }
-    if (weapon.flame?.mAtk) {
-      currentFlamemAtk = weapon.flame.mAtk;
-      weaponFlame.mAtk.map((element, index) => {
-        if (element === weapon.flame.mAtk) mAtkGrade = index;
-      });
+    const {information, setInformationHandler} = useContext(LocalStorageContext);
+
+    const weapon = information.data.find((element) => element.category.endsWith("무기)"))
+    let atkGrade = 0;
+    let mAtkGrade = 0;
+    let currentFlameAtk = 0;
+    let currentFlamemAtk = 0;
+    let weaponGrade = "파프니르";
+
+    if(weapon) {
+        const weaponFlame = flameWeaponData.find((element) => element.name.includes(weapon.name));
+        if(weapon.flame?.atk) {
+            currentFlameAtk = weapon.flame.atk;
+            weaponFlame.atk.map((element, index) => {
+                if(element === weapon.flame.atk) atkGrade = index;
+            });
+        }
+        if(weapon.flame?.mAtk) {
+            currentFlamemAtk = weapon.flame.mAtk;
+            weaponFlame.mAtk.map((element, index) => {
+                if(element === weapon.flame.mAtk) mAtkGrade = index;
+            })
+        }
+        weaponGrade = weapon.name.split(" ")[0];
     }
-    weaponGrade = weapon.name.split(" ")[0];
-  }
 
-  let atkDiff = flameGrades[weaponGrade][atkGrade] - currentFlameAtk;
-  let mAtkDiff = flameGrades[weaponGrade][mAtkGrade] - currentFlamemAtk;
+    
 
-  return { atk: atkDiff, mAtk: mAtkDiff };
-};
+    
+    let atkDiff = flameGrades[weaponGrade][atkGrade] - currentFlameAtk;
+    let mAtkDiff = flameGrades[weaponGrade][mAtkGrade] - currentFlamemAtk;
+
+    return {atk : atkDiff, mAtk : mAtkDiff};
+}
 
 export const GetSumOfStat = () => {
   const statInfo = GetStatInformation();
@@ -159,76 +158,38 @@ export const GetSumOfStat = () => {
     );
   }
 
-  const combatInfo = GetCombat();
-
-  let finalMainStat =
-    base.base[mainStat] + base.item[mainStat] + base.union[mainStat];
-  let finalMainStatNopersent =
-    noPersent.arcane[mainStat] +
-    noPersent.authentic[mainStat] +
-    noPersent.hyper[mainStat] +
-    noPersent.union[mainStat];
-  let finalSubStat =
-    base.base[subStat] + base.item[subStat] + base.union[subStat];
-  let finalSubStatNopersent =
-    noPersent.arcane[subStat] +
-    noPersent.authentic[subStat] +
-    noPersent.hyper[subStat] +
-    noPersent.union[subStat];
-
-  let finalStat =
-    ((finalMainStat * (1 + persent.item[mainStat + "P"] / 100) +
-      finalMainStatNopersent) *
-      4 +
-      (finalSubStat * (1 + persent.item[subStat + "P"] / 100) +
-        finalSubStatNopersent)) /
-    100;
-
-  let finalAtk =
-    (base.item[mainAtk] + base.union[mainAtk] + combatInfo[mainAtk]) *
-    (1 + persent.item[mainAtk + "P"] / 100);
-
-  let finalBossDmg =
-    1 +
-    (base.item.bossDmg +
-      base.item.dmg +
-      base.union.bossDmg +
-      base.union.dmg +
-      noPersent.ability.dmg +
-      noPersent.ability.bossDmg +
-      noPersent.hyper.bossDmg +
-      noPersent.hyper.dmg +
-      noPersent.union.bossDmg +
-      noPersent.union.dmg) /
-      100;
-
-  let finalCrit =
-    1.35 +
-    (base.item.critDmg +
-      base.union.critDmg +
-      noPersent.ability.critDmg +
-      noPersent.hyper.critDmg +
-      noPersent.union.critDmg) /
-      100;
-
-  result.combat = Math.floor(
-    finalStat *
-      finalAtk *
-      finalBossDmg *
-      finalCrit *
-      (1 + result.finalDmg / 100)
-  );
-
-  console.log(
-    `${finalStat} / ${finalAtk} / ${finalBossDmg} / ${finalCrit} / ${
-      1 + result.finalDmg / 100
-    }`
-  );
-
-  console.log(result.combat);
 
   return result;
 };
+
+    const combatInfo = GetCombat();
+
+    let finalMainStat = (base.base[mainStat] + base.item[mainStat] + base.union[mainStat]);
+    let finalMainStatNopersent = (noPersent.arcane[mainStat] + noPersent.authentic[mainStat] + noPersent.hyper[mainStat] + noPersent.union[mainStat]);
+    let finalSubStat = (base.base[subStat] + base.item[subStat] + base.union[subStat]);
+    let finalSubStatNopersent = (noPersent.arcane[subStat] + noPersent.authentic[subStat] + noPersent.hyper[subStat] + noPersent.union[subStat]);
+
+    let finalStat = ((finalMainStat * (1 + (persent.item[mainStat + "P"] / 100)) + finalMainStatNopersent) * 4 +
+                    (finalSubStat * (1 + (persent.item[subStat + "P"] / 100)) + finalSubStatNopersent)) / 100;
+
+    let finalAtk = (base.item[mainAtk] + base.union[mainAtk] + combatInfo[mainAtk]) * (1 + (persent.item[mainAtk + "P"] / 100));
+
+    let finalBossDmg = 1 + ((base.item.bossDmg + base.item.dmg + base.union.bossDmg + base.union.dmg + 
+        noPersent.ability.dmg + noPersent.ability.bossDmg + 
+        noPersent.hyper.bossDmg + noPersent.hyper.dmg + noPersent.union.bossDmg + noPersent.union.dmg) / 100)
+    
+    let finalCrit = 1.35 + ((base.item.critDmg + base.union.critDmg + noPersent.ability.critDmg + 
+        noPersent.hyper.critDmg + noPersent.union.critDmg) / 100);
+
+    result.combat = Math.floor(finalStat * finalAtk * finalBossDmg * finalCrit * (1+(result.finalDmg / 100)));
+
+    console.log(`${finalStat} / ${finalAtk} / ${finalBossDmg} / ${finalCrit} / ${1+(result.finalDmg / 100)}`);
+
+    console.log(result.combat);
+
+    return result;
+}
+
 
 export const GetMainStat = () => {
   const { information, setInformationHandler } =
