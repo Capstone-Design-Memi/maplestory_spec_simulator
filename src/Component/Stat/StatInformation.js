@@ -79,7 +79,6 @@ const StatInformation = () => {
 
     const toLocale = (num) => {
         let numArr = num.toString().split("");
-        console.log(numArr.length);
         let charArr = ['만','억'];
         for(let i=numArr.length - 1; i>=0; i--) {
             if(i%4 === 0) {

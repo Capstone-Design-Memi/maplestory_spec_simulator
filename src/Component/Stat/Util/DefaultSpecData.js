@@ -7,7 +7,7 @@ export const DefaultSumData = {
     summonor : 0, meso : 0, starforce : 0, item : 0,
     arc : 0, exp : 0, aut : 0, def : 0, resistance : 0,
     speed : 0, jump : 0, stance : 0, attackSpeed : 0,
-    atkSpeed : 0, atkP : 0, mAtkP : 0
+    atkSpeed : 0, atkP : 0, mAtkP : 0, combat : 0,
 }
 export const WeaponConstData = {
     아대 : 1.75,
