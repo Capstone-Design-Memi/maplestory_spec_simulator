@@ -148,7 +148,13 @@ export const ItemSlot = styled.div`
   box-sizing: border-box;
 `;
 
-const DepartmentDiv = (props) => {
+const DepartmentDiv = ({
+  exampleData,
+  dragDrop,
+  setDragDrop,
+  doubleClickItem,
+  setDoubleClickItem,
+}) => {
   const [cookies] = useCookies();
   const [hover, setHover] = useState(false);
   const [hoverUrl, setHoverUrl] = useState();
@@ -163,7 +169,6 @@ const DepartmentDiv = (props) => {
   );
   const { information, setInformationHandler } =
     useContext(LocalStorageContext);
-  const exampleData = props.exampleData;
   for (let key in exampleData) {
     for (let i = 0; i < categoryName.length; i++) {
       if (exampleData[key].category === categoryName[i]) {
@@ -233,12 +238,12 @@ const DepartmentDiv = (props) => {
           key={index}
           onMouseUp={() => {
             const newEqItem = information;
-            if (categoryName[index] == props.dragDrop?.category) {
-              // console.log(information.data.concat(props.dragDrop));
+            if (categoryName[index] == dragDrop?.category) {
+              // console.log(information.data.concat(dragDrop));
               const asd = [
                 {
                   ...information,
-                  data: information.data.concat(props.dragDrop),
+                  data: information.data.concat(dragDrop),
                 },
               ];
               localStorage.removeItem(`testChItem${cookies.cId.cId}`);
@@ -248,7 +253,7 @@ const DepartmentDiv = (props) => {
               );
             }
             nowInventory[0].data.map((item) => {
-              if (props.dragDrop?.id != item.id) {
+              if (dragDrop?.id != item.id) {
                 setNewInventory([...newInventory, item]);
               }
             });
@@ -264,7 +269,8 @@ const DepartmentDiv = (props) => {
           onMouseDown={() => {
             nowEqItem.map((item) => {
               if (categoryName[index] == item.category) {
-                console.log(item);
+                setDragDrop(item);
+                console.log(dragDrop);
               }
             });
           }}

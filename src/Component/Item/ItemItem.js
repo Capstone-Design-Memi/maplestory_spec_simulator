@@ -59,13 +59,11 @@ const ItemItem = ({
   //생성된 배열이 grid가 됨!!
 
   const newItemList = itemListVer.map((item) => {
-    console.log(item);
     if (item !== undefined) {
       return (
         <InventoryWrap
           onMouseDown={() => {
             setDragDrop(item);
-            console.log(dragDrop);
           }}
           onClick={() => {
             setDragDrop(item);
@@ -84,7 +82,23 @@ const ItemItem = ({
         </InventoryWrap>
       );
     } else {
-      return <InventoryWrap></InventoryWrap>;
+      return (
+        <InventoryWrap
+          onMouseUp={() => {
+            const nowInventory = JSON.parse(
+              localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
+            );
+            setInvenItem({ ...nowInventory[0]?.data, dragDrop });
+            const asd = { id: cookies.cId.cId, data: [...invenItem] };
+            console.log(asd);
+            localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
+            localStorage.setItem(
+              `InventoryItem${cookies.cId.cId}`,
+              JSON.stringify(asd)
+            );
+          }}
+        ></InventoryWrap>
+      );
     }
   });
 
