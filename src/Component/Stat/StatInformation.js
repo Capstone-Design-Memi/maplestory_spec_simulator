@@ -116,14 +116,16 @@ const StatInformation = () => {
     </>
   ));
 
-  const toLocale = (num) => {
-    let numArr = num.toString().split("");
-    // console.log(numArr.length);
-    let charArr = ["만", "억"];
-    for (let i = numArr.length - 1; i >= 0; i--) {
-      if (i % 4 === 0) {
-        numArr.splice(numArr.length - i, 0, charArr[i / 4 - 1], " ");
-      }
+
+    const toLocale = (num) => {
+        let numArr = num.toString().split("");
+        let charArr = ['만','억'];
+        for(let i=numArr.length - 1; i>=0; i--) {
+            if(i%4 === 0) {
+                numArr.splice(numArr.length - i, 0, charArr[i / 4 - 1], " ");
+            }
+        }
+        return numArr;
     }
     return numArr;
   };
