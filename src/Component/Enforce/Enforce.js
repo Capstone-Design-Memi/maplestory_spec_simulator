@@ -89,7 +89,9 @@ const Enforce = ({ enforceItem }) => {
   const [starHandler, setStarHandler] = useState(enforceItem?.star);
   const [flameHandler, setFlameHandler] = useState(enforceItem?.flame);
   const [gradeHandler, setGradeHandler] = useState(enforceItem?.grade);
-  const [potentialHandler, setPotentialHandler] = useState(enforceItem?.potentail?.effects);
+  const [potentialHandler, setPotentialHandler] = useState(
+    enforceItem?.potentail?.effects
+  );
 
   const itemEdit = () => {
     let star = enforceItem.star;
@@ -142,16 +144,16 @@ const Enforce = ({ enforceItem }) => {
   const handleGradeChange = (grade) => {
     enforceItem.grade = grade;
     setGradeHandler(grade);
-  }
+  };
 
   const handlePotentialChange = (potentialArr) => {
-    if("potential" in enforceItem) {
-    enforceItem.potential.effects = potentialArr;
+    if ("potential" in enforceItem) {
+      enforceItem.potential.effects = potentialArr;
     } else {
       enforceItem.potential = {
-        "grade" : gradeHandler,
-        "effects" : [],
-      }
+        grade: gradeHandler,
+        effects: [],
+      };
     }
     setPotentialHandler(potentialArr);
   };
@@ -161,7 +163,8 @@ const Enforce = ({ enforceItem }) => {
       <div style={{ float: "left" }}>
         <ItemStat item={enforceItem} extraInfo={extraInfo} />
       </div>
-      <div style={{ float: "left", border: "1px solid lime", width: "250px" }}>
+      <div style={{ float: "left", border: "1px solid lime", width: "500px" }}>
+        <h4>스타포스</h4>{" "}
         <StarforceTab
           item={enforceItem}
           extraInfo={extraInfo}
@@ -171,7 +174,9 @@ const Enforce = ({ enforceItem }) => {
           onSub10Star={handleSub10Star}
           star={enforceItem?.star}
         />
+        <h4>추가옵션</h4>
         <FlameTab flameInfo={flameInfo} handleFlameChange={handleFlameChange} />
+        <h4>잠재옵션</h4>
         <PotentialTab
           item={enforceItem}
           handleGradeChange={handleGradeChange}
