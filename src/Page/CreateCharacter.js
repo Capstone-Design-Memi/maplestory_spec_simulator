@@ -171,6 +171,7 @@ const CreateCharacter = () => {
         <div>
           <Button
             onClick={() => {
+              console.log(cookies.testChInfo0);
               if (cookies.testChInfo0) {
                 const characterIds = Object.keys(cookies);
                 const lastCharacterId = characterIds[

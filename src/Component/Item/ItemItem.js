@@ -9,21 +9,14 @@ import { AppContext } from "../../App";
 import ItemStatDropDown from "../ItemStatDropDown/ItemStatDropDown";
 import { LocalStorageContext } from "../../Context/LocalStorageContext";
 
-const ItemItem = ({
-  dragDrop,
-  setDragDrop,
-  doubleClickItem,
-  setDoubleClickItem,
-}) => {
+const ItemItem = ({ dragDrop, setDragDrop }) => {
   const [cookies, setCookie, removeCookie] = useCookies();
   const myItems = ChractersInfo[0].equipments;
   const [hover, setHover] = useState(false);
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const [testItem, setTestItem] = useState([]);
-  const [invenItem, setInvenItem] = useState([]);
-  const { information, setInformationHandler } =
-    useContext(LocalStorageContext);
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
   const inventoryItem = DefaultItems;
 
   const eqItemMap = testItem[0]?.data.map((item) => {
@@ -46,73 +39,14 @@ const ItemItem = ({
       return JSON.parse(localStorage.getItem(item));
     }
   });
-  const h = 4;
-  const w = 10;
-  const itemListVer = Array(h * w)
-    .fill()
-    .map((arr, i) => {
-      return allKeyMap[0][0]?.data[i];
-    });
 
-  //Array(h * w).fill()의 각 값(undefined)을 map()을 통해 하나씩 불러와서 i로 return
-  //map()은 각각 return한 값으로 이루어진 배열을 생성함
-  //생성된 배열이 grid가 됨!!
-
-  const newItemList = itemListVer.map((item) => {
-    if (item !== undefined) {
-      return (
-        <InventoryWrap
-          onMouseDown={() => {
-            setDragDrop(item);
-          }}
-          onClick={() => {
-            setDragDrop(item);
-            console.log(dragDrop);
-          }}
-          onMouseOver={() => {
-            setHoverItem(item);
-            setHover(true);
-          }}
-          onMouseOut={() => {
-            setHoverItem();
-            setHover(false);
-          }}
-        >
-          <img src={item?.imageUrl} />
-        </InventoryWrap>
-      );
-    } else {
-      return (
-        <InventoryWrap
-          onMouseUp={() => {
-            const nowInventory = JSON.parse(
-              localStorage.getItem(`InventoryItem${cookies.cId.cId}`)
-            );
-            setInvenItem({ ...nowInventory[0]?.data, dragDrop });
-            const asd = { id: cookies.cId.cId, data: [...invenItem] };
-            console.log(asd);
-            localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
-            localStorage.setItem(
-              `InventoryItem${cookies.cId.cId}`,
-              JSON.stringify(asd)
-            );
-          }}
-        ></InventoryWrap>
-      );
-    }
-  });
-
-  const item = allKeyMap.map((item) => {
+  const v = allKeyMap.map((item) => {
     const inventoryItems = item?.data;
     if (item != undefined) {
       const inventoryItemMap = inventoryItems?.map((it) => {
         return (
           <InventoryWrap
             onMouseDown={() => {
-              setDragDrop(it);
-              console.log(dragDrop);
-            }}
-            onClick={() => {
               setDragDrop(it);
               console.log(dragDrop);
             }}
@@ -132,9 +66,7 @@ const ItemItem = ({
       return inventoryItemMap;
     }
   });
-
   const testInventoryItem = inventoryItem.map((it) => {
-    // console.log(it);
     return (
       <InventoryWrap
         onMouseOver={() => {
@@ -150,26 +82,6 @@ const ItemItem = ({
       </InventoryWrap>
     );
   });
-
-  // onMouseUp={() => {
-  //   const newEqItem = information;
-  //   console.log(123);
-  //   if (categoryName[index] == props.dragDrop?.category) {
-  //     // console.log(information.data.concat(props.dragDrop));
-  //     const asd = [
-  //       {
-  //         ...information,
-  //         data: information.data.concat(props.dragDrop),
-  //       },
-  //     ];
-  //     console.log(1);
-  //     localStorage.removeItem(`testChItem${cookies.cId.cId}`);
-  //     localStorage.setItem(
-  //       `testChItem${cookies.cId.cId}`,
-  //       JSON.stringify(asd)
-  //     );
-  //   }
-  // }}
 
   const myItemMap = myItems.map((item) => {
     const myItemCategory = item.category;
@@ -208,17 +120,34 @@ const ItemItem = ({
       <h3>인벤</h3>
       <div
         style={{
-          width: `475px`,
-          height: `208px`,
+          width: `${
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
+              ? 475
+              : 51 *
+                localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length
+          }px`,
+          height: `${
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
+              ? ((localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                  ?.length -
+                  (localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                    ?.length %
+                    10)) /
+                  10 +
+                  1) *
+                51
+              : 51
+          }px`,
           border: "1px solid #C4C4C4",
           marginLeft: "5px",
           borderRadius: "5px",
-          marginBottom: "5px",
         }}
       >
         {localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length !==
         0 ? (
-          <ItemBoxWrap>{newItemList}</ItemBoxWrap>
+          <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
           <div style={{ width: "120px" }}>아이템이 없습니다</div>
         )}
@@ -227,7 +156,9 @@ const ItemItem = ({
         <div>
           <ItemStatDropDown item={hoverItem} eqItem={eqItem[0]} />
         </div>
-      ) : null}
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

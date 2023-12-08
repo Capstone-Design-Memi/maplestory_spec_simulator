@@ -13,8 +13,6 @@ const Main = () => {
   const [cookies] = useCookies();
   const [dragDrop, setDragDrop] = useState();
   const [dragDropSuccess, setDragDropSuccess] = useState(false);
-  const [doubleClickItem, setDoubleClickItem] = useState();
-
   const navigator = useNavigate();
   useEffect(() => {
     if (cookies.cId === undefined) {
@@ -24,34 +22,26 @@ const Main = () => {
   return (
     <div>
       <LocalStorageContextProvider>
-        <Row>
-          <Col>
-            <Setting_Unions_Button />
-          </Col>
-          <Col>
-            <EquipmentInventory
-              dragDrop={dragDrop}
-              setDragDrop={setDragDrop}
-              doubleClickItem={doubleClickItem}
-              setDoubleClickItem={setDoubleClickItem}
-            />
-          </Col>
-          <Col>
-            <StatInformation />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <ItemList
-              dragDrop={dragDrop}
-              setDragDrop={setDragDrop}
-              doubleClickItem={doubleClickItem}
-              setDoubleClickItem={setDoubleClickItem}
-            />
-          </Col>
-          <Col></Col>
-          <Col></Col>
-        </Row>
+      <Row>
+        <Col>
+          <Setting_Unions_Button />
+        </Col>
+        <Col>
+          <EquipmentInventory dragDrop={dragDrop} setDragDrop={setDragDrop} />
+        </Col>
+        <Col>
+          <StatInformation />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
+        </Col>
+        <Col>
+        </Col>
+        <Col>
+        </Col>
+      </Row>
       </LocalStorageContextProvider>
     </div>
   );
