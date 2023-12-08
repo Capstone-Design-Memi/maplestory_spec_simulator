@@ -173,6 +173,13 @@ export class EquipmentParser {
         option.flame.allStatP = flame[1];
         continue;
       }
+      if (name.startsWith('보스') && statNode.text.includes('%')) {
+        const { base, scroll, flame } = this.parseStat(name, statNode);
+        option.base.bossDmg = base[1];
+        option.scroll.bossDmg = scroll[1];
+        option.flame.bossDmg = flame[1];
+        continue;
+      }
       if (STAT_MAPPING[name]) {
         const { base, scroll, flame } = this.parseStat(name, statNode);
         option.base[base[0]] = base[1];
