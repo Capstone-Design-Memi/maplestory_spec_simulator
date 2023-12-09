@@ -184,9 +184,7 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
         <div>
           <ItemStatDropDown item={hoverItem} eqItem={eqItem[0]} />
         </div>
-      ) : (
-        <></>
-      )}
+      ) : null}
     </div>
   );
 };

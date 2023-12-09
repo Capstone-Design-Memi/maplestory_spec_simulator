@@ -22,26 +22,24 @@ const Main = () => {
   return (
     <div>
       <LocalStorageContextProvider>
-      <Row>
-        <Col>
-          <Setting_Unions_Button />
-        </Col>
-        <Col>
-          <EquipmentInventory dragDrop={dragDrop} setDragDrop={setDragDrop} />
-        </Col>
-        <Col>
-          <StatInformation />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
-        </Col>
-        <Col>
-        </Col>
-        <Col>
-        </Col>
-      </Row>
+        <Row>
+          <Col>
+            <Setting_Unions_Button />
+          </Col>
+          <Col>
+            <EquipmentInventory dragDrop={dragDrop} setDragDrop={setDragDrop} />
+          </Col>
+          <Col>
+            <StatInformation />
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{ transform: " translateY(-350px)" }}>
+            <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
+          </Col>
+          <Col></Col>
+          <Col></Col>
+        </Row>
       </LocalStorageContextProvider>
     </div>
   );
