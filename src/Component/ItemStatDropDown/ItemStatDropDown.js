@@ -4,13 +4,7 @@ import ItemStat from "../ItemDetail/ItemStat";
 const ItemStatDropDown = ({ item, eqItem }) => {
   return (
     <div>
-      <ul
-        style={{
-          listStyle: "none",
-          marginLeft: "480px",
-          transform: "translateY(-400px)",
-        }}
-      >
+      <ul style={{ listStyle: "none" }}>
         <li style={{ float: "left" }}>
           <ItemStat item={item} />
         </li>
