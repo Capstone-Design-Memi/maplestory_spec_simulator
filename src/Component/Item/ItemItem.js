@@ -16,8 +16,7 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
   const [hoverItem, setHoverItem] = useState();
   const [testLocalItems, setTestLocalItems] = useState([]);
   const [testItem, setTestItem] = useState([]);
-  const { information, setInformationHandler } =
-    useContext(LocalStorageContext);
+  const {information, setInformationHandler} = useContext(LocalStorageContext);
   const inventoryItem = DefaultItems;
 
   const eqItemMap = testItem[0]?.data.map((item) => {
@@ -40,53 +39,8 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
       return JSON.parse(localStorage.getItem(item));
     }
   });
-  const allKeyMapNotUndefined = allKeyMap.filter((it) => it !== undefined);
-  console.log(allKeyMapNotUndefined);
-  const h = 4;
-  const w = 10;
-  const itemListVer = Array(h * w)
-    .fill()
-    .map((arr, i) => {
-      return allKeyMapNotUndefined[0]?.data[i];
-    });
 
-  //Array(h * w).fill()의 각 값(undefined)을 map()을 통해 하나씩 불러와서 i로 return
-  //map()은 각각 return한 값으로 이루어진 배열을 생성함
-  //생성된 배열이 grid가 됨!!
-
-  console.log(itemListVer);
-
-  const newItemList = itemListVer.map((item) => {
-    console.log(item);
-    if (item !== undefined) {
-      return (
-        <InventoryWrap
-          onMouseDown={() => {
-            setDragDrop(item);
-            console.log(dragDrop);
-          }}
-          onClick={() => {
-            setDragDrop(item);
-            console.log(dragDrop);
-          }}
-          onMouseOver={() => {
-            setHoverItem(item);
-            setHover(true);
-          }}
-          onMouseOut={() => {
-            setHoverItem();
-            setHover(false);
-          }}
-        >
-          <img src={item?.imageUrl} />
-        </InventoryWrap>
-      );
-    } else {
-      return <InventoryWrap></InventoryWrap>;
-    }
-  });
-
-  const item = allKeyMap.map((item) => {
+  const v = allKeyMap.map((item) => {
     const inventoryItems = item?.data;
     if (item != undefined) {
       const inventoryItemMap = inventoryItems?.map((it) => {
@@ -166,8 +120,26 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
       <h3>인벤</h3>
       <div
         style={{
-          width: `475px`,
-          height: `208px`,
+          width: `${
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
+              ? 475
+              : 51 *
+                localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length
+          }px`,
+          height: `${
+            localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length >=
+            10
+              ? ((localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                  ?.length -
+                  (localStorage.getItem(`inventoryItem${cookies.cId.cId}`)
+                    ?.length %
+                    10)) /
+                  10 +
+                  1) *
+                51
+              : 51
+          }px`,
           border: "1px solid #C4C4C4",
           marginLeft: "5px",
           borderRadius: "5px",
@@ -175,7 +147,7 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
       >
         {localStorage.getItem(`inventoryItem${cookies.cId.cId}`)?.length !==
         0 ? (
-          <ItemBoxWrap>{newItemList}</ItemBoxWrap>
+          <ItemBoxWrap>{v}</ItemBoxWrap>
         ) : (
           <div style={{ width: "120px" }}>아이템이 없습니다</div>
         )}
@@ -184,7 +156,9 @@ const ItemItem = ({ dragDrop, setDragDrop }) => {
         <div>
           <ItemStatDropDown item={hoverItem} eqItem={eqItem[0]} />
         </div>
-      ) : null}
+      ) : (
+        <></>
+      )}
     </div>
   );
 };
