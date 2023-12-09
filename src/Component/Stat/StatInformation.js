@@ -11,7 +11,20 @@ import { AttackBack, CharacterInfo, LayerName, MainStatBack, Stat, StatBackgrnd,
     UtilityBack, AbilityButton, HyperButton, MainStatFont, AttactFont, UtilityFont, DefenseFont, LevelText,
      CharacterImg, NameText, GuildText, HyperBack, HyperStatUpButton, HyperStatText, HyperStatResetButton, Section, B1, TopFrame, Line, SubText, SumOfStatText } from "./Styles";
 import { DetailWindow } from "./Util/DetailWindow";
-import { Menu } from "antd";
+import number0 from"../../images/statWindow/common/detailStat/attackPowrFont/0.png";
+import number1 from"../../images/statWindow/common/detailStat/attackPowrFont/1.png";
+import number2 from"../../images/statWindow/common/detailStat/attackPowrFont/2.png";
+import number3 from"../../images/statWindow/common/detailStat/attackPowrFont/3.png";
+import number4 from"../../images/statWindow/common/detailStat/attackPowrFont/4.png";
+import number5 from"../../images/statWindow/common/detailStat/attackPowrFont/5.png";
+import number6 from"../../images/statWindow/common/detailStat/attackPowrFont/6.png";
+import number7 from"../../images/statWindow/common/detailStat/attackPowrFont/7.png";
+import number8 from"../../images/statWindow/common/detailStat/attackPowrFont/8.png";
+import number9 from"../../images/statWindow/common/detailStat/attackPowrFont/9.png";
+import numberx from"../../images/statWindow/common/detailStat/attackPowrFont/x.png";
+import numbery from"../../images/statWindow/common/detailStat/attackPowrFont/y.png";
+import numberz from"../../images/statWindow/common/detailStat/attackPowrFont/z.png";
+
 
 const StatInformation = () => {
     const [cookies, setCookie, removeCookie] = useCookies();
@@ -24,6 +37,9 @@ const StatInformation = () => {
     const wrapperRef = useRef();
     const levelArr = CalculatStatLevel();
     const sumOfStat = GetSumOfStat();
+    const numArr = [number0,number1,number2,number3,number4,
+                    number5,number6,number7,number8,number9,numberx,numbery,numberz];
+    const xyzArr = [numberx,numbery,numberz];
 
     const hyperStat = information.spec.hypers;
     
@@ -88,6 +104,28 @@ const StatInformation = () => {
         return numArr;
     }
 
+    let combatArr = sumOfStat.combat.toString().split("");
+
+    for(let i=combatArr.length - 1; i > 0; i--) {
+        if(i%4 === 0) {
+            combatArr.splice(combatArr.length - i, 0, i / 4 - 1 + 10);
+        }
+    }
+    
+    const combatLine = combatArr.map((element, index) =>
+        <>
+        { element < 10 ? 
+        <div key={index} style={{float:"left", width:"11px", height:"14px", overflow:"hidden"}}>
+            <img key={index} src={numArr[element]} style={{width:"100%", height:"100%", objectFit:"contain"}}></img>
+        </div>
+        :
+        <div key={index} style={{float:"left", width:"16px", height:"18px", overflow:"hidden", marginLeft:"1px"}}>
+            <img key={index} src={numArr[element]} style={{width:"100%", height:"100%", objectFit:"contain"}}></img>
+        </div>
+        }
+        </>
+    )
+
     let statAtkArr = ["statAtk", "dmg", "finalDmg", "bossDmg", "ignoreDef",
     "mobDmg", "atk", "crit", "mAtk", "critDmg", "reuse", "buff", "reset", "ignoreResist",
     "statusDmg", "summonor"];
@@ -113,7 +151,7 @@ const StatInformation = () => {
         </Section>
         {index % 2 === 0 && <B1/>}
     </>)
-    
+
     const hyperStatLine = levelArr.map((element, index) => 
         <div style={{height:"22px"}}>
              <HyperStatUpButton disabled={element > 14} value={index} style={{float: "left"}} onClick={updateHyperStat}/>
@@ -151,7 +189,11 @@ const StatInformation = () => {
                     </HyperBack>
                 }
                 <AttackBack>
-                    <div style={{width:"448px", height:"35px", boxSizing:"border-box"}}></div>
+                    <div style={{width:"448px", height:"35px", boxSizing:"border-box", display:"flex", justifyContent:"center"}}>
+                        <div style={{margin: "auto"}}>
+                            {combatLine}
+                        </div>
+                    </div>
                     <div style={{overflow:"hidden", marginTop:"2px"}}>
                         <MainStatBack>
                             <MainStatFont/>

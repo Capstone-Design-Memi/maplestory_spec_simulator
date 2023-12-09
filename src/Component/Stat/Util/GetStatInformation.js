@@ -109,13 +109,13 @@ export const GetSumOfStat = () => {
 
     const thiefArr = ["듀얼블레이드", "섀도어", "카데나"];
     if(thiefArr.includes(constanceArr[2])) {
-        result.statAtk = Math.floor(((result[mainStat] * 4 + result[subStat] + result.str - 2.2) / 100) * (result[mainAtk]) * ((100 + result.dmg) / 100)
+        result.statAtk = Math.floor(((result[mainStat] * 4 + result[subStat] + result.str - 2.4) / 100) * (result[mainAtk]) * ((100 + result.dmg) / 100)
     * ((100 + result.finalDmg) / 100) * constanceArr[0] * constanceArr[1]);
     }
 
     const combatInfo = GetCombat();
 
-    let finalMainStat = (base.base[mainStat] + base.item[mainStat] + base.union[mainStat]);
+    let finalMainStat = (base.base[mainStat] + base.item[mainStat] + base.union[mainStat] + base.title[mainStat]);
     let finalMainStatNopersent = (noPersent.arcane[mainStat] + noPersent.authentic[mainStat] + noPersent.hyper[mainStat] + noPersent.union[mainStat]);
     let finalSubStat = (base.base[subStat] + base.item[subStat] + base.union[subStat]);
     let finalSubStatNopersent = (noPersent.arcane[subStat] + noPersent.authentic[subStat] + noPersent.hyper[subStat] + noPersent.union[subStat]);

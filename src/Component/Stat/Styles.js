@@ -37,6 +37,7 @@ import TopFrame_img from "../../images/frame/top.png";
 import BottomFrame_img from "../../images/frame/bottom.png";
 
 
+
 export const SumOfStatText = styled.span`
 color: #FFFFFF;
 font-size: 11px;
