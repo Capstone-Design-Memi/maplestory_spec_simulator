@@ -35,7 +35,7 @@ const CharacterStat = () => {
     (item) => item.cookieInputData.id != undefined
   );
   const chInfo = cookies.cId
-    ? chInfoMapFilterUndefined[0].cookieInputData.data[0]
+    ? chInfoMapFilterUndefined[0]?.cookieInputData.data[0]
     : "캐릭터를 선택해주세요.";
 
   const mainStat = jobClass.map((item) => {
@@ -43,15 +43,15 @@ const CharacterStat = () => {
     const testClass = type.map((it) => {
       const testDepart = it.children;
       const testJob = testDepart.map((i) => {
-        if (i.value == chInfo.job) {
+        if (i.value == chInfo?.job) {
           if (i.main == "str") {
-            str = chInfo.level * 5 + 18;
+            str = chInfo?.level * 5 + 18;
           } else if (i.main == "int") {
-            int = chInfo.level * 5 + 18;
+            int = chInfo?.level * 5 + 18;
           } else if (i.main == "dex") {
-            dex = chInfo.level * 5 + 18;
+            dex = chInfo?.level * 5 + 18;
           } else if (i.main == "luk") {
-            luk = chInfo.level * 5 + 18;
+            luk = chInfo?.level * 5 + 18;
           }
         }
       });
@@ -61,9 +61,9 @@ const CharacterStat = () => {
   return cookies.cId !== undefined ? (
     <div style={{ backgroundColor: "white" }}>
       <ul>
-        <li>name:{chInfo.name}</li>
-        <li>lv:{chInfo.level}</li>
-        <li>job:{chInfo.job}</li>
+        <li>name:{chInfo?.name}</li>
+        <li>lv:{chInfo?.level}</li>
+        <li>job:{chInfo?.job}</li>
         <ul>
           <li>str:{str}</li>
           <li>int:{int}</li>
