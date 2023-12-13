@@ -68,7 +68,7 @@ const MakeItem = () => {
       }
       setItemId(itemId + 1);
     });
-    const inputData = { id: cId, data: inputLocalInventoryItem };
+    const inputData = [{ id: cId, data: [inputLocalInventoryItem] }];
     console.log(inputData);
     localStorage.removeItem(`InventoryItem${cookies.cId.cId}`);
     localStorage.setItem(
