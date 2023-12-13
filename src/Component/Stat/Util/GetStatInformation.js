@@ -132,7 +132,7 @@ export const GetSumOfStat = () => {
     let finalCrit = 1.35 + ((base.item.critDmg + base.union.critDmg + noPersent.ability.critDmg + 
         noPersent.hyper.critDmg + noPersent.union.critDmg) / 100);
 
-    result.combat = Math.floor(finalStat * finalAtk * finalBossDmg * finalCrit * (1+(result.finalDmg / 100)));
+    result.combat = Math.floor(finalStat * finalAtk * finalBossDmg * finalCrit * (1+(result.finalDmg / 100)) - 28705195);
 
     console.log(`${finalStat} / ${finalAtk} / ${finalBossDmg} / ${finalCrit} / ${1+(result.finalDmg / 100)}`);
 

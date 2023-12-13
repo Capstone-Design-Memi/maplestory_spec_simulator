@@ -33,9 +33,9 @@ const Main = () => {
           <StatInformation />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop} />
+      <Row span={8}>
+        <Col style={{ transform: " translateY(-350px) translateX(300px) " }}>
+          <ItemList dragDrop={dragDrop} setDragDrop={setDragDrop}/>
         </Col>
         <Col>
         </Col>

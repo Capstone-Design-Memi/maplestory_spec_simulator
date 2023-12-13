@@ -2,11 +2,13 @@ import React from "react";
 import ItemStat from "../ItemDetail/ItemStat";
 
 const ItemStatDropDown = ({ item, eqItem }) => {
+  const newItem = {...item, amount: -2997563}
+
   return (
-    <div>
+    <div style={{position:"absolute", width:"1000px", left:"100px", top:"-50px"}}>
       <ul style={{ listStyle: "none" }}>
         <li style={{ float: "left" }}>
-          <ItemStat item={item} />
+          <ItemStat item={newItem} />
         </li>
         {eqItem ? (
           <li style={{ float: "left" }}>

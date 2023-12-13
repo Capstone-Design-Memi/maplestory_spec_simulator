@@ -58,16 +58,21 @@ export const DotLine = styled.div`
 
 const otherInformation = {
   maxStar: 20,
-  stateChageAmount: 2010914,
+  stateChageAmount: 0,
   reqLev: 150,
 };
 
-const ItemStat = ({ item }) => {
+const ItemStat = ({item}) => {
+  if(item && item.hasOwnProperty("amount")) {
+    otherInformation.stateChageAmount = item.amount;
+  }else {
+    otherInformation.stateChageAmount = 0
+  }
 
   if(item){
-  let test = GetExtraInfo(item);
-  otherInformation.maxStar = test.maxStar;
-  otherInformation.reqLev = test.reqLev;
+    let test = GetExtraInfo(item);
+    otherInformation.maxStar = test.maxStar;
+    otherInformation.reqLev = test.reqLev;
   }
 
   //console.log(otherInformation.reqLev);
